@@ -1,55 +1,38 @@
-concrete DatalogNor of Datalog = open Prelude in {
+concrete DatalogNor of Datalog = open Prelude, SyntaxSwe, ParadigmsSwe in {
   lincat
-    Rule,  Term, Terms, Predicate = { s : Str } ;
-    Literal, Compound = { s : Rulepart => Str };
+      Rule = S ;
+      Compound = S ;
+      Literal = Cl ;
+      Term = NP;
 
-  param
-    Rulepart = Antecedent | Consequent ;
-  
+
   lin
-    -- DistancePredicate a b l = ss ("avstanden fra" ++ a.s ++ "til" ++ b.s ++ "er" ++ l.s);
+    --if_then_Conj = {s1 = "om" ; s2 = "så" ; n = singular ; isDiscont = False } ;
 
-    DistancePredicate a b l = { s = table {
-      Antecedent => "avstanden fra" ++ a.s ++ "til" ++ b.s ++ "er" ++ l.s;
-      Consequent => "er avstanden fra" ++ a.s ++ "til" ++ b.s ++ l.s
-    } } ;
+    -- track(T)
+    TrackClassPredicate t =  (mkCl t (mkNP (mkN "spor"))) ;
 
-    TrackQualityPredicate t q = { s = table {
-      Antecedent => "sporet" ++ t.s ++ "sin kvalitetsklasse er" ++ q.s;
-      Consequent => "er sporet" ++ t.s ++ "sin kvalitetsklasse" ++ q.s
-   } }  ;
+    -- trackQuality(T,Q)
+    TrackQualityPredicate t q =  (mkCl (mkNP (mkCN (mkN2 (mkN "kvalitetsklasse") (mkPrep "til")) t)) q) ;
 
+    -- distance(A,B,L)
+    DistancePredicate a b l =  (mkCl 
+	(mkNP (mkCN (mkN3 (mkN "avstand") (mkPrep "fra") (mkPrep "til")) a b))
+	l
+	) ;
 
-    TrackClassPredicate t = { s = table {
-      Antecedent => t.s ++ "er et spor";
-      Consequent => "er" ++ t.s ++ "et spor"
-    }} ;
+    UnknownPredicate =  (mkCl (mkN "predikat"));
 
-    UnknownPredicate = { s = table { _ =>  "predikat" } }  ;
+    X = mkNP (mkN "X");
+    Y = mkNP (mkN "Y");
+    Z = mkNP (mkN "Z");
+    a = mkNP (mkN "a");
+    b = mkNP (mkN "b");
+    c = mkNP (mkN "c");
 
-    X = ss "X";
-    Y = ss "Y";
-    Z = ss "Z";
-    a = ss "a";
-    b = ss "b";
-    c = ss "c";
-
-    FloatTerm f = f ;
-    IntTerm i = i; 
-    
-    CompoundTerms t ts =  ss (t.s ++ "og" ++ ts.s) ;
-    SimpleTerm t = t;
-    EmptyTerms = ss "";
-    
-    PredicateLiteral p t = { s= table { _ => p.s ++ "av" ++ t.s } };
-    
-    Negation l = { s = table { x => "ikke" ++ l.s!x } } ;
-
-    Conjunction l1 l2 = { s = table {  x => l1.s!x ++ "," ++"og" ++ l2.s!x }} ;
-    SimpleCompound l = l;
-    --Fact l = { s = table { x => l.s!x ++  "." } }  ; 
-    Fact l = ss (l.s!Antecedent  ++ ".");
-
-    Implies head body = ss ("Hvis" ++ body.s!Antecedent ++  "," ++  "så" ++ head.s!Consequent ++  ".");
-
+    Negation l = mkS presentTense negativePol l ;
+    Conjunction l1 l2 = mkS and_Conj l1 l2 ;
+    SimpleCompound l = mkS l;
+    Fact l = mkS l ;
+    Implies head body = mkS if_then_Conj body (mkS head) ;
 }

@@ -1,6 +1,6 @@
 concrete DatalogDatalog of Datalog = {
   lincat
-    Rule, Compound, Literal, Term, Terms, Predicate = {s : Str} ;
+    Rule, Compound, Literal, Term = {s : Str} ;
 
   --def
   --  linP3 n a b c = { s = n.s ++ "(" ++ a.s ++ "," ++ b.s ++ "," ++ c.s ++ ")" } ;
@@ -24,14 +24,14 @@ concrete DatalogDatalog of Datalog = {
     b = {s = "b" };
     c = {s = "c" };
 
-    IntTerm i = i ;
-    FloatTerm f = f ;
+    -- IntTerm i = i ;
+    -- FloatTerm f = f ;
     
-    CompoundTerms t ts = {s = t.s ++ "," ++ ts.s} ;
-    SimpleTerm t = {s = t.s};
-    EmptyTerms = {s = ""};
+    -- CompoundTerms t ts = {s = t.s ++ "," ++ ts.s} ;
+    -- SimpleTerm t = {s = t.s};
+    -- EmptyTerms = {s = ""};
     
-    PredicateLiteral  p t = {s = p.s ++ "(" ++ t.s ++ ")" } ;
+    -- PredicateLiteral  p t = {s = p.s ++ "(" ++ t.s ++ ")" } ;
     
     Negation l = {s = "!" ++ l.s } ; 
 

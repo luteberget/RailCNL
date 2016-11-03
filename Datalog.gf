@@ -2,7 +2,7 @@ abstract Datalog = {
   flags startcat = Rule;
   
   cat
-    Rule ; Compound ; Literal ; Term ; Terms ; Predicate ;
+    Rule ; Compound ; Literal ; Term ;
     
 
   fun 
@@ -13,13 +13,13 @@ abstract Datalog = {
     Conjunction : Compound -> Compound -> Compound ;
     Negation : Literal -> Compound ;
 
-    PredicateLiteral : Predicate -> Terms -> Literal ;
+    -- PredicateLiteral : Predicate -> Terms -> Literal ;
 
-    EmptyTerms : Terms;
-    SimpleTerm : Term -> Terms;
-    CompoundTerms : Term -> Terms -> Terms ;
-    IntTerm : Int -> Term;
-    FloatTerm : Float -> Term;
+    -- EmptyTerms : Terms;
+    -- SimpleTerm : Term -> Terms;
+    -- CompoundTerms : Term -> Terms -> Terms ;
+    -- IntTerm : Int -> Term;
+    -- FloatTerm : Float -> Term;
 
     X, Y, Z : Term ;
     a, b, c : Term ;

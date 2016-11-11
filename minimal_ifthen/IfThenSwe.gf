@@ -1,9 +1,23 @@
-concrete IfThenSwe of IfThen = open Prelude, SyntaxSwe, ParadigmsSwe in {
+concrete IfThenSwe of IfThen = open Prelude, SyntaxSwe, ParadigmsSwe, TrySwe in {
   lincat
-    Sentence = S;
-    Statement = Cl;
-
+    Sentence = Utt;
+    Clause = Cl;
   lin
-    StatementA = mkCl (mkNP (mkN "fisk"));
-    SSentence a b = mkS if_then_Conj (mkS a) (mkS b) ;
+    SomeClause = mkCl (mkNP (mkN "fisk"));
+    -- CondSentence a b = mkUtt (mkS (mkCl (mkAdv if_Subj (mkS a)) (mkS b))) ;
+    -- CondSentence a b = mkUtt (mkAdV if_Subj (mkS (mkCl (mkNP (mkN "fisk")))) ) ;
+    -- CondSentence a b = mkUtt (mkAdv if_Subj (mkNP the_Det house_N)) ;
+
+CondSentence a b =
+
+--  det är om det finns fisk det finns fisk
+-- mkUtt (mkCl (mkAdv if_Subj (mkS b)) (mkS a))
+
+-- om det finns fisk finns det fisk
+-- mkUtt (mkS (mkAdv if_Subj (mkS b)) (mkS a))
+
+-- om det finns fisk så finns det fisk
+mkUtt (mkS (mkAdv if_Subj (mkS b)) (mkS (mkAdv "så") (mkS a)))
+
+;
 }

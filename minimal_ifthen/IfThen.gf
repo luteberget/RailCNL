@@ -1,7 +1,7 @@
 abstract IfThen =  {
  flags startcat = Sentence;
- cat Sentence; Statement;
+ cat Sentence; Clause;
   fun
-   StatementA : Statement ;
-   SSentence : Statement -> Statement -> Sentence;
+   SomeClause : Clause ;
+   CondSentence : Clause -> Clause -> Sentence;
 }

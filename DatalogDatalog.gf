@@ -1,6 +1,6 @@
 concrete DatalogDatalog of Datalog = {
   lincat
-    Rule, Compound, Literal, Term = {s : Str} ;
+    Rule, Compound, Literal, Term, Predicate = {s : Str} ;
 
   --def
   --  linP3 n a b c = { s = n.s ++ "(" ++ a.s ++ "," ++ b.s ++ "," ++ c.s ++ ")" } ;
@@ -14,29 +14,16 @@ concrete DatalogDatalog of Datalog = {
     --TrackQualityPredicate = linP2 "trackQuality" ;
     TrackQualityPredicate t q = { s = "trackQuality" ++ "(" ++ t.s ++ "," ++ q.s ++ ")" } ;
 
-    UnknownPredicate = {s = "predicate"} ;
-    
-
-    X = {s = "X" };
-    Y = {s = "Y" };
-    Z = {s = "Z" };
-    a = {s = "a" };
-    b = {s = "b" };
-    c = {s = "c" };
-
-    -- IntTerm i = i ;
-    -- FloatTerm f = f ;
-    
-    -- CompoundTerms t ts = {s = t.s ++ "," ++ ts.s} ;
-    -- SimpleTerm t = {s = t.s};
-    -- EmptyTerms = {s = ""};
-    
-    -- PredicateLiteral  p t = {s = p.s ++ "(" ++ t.s ++ ")" } ;
-    
     Negation l = {s = "!" ++ l.s } ; 
-
     Conjunction l1 l2 = {s = l1.s ++ "," ++ l2.s } ;
     SimpleCompound l = {s = l.s } ; 
     Fact l = {s = l.s ++ "." } ;
     Implies head body = {s = head.s ++ " :- " ++ body.s ++ "." };
+
+    CustomLiteral0 p = p;
+    CustomLiteral1 p a = { s = p.s ++ "(" ++ a.s ++ ")" } ;
+    CustomLiteral2 p a b = { s = p.s ++ "(" ++ a.s ++"," ++ b.s ++ ")" } ;
+
+    StringPredicate s = s;
+    StringTerm s = s;
 }

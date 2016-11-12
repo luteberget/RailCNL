@@ -1,8 +1,13 @@
 abstract IfThen =  {
  flags startcat = Sentence;
- cat Sentence; Clause;
+ cat Sentence; Clause; Predicate; Polarity; Identifier;
   fun
-   LiteralPos : Clause ;
-   LiteralNeg : Clause ;
+   Positive : Polarity;
+   Negative : Polarity;
+   CustomPredicate : String -> Predicate;
+   CustomIdentifier : String -> Identifier;
+   Literal0 : Predicate -> Polarity -> Clause ;
+   --Literal1 : Predicate -> Polarity -> Identifier ->Clause ;
+   --Literal2 : Predicate -> Polarity -> Identifier -> Identifier ->Clause ;
    CondSentence : Clause -> Clause -> Sentence;
 }

@@ -1,4 +1,4 @@
-concrete IfThenSwe of IfThen = open Prelude, SyntaxSwe, ParadigmsSwe, TrySwe in {
+concrete IfThenSwe of IfThen = open TrySwe in {
   lincat
     Sentence = Utt;
     Clause = Cl;

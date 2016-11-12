@@ -2,6 +2,7 @@ abstract IfThen =  {
  flags startcat = Sentence;
  cat Sentence; Clause;
   fun
-   SomeClause : Clause ;
+   LiteralPos : Clause ;
+   LiteralNeg : Clause ;
    CondSentence : Clause -> Clause -> Sentence;
 }

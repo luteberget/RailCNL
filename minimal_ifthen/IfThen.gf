@@ -10,4 +10,5 @@ abstract IfThen =  {
    --Literal1 : Predicate -> Polarity -> Identifier ->Clause ;
    --Literal2 : Predicate -> Polarity -> Identifier -> Identifier ->Clause ;
    CondSentence : Clause -> Clause -> Sentence;
+   Combo : Clause -> Clause -> Clause;
 }

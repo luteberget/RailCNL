@@ -61,8 +61,8 @@ Literal0 pred pol = mkLiteral pol (mkPredCl0 pred) ;
   -- mkSubj : Str -> Subj
    -- = \s -> lin Subj (ss s) ;
 
-  CustomPredicate sh = constN sh.s ;
-  CustomIdentifier sh = constN sh.s ;
+  CustomPredicate sh = constN "skeks" ;
+  CustomIdentifier sh = constN "fleks" ;
 
   Positive = positivePol;
   Negative = negativePol;
@@ -70,4 +70,6 @@ Literal0 pred pol = mkLiteral pol (mkPredCl0 pred) ;
   CondSentence a b =
   -- om det finns fisk så finns det fisk
   mkUtt (mkS (mkAdv if_Subj b) (mkS (P.mkAdv "så") a)) ;
+
+  Combo a b = mkS and_Conj a b ;
 }

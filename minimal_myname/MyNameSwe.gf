@@ -4,7 +4,7 @@ concrete MyNameSwe of MyName = open TryNor, (D=DiffNor) in {
      Sentence = Utt;
   oper
     mkPN_x : Str -> PN
-     = \s -> {s = \\_ =>  s ; g = D.ngen2gen neutrum } ** {lock_PN = <>} ;
+     = \s -> lin PN {s = \\_ =>  s ; g = D.ngen2gen neutrum } ;
   lin
     MyNameSentence name = mkUtt (mkS (mkCl (mkNP name))) ;
     CustomName cn = mkPN_x (cn.s) ;

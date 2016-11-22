@@ -4,7 +4,7 @@ concrete LowLevelNor of LowLevel = open (Pre=Prelude), SyntaxNor, (CS=CommonScan
     Constraint, Obligation = Utt;
     Compound = S;
     Literal = Cl;
-    Term = NP;
+    Term = CN;
     Predicate = N;
 
   oper
@@ -50,12 +50,12 @@ concrete LowLevelNor of LowLevel = open (Pre=Prelude), SyntaxNor, (CS=CommonScan
     Negation l = mkS presentTense negativePol l ;
 
     StringPredicate x =  (mkN_x x.s );
-    StringTerm x = mkNP (mkPN_x x.s );
-    IntTerm x = mkNP (mkPN_x x.s);
-    FloatTerm x = mkNP (mkPN_x x.s);
+    StringTerm x = mkCN (mkN_x x.s );
+    IntTerm x = mkCN (mkN_x x.s);
+    FloatTerm x = mkCN (mkN_x x.s);
     StringId x = x;
 
     Literal0 pred = mkCl (det_N pred) ;
-    Literal1 pred a = mkCl (a) (det_N pred) ;
-    Literal2 pred a b = mkCl (b) (x_of_y (det_N pred) (a)) ;
+    Literal1 pred a = mkCl (mkNP a) (det_N pred) ;
+    Literal2 pred a b = mkCl (mkNP b) (x_of_y (det_N pred) (mkNP a)) ;
 }

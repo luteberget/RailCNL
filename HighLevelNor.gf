@@ -14,7 +14,7 @@ open SyntaxNor, (P=ParadigmsNor), (Try=TryNor) in {
 
  
    lincat
-     Restriction = {n : NP; a : A};
+     Restriction = {n : CN; a : A};
      -- ImplicitySubjectLiteral = Cl;
 
      Class = N;
@@ -34,9 +34,9 @@ open SyntaxNor, (P=ParadigmsNor), (Try=TryNor) in {
    MkImplicitSubjectOtherClass subj cls = mkNP subj (mkRS (mkRCl which_RP (mkNP cls))) ;
 
 
-   MkPropertySpec prop val = (mkNP (mkCN prop val));
+   MkPropertySpec prop val = (mkNP (mkCN prop (mkNP val)));
    -- MkPropertyRestriction prop restr = (mkNP (mkCN restr.a restr.n));
-   MkPropertyRestriction prop restr = mkNP (mkNP prop) (mkRS (mkRCl which_RP restr.a restr.n));
+   -- MkPropertyRestriction prop restr = mkNP (mkNP prop) (mkRS (mkRCl which_RP restr.a restr.n));
    MkCompoundProperty = and_NP;
 
 
@@ -65,8 +65,8 @@ open SyntaxNor, (P=ParadigmsNor), (Try=TryNor) in {
 
 
 
-   Distance a b l =             (mkCl (mkNP the_Det (dist_CN a b)) l) ;
-   DistanceRestriction a b r =  (mkCl (mkNP the_Det (dist_CN a b)) r.a r.n) ;
+   Distance a b l =             (mkCl (mkNP the_Det (dist_CN (mkNP a) (mkNP b))) (mkNP l)) ;
+   DistanceRestriction a b r =  (mkCl (mkNP the_Det (dist_CN (mkNP a) (mkNP b))) r.a (mkNP r.n)) ;
 
    AnonArithmeticLessThan x = lin Restriction {n = x; a = Try.small_A} ;
    AnonArithmeticGreaterThan x = lin Restriction {n = x; a = Try.big_A} ;

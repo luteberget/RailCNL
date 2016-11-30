@@ -35,9 +35,14 @@ open SyntaxNor, (P=ParadigmsNor), (Try=TryNor) in {
 
 
    MkPropertySpec prop val = (mkNP (mkCN prop (mkNP val)));
-   -- MkPropertyRestriction prop restr = (mkNP (mkCN restr.a restr.n));
-   -- MkPropertyRestriction prop restr = mkNP (mkNP prop) (mkRS (mkRCl which_RP restr.a restr.n));
+   MkPropertyRestriction prop restr =
+      mkNP (mkCN prop (mkRS (mkRCl which_RP restr.a (mkNP restr.n))));
+     -- (mkNP (mkCN restr.a restr.n))
    MkCompoundProperty = and_NP;
+
+-- UseCl (PredVP (UsePron she_Pron) (ComplSlash (SlashV2a love_V2) (DetCN (DetQuant DefArt NumSg) (RelCN (UseN woman_N) (UseRCl (TTAnt TPres ASimul) PPos (RelVP IdRP (UseComp (CompAP (PositA red_A)))))))))
+
+
 
 
    MkPropertyConstraintWImplSubj subj prop = mkUtt (mkS (mkCl subj (must_VP prop )) );

@@ -1,4 +1,5 @@
 abstract HighLevel = LowLevel** {
+  flags startcat=Constraint;
   cat
 
     Restriction;

@@ -1,5 +1,5 @@
 abstract Binding =  {
-  -- flags startcat=Prop;
+  flags startcat=Prop;
   cat
    Identifier; Prop;
 

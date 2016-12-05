@@ -30,5 +30,7 @@ abstract LowLevel = {
     Literal0 : Predicate -> Literal;
     Literal1 : Predicate -> Term -> Literal;
     Literal2 : Predicate -> Term -> Term -> Literal;
+    Literal3 : Predicate -> Term -> Term -> Term -> Literal;
+    Literal4 : Predicate -> Term -> Term -> Term -> Term -> Literal;
     -- LiteralMany : Predicate -> [Term] -> Literal;
 }

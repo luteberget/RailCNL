@@ -23,7 +23,9 @@ abstract Datalog = {
     Literal4 : Predicate -> Term -> Term -> Term -> Term -> Literal;
 
     -- Arithmetic literals
-    Gt, Gte, Lt, Lte, Eq, Neq : Term -> Term -> Literal;
+    -- Conjunction to allow S linearization category
+    -- (which enables negation). 
+    Gt, Gte, Lt, Lte, Eq, Neq : Term -> Term -> Conjunction;
 
     -- Conjunction: from literals to rule body.
     --   Negated literals can only appear in rule body,

@@ -1,4 +1,4 @@
-abstract Ontology = RailCNLStatement, Datalog** {
+abstract Ontology = RailCNLStatement, Datalog ** {
   -- Partial grammar in the Railway CNL for expressing classes and 
   -- properties of classes.
 
@@ -9,9 +9,7 @@ abstract Ontology = RailCNLStatement, Datalog** {
     -- Try without this for now.
     Subject; -- a track, a track of quality class X, a track which has length greater than 200,
              -- an object which is red.
-
     Condition;
-
     PropertyRestriction; -- has a length which is less than 200 m
 
   fun

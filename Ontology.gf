@@ -2,6 +2,8 @@ abstract Ontology = RailCNLStatement, Datalog ** {
   -- Partial grammar in the Railway CNL for expressing classes and 
   -- properties of classes.
 
+  flags startcat=Statement ;
+
 
   cat
     Class; Property; Value;
@@ -25,7 +27,9 @@ abstract Ontology = RailCNLStatement, Datalog ** {
   -- Subjects
     SubjectClass : Class -> Subject;
     -- SubjectPropertyValue : Subject -> Property -> Value -> Subject;
-    SubjectPropertyRestriction : Subject -> PropertyRestriction -> Subject;
+    SubjectPropertyRestriction : Class -> PropertyRestriction -> Subject;
+
+    AndRestr, OrRestr : PropertyRestriction -> PropertyRestriction -> PropertyRestriction;
 
 
   -- Conditions 
@@ -34,8 +38,7 @@ abstract Ontology = RailCNLStatement, Datalog ** {
     DatalogCondition : Literal -> Condition;
 
     -- Condition operations
-    AndCond : Condition -> Condition -> Condition;
-    OrCond : Condition -> Condition -> Condition;
+    AndCond, OrCond : Condition -> Condition -> Condition;
   
     
   -- Statements 

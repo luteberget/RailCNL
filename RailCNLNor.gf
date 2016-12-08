@@ -1,1 +1,1 @@
-concrete RailCNLNor of RailCNL = OntologyNor, DatalogNor ** {};
+concrete RailCNLNor of RailCNL = OntologyNor ** {};

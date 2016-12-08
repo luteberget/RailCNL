@@ -3,7 +3,7 @@ concrete DatalogNor of Datalog = open
   ParadigmsNor, (Par = ParadigmsNor),
   (Struct = StructuralNor), 
   (Diff = DiffNor),
-  (Lex = LexiconNor)
+  (Lex = LexiconNor), MyParadigmsNor
 
 in {
 
@@ -15,52 +15,6 @@ in {
     Predicate = Str;
 
 
-  oper
-    then_Adv : Adv  = Par.mkAdv  "så";
-    of_Prep  : Prep = Par.mkPrep "til";
-
-    small_A : A  = Lex.small_A;
-    big_A : A    = Lex.big_A;
-
-    equal_to_A2 : A2 = Par.mkA2 (mkA "lik" "lik") (mkPrep "");
-    not_equal_to_A2 : A2 = 
--- Par.mkA2 (mkA "ikke lik" "ikke lik") (mkPrep "")
-    -- not_equal_to_A2 : A = 
-           Par.mkA2 (mkA "ulik" "ulik") (mkPrep "");
-
-    gte_A2 : A2 = Par.mkA2 (mkA 
-      "større enn eller lik"
-      "større enn eller lik"
-      ) (mkPrep "") ;
-
-    lte_A2 : A2 = Par.mkA2 (mkA 
-      "mindre enn eller lik"
-      "mindre enn eller lik"
-      ) (mkPrep "") ;
-
-    x_of_y : NP -> NP -> NP
-     = \mother,king -> mkNP mother (Syn.mkAdv possess_Prep king) ;
-    
-    strPN : Str -> PN
-      = \str -> lin PN { s = \\_ => str; g = Diff.ngen2gen neutrum } ;
-
-    strN : Str -> N
-      = \str -> lin N { s = \\_ => \\_ => \\_  => str ; g = masculine ; co = str };
-
-    strCN : Str -> CN = \str -> mkCN (strN str);
-
-    strNP : Str -> NP = \str -> mkNP (strPN str);
-
-    cmpCl = overload {
-       cmpCl : A -> Str -> Str -> Cl  = 
-         \adj,a,b -> mkCl (strNP a) (mkAP adj (strNP b)) ;
-       
-       cmpCl : A2 -> Str -> Str -> Cl
-	 = \adj,a,b -> mkCl (strNP a) (mkAP adj (strNP b)) ;
-    };
-
-    negCl : Cl -> S = mkS presentTense negativePol;
-    andS : S -> S -> S = mkS and_Conj;
 
   lin
 

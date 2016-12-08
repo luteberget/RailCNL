@@ -1,4 +1,4 @@
-abstract Ontology = Datalog** {
+abstract Ontology = RailCNLStatement, Datalog** {
   -- Partial grammar in the Railway CNL for expressing classes and 
   -- properties of classes.
 
@@ -13,8 +13,6 @@ abstract Ontology = Datalog** {
     Condition;
 
     PropertyRestriction; -- has a length which is less than 200 m
-
-    Statement; -- Maybe this instead of definition/constraint/obligation/heuristic.?
 
   fun
 

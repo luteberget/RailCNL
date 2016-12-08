@@ -1,0 +1,5 @@
+Obligation (SubjectClass (StringClass "derailer")) (AndCond (ConditionClass (StringClass "placed_element")) (ConditionClass (StringClass "oriented_element")))
+
+
+Constraint (SubjectClass (StringClass "Foo")) (DatalogCondition (Literal3 (StringPredicate "Foo") (FloatTerm 3.14) (StringTerm "Foo") (FloatTerm 3.14)))
+

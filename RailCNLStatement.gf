@@ -1,0 +1,5 @@
+abstract RailCNLStatement = {
+
+ cat Statement;
+
+}

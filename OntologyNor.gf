@@ -18,21 +18,6 @@ in {
     Statement = Utt;
 
    oper
-    should_VV = lin VV ((Par.mkV "burde" "bør" "bør" "burde" "burdet" "bør") ** {c2 = CommonScand.mkComplement []});
-    must_VP : NP -> VP = \np -> mkVP must_VV (mkVP np) | mkVP must_VV (mkVP have_V2 np);
-    should_VP : NP -> VP = \np -> mkVP should_VV (mkVP np) | mkVP should_VV (mkVP have_V2 np);
-    forall_CN : CN -> NP = \n -> mkNP a_Det n | mkNP all_Predet (mkNP aPl_Det n);
-    conj_NP : Syn.Conj -> NP -> NP -> NP = \conj,a,b -> mkNP conj a b ;
-
-
-
-
-    -- implCmpA : A -> Str -> RS = \cl -> mkRS (mkRCl which_
-
-
-   -- TODO: remove constructors from Subject to Subject,
-   --- create instead ClassSubject, ClassSubjectWithRestriction,
-   --- and allow restrictions to be combined.
 
   lin
     StringClass rts = rts.s;
@@ -59,7 +44,9 @@ in {
     OrCond =  conj_NP or_Conj;
     
 
-    DefineClass subj class = mkUtt (mkS (mkCl subj (strNP class)));
+    DefineClass subj cls = mkUtt (mkS (
+      mkCl subj (strNP cls)
+    ));
 
     Obligation subj cond = mkUtt (mkS (
       mkCl subj (must_VP cond)

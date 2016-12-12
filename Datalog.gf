@@ -22,9 +22,10 @@ abstract Datalog = {
     Literal3 : Predicate -> Term -> Term -> Term -> Literal;
     Literal4 : Predicate -> Term -> Term -> Term -> Term -> Literal;
 
-    -- Arithmetic literals
-    -- Conjunction to allow S linearization category
-    -- (which enables negation). 
+    -- Comparison literals
+    -- Conjunction because it can then use the S linearization 
+    -- category, which allows specifying negation (polarity) 
+    -- in the resource grammar API. 
     Gt, Gte, Lt, Lte, Eq, Neq : Term -> Term -> Conjunction;
 
     -- Conjunction: from literals to rule body.

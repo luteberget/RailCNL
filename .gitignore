@@ -1,1 +1,3 @@
 *.gfo
+*_out.txt
+scratch/

@@ -1,10 +1,8 @@
 concrete DatalogNor of Datalog = open 
-  SyntaxNor, (Syn = SyntaxNor), 
-  ParadigmsNor, (Par = ParadigmsNor),
-  (Struct = StructuralNor), 
-  (Diff = DiffNor),
-  (Lex = LexiconNor), MyParadigmsNor
-
+  SyntaxNor, (Syn=SyntaxNor),
+  ParadigmsNor,  (Par=ParadigmsNor),
+  RailCNLParadigmsNor,
+  RailCNLLexiconNor
 in {
 
   lincat

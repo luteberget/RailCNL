@@ -1,6 +1,0 @@
-abstract RailwayProperties = Ontology ** {
-fun
-
-  
-
-}

@@ -14,3 +14,5 @@ En balise må ha farge rød og duft god
 En balise som har radiosender G er en godkjent_radiosender
 En spor må ha type main eller lengde som er lik 0 eller større enn 200
 En spor som har type ikke lik main må ha lengde mindre enn 500
+Alle veier fra en stasjonsgrense til den første motrettete sporvekselen må passere en hovedsignal i kjøreretningen
+Avstanden fra en balise som har farge rød til en balise som har farge blå må være større enn 55

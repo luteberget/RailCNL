@@ -1,6 +1,6 @@
 abstract RailCNLLexicon = Cat ** {
 
-  fun 
+  fun
   -- Rules
     then_Adv : Adv ;
     of_Prep  : Prep;
@@ -21,4 +21,27 @@ abstract RailCNLLexicon = Cat ** {
 
     gte_A2 : A2;
     lte_A2 : A2;
+
+
+    -- Directionality
+    direction_N : N;
+    driving_direction_N : N;
+    same_A : A;
+    opposite_A : A;
+
+    -- Path
+    pass_V2 : V2;
+    path_N : N;
+    first_A : A;
+    distance_N3 : N3;
+
+    -- Classes
+    -- ... (get from XSD)
+    -- Properties
+    -- ... (get from XSD)
+
+    -- Special case objects (in Graph.gf)
+    facingSwitch_CN : CN;
+    trailingSwitch_CN : CN;
+
 }

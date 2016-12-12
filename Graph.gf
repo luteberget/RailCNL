@@ -3,26 +3,34 @@ abstract Graph = Ontology ** {
 
 
   cat
-    DirectionalSubject;
+    DirectionalObject;
+    GoalObject;
     PathCondition;
+    Object;
 
   fun
 
--- Subjects which are direction-dependent.
+-- Objects which are direction-dependent.
+
+  ObjectClass : Class -> Object;
+  ObjectPropertyRestriction : Class -> PropertyRestriction -> Object;
 
   -- Special terminology for switch goal
-  FacingSwitch : DirectionalSubject;
-  TrailingSwitch : DirectionalSubject;
+  FacingSwitch : DirectionalObject;
+  TrailingSwitch : DirectionalObject;
 
   -- General terminology for goals: signals, derailers, etc.
-  SameDirectionSubject : Subject -> DirectionalSubject;
-  OppositeDirectionSubject : Subject -> DirectionalSubject;
+  SameDirectionObject : Object -> DirectionalObject;
+  OppositeDirectionObject : Object -> DirectionalObject;
 
-  AnyDirectionSubject : Subject -> DirectionalSubject;
+  AnyDirectionObject : Object -> DirectionalObject;
 
-  SearchDirectionSubject : Subject -> DirectionalSubject;
-  OppositeSearchDirecitonSubject : Subject -> DirectionalSubject;
+  SearchDirectionObject : Object -> DirectionalObject;
+  OppositeSearchDirecitonObject : Object -> DirectionalObject;
 
+-- Search goals
+  FirstFound : DirectionalObject -> GoalObject;
+  AnyFound : DirectionalObject -> GoalObject;
 
 -- Distance
 
@@ -42,10 +50,12 @@ abstract Graph = Ontology ** {
     -- Balise spacing
     -- Avstanden mellom baliser må være større enn 3.
 
-    AllPathsObligation : Subject -> DirectionalSubject -> PathCondition -> Obligation;
-    -- ExistsPathObligation : Subject -> DirectionalSubject -> PathCondition;
+    AllPathsObligation : Subject -> GoalObject -> PathCondition -> Statement;
+    -- ExistsPathObligation : Object -> GoalObject -> PathCondition;
 
-    DistanceObligation : Subject -> DirectionalSubject -> PropertyRestriction -> Obligation;
+    DistanceObligation : Subject -> GoalObject -> Restriction -> Statement;
 
+  -- Path Conditions
+    PathContains : DirectionalObject -> PathCondition;
 
 }

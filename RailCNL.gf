@@ -1,4 +1,4 @@
-abstract RailCNL = RailCNLStatement, Datalog, Ontology ** 
+abstract RailCNL = RailCNLStatement, Datalog, Ontology, Graph ** 
 {
   flags startcat=Statement;
 }

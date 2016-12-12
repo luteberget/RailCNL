@@ -1,10 +1,14 @@
 concrete RailCNLLexiconNor of RailCNLLexicon = CatNor ** 
   open MorphoNor, ParadigmsNor, (X = ConstructX), IrregNor, Prelude,
+  (Struct = StructuralNor),
   (Lex = LexiconNor) in {
 
   lin
     should_VV = lin VV ((mkV "burde" "bør" "bør" "burde" "burdet" "bør") ** {c2 = mkComplement []}); 
 
+
+    must_VV = Struct.must_VV;
+    have_V2 = Struct.have_V2;
 
     then_Adv   = mkAdv  "så";
     of_Prep   = mkPrep "til";

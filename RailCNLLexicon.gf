@@ -8,6 +8,9 @@ abstract RailCNLLexicon = Cat ** {
 
   -- Statement
     should_VV : VV;
+    must_VV  :VV;
+    have_V : V;
+    have_V2  :V2;
 
   -- Comparison
     small_A : A ;

@@ -1,3 +1,4 @@
 *.gfo
 *_out.txt
 scratch/
+.*swp

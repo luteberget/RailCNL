@@ -25,10 +25,14 @@ abstract Ontology = RailCNLStatement, Datalog ** {
       : Property -> Value -> PropertyRestriction; 
 
   -- Subjects
+
+    -- alle spor / et spor ...
     SubjectClass : Class -> Subject;
-    -- SubjectPropertyValue : Subject -> Property -> Value -> Subject;
+
+    -- alle spor som har ...
     SubjectPropertyRestriction : Class -> PropertyRestriction -> Subject;
 
+    -- SubjectPropertyValue : Subject -> Property -> Value -> Subject;
     AndRestr, OrRestr : PropertyRestriction -> PropertyRestriction -> PropertyRestriction;
 
 

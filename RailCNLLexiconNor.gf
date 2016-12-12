@@ -34,6 +34,9 @@ concrete RailCNLLexiconNor of RailCNLLexicon = CatNor **
       "mindre enn eller lik"
       ) (mkPrep "") ;
 
+ other_A = mkA "annen" "annet" "andre";
+ another_CN = Syn.mkCN (mkN "annen");
+
 
 --Directionality
       same_A = mkA "samme" "samme" "samme";

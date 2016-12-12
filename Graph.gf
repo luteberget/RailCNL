@@ -13,6 +13,8 @@ abstract Graph = Ontology ** {
 -- Objects which are direction-dependent.
 
   ObjectClass : Class -> Object;
+  ObjectOther : Class -> Object;
+  ObjectOtherImplied : Object;
   ObjectPropertyRestriction : Class -> PropertyRestriction -> Object;
 
   -- Special terminology for switch goal
@@ -28,9 +30,9 @@ abstract Graph = Ontology ** {
   SearchDirectionObject : Object -> DirectionalObject;
   OppositeSearchDirecitonObject : Object -> DirectionalObject;
 
--- Search goals
+-- Search termination
   FirstFound : DirectionalObject -> GoalObject;
-  AnyFound : DirectionalObject -> GoalObject;
+  AnyFound : DirectionalObject -> GoalObject; -- Any or All?
 
 -- Distance
 

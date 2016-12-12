@@ -36,6 +36,10 @@ abstract RailCNLLexicon = Cat ** {
     distance_N3 : N3;
 
     -- Classes
+    other_A : A; -- From a signal to another signal.
+                -- From one signal to another??
+    another_CN : CN;
+
     -- ... (get from XSD)
     -- Properties
     -- ... (get from XSD)

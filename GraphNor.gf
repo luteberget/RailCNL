@@ -27,6 +27,8 @@ in {
 
   -- Objects in general
     ObjectClass cls =  (strCN cls);
+    ObjectOther cls = mkCN other_A (strCN cls);
+    ObjectOtherImplied = another_CN;
     ObjectPropertyRestriction cls restr =  (mkCN (strCN cls)
      (mkRS (mkRCl which_RP Syn.have_V2 (restr))) );
 

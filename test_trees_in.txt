@@ -3,3 +3,4 @@ Obligation (SubjectClass (StringClass "signal")) (OrCond (ConditionClass (String
 Obligation (SubjectClass (StringClass "derailer")) (AndCond (ConditionClass (StringClass "placed_element")) (ConditionClass (StringClass "oriented_element")))
 Constraint (SubjectClass (StringClass "Foo")) (DatalogCondition (Literal3 (StringPredicate "Foo") (FloatTerm 3.14) (StringTerm "Foo") (FloatTerm 3.14)))
 Constraint (SubjectPropertyRestriction (StringClass "signal") (EqProperty (StringProperty "type") (MkValue (StringTerm "main")))) (ConditionClass (StringClass "hovedsignal"))
+Recommendation (SubjectPropertyRestriction (StringClass "spor") (GtProperty (StringProperty "lengde") (MkValue (FloatTerm 55.0)))) (ConditionClass (StringClass "hovedspor"))

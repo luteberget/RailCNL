@@ -17,7 +17,10 @@ in {
     Property = Str;
     Value = Str;
     Subject = NP;
+
     Condition = NP; -- ??
+    -- TODO Condition: add field to decide is/has
+
     PropertyRestriction = {cn : CN; prop : Str; value : Str; simple:IsSimple };
     Statement = Utt;
 

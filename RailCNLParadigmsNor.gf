@@ -23,7 +23,7 @@ resource RailCNLParadigmsNor = open
       = \str -> lin PN { s = \\_ => str; g = Diff.ngen2gen neutrum } ;
 
     strN : Str -> N
-      = \str -> lin N { s = \\_ => \\_ => \\_  => str ; g = masculine ; co = str };
+      = \str -> lin N { s = \\_ => \\_ => \\_  => str ; g = masculine | feminine | neutrum ; co = str };
 
     strCN : Str -> CN = \str -> mkCN (strN str);
 

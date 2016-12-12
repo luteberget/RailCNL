@@ -1,5 +1,2 @@
-Et spor må være et spor
-Et sporsegment som har svilletype betong må ha radius som er større enn 250
-En stasjonsgrense må følges av et innkjørhovedsignal før første motrettede sporveksel
-Et innkjørhovedsignal må ha avstand til nærmeste motrettede sporveksel som er større enn 200
-Avstanden fra et innkjørhovedsignal til nærmeste motrettede sporveksel må være spørre enn 200
+En spor må være en spor
+En spor bør være en hovedspor

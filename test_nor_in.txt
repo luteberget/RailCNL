@@ -1,2 +1,6 @@
+En spor er en objekt
 En spor må være en spor
 En spor bør være en hovedspor
+En spor som har type main er en hovedspor
+En spor som har lengde som er større enn 1000 bør være en hovedspor
+En balise som har farge rød må være en rødbalise

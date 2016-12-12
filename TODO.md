@@ -5,6 +5,7 @@
  * Main (definition, constraint, obligation, etc)
  * Ontology
  * Graph
+ * Builtins: distance (maybe only in graph), placement, etc.
 
 ## Features
 

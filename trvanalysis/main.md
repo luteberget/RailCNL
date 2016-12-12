@@ -268,6 +268,11 @@ cannot be nested. More specifically, since literals can have the clause type
 `Cl` instead of the sentence type `S`, natural expressions of negation are
 available directly from the resource grammar.
 
+Whenever negation required over a complex term is needed, it is required to 
+define an intermediate Datalog predicate whose atomic representation can be negated
+instead of the complex. This avoid the (usually less elegant) 
+sentence construction "it is not the case that ...".
+
 These considerations have led to the comparison section below.
 
 ## Strategies for translating HL to LL
@@ -333,6 +338,11 @@ It might not be a top priority to convert from LL to HL, but it could
 also be used to illustrate how extending the HL with better constructs
 improves the naturalness of the language.
 
+See *Ranta: Translating between language and logic* for an overview of
+rewriting rules used in a first order logic natural language generation system, 
+going from the low level logic representation to a higher level AST which
+generates more natural sentences.
+
 # Sentence translation case studies
 
 ## Object type constraints
@@ -393,19 +403,123 @@ higher-arity relations.
 
      A *macroscopic node* is considered a *station boundary*.
 
-
 ### Definition (search)
 
      A *default train route* consists of two main signals Sa and Sb, 
      both oriented in the direction Dir, such that Sb follows Sa and
      there is a path without signals from Sa to Sb in direction Dir.
 
-
 ### Object properties
 
      All signal should have a type. / Alle signaler skal være av en signaltype.
      
+### Must placement
+The placement of the word must in the sentence determines where the subject ends and the
+condition starts. Moving it also affects the number of rules that must be generated.
+
+Examples: 
+
+* *If a track has closest balise, the balise must be red.*
+
+        track(X), balise(A), closest_balise(X,A), !red(A) -> error
+
+* *All tracks must have a closest balise which is red.*
+
+        track(X), balise(A), !closest_balise(X,A)          -> error
+
+        track(X), balise(A),  closest_balise(X,A), !red(A) -> error
+
+* *A track which has a closest balise which is red, must exist.*
+
+        !track(X) -> error
+
+        track(X), balise(A), !closest_balise(X,A) -> error
+
+        track(X), balise(A), closest_balise(X,A), !red(A) -> error
+
+
+All of these examples also requires the (graph-domain) definition of `closest_balise`.
+
+### And/or and negation
+
+The condition part of a sentence is negated in the rule. As Datalog does not (necessarily)
+have an *or* operator, nor negation over complex terms, these must be given special consideration.
+
+* *Et hovedsignal bør ikke plasseres i tunneler eller på broer.*
+
+        Heuristic (Property (Class Signal) (Adjective Main)) 
+          (Not (Or (Placement Tunnel) (Placement Bridge)))
+
+        signal(X), type(X,main), placement(X,tunnel) -> warning
+        signal(X), type(X,main), placement(X,bridge) -> warning
+
+* *Et hovedsignal bør festes i mast eller åk.*
+
+        Heuristic (Property (Class Signal) (Adjective Main)) 
+          (Or (Mounting Mast) (Mounting Yoke))
+
+        signal(X), type(X,main), !should_mounting_rule123(X) -> warning
+        mounting(X, mast) -> should_mounting_rule123(X).
+        mounting(X, yoke) -> should_mounting_rule123(X).
      
+     
+# System overview
+
+A verification and knowledge base editor system integrated 
+
+ - Basic low-level grammar (GF, static)
+ - Ontology / vocabulary based on railML or RailCOMPLETE config, from 
+   C# classes, XSD or OWL ontology or similar. (could be static)
+     - Could be extended with  CNL-related information such as noun genders.
+ - High-level grammar extensions (GF, static)
+     - Ontology (classes and properties)
+     - Graph searches ("first", "all paths", "some paths", etc.)
+ - Dynamically defined concepts.
+ - Dynamic evaluation/testing environment.
+  
+## Dynamic 
+In the KeY book chapter by Johannisson, it seems that he has used
+a conversion from UML to GF, then the GF compiler, and combined this with
+the static part of the grammar.
+
+We would like to avoid using the GF compiler dynamically from the interactive 
+knowledge base system, for the following reasons.
+
+ - Recompilation of grammar with new concepts might be required very often,
+   for example after adding a definition. An actually dynamic vocabulary
+   in the PGF runtime library seems more fitting.
+ - GF compiler is a heavier dependency for the engineering tool than the PGF library alone.
+ - GF compiler distribution has license incompatibility with RailCOMPLETE.
+     
+Hopefully, this functionality is covered by C runtime PGF library *proper noun callbacks*.
+
+<!-- # Topics 2016-11-25 -->
+
+<!--  - Which high level extensions -->
+<!--  - NP vs CN -->
+<!--  - ontology language: base on other efforts? -->
+<!--  - dynamic vocabulary: strings (external checker) vs. callbacks vs. key book chapter -->
+
+\pagebreak
+
+# RailCOMPLETE (.NET) integration
+
+
+<!-- I have looked at the feasibility of integrating a GF CNL into a .NET desktop app without too many heavy dependencies. -->
+Some consideration for integrating a GF CNL into a .NET desktop application without to many heavy dependencies.
+
+1. We need to distribute our application in executable form. As we are not using Haskell in the RailCOMPLETE software, Haskell libraries would be a heavy dependency. We will focus instead on the C runtime, and assume that the C runtime has the same capabilities as the Haskell runtime. At least when disregarding higher-order and dependent types, this seems to be the case. The C runtime has been used in other projects with platform integrations.
+
+2. The C runtime compiles with autotools and GCC. These are available on Windows through MinGW. I am having a bit of trouble to find out exactly what MinGW libraries must be distributed together with an application, and would prefer to also eliminate this dependency by using the Microsoft (MSVC) compiler. I managed to do a port the GF runtime to CMake and MSVC, which is not entirely trivial because (a) the code uses some GCC-specific extensions of C, and (b) the MSVC doesn't fully support the C99 standard, and (c) exporting functions and data from a library is slightly different on Windows. Some code changes were required, but the result was a very lightweight library (a few hundred kB). I can later clean this up and offer it to the GF developers, if they are willing to pollute the code with some MSVC-specific workarounds.
+
+3. A .NET wrapper library is required to do a practical/idiomatic and safe (in terms of memory/resources) interface to the C library. The Python and Java wrappers show how to do this, but the Python wrapper, for example, is 3000 lines of C code, which could require a bit of effort to port. I have started on this, and it seems to be doable in a few days work, especially if some features can be (temporarily) omitted.
+
+4. Manipulation of the AST and passing the AST from the library to the application code, is done through strings. To have type-safe manipulations, the GF compiler can generate Haskell code which transforms the strings into a Haskell algebraic data type. A wrapper library in another language should have something similar if it aims to manipulate a specific application grammar, which we want to do. Python (and Java?) wrappers lack this, it seems, and use instead a general data type for expressions. Maybe applications in these languages are more geared towards treating grammars in general, not specific application grammars.
+
+
+
+
+
 \pagebreak
 
 # Schedule
@@ -465,3 +579,22 @@ higher-arity relations.
  - Stanford parser gives complete parses 
  
      <http://nlp.stanford.org/>
+
+
+\pagebreak
+
+# Other notes
+
+## Why don't we store the syntax tree instead of the source code?
+
+<http://softwareengineering.stackexchange.com/questions/119095/why-dont-we-store-the-syntax-tree-instead-of-the-source-code>
+
+ - Requiring strict correspondence of AST and concrete syntax loses whitespace, comments, meaningful formatting, etc.
+ - Half-written code or almost-correct code is meaningful to the human reader, but the AST representation is not meaningful at all.
+ - No two languages are perfect matches.
+ 
+## Editor ideas
+
+- Outer/inner editor: the regulations might require structuring in larger documents, while we would like to keep the CNL editor on a sentence-scale. 
+
+      See <https://clearly.pl/tutorial/>

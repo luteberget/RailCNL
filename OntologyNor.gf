@@ -10,20 +10,28 @@ concrete OntologyNor of Ontology = DatalogNor ** open
 in {
 
   param
-    IsSimple = Simple | NotSimple;
+    ConditionRec = WithClass | OnlyProperty ;
+
 
   lincat
     Class = Str;
     Property = Str;
     Value = Str;
     Subject = NP;
-
-    Condition = NP; -- ??
-    -- TODO Condition: add field to decide is/has
-
-    PropertyRestriction = {cn : CN; prop : Str; value : Str; simple:IsSimple };
+    Condition = { np : NP ; cls : ConditionRec };
+    PropertyRestriction = CN;
     Statement = Utt;
 
+  oper
+    mkCmpA : A -> Str -> Str -> CN
+      = \a,prop,value -> mkCN (strCN prop)
+        (mkRS (mkRCl which_RP (mkAP a (mkNP (strCN value)))));
+
+    is_or_has : { np : NP ; cls:ConditionRec } -> VP
+      = \cond -> case cond.cls of {
+        WithClass => mkVP cond.np;
+        OnlyProperty => mkVP RailLex.have_V2 cond.np
+      };
 
   lin
     StringClass rts = rts.s;
@@ -33,32 +41,18 @@ in {
     MkValue t = t;
 
     SubjectClass cls = forall_CN (strCN cls);
-    SubjectPropertyRestriction cls restr = case restr.simple of {
-      NotSimple => forall_CN (mkCN (strCN cls)
-       (mkRS (mkRCl which_RP Syn.have_V2 (mkNP restr.cn))) );
+    SubjectPropertyRestriction cls restr = forall_CN (mkCN (strCN cls)
+     (mkRS (mkRCl which_RP Syn.have_V2 (mkNP restr))) );
 
-       Simple => forall_CN (mkCN (strCN cls)
-        (mkRS (mkRCl which_RP Syn.have_V2 ((mkNP restr.cn ))) ))
-    };
+    GtProperty = mkCmpA big_A;
+    LtProperty = mkCmpA small_A;
+    EqProperty prop value = mkCN (strCN prop) (strNP value);
 
-    GtProperty prop value = {
-      cn = mkCN (strCN prop) (mkRS (mkRCl which_RP (mkAP big_A (mkNP (strCN value)))));
-      prop = prop;
-      value = value;
-      simple = NotSimple};
+    ConditionClass cls = { np = mkNP a_Det (strCN cls) ; cls = WithClass };
+    ConditionPropertyRestriction prop = { np = mkNP prop ; cls = OnlyProperty };
 
-    EqProperty prop value = {
-      cn = (mkCN (strCN prop) (strNP value)); -- mkCN (strCN prop) (mkRS (mkRCl which_RP (strNP value)));
-      prop = prop;
-      value = value;
-      simple = Simple};
-
-
-    ConditionClass cls = mkNP a_Det (strCN cls) ;
-    ConditionPropertyRestriction prop = mkNP prop.cn;
-
-    AndCond = conj_NP and_Conj;
-    OrCond =  conj_NP or_Conj;
+    --AndCond = conj_NP and_Conj;
+    --OrCond =  conj_NP or_Conj;
 
 
     DefineClass subj cls = mkUtt (mkS (
@@ -66,14 +60,15 @@ in {
     ));
 
     Obligation subj cond = mkUtt (mkS (
-      mkCl subj (vv_have RailLex.must_VV cond)
+      -- mkCl subj (vv_have RailLex.must_VV cond)
+      mkCl subj (mkVP RailLex.must_VV (is_or_has cond))
     ));
 
     Constraint subj cond = mkUtt (mkS (
-      mkCl subj cond | mkCl subj RailLex.have_V2 cond
+      mkCl subj (is_or_has cond)
     ));
 
     Recommendation subj cond = mkUtt (mkS (
-      mkCl subj (vv_have RailLex.should_VV cond)
+      mkCl subj (mkVP RailLex.should_VV (is_or_has cond))
     ));
 }

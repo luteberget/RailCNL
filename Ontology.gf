@@ -1,5 +1,5 @@
 abstract Ontology = RailCNLStatement, Datalog ** {
-  -- Partial grammar in the Railway CNL for expressing classes and 
+  -- Partial grammar in the Railway CNL for expressing classes and
   -- properties of classes.
 
   flags startcat=Statement ;
@@ -7,12 +7,17 @@ abstract Ontology = RailCNLStatement, Datalog ** {
 
   cat
     Class; Property; Value;
-    -- SimpleSubject; -- a track, a red track, a track of quality class X.
-    -- Try without this for now.
-    Subject; -- a track, a track of quality class X, a track which has length greater than 200,
-             -- an object which is red.
-    Condition;
-    PropertyRestriction; -- has a length which is less than 200 m
+    Subject; -- "a track", "a track of quality class X",
+             -- "a track which has length greater than 200",
+             -- "an object which is red".
+
+    Condition; -- Same as subject, but can also be just a property restriction,
+               -- "a track which has color red" or just "color red".
+
+    PropertyRestriction; -- "has a length which is less than 200 m"
+                         -- "color red"
+                         -- "color red or blue"
+                         -- "color red or length 15.0"
 
   fun
 
@@ -21,8 +26,12 @@ abstract Ontology = RailCNLStatement, Datalog ** {
     StringAdjective : String -> Class -> Class;
     StringProperty : String -> Property;
     MkValue : Term -> Value; -- ConstTerm?
-    GtProperty, GteProperty, LtProperty, LteProperty, EqProperty, NeqProperty  
-      : Property -> Value -> PropertyRestriction; 
+
+  -- Property restrictions
+    GtProperty, GteProperty, LtProperty, LteProperty, EqProperty, NeqProperty
+      : Property -> Value -> PropertyRestriction;
+      AndRestr, OrRestr : PropertyRestriction -> PropertyRestriction -> PropertyRestriction;
+
 
   -- Subjects
 
@@ -32,25 +41,23 @@ abstract Ontology = RailCNLStatement, Datalog ** {
     -- alle spor som har ...
     SubjectPropertyRestriction : Class -> PropertyRestriction -> Subject;
 
-    -- SubjectPropertyValue : Subject -> Property -> Value -> Subject;
-    AndRestr, OrRestr : PropertyRestriction -> PropertyRestriction -> PropertyRestriction;
 
-
-  -- Conditions 
+  -- Conditions
     ConditionClass : Class -> Condition;
     ConditionPropertyRestriction : PropertyRestriction -> Condition;
     DatalogCondition : Literal -> Condition;
 
     -- Condition operations
     AndCond, OrCond : Condition -> Condition -> Condition;
-  
-    
-  -- Statements 
+
+
+  -- Statements
     DefineClass : Subject -> Class -> Statement;
-    -- DefineProperty : Subject -> SubjectValue -> Property -> Definition;
+    -- -- DefineProperty : Subject -> SubjectValue -> Property -> Definition;
+
     Obligation : Subject -> Condition -> Statement;
     Constraint : Subject -> Condition -> Statement;
     Recommendation : Subject -> Condition -> Statement;
     Heuristic : Subject -> Condition -> Statement;
-  
+
 }

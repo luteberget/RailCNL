@@ -2,9 +2,9 @@ abstract Datalog = {
 
   -- Datalog abstract syntax.
 
-  cat 
-    Term; Predicate; Literal; Conjunction; 
-    Rule; 
+  cat
+    Term; Predicate; Literal; Conjunction;
+    Rule;
 
   fun
     -- Terms
@@ -23,10 +23,11 @@ abstract Datalog = {
     Literal4 : Predicate -> Term -> Term -> Term -> Term -> Literal;
 
     -- Comparison literals
-    -- Conjunction because it can then use the S linearization 
-    -- category, which allows specifying negation (polarity) 
-    -- in the resource grammar API. 
-    Gt, Gte, Lt, Lte, Eq, Neq : Term -> Term -> Conjunction;
+    -- Conjunction because it can then use the S linearization
+    -- category, which allows specifying negation (polarity)
+    -- in the resource grammar API.
+    GtLit, GteLit, LtLit, LteLit, EqLit, NeqLit :
+      Term -> Term -> Conjunction;
 
     -- Conjunction: from literals to rule body.
     --   Negated literals can only appear in rule body,

@@ -11,6 +11,7 @@ in {
 
   param
     ConditionRec = WithClass | OnlyProperty ;
+    RestrictionType = RestrNP | RestrRS;
 
 
   lincat
@@ -19,19 +20,39 @@ in {
     Value = Str;
     Subject = NP;
     Condition = { np : NP ; cls : ConditionRec };
-    PropertyRestriction = CN;
+    PropertyRestriction = NP;
+    Restriction = { ap : AP; np : NP; typ : RestrictionType} ;
     Statement = Utt;
 
   oper
-    mkCmpA : A -> Str -> Str -> CN
-      = \a,prop,value -> mkCN (strCN prop)
-        (mkRS (mkRCl which_RP (mkAP a (mkNP (strCN value)))));
+    mkCmpRS : AP -> RS
+      = \a ->
+        (mkRS (mkRCl which_RP a));
 
     is_or_has : { np : NP ; cls:ConditionRec } -> VP
       = \cond -> case cond.cls of {
         WithClass => mkVP cond.np;
         OnlyProperty => mkVP RailLex.have_V2 cond.np
       };
+
+      conj_Restriction : Syn.Conj -> Restriction -> Restriction -> Restriction
+       = \conj,r1,r2 ->  lin Restriction  {
+         ap = mkAP conj r1.ap r2.ap ;
+         np = mkNP conj r1.np r2.np ;
+         typ = case <r1.typ,r2.typ> of {
+           <RestrNP,RestrNP> => RestrNP;
+           _ => RestrRS
+         }
+       };
+
+       conj_Condition : Syn.Conj -> Condition -> Condition -> Condition
+        = \conj,c1,c2 -> lin Condition {
+          np = conj_NP conj c1.np c2.np;
+          cls = case <c1.cls,c2.cls> of {
+            <OnlyProperty,OnlyProperty> => OnlyProperty;
+            _ => WithClass
+          }
+        };
 
   lin
     StringClass rts = rts.s;
@@ -42,30 +63,39 @@ in {
 
     SubjectClass cls = forall_CN (strCN cls);
     SubjectPropertyRestriction cls restr = forall_CN (mkCN (strCN cls)
-     (mkRS (mkRCl which_RP Syn.have_V2 (mkNP restr))) );
+     (mkRS (mkRCl which_RP Syn.have_V2 (restr))) );
 
-    GtProperty = mkCmpA big_A;
-    LtProperty = mkCmpA small_A;
-    EqProperty prop value = mkCN (strCN prop) (strNP value);
+    Gt val =  { ap = mkAP big_A (strNP val);       np = strNP val; typ = RestrRS };
+    Gte val =  { ap = mkAP gte_A2 (strNP val);     np = strNP val; typ = RestrRS };
+    Lt val =  { ap = mkAP small_A (strNP val);     np = strNP val; typ = RestrRS };
+    Lte val =  { ap = mkAP lte_A2 (strNP val);     np = strNP val; typ = RestrRS };
+    Eq val =  { ap = mkAP equal_to_A2 (strNP val); np = strNP val; typ = RestrNP };
+    Neq val =  { ap = mkAP not_equal_to_A2 (strNP val); np = strNP val; typ = RestrRS };
+
+    AndRestr = conj_Restriction and_Conj;
+    OrRestr = conj_Restriction or_Conj;
+
+    AndPropRestr = conj_NP and_Conj;
+    OrPropRestr = conj_NP or_Conj;
+
+    MkPropertyRestriction prop restr = case restr.typ of {
+      RestrRS => mkNP (mkCN (strCN prop) (mkCmpRS restr.ap));
+      RestrNP => mkNP (mkCN (strCN prop) restr.np)
+    };
 
     ConditionClass cls = { np = mkNP a_Det (strCN cls) ; cls = WithClass };
-    ConditionPropertyRestriction prop = { np = mkNP prop ; cls = OnlyProperty };
+    ConditionPropertyRestriction prop = { np = prop ; cls = OnlyProperty };
 
-    --AndCond = conj_NP and_Conj;
-    --OrCond =  conj_NP or_Conj;
+    AndCond = conj_Condition and_Conj;
+    OrCond =  conj_Condition or_Conj;
 
 
-    DefineClass subj cls = mkUtt (mkS (
-      mkCl subj (strNP cls)
+    Constraint subj cond = mkUtt (mkS (
+        mkCl subj (is_or_has cond)
     ));
 
     Obligation subj cond = mkUtt (mkS (
-      -- mkCl subj (vv_have RailLex.must_VV cond)
       mkCl subj (mkVP RailLex.must_VV (is_or_has cond))
-    ));
-
-    Constraint subj cond = mkUtt (mkS (
-      mkCl subj (is_or_has cond)
     ));
 
     Recommendation subj cond = mkUtt (mkS (

@@ -4,31 +4,48 @@ abstract Graph = Ontology ** {
 
   cat
     DirectionalSubject;
+    PathCondition;
 
-  fun 
+  fun
 
-    Distance : Term -> Term -> PropertyRestriction -> Literal; -- Avstanden fra X til Y er Z.
+-- Subjects which are direction-dependent.
 
-    DistanceToCond : Subject -> PropertyRestriction -> Condition; 
-      -- Avstanden fra {implisitt subjekt} til {gitt subjekt} er {restriksjon}.
+  -- Special terminology for switch goal
+  FacingSwitch : DirectionalSubject;
+  TrailingSwitch : DirectionalSubject;
 
-    DistanceSubj : Subject -> Subject -> PropertyRestriction -> Subject; -- Trenger vi denne?
+  -- General terminology for goals: signals, derailers, etc.
+  SameDirectionSubject : Subject -> DirectionalSubject;
+  OppositeDirectionSubject : Subject -> DirectionalSubject;
+
+  AnyDirectionSubject : Subject -> DirectionalSubject;
+
+  SearchDirectionSubject : Subject -> DirectionalSubject;
+  OppositeSearchDirecitonSubject : Subject -> DirectionalSubject;
 
 
-    -- First balise from signal.
-    -- First {balise which is red} from {signal which is blue}.
-    FirstSubjFrom : DirectionalSubject -> Subject;
+-- Distance
 
+--    Distance : Term -> Term -> PropertyRestriction -> Literal;
+    -- Avstanden fra X til Y er Z.
 
-    -- Ignore direction, i.e. use FirstSubjFrom with 
-    --    "Subject" instead of "DirectionalSubject".
-    NonDirectionalSubject : Subject -> DirectionalSubject;
-    ForwardFromSubject : Subject -> DirectionalSubject;
-    SameDirectionSubject : Subject -> DirectionalSubject;
-    SearchDirectionSubject : Subject -> DirectionalSubject;
+    -- A home main signal shall be placed at least 200 m in
+    -- front of the first controlled, facing switch
+    -- in the entry train path
+    -- --->
+    -- Alle veier fra en stasjonsgrense til første motrettet sporveksel
+    -- må passere et innkjørhovedsignal i kjøreretningen.
+    --
+    -- Avstanden fra et innkjørhovedsignal til første motrettede sporveksel
+    -- må være større enn 200.
 
-    AllFirstSubjFrom : DirectionalSubject -> Subject;
-    ExistFirstSubjFrom : DirectionalSubject -> Subject;
-   
+    -- Balise spacing
+    -- Avstanden mellom baliser må være større enn 3.
+
+    AllPathsObligation : Subject -> DirectionalSubject -> PathCondition -> Obligation;
+    -- ExistsPathObligation : Subject -> DirectionalSubject -> PathCondition;
+
+    DistanceObligation : Subject -> DirectionalSubject -> PropertyRestriction -> Obligation;
+
 
 }

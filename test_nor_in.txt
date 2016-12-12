@@ -4,3 +4,13 @@ En spor bør være en hovedspor
 En spor som har type main er en hovedspor
 En spor som har lengde som er større enn 1000 bør være en hovedspor
 En balise som har farge rød må være en rødbalise
+En balise må ha farge rød eller gul
+En spor må ha lengde større enn 500 eller mindre enn 100
+En spor må ha lengde større enn 500 eller lengde mindre enn 200
+En spor må ha lengde mindre enn 500 eller farge gul
+En balise må ha farge som er mindre enn eller lik rød eller lik gul
+En balise må være en a-balise eller en b-balise eller en c-balise
+En balise må ha farge rød og duft god
+En balise som har radiosender G er en godkjent_radiosender
+En spor må ha type main eller lengde som er lik 0 eller større enn 200
+En spor som har type ikke lik main må ha lengde mindre enn 500

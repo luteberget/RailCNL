@@ -19,6 +19,10 @@ abstract Ontology = RailCNLStatement, Datalog ** {
                          -- "color red or blue"
                          -- "color red or length 15.0"
 
+    Restriction;        -- "less than 200 m"
+                        -- "red"
+                        -- "red or blue"
+
   fun
 
   -- Classes, properties, values
@@ -27,11 +31,14 @@ abstract Ontology = RailCNLStatement, Datalog ** {
     StringProperty : String -> Property;
     MkValue : Term -> Value; -- ConstTerm?
 
-  -- Property restrictions
-    GtProperty, GteProperty, LtProperty, LteProperty, EqProperty, NeqProperty
-      : Property -> Value -> PropertyRestriction;
-      AndRestr, OrRestr : PropertyRestriction -> PropertyRestriction -> PropertyRestriction;
+  -- Value restrictions
+    Gt, Gte, Lt, Lte, Eq, Neq
+      : Value -> Restriction;
+    AndRestr, OrRestr : Restriction -> Restriction -> Restriction;
 
+  -- Property value restrictions
+   MkPropertyRestriction : Property -> Restriction -> PropertyRestriction;
+   AndPropRestr, OrPropRestr : PropertyRestriction -> PropertyRestriction -> PropertyRestriction;
 
   -- Subjects
 
@@ -52,12 +59,7 @@ abstract Ontology = RailCNLStatement, Datalog ** {
 
 
   -- Statements
-    DefineClass : Subject -> Class -> Statement;
-    -- -- DefineProperty : Subject -> SubjectValue -> Property -> Definition;
-
-    Obligation : Subject -> Condition -> Statement;
-    Constraint : Subject -> Condition -> Statement;
-    Recommendation : Subject -> Condition -> Statement;
-    Heuristic : Subject -> Condition -> Statement;
+    Obligation, Constraint, Recommendation : Subject -> Condition -> Statement;
+      -- TODO: add Heuristic?
 
 }

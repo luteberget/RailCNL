@@ -6,7 +6,7 @@ concrete OntologyNor of Ontology = DatalogNor ** open
   (Lex = LexiconNor),
   (CommonScand = CommonScand),
   RailCNLParadigmsNor,
-  RailCNLLexiconNor
+  (RailLex = RailCNLLexiconNor), RailCNLLexiconNor
 in {
 
   param
@@ -66,14 +66,14 @@ in {
     ));
 
     Obligation subj cond = mkUtt (mkS (
-      mkCl subj (vv_have must_VV cond)
+      mkCl subj (vv_have RailLex.must_VV cond)
     ));
 
     Constraint subj cond = mkUtt (mkS (
-      mkCl subj cond | mkCl subj have_V2 cond
+      mkCl subj cond | mkCl subj RailLex.have_V2 cond
     ));
 
     Recommendation subj cond = mkUtt (mkS (
-      mkCl subj (vv_have should_VV cond)
+      mkCl subj (vv_have RailLex.should_VV cond)
     ));
 }

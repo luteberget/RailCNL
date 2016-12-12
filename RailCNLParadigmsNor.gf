@@ -5,13 +5,13 @@ resource RailCNLParadigmsNor = open
   (Diff = DiffNor),
   (Lex = LexiconNor),
   (CommonScand = CommonScand),
-  RailCNLLexiconNor
+  (RailLex = RailCNLLexiconNor), RailCNLLexiconNor
  in {
 
 
   oper
 
-    vv_have : VV -> NP -> VP = \vv,np ->   mkVP vv (mkVP np) | mkVP vv (mkVP have_V2 np);
+    vv_have : VV -> NP -> VP = \vv,np ->   mkVP vv (mkVP np) | mkVP vv (mkVP RailLex.have_V2 np);
     forall_CN : CN -> NP = \n -> mkNP a_Det n | mkNP all_Predet (mkNP aPl_Det n);
     conj_NP : Syn.Conj -> NP -> NP -> NP = \conj,a,b -> mkNP conj a b ;
 
@@ -23,7 +23,8 @@ resource RailCNLParadigmsNor = open
       = \str -> lin PN { s = \\_ => str; g = Diff.ngen2gen neutrum } ;
 
     strN : Str -> N
-      = \str -> lin N { s = \\_ => \\_ => \\_  => str ; g = masculine | feminine | neutrum ; co = str };
+      = \str -> lin N { s = \\_ => \\_ => \\_  => str ; g = masculine ; co = str }
+      ;
 
     strCN : Str -> CN = \str -> mkCN (strN str);
 

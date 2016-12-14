@@ -17,6 +17,7 @@ abstract Graph = Ontology ** {
   ObjectOtherImplied : Object;
   ObjectPropertyRestriction : Class -> PropertyRestriction -> Object;
 
+
   -- Special terminology for switch goal
   FacingSwitch : DirectionalObject;
   TrailingSwitch : DirectionalObject;

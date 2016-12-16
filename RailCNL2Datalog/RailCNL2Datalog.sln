@@ -1,0 +1,23 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2012
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RailCNL2Datalog", "RailCNL2Datalog.csproj", "{7EFBC89C-7224-4E8B-BC44-189D8DB4459C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LibPGFSharp", "..\..\PGFSharp\LibPGFSharp\LibPGFSharp.csproj", "{81C13B1B-FE00-4A56-A831-964D55032CDD}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|x86 = Debug|x86
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{7EFBC89C-7224-4E8B-BC44-189D8DB4459C}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{7EFBC89C-7224-4E8B-BC44-189D8DB4459C}.Debug|x86.Build.0 = Debug|Any CPU
+		{7EFBC89C-7224-4E8B-BC44-189D8DB4459C}.Release|x86.ActiveCfg = Release|Any CPU
+		{7EFBC89C-7224-4E8B-BC44-189D8DB4459C}.Release|x86.Build.0 = Release|Any CPU
+		{81C13B1B-FE00-4A56-A831-964D55032CDD}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{81C13B1B-FE00-4A56-A831-964D55032CDD}.Debug|x86.Build.0 = Debug|Any CPU
+		{81C13B1B-FE00-4A56-A831-964D55032CDD}.Release|x86.ActiveCfg = Release|Any CPU
+		{81C13B1B-FE00-4A56-A831-964D55032CDD}.Release|x86.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal

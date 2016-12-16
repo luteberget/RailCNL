@@ -6,6 +6,16 @@ namespace RailCNL2Datalog
 {
 	using ConjL = System.Collections.Generic.List<RailCNL.Conjunction>;
 
+	// TODO:
+	// Add optimizer which recognizes the following:
+	//  - Optionally use disjunction operator? For Datalogs/Prologs that support this (XSB).
+	//  - A variable only used in a predicate and equality could be eliminated: a(X), x=5 --> a(5).
+	//  - (inter-rule analysis) A negated predicate whose rule only differs from the usage rule
+	//     by a single predicate, could be simplified into a single rule, inverting the single predicate.
+	//       a_ok(X)  :- a(X), X < 5.
+	//       a_err(X) :- a(X), !a_ok(X).
+	//       ---> a_err(X) :- a(X), X >= 5.
+
 	public class Converter
 	{
 		private struct Subject
@@ -14,6 +24,7 @@ namespace RailCNL2Datalog
 			public string Variable;
 			public string DirVar;
 			public RailCNL.Conjunction Dir;
+			public IList<RailCNL.Rule> Rules;
 		}
 
 		static readonly string CMP_ERROR_MSG = "Constraint implying a comparison operator is not supported by Datalog output.";
@@ -34,17 +45,62 @@ namespace RailCNL2Datalog
 		{
 			this.ruleId = ruleId;
 			return statement.Accept (new RailCNL.Statement.Visitor<IList<RailCNL.Rule>> (
-				
+
+				// TODO: this is not finished.
+				// AllPathsCONTAIN-obligation
 				VisitAllPathsObligation: (subj,goal,cond) => {
 					var subjOut = CreateSubject (subj);
 					var goalOut = CreateGoal(subjOut, goal);
 
-					var condOut = cond.Accept(new RailCNL.PathCondition.Visitor<ConjL>(
-						VisitPathContains: obj => GetDirObj(subjOut, goalOut.Variable, goalOut.DirVar, obj)
-					));
+					//var condOut = CreatePathCond(subjOut, cond);
 
-					return null;
+					// 
+
+					var rules = new List<RailCNL.Rule>();
+
+
+					var subjectRuleHead = PropertyLiteral(ruleId + "_" + "subject", subjOut.Variable, subjOut.DirVar);
+					var subjectRules = subjOut.RulePrefixes.Select(r => new RailCNL.Conj(subjOut.Dir,r)).Select(r => 
+						(RailCNL.Rule) new RailCNL.MkRule(subjectRuleHead, r)
+					);
+					rules.AddRange(subjectRules);
+
+
+					//var goalRuleHead = PropertyLiteral(ruleId + "_" + "goal", goalOut.Variable
+
+					/*
+					var condRuleHead = PropertyLiteral(ruleId + "_" + "condobj", goalOut.Variable, goalOut.DirVar);
+					var condRules = condOut.Select(r => new RailCNL.Conj(goalOut.DirVar, r)).Select(r =>
+						(RailCNL.Rule) new RailCNL.MkRule(condRuleHead, r));
+
+*/
+
+
+//					var reachRule = Literal3(ruleId + "_" + "reach", subjOut.Variable, 
+					//var reachRule = new RailCNL.MkRule(
+
+					// Find subj/goal pairs
+					// Find between(subj,cond,goal)
+
+					// If reachFromSubjToGoal_without(S,G,Dir) then error(S,G)
+
+					//
+					// reachFromSubject(S,X,SearchDir) :-
+					//   subject(S,SubjDir), next(S,X,SearchDir), !cond(X,SubjDir,SearchDir).
+					// reachFromSUbjToGoal_without_Cond(S,G) :- 
+					//   reachFromSubject(S,X,_), goal(X).
+					//
+
+					return rules;
 				},
+
+				// No Paths Obligation
+				// If [Reach subj to cond(X)] and [reach cond(X) to goal] then [error]
+				// If reachFromSubjToCond(Subj,X) and reachfromCondToGoal(X,Goal) then error(Subj,Goal).
+
+				// Unique pathcontains obligation
+				// If [Reach subj from
+
 
 				VisitConstraint: (subj, cond) => {
 					var subjOut = CreateSubject (subj);
@@ -60,6 +116,15 @@ namespace RailCNL2Datalog
 				},
 
 				VisitDistanceObligation: (subj,goal,restr) => {
+
+
+					// Another try 2016-12-14
+					//
+					// subject(X,Dir) :- ...
+					// goal(X,Dir) :- ...
+					// distance
+					//
+
 					var resultType = "distobl";
 
 					var subjOut = CreateSubject(subj);
@@ -80,7 +145,7 @@ namespace RailCNL2Datalog
 						(RailCNL.Rule) new RailCNL.MkRule(negativeRuleHead, new RailCNL.Conj(
 							body, new RailCNL.Negation(positiveRuleHead))));
 
-					return positiveRules.Concat(negativeRules).ToList();
+					return goalOut.Rules.Concat(positiveRules).Concat(negativeRules).ToList();
 				},
 
 				VisitObligation:     (subj,cond) => FindResults("obligation",     subj, cond),
@@ -226,20 +291,47 @@ namespace RailCNL2Datalog
 			};
 		}
 
+		private Subject CreatePathCond(Subject subj, RailCNL.DirectionalObject obj) {
+			var condVar = "PathCond" + (fresh++).ToString ();
+			var dirVar = "Dir" + (fresh++).ToString ();
+
+			var rules = new List<RailCNL.Rule> ();
+
+			var rulePrefixes = GetDirObj (subj, condVar, dirVar, obj);
+
+			return new Subject {
+				Dir = null,
+				DirVar = dirVar,
+				RulePrefixes = rulePrefixes,
+				Variable = condVar,
+				Rules = rules
+			};
+		}
+
 		private Subject CreateGoal(Subject subj, RailCNL.GoalObject goal) {
 			var goalVar = "Goal" + (fresh++).ToString ();
 			var dirVar = "Dir" + (fresh++).ToString ();
 
+			var rules = new List<RailCNL.Rule> ();
+
 			var rulePrefixes = goal.Accept(new RailCNL.GoalObject.Visitor<ConjL>(
 				VisitAnyFound: obj => GetDirObj(subj, goalVar, dirVar, obj),
-				VisitFirstFound: null
+				VisitFirstFound: obj => {
+					var goalPrefixes = GetDirObj(subj, goalVar, dirVar, obj);
+					var goalRuleHead = ClassLiteral(ruleId + "_" + "goal", goalVar);
+
+					var positiveRules = AndConjunction(subj.RulePrefixes, goalPrefixes).Select(p => new RailCNL.MkRule(goalRuleHead, p));
+					rules.AddRange(positiveRules);
+					return And(goalRuleHead);
+				}
 			));
 
 			return new Subject {
 				Dir = null,
 				DirVar = dirVar,
 				RulePrefixes = rulePrefixes,
-				Variable = goalVar
+				Variable = goalVar,
+				Rules = rules
 			};
 		}
 
@@ -361,6 +453,7 @@ namespace RailCNL2Datalog
 		}
 
 
+		// TODO: optimization pass could move e.g. a single Eq sign to replace the variable with the value directly.
 		private ConjL VarRestrictionLiteral(string varName, RailCNL.Restriction restr) {
 			return restr.Accept(new RailCNL.Restriction.Visitor<ConjL>(
 
@@ -460,6 +553,10 @@ namespace RailCNL2Datalog
 
 		private ConjL Literals(params RailCNL.Literal[] p) {
 			return p.Select (l => (RailCNL.Conjunction) new RailCNL.SimpleConj (l)).ToList ();
+		}
+
+		private ConjL And(params RailCNL.Literal[] ls) {
+			return ls.Select(l => new ConjL { new RailCNL.SimpleConj(l) }).Aggregate (AndConjunction).ToList ();
 		}
 
 		private ConjL And(params ConjL[] ls) {

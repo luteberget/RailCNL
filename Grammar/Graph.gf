@@ -55,6 +55,8 @@ abstract Graph = Ontology ** {
 
     AllPathsObligation : Subject -> GoalObject -> PathCondition -> Statement;
     -- ExistsPathObligation : Object -> GoalObject -> PathCondition;
+    -- UniquePPathObligation : Object -> GoalObject -> PathCondition;
+    -- NoPathObligation : Object -> GoalObject -> PathCondition;
 
     DistanceObligation : Subject -> GoalObject -> Restriction -> Statement;
 

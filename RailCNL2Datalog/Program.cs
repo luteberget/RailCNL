@@ -16,7 +16,7 @@ namespace RailCNL2Datalog
 				int n = 1;
 				while(true) {
 					inputLine = Console.ReadLine ();
-					if (inputLine == null)
+					if (String.IsNullOrWhiteSpace(inputLine))
 						break;
 					
 					try {

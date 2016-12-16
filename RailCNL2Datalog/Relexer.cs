@@ -6,7 +6,7 @@ namespace RailCNL2Datalog
 	{
 		public static string Input2GF(string input) {
 			// A single sentence.
-			var gf = input.Trim();
+			input = input.Trim();
 
 			// optionally starting with a
 			// upper case letter (removed for GF input)

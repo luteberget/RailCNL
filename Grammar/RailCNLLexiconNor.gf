@@ -54,4 +54,9 @@ concrete RailCNLLexiconNor of RailCNLLexicon = CatNor **
       facingSwitch_CN   = Syn.mkCN (mkA "motrettet") (mkN "sporveksel");
       trailingSwitch_CN = Syn.mkCN (mkA "medrettet") (mkN "sporveksel");
 
+
+      tunnel_CN = Syn.mkCN (mkN "tunnel") ;
+      bridge_CN = Syn.mkCN (mkN "bro") ;
+      localreleasearea_CN = Syn.mkCN (mkN "lokalområde" );
+
 }

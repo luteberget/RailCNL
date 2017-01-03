@@ -48,4 +48,9 @@ abstract RailCNLLexicon = Cat ** {
     facingSwitch_CN : CN;
     trailingSwitch_CN : CN;
 
+
+    -- Area nouns
+    tunnel_CN, bridge_CN, localreleasearea_CN : CN;
+ 
+
 }

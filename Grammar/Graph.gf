@@ -1,7 +1,6 @@
 abstract Graph = Ontology ** {
   -- Graph property language.
 
-
   cat
     DirectionalObject;
     GoalObject;

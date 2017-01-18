@@ -1,0 +1,788 @@
+EDHEADINGS__
+== Hensikt og omfang ==
+Kapitlet fastlegger prosjekteringsregler for
+* kilometrering
+* horisontalkurvatur
+* vertikalkurvatur
+* tillatt hastighet
+* sporavstander
+
+
+Krav som står i tabell i hovedkapitlet er å regne som skal-krav dersom ikke annet er oppgitt. Se forøvrig [[Felles_bestemmelser/Generelle_bestemmelser|generelle bestemmelser]].
+
+<label id="overbygning_generelt_1">For prosjektering av nye baner er det "normale krav" som betegner Jernbaneverkets standardkrav.</label> Unntaksvis kan man likevel tillate en lavere traséstandard for å unngå uforholdsmessig store investeringer. Det er da mulighet for å benytte "minste krav". Det er prosjektet (hovedplan) som avgjør om og i tilfelle hvor det er nødvendig å benytte "minste krav". Dispensasjon utover "minste krav" må søkes om på samme måte som for skal-krav.
+
+== Kilometrering ==
+
+=== Profil ===
+
+{{lærebokstoff|Profil er et lengdemål for et definert spor målt i kartplanet langs senterlinjen. Hvert spor har en slik profillinje. I forbindelse med sporveksler, parsellinndeling under bygging eller ved endring av et spors lengde pga. ombygning, kan det oppstå et brudd i profillinjen. Dette bruddet benevnes profilbrudd.}}
+
+a) '''Profil:''' Profil skal angis i hele meter.
+
+=== Kilometer ===
+
+{{lærebokstoff|Kilometer (km) er en posisjonsangivelse langs en banes trasé og benyttes til å stedfeste objekter langs denne. Kilometer øker fra kilometreringens utgangspunkt. Der en ny eller ombygget bane møter en eksisterende bane eller der to baner med ulik kilometer samles, kan det oppstå et brudd i kilometreringen. Dette bruddet benevnes kjedebrudd.}}
+
+a) '''Kilometerangivelse:''' Kilometer skal angis i km med tre desimaler, det vil si på nærmeste hele meter.
+
+b) '''Kilometerangivelse for objekter:''' Kilometer for objekter bør bestemmes ved å trekke normalen på bestemmende spors senterlinje og å tilordne samme kilometer for alt langs normalen.
+
+c) '''Felles kilometer:''' <label id="overbygning_km_1">For å forhindre at kilometer oppgis galt i drifts- og avvikssituasjoner skal kilometer være felles når baner ligger i rimelig nærhet til hverandre.</label>
+
+{{lærebokstoff|Det utøves skjønn i fastsettelse av minste avstand mellom spor på baner der ulik kilometrering benyttes. I slike situasjoner tas det hensyn til blant annet at
+* vogner kan spore av og stille seg på tvers av begge baner
+* faste konstruksjoner som forhindrer sammenstøt kan skille banene
+* banene kan gå i forskjellige horisontalplan
+* kjedebrudd helst assosieres med et godt synlig fastmerke
+
+Det tas ikke hensyn til
+* støyskjermer, gjerder eller andre lettere konstruksjoner mellom banene
+* vegetasjon
+* rullende materiell utover det som normalt trafikkerer banene}}
+
+
+d) '''Kilometreringsreferanse:''' Kilometerverdier skal refereres til bestemmende spor.
+# Utførelse: <label id="overbygning_km_2">Ved flersporet bane skal normalt utgående hovedspor benyttes som bestemmende spor.</label>
+# Utførelse: <label id="overbygning_km_3">Dersom to eller flere baner er parallellført i samme trasé, skal normalt det lengste spor benyttes som det bestemmende spor.</label>
+
+
+For skilting av kilometer og trasépunkter, se [[Skilt/Plassering_av_skilt_langs_sporet/Skiltoversikt#Signal_75A_.C2.ABKilometerskilt.C2.BB|kilometerskilt]] (se også underavsnittene), [[Skilt/Plassering_av_skilt_langs_sporet/Skiltoversikt#Signal_75B_.C2.ABKilometerskilt_for_tunneler.C2.BB|kilometerskilt for tunneler]] og [[Skilt/Plassering_av_skilt_langs_sporet/Skiltoversikt#Skilt_for_tras.C3.A9punkt|skilt for trasépunkt]]
+
+==== Kjedebrudd ====
+
+{{lærebokstoff|Kjedebrudd er brudd i kilometreringen. Kjedebruddet har positiv verdi hvis kilometerverdien øker over bruddet.}}
+
+a) '''Negative kjedebrudd:''' <label id="overbygning_km_4">Negative kjedebrudd bør unngås.</label>
+
+b) '''Plassering:''' <label id="overbygning_km_5">Kjedebrudd skal plasseres på linjen, det vil si mellom to stasjoners innkjørhovedsignaler.</label>
+
+Utførelse:
+# <label id="overbygning_km_5">Bruddet søkes plassert på hel 100-meter, eventuelt hel 10-meter.</label>
+# <label id="overbygning_km_6">Bruddet skal ikke plasseres i vertikalkurver eller overgangskurver.</label>
+# Der to baner samles uten at det ligger noen stasjon der, legges kjedebruddet ved første passende anledning på Oslo-siden av samlingsstedet.
+# Der en bane opphører for å samles med en kortere bane (lavere kilometer), søkes bruddet lagt rett foran første sporveksel på stasjonen.
+# Ved lange tunneler søkes kjedebruddet lagt utenfor tunnelmunningene.
+# Bruddet plasseres på et sted der det ikke finnes fundamenter/objekter. Dette for å unngå tvetydige kilometerverdier for samme objekt.
+
+For skilting av kjedebrudd, se [[Skilt/Plassering_av_skilt_langs_sporet/Skiltoversikt#Kjedebrudd|kjedebrudd]] og 
+[[Skilt/Plassering_av_skilt_langs_sporet/Skiltoversikt#Eksakt_kjedebrudd|eksakt kjedebrudd]]
+
+== Horisontaltrasé ==
+
+Hastig­hetspr­ofilet bør i størst mulig grad tilpasses hastighet/vei-dia­gram­mene for de raskeste tog. Det er av den grunn ikke nødvendig at strekningshastig­het kan tillates i ak­selerasjons- og retardasjonsområ­dene nær steder hvor de raskeste tog likevel stopper. Store lokale innsnevringer av profilet for streknings­hastigheten bør unngås.
+
+a) '''Minste lengde for avsnitt med konstant krumning:''' Sirkelkurver og rette avsnitt på linjen skal ha lengde i henhold til <xr id="Minste lengde for avsnitt med konstant krumning" />
+
+<figtable id="Minste lengde for avsnitt med konstant krumning">
+{| class="wikitable"
+|+ Minste lengde for avsnitt med konstant krumning
+! Normale krav [m]
+! Minste krav [m]
+|-
+| <label id="overbygning_horisontal_1">0,5 ''V''</label>
+| <label id="overbygning_horisontal_2">0,25 ''V''</label>
+|}
+</figtable>
+# Unntak: For linjeoptimalisering mht. krengetog anvendes minste krav der ''V'' er krengetogshastigheten.
+
+
+b) '''Overhøyde ved lave hastigheter:''' Ved hastighet mindre enn eller lik 40 km/h skal det ikke legges inn overhøyde.
+# Unntak: Om særskilte forhold tilsier bruk av overhøyde skal denne maksimalt være 60 mm. Unntaket gjelder ikke for oppstillingsspor eller ved sporsperrer.
+
+
+=== Dimensjonerende parametre - Nye baner og linjeomlegginger ===
+{{lærebokstoff|Av hensyn til sikkerhet, komfort og vedlikeholdsbehov skal man på en fornuftig måte takle de topografiske situasjoner. Traséen skal være slik at vedlikeholdsbehovet blir lavt og komforten høy.}}
+
+Dimensjonerende parametre for traséen er gitt i <xr id="tab:Dimensjonerende parametre for nye baner og linjeomlegginger" />.
+
+<figtable id="tab:Dimensjonerende parametre for nye baner og linjeomlegginger">
+{| class="wikitable"
+|+ Dimensjonerende parametre for nye baner og linjeomlegginger
+!
+! Symbol
+! Definisjon
+! Normale krav
+! Minste krav
+|-
+| a) &nbsp;&nbsp;
+| <math>R_\text{min}</math>
+| minste radius
+| align="center"| 250 m
+| align="center"| 190 m
+|-
+| b)
+| <math>h_{maks}\,</math>
+| maksimal verdi for over­hø­yden <sup>1)</sup>
+| colspan="2" align="center"| 150 mm
+|-
+| c)
+| <math>h_{avsp}\,</math>
+| grense for over­høy­de pga. av­sporing­sfa­ren ved lave hastig­heter 
+| colspan="2" align="center"| <math>\tfrac{R-100}{2}</math> mm
+|-
+| d)
+| <math>\left(\tfrac{\Delta h}{L}\right)_{maks}</math>
+| grenseverdi for rampestigning
+| colspan="2" align="center"| 1:400
+|-
+| e)
+| <math>I_{maks}\,</math>
+| grenseverdi for manglende overhøyde <sup>2)</sup>
+| colspan="2" align="center"| R ≤ 600: 100 mm <br>
+R > 600: 130 mm
+|-
+| f)
+| <math>\left(\tfrac{\mathrm{d}I}{\mathrm{d}t}\right)_{maks}</math>
+| grenseverdi for variasjon av den manglende overhøyde
+| align="center"| 50 mm/s (tilsv. ψ = 0,33 m/s<sup>3</sup>)
+| align="center"| 70 mm/s (tilsv. ψ = 0,46 m/s<sup>3</sup>)
+|-
+| g)
+| <math>\left(\tfrac{\mathrm{d}h}{\mathrm{d}t}\right)_{maks}</math>
+| grenseverdi for rampestignings­hastighet 
+| align="center"| 35 mm/s (tilsv. 1:8 V)
+| align="center"| 46 mm/s (tilsv. 1:6 V)
+|-
+| h)
+| <math>E_{maks}\,</math>
+| grenseverdi for overskudds­overhøyde  <sup>3)</sup>
+| align="center"| 70 mm
+| align="center"| 100 mm
+|-
+| i)
+| <math>V_g \,</math>
+| hastighet for de langsomt­gående tog <sup>3)</sup>
+| colspan="2" align="center"| 80 km/h
+|}
+</figtable>
+# For rene persontrafikkbaner gjelder h<sub>maks</sub> = 160 mm (normale krav) og h<sub>maks</sub> = 180 mm (minste krav).
+# I kurve med kurveveksel gjelder ''I''<sub>maks</sub> = 80 mm for R ≤ 600 og ''I''<sub>maks</sub> = 100 mm for R > 600.
+# For rene persontrafikkbaner gjelder ikke kravene h) og i).
+
+{{lærebokstoff|Av komforthensyn er det en fordel om overhøyden begrenses til 80 mm i kurver hvor toget ofte stopper, for eksempel foran signaler hvor det er planlagt stopp (områder med køkjøring).}}
+
+Vedlegget [[Overbygning/Prosjektering/Sporets trasé/Vedlegg/Traseringstabeller for nye baner og linjeomlegginger|traseringstabeller for nye baner og linjeomlegginger]] angir utfra hastighet og radius verdier for ''h'' og ''L'' som tilfredsstiller kravene ovenfor for baner med blandet trafikk. For rene persontrafikkbaner benyttes [[Overbygning/Prosjektering/Sporets trasé/Vedlegg/Traseringstabeller for nye persontrafikkbaner|traseringstabeller for nye persontrafikkbaner]].
+
+{{lærebokstoff|For å bedre komforten er det en fordel at det velges en lengre overgangskurve enn i traseringstabellene der det er mulig. Forlengelse utover 50 % av opprinnelig lengde er unødvendig.}}
+
+=== Dimensjonerende parametre - eksisterende baner ===
+For eksisterende trasé er dimens­jonerende parametre for traséen gitt i
+<xr id="tab:Dimensjonerende parametre for eksisterende baner - konvensjonelt materiell" />.
+
+
+<figtable id="tab:Dimensjonerende parametre for eksisterende baner - konvensjonelt materiell">
+{| class="wikitable"
+|+ Dimensjonerende parametre for eksisterende baner - konvensjonelt materiell
+!
+! Symbol
+! Definisjon
+! Krav
+|-
+| a) &nbsp;&nbsp;
+| <math>R_\text{min}</math>
+| minste radius
+| 190 m
+|-
+| b)
+| <math>h_{maks}\,</math>
+| maksimal verdi for overhøyde <sup>1)</sup>
+| 150 mm
+|-
+| c)
+| <math>h_{avsp}\,</math>
+| grense for over­høy­de pga. av­sporing­sfa­ren ved lave hastig­heter
+| <math>\tfrac{R - 50}{1,5}</math> mm
+|-
+| d)
+| <math>\left(\tfrac{\Delta h}{L}\right)_{maks}</math>
+| grenseverdi for rampestig­ning
+| 1:400
+|-
+| e)
+| <math>I_{maks}\,</math>
+| grenseverdi for manglen­de over­høyde <sup>2)</sup><sup>3)</sup>
+| 100 mm for R < 290 <br>
+130 mm for 290 ≤ R ≤ 600 <br>
+150 mm for R > 600
+|-
+| f)
+| <math>\left(\tfrac{\mathrm{d} I}{\mathrm{d} t}\right)_{maks}</math>
+| grenseverdi for variasjon av den manglende over­høyde
+| 80 mm/s (tilsv. ψ = 0,52 m/s<sup>3</sup>)
+|-
+| g)
+| <math>\left(\tfrac{\mathrm{d}h}{\mathrm{d}t}\right)_{maks}</math>
+| grenseverdi for rampestign­ings­hastighet
+| 55 mm/s (tilsv. 1:5 V)
+|-
+| h)
+| <math>E_{maks}\,</math>
+| grenseverdi for over­skudds­overhøyde
+| 90 mm for R ≤ 6­00 <br>
+110 mm for R > 600
+|-
+| i)
+| <math>V_g\,</math>
+| hastighet for de langsomtgående tog
+| 80 km/h
+|}
+</figtable>
+
+# I kurver hvor toget ofte stopper gjelder ''h''<sub>maks</sub> = 130 mm. Eksempelvis ved plattform eller 500 m foran innkjørs- eller blokksignal.
+# For overbygningsklasse ''b'' gjelder ''I''<sub>maks</sub> = 100 mm.
+# I kurve med kurveveksel eller på bro uten gjennomgående ballast gjelder ''I''<sub>maks</sub> = 100 mm for R ≤ 350 og ''I''<sub>maks</sub> = 130 mm for R > 350.
+
+For krav om overhøyde ved stasjoner, se [[Overbygning/Prosjektering/Plattformer_og_spor_på_stasjoner#Spor_mot_plattformer|Plattformer og spor på stasjoner#Spor mot plattformer]].
+
+Vedlegget [[Overbygning/Prosjektering/Sporets trasé/Vedlegg/Traseringstabeller for eksisterende baner|traseringstabeller for eksisterende baner]] angir utfra hastighet og radius verdier for h og L som tilfredsstiller kravene ovenfor for eksisterende baner med blandet trafikk.
+
+{{lærebokstoff|''Konvensjonelt materiell'' er hovedsaklig godstog og arbeidsmaskiner. ''Plussmateriell'' er persontog som er godkjent for å kjøre etter plusshastigheter (persontog som ikke er godkjent for dette regnes som konvensjonelt materiell). Persontog med krengeanordning er omfattet under ''krengetogsmateriell''.}}
+
+
+==== Dimensjonerende parametre for plussmateriell ====
+For bestemte togsett, såkalt plussmateriell, gjelder
+<xr id="tab:Dimensjonerende parametre for eksisterende baner - konvensjonelt materiell" />,
+med unntak av parametrene gitt i
+<xr id="tab:Dimensjonerende parametre for eksisterende baner – plussmateriell" />:
+
+<figtable id="tab:Dimensjonerende parametre for eksisterende baner – plussmateriell">
+{| class="wikitable"
+|+ Dimensjonerende parametre for eksisterende baner – plussmateriell
+!
+! Symbol
+! Definisjon
+! Krav
+|-
+| a) &nbsp;&nbsp;
+| <math>h_\text{maks}</math>
+| maksimal verdi for overhøyde
+| 150 mm
+|-
+| b)
+| <math>I_\text{maks}</math>
+| grenseverdi for manglen­de over­høyde<sup>1)</sup>
+| 130 mm for R < 250 <br>
+(0,6R - 20) mm for 250 ≤ R < 290 <br>
+153 mm for R ≥ 290
+|-
+| c)
+| <math>\left(\tfrac{\mathrm{d}I}{\mathrm{d}t}\right)_{maks}</math>
+| grenseverdi for variasjon av den manglende over­høyde
+| 100 mm/s
+|-
+| d)
+| <math>\left(\tfrac{\mathrm{d}h}{\mathrm{d}t}\right)_{maks}</math>
+| grenseverdi for rampestign­ings­hastighet
+| 69 mm/s
+|}
+</figtable>
+
+# For overbygningsklasse ''b'' gjelder I<sub>maks</sub> = 130 mm.
+
+==== Dimensjonerende parametre for krengetogsmateriell ====
+For krengetog gjelder
+<xr id="tab:Dimensjonerende parametre for eksisterende baner - konvensjonelt materiell" />,
+med unntak av parametrene gitt i
+<xr id="tab:Dimensjonerende parametre for eksisterende baner - krengetogsmateriell" />.
+
+<figtable id="tab:Dimensjonerende parametre for eksisterende baner - krengetogsmateriell">
+{| class="wikitable"
+|+ Dimensjonerende parametre for eksisterende baner - krengetogsmateriell
+!
+! Symbol
+! Definisjon
+! Krav
+|-
+| a) &nbsp;&nbsp;
+| <math>h_\text{maks}</math>
+| maksimal verdi for overhøyde
+| 150 mm
+|-
+| b)
+| <math>I_\text{maks}</math>
+| grenseverdi for manglen­de over­høyde <sup>1)</sup>
+| 160 mm for R < 250 <br>
+(1,7R - 265) mm for 250 ≤ R ≤ ­300 <br>
+245 mm for R > 300
+|-
+| c)
+| <math>\left(\tfrac{\mathrm{d}I}{\mathrm{d}t}\right)_{maks}</math>
+| grenseverdi for variasjon av den manglende over­høyde
+| 122,5 mm/s (tilsv. ψ = 0,80 m/s<sup>3</sup>
+|-
+| d)
+| <math>\left(\tfrac{\mathrm{d}h}{\mathrm{d}t}\right)_{maks}</math>
+| grenseverdi for rampe-stign­ings­hastighet
+| 75 mm/s (tilsv. 1:3.7 V)
+|}
+</figtable>
+
+# For kurve med kurveveksel eller på bro uten gjennomgående ballast skal ''I''<sub>maks</sub> ikke overstige 180 mm.
+
+{{lærebokstoff|Av hensyn til konvensjonelt materiell bør overgangskurvene ikke være dimensjonerende for krengetogshastighetene.}}
+
+=== Dimensjonerende parametre - sidespor og andre spor på stasjoner ===
+
+For stasjonsspor, sidespor og øvrige spor gjelder parametrene i <xr id="tab:Dimensjonerende parametre for nye baner og linjeomlegginger" /> (for nye spor) og <xr id="tab:Dimensjonerende parametre for eksisterende baner - konvensjonelt materiell" /> (for eksisterende spor) med unntak av parametrene gitt i <xr id="tab:Dimensjonerende parametre for sidespor og andre spor på stasjoner" />:
+
+<figtable id="tab:Dimensjonerende parametre for sidespor og andre spor på stasjoner">
+{| class="wikitable"
+|+ Dimensjonerende parametre for sidespor og andre spor på stasjoner
+! 
+! Symbol
+! Definisjon
+! Normale krav
+! Minste krav
+|-
+| a)
+| <math>R_\text{min}</math>
+| minste radius
+| 190 m
+| 150 m
+|-
+| b)
+| <math>\left(\tfrac{\Delta h}{L}\right)_\text{maks}</math>
+| grenseverdi for rampestigning
+| colspan="2" | 1:300
+|-
+| c)
+| <math>\left(\tfrac{\mathrm{d}h}{\mathrm{d}t}\right)_\text{maks}</math>
+| grenseverdi for rampestign­ings­hastighet
+| colspan="2" | 46 mm/s (tilsv. 1:6 V)
+|}
+</figtable>
+
+=== Kombinasjonskurver ===
+
+a) '''Kombinasjonskurver:''' Kombinasjonskurver bør unngås.
+
+Det stilles samme traseringskrav for kom­binasjonskurver som for vanlige kurver.
+
+<figure id="fig:Pilhøydediagram for kombinasjonskurve">
+[[Fil:JD530 05 fig002.png|thumb|600px|center|<caption>Pilhøydediagram for kombinasjonskurve</caption>]]
+</figure>
+
+{{lærebokstoff|Ved kombinasjonskurver bestemmes lengden av overgangskurven <math>L_{12}</math> slik:
+
+# Beregn den fiktive radi­us <math>R_{12}</math>
+#:<center><math>R_{12} = \frac{R_1 R_2}{R_1 - R_2},</math>&nbsp;&nbsp;&nbsp;(5)</center>
+#:der begge radiene er positive med ''R''<sub>1</sub> > ''R''<sub>2</sub>.
+# Finn deretter ''h''<sub>12</sub> og ''L''<sub>12</sub> ved å bruke ''R''<sub>12</sub> som inng­angsverdi i [[Overbygning/Prosjektering/Sporets trasé/Vedlegg/Traseringstabeller for nye baner og linjeomlegginger|traseringstabell for nye baner og linjeomlegginger]] eller [[Overbygning/Prosjektering/Sporets trasé/Vedlegg/Traseringstabeller for eksisterende baner|traseringstabell for eksisterende baner]]. Hvis ''h''<sub>12</sub> er ulik differansen mellom ''h''<sub>1</sub> og ''h''<sub>2</sub> finnes følgende alternativer:
+#* Endre lengdene av L<sub>1</sub> og L<sub>2</sub> (kan maksimalt økes med 50% i forhold til verdiene i tabell) og dermed h<sub>1</sub> og h<sub>2</sub>.
+#* Øke overhøyden h<sub>12</sub> og dermed L<sub>12</sub> etter følgende kriterier:
+:::<math>h_{12} \leq 100 \cdot\tfrac{L_{12}}{V}</math> &nbsp;(normale krav) 
+:::<math>h_{12} \leq 126 \cdot\tfrac{L_{12}}{V}</math> &nbsp;(minste krav når ''V'' > 120)
+:::<math>h_{12} \leq 166 \cdot\tfrac{L_{12}}{V}</math> &nbsp;(minste krav når ''V'' ≤ 120)
+:::<math>h_{12} \leq 198 \cdot\tfrac{L_{12}}{V}</math> &nbsp;(eksisterende baner)}}
+
+
+=== Kurver uten overgangskurver ===
+
+Kravene i dette avsnittet gjelder kun for togspor.
+
+{{lærebokstoff|Der det ikke er mulig å legge inn overgangskurver mellom rettlinje og sirkelkurve eller mellom to sirkelkurver, vil det oppstå et sprang i den manglende overhøyden (ΔI).}}
+
+
+a) '''Maksimalt sprang i manglende overhøyde (ΔI<sub>maks</sub>):''' Sprang i manglende overhøyde skal maksimalt være 100 mm for V ≤ 200 km/h, 85 mm for 200 km/h < V ≤ 230 km/h og 25 mm for V > 230 km/h.
+
+
+Kombinasjoner av kurver uten overgangskurver kan være (jamfør figur):
+- motsattrettede kurver uten rettlinjet avsnitt
+- ensrettede kurver uten rettlinjet avsnitt
+- motsattrettede kurver med rettlinjet avsnitt
+- ensrettede kurver med rettlinjet avnsitt
+
+<figure id="fig:Kombinasjoner av kurveelementer uten overgangskurver">
+[[Fil:Tegning-fra-EN13803.png|thumb|600px|center|<caption>Kombinasjoner av kurveelementer uten overgangskurver</caption>]]
+</figure>
+
+b) '''Rettlinjet avsnitt mellom to kurver uten overgangskurver:''' For å betrakte to sprang i den manglende overhøyden som separate, skal det være et rettlinjet avsnitt (''M'') mellom kurvene etter følgende regler:
+
+::''M'' ≥ 0,1 ''V'' [m] for 40 ≤ V < 65 km/h
+::''M'' ≥ 0,15 ''V'' [m] for 65 ≤ V ≤ 100 km/h &nbsp;&nbsp;&nbsp; (4)
+::''M'' ≥ 0,25 ''V'' [m] for V > 100 km/h,
+der ''V'' er skiltet hastighet over kurvene. Ved pluss-/krengetoghastighet skal den største hastigheten benyttes.
+
+Ved mindre rettlinjet avsnitt enn ''M'', skal sprangene i overhøyde betraktes som ett: ΔI = I<sub>1</sub>+I<sub>2</sub> ved motsattrettede kurver og ΔI = max{I<sub>1</sub>,I<sub>2</sub>} ved ensrettede kurver.
+
+
+c) '''Rampestigningshastighet for rampe uten overgangskurve:''' Overhøyderamper der det ikke er overgangskurve skal ikke ha rampestigningshastighet større enn 46 mm/s.
+# Nye baner skal ikke ha overhøyderamper som ikke sammenfaller med en overgangskurve.
+
+=== Bufferoverdekning i S-kurve ===
+For å sikre ønsket bufferoverdekning i sirkelkurver som krummer i forskjellig retning, skal det enten velges tilstrekkelig store radier eller det skal anlegges en rettlinje mellom kurvene.
+
+Hvis <math>\tfrac{R_1 R_2}{R_1 + R_2}</math> ≥ 120 anlegges ingen rettlinje.
+
+Hvis 100 ≤ <math>\tfrac{R_1 R_2}{R_1 + R_2}</math> < 120 anlegges en rettlinje på 7 meter i spor som skal trafikkeres av personvogner og ingen rettlinje i spor som bare skal trafikkeres med godsvogner.
+
+Hvis <math>\tfrac{R_1 R_2}{R_1 + R_2}</math> < 100 anlegges en rettlinje på 10 meter i spor som skal trafikkeres av personvogner og 7 meter i spor som bare skal trafikkeres med godsvogner.
+
+Begge radiene skal større enn eller lik 150 meter. Det antas at radiene er positive i de ovenstående formler.
+
+=== Sporveksler og sporforbindelser ===
+
+a) '''Plassering av sporveksler 1:''' <label id="overbygning_sporveksel_1">Sporveksler bør ligge i rette avsnitt.</label> <label id="overbygning_sporveksel_2">Ved aksellast større enn 25 tonn skal sporveksler ligge i rette avsnitt.</label>
+
+b) '''Plassering av sporveksler 2:''' <label id="overbygning_sporveksel_3">Sporveksler skal ikke plasseres i overgangskurver eller i sirkelkurver med større overhøyde enn 100 mm</label> <sup>1)</sup>.
+# Unntak: Ved håndbetjent sporveksel til sidespor skal overhøyden ikke overstige 80 mm.
+
+For plassering av sporveksler i forhold til bruer gjelder krav i [[Overbygning/Prosjektering/Spor på bruer#Spor på bruer med gjennomgående ballast|Spor på bruer]]
+
+{{lærebokstoff|Kurveveksler kan medføre økt vedlikeholdsbehov i forhold til rette sporveksler. I kurveveksler i spor med overhøyde kan tyngdekraften medføre et behov for økt omleggingskraft. Tyngdekraften vil også påvirke fraliggende tunges posisjon i forhold til stokkskinnen. Disse forholdene kan i noen tilfeller medføre behov for en ekstra drivmaskin for å sikre at minimumsavstand mellom fraliggende tunge og stokkskinne overholdes.}}
+
+
+c) '''Avstand mellom sporveksel og overgangskurve/sirkelkurve/bru/sporveksel:''' Avstanden mellom sporveksel og overgangskurve, sirkelkurve, bru eller annen motstående sporveksel skal ikke være mindre enn avstanden M gitt i [[Overbygning/Prosjektering/Sporets_trasé#Kurver_uten_overgangskurver|Kurver uten overgangskurver]], krav b). ''M'' skal imidlertid ikke være kortere enn 6 m.
+# Unntak: Ved sirkelkurver med lik, ensrettet krumning bortfaller kravet til mellomparti ''M''.
+# Unntak: For sporsløyfer med klotoideveksler bortfaller kravet til mellomparti ''M''.
+# Utførelse: Avstanden ''M'' måles fra stokkskinneskjøt (SS)/bakkant (BK) på sporvekselen til overgangskurvens begynnelse (OB)/ende (OE), bruens start-/sluttpunkt eller sirkelkurvens kurvepunkt (KP).
+
+{{lærebokstoff|I alle tilfeller bør felles stokkskinneskjøt unngås av hensyn plassering av akseltellere og fremtidig behov for utskifting av tungeanordninger. Hvis felles stokkskinneskjøt ikke kan unngås, må man ta hensyn til plassering av eventuelle akseltellere i forhold til stokkskinneskjøt}}
+
+
+<figure id="fig:Krav til rettlinje M mellom to motstående sporveksler og sporveksel og kurve">
+[[Fil:JD530 05 fig003.png|thumb|600px|center|<caption>Krav til rettlinje M mellom to motstående sporveksler og sporveksel og kurve</caption>]]
+</figure>
+
+<figure id="fig:Krav til rettlinje M ved linjedelende sporveksel">
+[[Fil:JD530 05 fig005.png|thumb|600px|center|<caption>Krav til rettlinje M ved linjedelende sporveksel</caption>]]
+</figure>
+
+<figure id="fig:Sporsløyfe">
+[[Fil:JD530 05 fig004.png|thumb|600px|center|<caption>Sporsløyfe</caption>]]
+</figure>
+
+
+
+d) '''Plassering av sporsløyfer:''' <label id="overbygning_sporveksel_4">Sporsløyfer skal plasseres på rettlinje eller i kurver uten overhøyde.</label>
+
+{{lærebokstoff|Ved plassering av sporsløyfer bør det tas hensyn til plass for framtidig ny sporveksel med mindre stigning.}}
+
+
+e) '''Overhøyderamper til utjevning av falsk overhøyde:''' <label id="overbygning_sporveksel_5">Overhøyderamper til utjevning av overhøyden ("falsk overhøyde") bak kurveveksler skal ikke ha større rampestigningshastighet enn 35 mm/s (tilsv. 1:8 V).</label>
+
+
+Ved små radier kan det i alle tilfeller være nødvendig med en rettlinje jamfør [[#Bufferoverdekning i S-kurve|Bufferoverdekning i S-kurve]].
+
+
+For sporveksler i vertikalkurver, se [[#Vertikalkurver|Vertikalkurver]].
+
+
+f) '''Avstand mellom etterfølgende sporveksler:''' Dersom bakkant sporveksel (BK) i hovedspor møter en tilstøtende sporveksel i stokkskinneskjøten (SS), skal det legges inn en rettlinje M med lengde som angitt i <xr id="tab:Minste rettlinje M mellom bakkant sporveksel (BK) i hovedspor og påfølgende stokkskinneskjøt" />.
+
+<figure id="fig:Krav til rettlinje M mellom to etterfølgende sporveksler">
+[[Fil:JD530 05 fig006.png|thumb|600px|center|<caption>Krav til rettlinje M mellom to etterfølgende sporveksler NB: Ikke samme ''M'' som i det foregående.</caption>]]
+</figure>
+
+
+<figtable id="tab:Minste rettlinje M mellom bakkant sporveksel (BK) i hovedspor og påfølgende stokkskinneskjøt">
+{| class="wikitable"
+|+ Minste rettlinje M mellom bakkant sporveksel (BK) i hovedspor og påfølgende stokkskinneskjøt
+! width="100pt"| tgα <sup>1)</sup> !! width="100pt"| M [m]
+|-
+| align="center" | 1:9 || align="center" | 6
+|-
+| align="center" | 1:12 || align="center" | 9
+|-
+| align="center" | 1:14 || align="center" | 12
+|-
+| align="center" | 1:18,4 || align="center" | 15
+|-
+| align="center" | 1:26,1 || align="center" | 18
+|}
+</figtable>
+1) Henviser til første sporveksel i figur 6.
+
+
+g) '''Gjennomkjøring av avvikespor:''' Ved gjennomkjøring av avvikespor skal følgende hastigheter ikke overskrides:
+* For sporveksel 1:9/ R = 190 m: 35 km/h <sup>1)</sup>
+* For sporveksel 1:9/ R = 300 m: 40 km/h <sup>2)</sup>
+* For sporveksel 1:12/ R = 500 m: 60 km/h
+# Unntak: Gjelder ikke driftsbanegårder, skifteområder og andre spor uten persontrafikk.
+# Unntak: Ved behov for å øke hastigheten til 50 km/h, skal de lokale tekniske og driftsmessige forhold for hver enkelt sporveksel vurderes spesielt.
+
+For alle andre sporveksler uten klotoide gjelder krav a) fra avsnittet [[#Kurver uten overgangskurver|Kurver uten overgangskurver]].
+
+
+Kontaktledningsanlegget stiller også krav til avstand mellom sporveksler, se [[Kontaktledning/Prosjektering/Kontaktledningssystemer#Ledningsf.C3.B8ring_over_sporveksler|Kontaktledning/Prosjektering/Kontaktledningssystemer#Ledningsføring_over_sporveksler]].
+
+[[Overbygning/Prosjektering/Helsveist spor#Minste avstand mellom sveiste skjøter|Minste avstand mellom sveiste skjøter]] kan i noen tilfeller sette begrensninger i hvor nærme hverandre sporveksler kan plasseres.
+
+== Vertikaltrasé ==
+
+{{lærebokstoff| Vertikalkurvaturen har kun to elementer: rettlinjer (stigning/fall) og sirkelkurver.}}
+
+a) '''Elementlengder:''' <label id="overbygning_vertikal_1">Alle elementlengder i vertikalkurvaturen skal være minst 20 m.</label>
+
+
+=== Fall og stigninger ===
+{{lærebokstoff| Bestemmende stigning/fall er det fall i promille som beregnes ved å forbinde to punkter i strekningens lengdeprofil med innbyrdes avstand lik 1000 m med en rett linje. For en lengre strekning er det bestemmende fall/stigning den største verdien som fremkommer på en vilkårlig kilometer langs strekningen med denne beregningen. Bestemmende stigning/fall er av betydning for fremføring av tog og er derfor ikke relevant for sidespor.}}
+
+a) '''Fall og stigning:''' For nye baner skal bestemmende og absolutt fall/stigning ikke være større enn som gitt i <xr id="tab:Største bestemmende stigning fall" /> og <xr id="tab:Største absolutte stigning fall" />.
+
+<figtable id="tab:Største bestemmende stigning fall">
+{| class="wikitable"
+|+ Største bestemmende stigning/fall
+! &nbsp;
+! colspan="3" align="center"| Største bestemmende stigning/fall [o/oo]
+|-
+| &nbsp;
+| Baner med blandet trafikk
+| Persontrafikkbaner
+|-
+| Normale krav
+| align="center"| <label id="overbygning_vertikal_2">12,5</label>
+| align="center"| <label id="overbygning_vertikal_3">20</label>
+|-
+| Minste krav
+| align="center"| 20<sup>1)</sup>
+| align="center"| 25
+|}
+</figtable>
+# Tillates i en lengde opp til 3 km etter en inngående vurdering av stigningsforholdene på vedkommende banestrekning.
+
+<figtable id="tab:Største absolutte stigning fall">
+{| class="wikitable"
+|+ Største absolutte stigning/fall
+! &nbsp;
+! colspan="3" align="center"| Største absolutte stigning/fall [o/oo]
+|-
+| &nbsp;
+| Baner med blandet trafikk
+| Persontrafikkbaner
+| Sidespor
+|-
+| Normale krav
+| align="center"| 20
+| align="center" | 25
+| align="center"| 30
+|-
+| Minste krav
+| align="center"| 30<sup>1)</sup>
+| align="center"| 35
+| align="center"| 35
+|}
+</figtable>
+# For å hindre at et helt godstog blir stående i maksimal stigning tillates ikke stigning over 20 ‰ i sammenhengende lengde på mer enn 300 meter
+{{lærebokstoff| Strekningen i punkt 1 under <xr id="tab:Største absolutte stigning fall" /> måles fra den profilen hvor stigning/fall overstiger 20 ‰ inntil profilen hvor den faller under 20 ‰ igjen.}}
+
+
+b) '''Forlengelse av eksisterende bane:''' Når en ny bane driftsmessig betraktes som en forlengelse av en eksisterende bane eller når prosjektet gjelder en linjeomlegging skal bestemmende fall ikke være større enn for den eksisterende bane.
+# Unntak: Dersom kravet er svært kostbart å gjennomfør skal bestemmende fall velges slik at de forutsatte togtyper kan kjøre i stigning og fall med de tilsiktede hastigheter.
+
+
+c) '''Stasjonsområder:''' <label id="overbygning_vertikal_4">Gjennomsnittlig stigning/fall skal ikke overstige 20 ‰ mellom innkjørshovedsignal og utkjørshovedsignal.</label> For [[Overbygning/Prosjektering/Plattformer og spor på stasjoner#Spor mot plattformer|spor mot plattformer]] er kravene gitt [[Overbygning/Prosjektering/Plattformer og spor på stasjoner#Spor mot plattformer|her]] 
+
+d) '''Stasjoner med samtidig innkjør:''' <label id="overbygning_vertikal_5">På en stasjon med samtidig innkjør skal fallet fra utkjørhovedsignal til middel ikke overstige  12,5 ‰.</label> I tillegg skal fallet vurderes spesielt med hensyn til om sikkerhetsavstandens lengde er stor nok, se også tabell for sikkerhetsavstander i [[Signal/Prosjektering/Forriglingsutrustning#Sikkerhetsavstand|Signal/Prosjektering/Forriglingsutrustning#Sikkerhetsavstand]].
+
+e) '''Forlengelse av krysningsspor:''' Ved kryssingssporforlengelse skal det tas hensyn til lokale forhold, herunder igangsetting og avbremsing av de tyngste togene på strekningen.
+
+f) '''Hensettingsspor:''' <label id="overbygning_vertikal_6">Spor der materiell hensettes skal normalt anlegges horisontalt.</label> <label id="overbygning_vertikal_7">Største stigning/fall er 2 ‰ (normale krav) og 5 ‰ (minste krav). </label>
+
+
+g) '''Dekningsgivende objekt''': Sidespor skal ha et dekningsgivende objekt som hindrer at rullende materiell kommer inn på sikret område.
+# Utførelse:
+:* Dersom fall mot dekningsgivende objekt overstiger 2 ‰ skal sporveksel eller dobbel avsporingstunge brukes for å gi dekning.
+:* Dersom hastigheten i området det gis dekning for er større enn 40 km/h skal sporveksel eller dobbel avsporingstunge brukes for å gi dekning.
+:* I øvrige tilfeller kan sporsperre brukes for å gi dekning.
+{{lærebokstoff|Prosjekteringen må sørge for at dekningsgivende objekt plasseres slik at avsporing av materiell gir minst mulig risiko. Avsporingstunge og sporsperre gir mindre kontroll på avsporet materiell enn hva sporveksel gjør.}}
+
+
+<figure id="fig:Dekningsgivende objekt">
+[[Fil:JD530 05 fig007.svg|thumb|600px|center|<caption>Dekningsgivende objekt</caption>]]
+</figure>
+
+
+
+For skilting av fall og stigning, se [[Skilt/Plassering_av_skilt_langs_sporet/Skiltoversikt#Signal_63A_.C2.ABFallviser.C2.BB|fallviser]] og  [[Skilt/Plassering_av_skilt_langs_sporet/Skiltoversikt#Signal_63B_.C2.ABStigningsviser.C2.BB|stigningsviser]].
+
+Se også ''Trafikkregler for Jernbaneverkets nett'', kap. 3 ''Skifting'' som stiller krav til stigning/fall der materiell gjensettes  og krav til stigning/fall på spor ved plattform i [[Overbygning/Prosjektering/Plattformer_og_spor_på_stasjoner#Spor_mot_plattformer|Overbygning/Prosjektering/Plattformer og spor på stasjoner#Spor mot plattformer]].
+
+=== Vertikalkurver ===
+a) '''Minste vertikalkurveradier:''' Vertikalkurver (R<sub>V</sub>) skal ikke være mindre enn som gitt i <xr id="tab:Krav til vertikalkurver for nye baner" /> for nye baner og <xr id="tab:Krav til vertikalkurver for eksisterende baner" /> for eksisterende baner.
+
+<figtable id="tab:Krav til vertikalkurver for nye baner">
+{| class="wikitable"
+|+ Krav til vertikalkurver for nye baner
+! Normale krav
+! Minste krav
+|-
+| R<sub>v</sub> = V<sup>2</sup>/2,6 [m] <br>
+Minste R<sub>v</sub> = 4000 m
+| R<sub>v</sub> = V<sup>2</sup>/3,9 [m] <br>
+Minste R<sub>v</sub> = 2500 m
+|}
+</figtable>
+# Unntak: For sidespor er minste vertikalradius 1500 m (normale krav) og 500 m (minste krav). Det kan dispenseres for kurveradier ned til 250 m under bestemte betingelser vedrørende minste tverrsnitt og bruk av rullende materiell.
+
+<figtable id="tab:Krav til vertikalkurver for eksisterende baner">
+{| class="wikitable"
+|+ Krav til vertikalkurver for eksisterende baner
+! V ≤ 130 km/h
+! V > 130 km/h
+|-
+| R<sub>v</sub> = 20 V + 500 [m]
+| R<sub>v</sub> = 100 V - 10000 [m]
+|}
+</figtable>
+# Unntak: I lavbrekk kan R<sub>v</sub> = 500 m benyttes uavhengig av hastighet.
+
+
+b) '''Overgangskurver og sporveksler:''' <label id="overbygning_vertikal_8">Vertikalkurver med radius mindre enn 10000 meter skal ikke falle sammen med overgangskurver eller sporveksler.</label> Det skal være en avstand på minst 15 meter<sup>1)</sup> mellom overgangskurve/sporveksel og vertikalkurve med radius mindre enn 10000 meter.
+# Unntak: For hastigheter mindre enn eller lik 50 km/h kan det tillates kortere avstander.
+# Unntak: Ved stigningsendring mindre enn 1 ‰ legges det ikke inn vertikalkurve. Brekkpunktet som oppstår, skal ikke legges til en overgangskurve eller en sporveksel.
+
+== Største hastighet på grunn av sporets geometri ==
+
+Maksimalhastigheter for hver overbygningsklasse er beskrevet i [[Overbygning/Prosjektering/Generelle_tekniske_krav#Overbygningsklasser]]. Her er også de enkelte overbygningsklasser beskre­vet.
+
+a) '''Hastighet i kurver:''' <label id="overbygning_hastighet_1">Hastigheten i en kurve skal ikke være større enn:
+<center>
+<math>V = 0,291 \cdot\sqrt{R\left(h +I_{\text{maks}}\right)}</math>&nbsp; [km/h] &nbsp;&nbsp;(5)
+</center></label>
+# Hvis ligning 5 i tilfeller med falsk overhøyde gir lavere verdi enn 20 km/h gjelder ''V'' = 20 km/h.
+
+b) '''Hastighet i overgangskurver:''' Hastigheten i en overgangskurve skal ikke være større enn den minste av hastighetene gitt av rampestignings­hastighet (formel 6) og rykk (formel 7):
+
+Største hastighet av hensyn til rampestigningshastighet:
+<center>
+<math>V =\frac{\left(\frac{{\text{d}h}}{\text{d}t}\right)_{\text{maks}}\cdot 3,6\cdot L}{h_2-h_1}</math>&nbsp; [km/h] &nbsp;&nbsp;(6)
+</center>
+
+Største hastighet av hensyn til rykk:
+<center>
+<math>V =\frac{\left(\frac{{\text{d}I}}{\text{d}t}\right)_{\text{maks}}\cdot 3,6\cdot L}{I_2-I_1}</math>&nbsp; [km/h], &nbsp;&nbsp;(7)
+</center>
+
+der L er overgangskurvens lengde [meter], h<sub>1</sub> og h<sub>2</sub> er overhøydene [mm] og I<sub>1</sub> og I<sub>2</sub> er opptredende manglende overhøyde [mm] i sirkelkurvene. Indeks 2 viser alltid til sirkelkurven med minst radius.
+
+{{lærebokstoff|Merk at ligning 7 ikke kan anvendes direkte, siden den manglende overhøyden I er avhengig av hastigheten. Det må derfor itereres.}}
+
+Verdier for I<sub>maks</sub>, (dI/dt)<sub>maks</sub> og (dh/dt)<sub>maks</sub> er gitt i avsnittene [[Overbygning/Prosjektering/Sporets_trasé#Dimensjonerende parametre - Nye baner og linjeomlegginger|Dimensjonerende parametre - nye baner og linjeomlegginger]] og [[Overbygning/Prosjektering/Sporets_trasé#Dimensjonerende parametre - eksisterende baner|Dimensjonerende parametre - eksisterende baner]]. For pluss- og krengetogmateriell på eksisterende baner benyttes [[Overbygning/Prosjektering/Sporets_trasé#Dimensjonerende_parametre_for_plussmateriell|Dimensjonerende parametre for plussmateriell]] og [[Overbygning/Prosjektering/Sporets_trasé#Dimensjonerende_parametre_for_krengetogsmateriell|Dimensjonerende_parametre_for_krengetogsmateriell]].
+
+Største hastighet i sporveksler er gitt i kapittel [[Overbygning/Prosjektering/Sporveksler|7 Sporveksler]]. Se for øvrig avsnittet om [[Overbygning/Prosjektering/Sporets_trasé#Sporveksler_og_sporforbindelser|sporveksler og sporforbindelser]] (dette kap.) vedrørende spesielle bestemmelser for sporveksel 1:9 R190 m og 1:9/R = 300 m.
+
+=== Hastighet i kurver uten overgangskurver ===
+{{lærebokstoff|Kurver uten overgangskurver forekommer både i vanlige spor og i sporforgreninger, hvor sporvekslenes avvikende spor tilstøter rettlinjet spor eller kurve.}}
+
+Dette avsnittet inneholder ikke krav, kun metoder for å oppfylle kravene gitt i avsnittet [[#Kurver uten overgangskurver|kurver uten overgangskurver]].
+
+'''Rettlinje - sirkelkurve:'''
+
+Hastigheten i sirkelkurve som tilstøter rettlinje beregnes med formel 5 der I<sub>maks</sub> ikke overstiger verdien gitt i krav a) i [[#Kurver uten overgangskurver|kurver uten overgangskurver]].
+
+'''Sirkelkurver med felles kurvepunkt:'''
+
+* Hastighet i sirkelkurven) beregnes med formel 5 uten noen spesielle restriksjoner.
+* Ved ensrettede kurver uten mellomliggende rettlinje oppfylles krav a) i [[#Kurver uten overgangskurver|kurver uten overgangskurver]] ved å ikke overstige hastigheten beregnet med formel 8 nedenfor.
+* Ved motsattrettede kurver uten mellomliggende rettlinje oppfylles krav a) i [[#Kurver uten overgangskurver|kurver uten overgangskurver]] ved å ikke overstige hastigheten beregnet med formel 9 nedenfor.
+
+'''Sirkelkurver med mellomliggende rettlinje:'''
+
+* Dersom lengden av den mellomliggende rettlinjen oppfyller krav b) i [[#Kurver uten overgangskurver|kurver uten overgangskurver]] betraktes sirkelkurvene hver for seg og metoden for ''Rettlinje - sirkelkurve'' (ovenfor) benyttes.
+
+* Dersom lengden ikke oppfyller avstandskravet, benyttes metoden for ''Sirkelkurver med felles kurvepunkt'' (ovenfor).
+
+Det er uheldig dersom ensrettede sirkelkurver har mellomliggende rettlinje mindre enn krav b) i [[#Kurver uten overgangskurver|kurver uten overgangskurver]]. I dette tilfellet er det bedre å ikke ha noen rettlinje.
+
+'''Ved overhøyderampe - alle tilfeller:'''
+
+Hastighet i ramper beregnes med formel 6 der (dh/dt)<sub>maks</sub> er gitt i avsnittet [[#Kurver uten overgangskurver|kurver uten overgangskurver]], krav d). Formelen gjelder også ved falsk overhøyde (negativ h benyttes).
+
+<center>
+<math>V = 3\cdot \sqrt{\frac{R_1\cdot R_2}{R_1-R_2}}</math>&nbsp; [km/h] &nbsp;&nbsp;(8)
+</center>
+
+<center>
+<math>V = 3\cdot \sqrt{\frac{R_1\cdot R_2}{R_1+R_2}}</math>&nbsp; [km/h] &nbsp;&nbsp;(9)
+</center>
+
+I beregningsformlene antas det at begge radiene er positive og ''R''<sub>1</sub> > ''R''<sub>2</sub>.
+
+=== Hastighet i stigning/fall og vertikalkurver ===
+
+
+{{lærebokstoff|Største tillatte hastighet i fall er regulert av STY-602159 ''Strekningsbeskrivelse for Jernbaneverkets nett del 2, strekningsoversikt m.m'' i Styringssystemet.}}
+
+
+Største tillatte hastighet i høybrekk på grunn av vertikalkurvaturens radius bestem­mes av <xr id="tab:Krav til vertikalkurver for eksisterende baner" /> (krav a) i avsnitt [[#Vertikalkurver|Vertikalkurver]]). Omforming av formlene i tabellen gir:
+<center>
+<math>V = \frac{R_v}{20}-25 \;\;</math>  [km/h] når  R<sub>v</sub> < 3125 meter
+</center>
+<center>
+<math>V = \frac{R_v}{100}+100</math> [km/h] når  R<sub>v</sub> > 3125 meter
+</center>
+
+== Sporavstander ==
+
+=== Sporavstand på linjen ===
+
+a) '''Sporavstand på dobbelt- eller flersporede strekninger:''' Sporavstanden (Sp) på dobbeltsporede eller flersporede strekninger skal ikke være mindre enn som gitt i <xr id="tab:Minste sporavstander på linjen, nye baner" /> og <xr id="tab:Minste sporavstander på linjen, eksisterende baner" />.
+
+<figtable id="tab:Minste sporavstander på linjen, nye baner">
+{| class="wikitable"
+|+ Minste sporavstander<sup>1)</sup> på linjen, nye baner
+! width=250 | Radius [m]
+! width = 200 | Sp [m]
+|- align="center"
+| ''R'' < 350
+| 4,70
+|- align="center"
+| 350 < ''R'' < 500
+| 4,68
+|- align="center"
+| 500 < ''R'' < 600
+| 4,66
+|- align="center"
+| 600 < ''R'' < 1000
+| 4,64
+|- align="center"
+| 1000 < ''R'' < 4000
+| 4,60
+|- align="center"
+| 4000 < ''R'' < 5000
+| 4,56
+|- align="center"
+| ''R'' > 5000
+| 4,40
+|}
+</figtable>
+
+<figtable id="tab:Minste sporavstander på linjen, eksisterende baner">
+{| class="wikitable"
+|+ Minste sporavstander<sup>1)</sup> på linjen, eksisterende baner
+! width =250 | Radius [m]
+! width = 200 | Sp [m]
+|- align="center"
+| ''R'' < 250
+| 3,95 + 75/R
+|- align="center"
+| ''R'' ≥ 250
+| 4,25
+|}
+</figtable>
+1) Kurveutslag er inkludert i sporavstanden.
+
+For hastigheter mellom 200 og 250 km/h i dobbeltsporet tunnel bestemmes sporavstanden i henhold til [[Underbygning/Prosjektering og bygging/Profiler og minste tverrsnitt#Normalprofil for tunneler]]
+
+
+=== Sporavstand på stasjoner ===
+
+a) '''Sporavstand på stasjoner:''' Sporavstanden (Sp) der rullende materiell hensettes og der drifts­oppgaver i forbindelse med det rullende materiell utføres skal være minst 4,70 meter. Det regnes ikke med kurveutslag.
+# Der det skal tas hensyn til plassering av master, gjerder o.l. er det behov for større sporavstander, jamfør [[Underbygning/Prosjektering_og_bygging/Profiler_og_minste_tverrsnitt#Master_og_andre_gjenstander_ved_siden_av_sporet]].
+# Der det er to eller flere spor mel­lom to plattformer skal det tas hensyn til mulig­heten for å plassere et gjerde mellom sporene over en lengde av minst 50 m forbi platt­formendene.
+# Behov for større sporavstander kan også oppstå på grunn av objekter som kabelkanaler, kummer o.l., jamfør [[Felles_elektro/Prosjektering_og_bygging/Kabellegging_og_kabelkanaler]].
+
+== Vedlegg ==
+
+[[Overbygning/Prosjektering/Sporets trasé/Vedlegg/Traseringstabeller for nye baner og linjeomlegginger|Traseringstabeller for nye baner og linjeomlegginger]]
+
+[[Overbygning/Prosjektering/Sporets trasé/Vedlegg/Traseringstabeller for eksisterende baner|Traseringstabeller for eksisterende baner]]
+
+[[Overbygning/Prosjektering/Sporets trasé/Vedlegg/Traseringstabeller for nye persontrafikkbaner|Traseringstabeller for nye persontrafikkbaner]]
+
+
+[[Category:Overbygning|530]]
+[[Category:Prosjektering]]
+

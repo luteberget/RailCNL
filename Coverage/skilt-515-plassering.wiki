@@ -1,0 +1,45 @@
+__NUMBEREDHEADINGS__
+= Hensikt og omfang =
+De generelle tekniske krav i dette regelverket er et minimum sett av krav til skilt, merker og stolper som skal oppfylles for å ivareta drifts- og personsikkerhet ved alle jernbaneanlegg.
+
+== Generelle krav == 
+=== Utførelse ===
+{{lærebokstoff|For å gjøre skilt, merker og stolper bedre synlig også i mørke, er de fleste av dem utstyrt med såkalt retroreflekterende folie/materiale. Graden av retrorefleksjon deles inn i tre klasser, der den øverste klassen (klasse 3) gir en relativt overlegen refleks vha. mikroprismer i overflaten.}}
+
+<label id="skilt1">På jernbaneskilt er det naturlig å skille mellom høyest mulig og en lavere refleksevne.</label> Dette fremgår av tegningen for det enkelte skilt.
+
+<label id="skilt2">For å unngå speilrefleks, bør skilt og merker ikke settes opp vinkelrett (90º) på sporet, men dreies 4º ut.</label>
+
+=== Behandling ===
+Uriktig behandling, både under transport og oppsetting, kan føre til skader som nedsetter skiltenes/merkenes levetid. Refleksbelegget må behandles varsomt, det vil si at:
+* <label id="skilt3_a">Innpakningen bør beholdes på også under lagring og transport.</label>
+* <label id="skilt3_b">Under lagring bør skilt/merker/stolper stå i reoler og skilles fra hverandre med papp eller bord.</label>
+* <label id="skilt3_c">Under oppsetting skal skilt og merker ikke legges mot bakken uten beskyttelse.</label>
+<label id="skilt4">Eventuelle skader/feil på leverte skilt/merker/stolper skal registreres ved mottakelsen og reklamasjon sendes leverandør.</label>
+
+=== Plassering ===
+Skilt, merker og stolper skal plasseres etter følgende generelle regler:
+* <label id="skilt5">De skal ikke plasseres umiddelbart bak kontaktledningsmast eller annen konstruksjon som hindrer fri sikt til signalet, herunder andre skiltstolper.</label> Det vises til [[Signal/Prosjektering/Lyssignal]] for plassering av signalapparater og [[Underbygning/Vedlikehold/Vegetasjonskontroll i sideterreng]] for vegetasjonskontroll/sikt til sporet fra tog.
+* På kontaktledningsmaster skal det kun monteres skilt som vedkommer ledningsanlegget, jf. § 75.19 [FSE]. Skilt skal plasseres slik at de ikke gjør det lett å klatre i mastene. Spornummerskilt og lignende kan monteres i åk dersom dette godkjennes av Driftsleder og åkene er dimensjonert for ekstralaster fra skilt (vind og vekt). Skilt skal monteres slik at galvanisering ikke skades.
+* De skal plasseres slik at de ikke kommer i konflikt med kravet til minste tverrsnitt.
+* På strekninger med mer enn to spor, plasseres skilt som gjelder for de to ytterste spor som på dobbeltsporet strekning.
+* To eller flere spor på strekning med fjernstyring og utbygd ATC er å betrakte som uavhengige enkeltspor og skal skiltes for begge kjøreretninger på alle spor.
+* Avstand fra signal 68 D «Markeringsmerke» til plasseringspunkt for signal 68 A «Nedsatt kjørehastighet» og signal 69 A «Midlertidig kjørehastighet» beregnes etter bestemmelsene i [[Signal/Prosjektering/ATC/Målavstandstabeller]].
+
+=== Prosjektering ===
+a) '''Dokumentasjon:''' For nye baner og omskilting av eksisterende baner skal det utarbeides en fullstendig skiltplan. 
+# Utførelse: Skiltplanen skal både utarbeides på skjematiske sporplaner og oppføres tabellarisk, jf. Vedlegg a: Skiltplaner. 
+# Utførelse: Tabellarisk del av skiltplanen skal inneholde opplysninger om skiltets utforming, plassering og eventuelle anmerkninger.
+# Utførelse: Skiltplanen skal inneholde alle aktuelle skilt fra gruppen «Skilt for kjørende personell».  
+
+b) '''Dokumentasjon:''' For mindre eller særskilte prosjekter kan det utarbeides en ufullstendig skiltplan.
+# Utførelse: Skiltplanen skal merkes slik at det tydelig fremgår at det ikke er en fullstendig skiltplan. 
+
+c) '''Tverrfaglig kontroll:''' Tverrfaglig kontroll skal dokumenteres på selve tegningene i alle trinn i prosessen.
+
+=== Godkjenning/ansvar ===
+Bane NOR, Trafikk godkjenner planer for plassering av skilt, merker og stolper på nye baner og linjeomlegginger på eksisterende baner. Dette gjelder også planer for endringer av permanent skilting for eksisterende baner.
+Infrastruktureier er ansvarlig for oppsetting og vedlikehold av skilt, merker og stolper på eksisterende strekninger.
+
+== Vedlegg ==
+[https://trv.jbv.no/PDF/Skilt/Vedlegg/Eksempel%20på%20skiltplan%20tabell.xls Vedlegg a: Skiltplan, tabell (xls)][https://trv.jbv.no/PDF/Skilt/Vedlegg/Eksempel%20på%20skiltplan%20tabell.ods (ods)]

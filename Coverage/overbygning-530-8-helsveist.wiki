@@ -1,0 +1,130 @@
+__NUMBEREDHEADINGS__
+=Hensikt og omfang=
+{{lærebokstoff|Kapitlet fastlegger de sportekniske krav til et helsveist spor. Et helsveist spor er et sporavsnitt hvor skinnene er sveist sammen til kontinuerlige skinnestrenger uten skjøter. Et helsveist spor eliminerer skjøter, noe som medfører mindre vedlikeholdskostnader og bedre komfort for passasjerene.}}
+
+
+{{lærebokstoff|Skinnene forandrer lengde med temperaturen. I et spor med laskede skinneskjøter (kortskinnespor) skjer lengdeforandringene over hele skinnens lengde. I et helsveist spor kan lengdeforandringer bare skje i sporets pustepartier i hver ende av sporet, mens skinnene i den sentrale del av sporet er helt hindret i å bevege seg. Som følge av at lengdeforandring ikke er mulig vil det bygges opp store aksialkrefter i skinnene. Lengden av pustepartiene er avhengig av friksjonsmotstanden i laskeskjøtene og motstanden mot lengdeforskyvning ved hver sville innenfor pustepartiene. Jo større disse motstander er samlet, desto kortere er pustepartiene.}}
+
+
+{{lærebokstoff|Avhengig av sportype og tilstand (skinner, sviller, befestigelse og ballast) kan man regne med pustelengder på mellom 50 og 100 m. For at spor skal regnes som helsveist, må derfor skinnelengden teoretisk være minst 2x50 m <nowiki>=</nowiki> 100m.}}
+
+a) Av hensyn til de store krefter som kan opptre i spor med større skinnelengder enn 40 - 50 m, skal også slike spor konstruksjons , vedlikeholds og sikkerhetsmessig betraktes som helsveist spor.
+
+=Krav=
+
+==Hovedspor==
+De store krefter som kan forekomme i et helsveist spor stiller strenge krav til sporets konstruksjon. For å sikre at sporet til en hver tid er sikkerhetsmessig forsvarlig, må følgende være oppfylt:
+
+===Varig utfesting===
+a) Helsveist spor bør være varig utfestet. 
+
+b) Ved fornyelse eller nybygging skal G-VUL være gjennomført før sporet sluttsveises, se [[Overbygning/Prosjektering/Utfesting og fastmerkenett#Geodetisk varig utfesting av linjen|Overbygning/Prosjektering/Utfesting og fastmerkenett]].
+
+===Minste kurveradius===
+a) <label id="overbygning_helsveist_1">Minste kurveradius for helsveist med betongsviller skal være 250 m.</label>
+
+b) a) <label id="overbygning_helsveist_2">Minste kurveradius for helsveist med tresviller skal være 300 m.</label>
+
+===Ballast===
+a) <label id="overbygning_helsveist_3">Ballasten skal på linjen og i hovedspor på stasjoner være fullverdig grovpukk (av størrelse 31,5 - 63 mm).  </label>
+
+b) Ballastprofilet skal være i henhold til bestemmelsene i [[Overbygning/Prosjektering/Ballast]].
+
+===Sviller===
+
+====Svilletype====
+a) <label id="overbygning_helsveist_4">Svillene skal være betongsviller eller tresviller av type X. </label>
+
+====Svilleavstand====
+a) <label id="overbygning_helsveist_5">Svilleavstanden skal ikke være større enn 650 mm i rettlinjet spor og i kurver med radier større eller lik 500 m. </label>
+
+b) <label id="overbygning_helsveist_6">I kurver med radier mindre enn 500 m skal svilleavstanden ikke være større enn 600 mm.</label>
+
+c) <label id="overbygning_helsveist_7">Ved sporombygging og nyanlegg av helsveist spor skal svilleavstanden ikke være større enn 600 mm.</label>
+
+===Befestigelse===
+a) Befestigelsen skal være av fjærende type med stor og varig motstandsevne mot langsgående krefter og med stor vridningsstivhet.
+
+b) Følgende skinnebefestigelser kan anvendes: Hey Back, Pandrol PR, Pandrol e, Pandrol Fastclip, Vossloh K, Vossloh Skl, Nabla RNTN1. 
+
+c) All befestigelse skal ha friksjonsøkende mellomlegg mellom skinne og underlag.
+
+d) For befestigelse på bruer skal regler i [[Overbygning/Prosjektering/Spor på bruer#Befestigelse|Overbygning/Prosjektering/Spor på bruer]] følges.
+
+===Skinner===
+a) Alle skinneprofiler kan helsveises. 
+
+b) Skinnene skal ikke ha synlige defekter, rissdannelser eller brente laskehull.
+
+====Sveisemetoder====
+a) Skinnene kan sveises sammen med følgende metoder:
+
+*Stasjonær elektrisk motstandssveising
+*Mobil elektrisk motstandssveising
+*Aluminiotermisk skjøtsveising
+
+b) Ved prosjektering av nye spor skal det legges vekt på å minimere antall aluminiotermisk sveiste skjøter i sporet. 
+
+c) På fri linje bør antall aluminiotermisk sveiste skjøter ikke overstige 100 pr. 5000 m spor (begge skinnestrenger og isolerte skjøter medregnet).
+
+====Minste avstand mellom sveiste skjøter====
+a) Minste avstand mellom to sveis skal ikke være mindre enn verdier i <xr id="tab:Minste avstand mellom to sveis" />.  Kravene gjelder alle typer sveiste skjøter samt påleggsveis. 
+
+b) Alle typer skinnekapp som skal legges inn i spor skal være lengre enn minste avstand gitt i <xr id="tab:Minste avstand mellom to sveis" />.
+
+<figtable id="tab:Minste avstand mellom to sveis">
+{| class="wikitable"
+|+ Minste avstand mellom to sveis
+|-
+| width="300"|Spor med sth > 160 km/h || width="50"|<center>10 m</center>
+|-
+| Spor med 40 km/h < sth ≤ 160 km/h || <center>5 m</center>
+|-
+| Spor med sth ≤ 40 km/h || <center>3 m</center>
+|}
+</figtable>
+
+====Minste avstand mellom sveis og hull====
+a) Avstanden mellom skinneenden og nærmeste hull skal være min. 120 mm. Dette gjelder alle typer hull, også boringer for elektrisk forbindelse. 
+
+b) Ved sveising av tidligere lasket spor skal laskekammersonene kappes bort,eller sveises med sveisemetoden ET LsV forutsatt at laskekammersonen er fri fra skader.
+
+====Overgang mellom skinneprofiler====
+a) Overgang mellom skinneprofiler skal utføres enten ved å bruke spesielle overgangsskinner eller ved å sveise med spesielle overgangsformer.
+
+b) For overganger fra 60E1 eller 60E2 til mindre profil skal det benyttes overgangsskinne i hovedspor.
+
+c) Ved permanent overgang mellom skinneprofiler 60E1 og 49E1 i hovedspor skal det benyttes et mellomparti med skinneprofil 54E3. Mellompartiet skal ha en lengde på minimum 20 meter. 
+
+d) For sidespor og midlertidige profiloverganger i hovedspor kan overgangsskinne 60E1/49E1 benyttes.
+
+e) Overganger mellom  skinneprofiler 54E3 og 49E1 skal sveises med bruk av overgangsformer.
+
+For tilgjengelige overgangsskinner, se [[Overbygning/Prosjektering/Sporkonstruksjoner#Overgangsskinner|Sporkonstruksjoner#Overgangsskinner]]. For tilgjengelige overgangsformer se [[Overbygning/Bygging/Helsveist spor/Vedlegg/Utstyrsliste for thermit skinnesveising#Sveiseformer|Utstyrsliste for thermit skinnesveising#Sveiseformer]]
+
+f) Overgang til annet skinneprofil skal ikke ligge nærmere enn 10 meter fra overgang mellom sviller av ulike materialer.
+
+g) Overgang til et annet skinneprofil i et helsveist spor bør ligge i rettlinjet spor og skal ikke legges i kurver med radius mindre enn 1500 m. 
+
+h) Overgang til annet skinneprofil skal ikke ligge nærmere enn 100 m fra bruer.
+
+===Isolerte skjøter===
+Se [[Overbygning/Prosjektering/Sporkonstruksjoner#Isolerte skjøter|Overbygning/Prosjektering/Sporkonstruksjoner/Isolerte skjøter]]
+
+===Sporveksler===
+a) Sporveksler skal helsveises etter prosedyrer gitt i [[Overbygning/Bygging/Sporveksler#Sveising|Overbygning/Bygging/Sporveksler]].
+
+==Spor på bruer==
+a) I et helsveist spor skal skinnene være sveist på bruer. 
+
+b) I tresvillespor skal det settes på skinnestoppere mot trykk  og strekkrefter på en lengde av ca. 30 m til hver side av alle bruer. 
+
+For krav til sporkonstruksjoner på bruer vises til [[Overbygning/Prosjektering/Spor på bruer]].
+
+==Øvrige spor==
+a) For øvrige spor kan det andvdendes ballast av finpukk eller eventuelt maskingrus og svilleavstand opp til 750 mm. 
+
+b) Kurver med radius ned til 200 m kan helsveises. 
+
+Det stilles ikke krav om bortkapping av skinnenes laskekammersoner.
+

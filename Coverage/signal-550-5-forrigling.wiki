@@ -1,0 +1,1105 @@
+__NUMBEREDHEADINGS__
+
+= Hensikt og omfang =
+Dette kapitlet beskriver krav til forriglingsutrustningen for sikringsanlegg. 
+
+<figure id="Systemoversikt signalanlegg">
+[[Bilde:JD550 05 fig001.png|thumb|center|600px|<caption>Systemoversikt signalanlegg</caption>]]
+</figure>
+
+<figure id="Systemoversikt signalanlegg ETCS L2">
+[[Fil:JD550 05 fig001b.svg||thumb|center|600px|<caption>Systemoversikt signalanlegg ETCS L2</caption>]]
+</figure>
+
+Krav som kun gjelder ETCS-L2 er merket med L2. Dersom L2 står i forbindelse med overskrift for delkapittel, er hele delkapittelet kun gyldig for trafikkstyring av strekning utrustet med ETCS-L2. Dersom et enkeltkrav er merket med L2, så er det kun dette kravet som er spesifikt for ETCS-L2. Krav som kun gjelder infrastruktur utstyrt med forriglingsutrustning som styrer hovedsignaler og eventuelt ATC, er på tilsvarende måte merket med NSS. Der hverken L2 eller NSS er angitt, så gjelder kravene universelt.
+
+Med kjøretillatelse menes i Teknisk regelverk kjøretillatelse gitt av forriglingsutrustningen på bakgrunn av oppfylte tekniske krav, og skal ikke forveksles med kjøretillatelse gitt av togleder/togekspeditør.
+
+= Definisjoner =
+==L2==
+
+Standardisert teknisk system for signalering og trafikkstyring som består av ETCS nivå 2 og GSM-R (klasse A-systemer). Systemet bruker ombordsignalering og er i henhold til TSI-CCS, ETCS level 2.
+
+{{lærebokstoff|Krav som bare er gjeldende for klasse A-systemer er merket med dette.
+Der krav ikke er merket gjelder kravet for begge systemene.}}
+
+==NSS==
+Nasjonalt signalsystem med forriglingsutrustning som styrer optiske hovedsignaler og eventuelt ATC (klasse B).
+
+{{lærebokstoff|Tilsvarer konvensjonelle signalanlegg, og krav som bare gjelder for Klasse B-systemer er merket med dette. Der krav ikke er merket gjelder kravet begge systemene.}}
+
+== Togvei/skiftevei ==
+
+{{lærebokstoff|En del av et spor, som er bestemt for å kjøre tog/skift, avgrenset av et startpunkt og et sluttpunkt.}}
+
+=== Sikret togvei ===
+En togvei er sikret når forriglingsutrustningen hindrer kjøretillatelser som er fiendtlige til den sikrede togveien. Betingelser for kjøretillatelse for kjøring med særlig ansvar (Staff responsible (SR)) i L2 er oppfylt.
+
+=== Fastlagt togvei ===
+En fastlagt togvei er en sikret togvei hvor det er kontrollert at alle betingelser for sikker togframføring  for den fastlagte togveien er tilstede. Betingelser for kjøretillatelse (NSS), og for kjøring med full overvåkning (Full supervision (FS)) i L2 er oppfylt.
+
+=== Delvis fastlagt togvei ===
+En delvis fastlagt togvei er en sikret togvei hvor det er kontrollert at alle betingelser for sikker togframføring, unntatt frie sporavsnitt, for den fastlagte togveien er tilstede. Betingelser for kjøretillatelse for kjøring med sikthastighet (On sight (OS)) i L2 er oppfylt.
+
+===Fiendtlig togvei/skiftevei===
+Togvei/skiftevei som ikke samtidig kan være fastlagt med annen togvei/skiftevei på grunn av fare for sammenstøt.
+
+===Motrettede togveier/skifteveier===
+Togveier/skifteveier med sluttpunkt i retning mot hverandre i samme spor.
+
+===Parallelle togveier/skifteveier===
+Togveier/skifteveier med sluttpunkt parallelt mot middel i samme sporveksel.
+
+== Midlertidig skifteområde (L2)==
+
+Område som frigis av togleder, der kjøretøy kan gå i skiftemodus (SH-modus).
+
+{{lærebokstoff|Tilsvarer område frigitt for lokal skifting i (NSS). 
+
+Svarer til Temporary Shunting Area (TSA) i ETCS-terminologi.
+}}
+
+== Område frigitt for lokal skifting ==
+Et geografisk avgrenset område beregnet for skiftebevegelser uten skifteveier. Grensene er sikret med dekningsgivende objekter, og sporveksler, avsporingstunger og sporsperrer i området må betjenes lokalt.
+ {{lærebokstoff|Skiftebetjeningen er ansvarlig for å betjene sporveksler, avsporingstunger og sporsperrer.}}
+
+== Arbeidsområde ==
+Et geografisk avgrenset område beregnet for arbeid uten skifte- eller togbevegelser. Grensene er sikret med dekningsgivende objekter, og sporveksler, avsporingstunger og sporsperrer i området kan betjenes lokalt.
+{{lærebokstoff|Et arbeidsområde kan benyttes ved arbeid i og ved spor. Grensen for et arbeidsområde går ved signaler eller mellom to koblede sporveksler.}}
+
+== Sikkerhetssone ==
+En funksjon i forriglingsutrustningen som sikrer en definert strekning etter sluttpunktet for en kjøretillatelse.
+
+{{lærebokstoff| Sikkerhetssonen lengde skal være ≥ sikkerhetsavstanden.
+
+Avhengighetene som inngår i sikkerhetssonen beskrives i forriglingstabell/togveiliste.
+
+}}
+
+===Hinderfri del av sikkerhetssone===
+
+Den delen av en sikkerhetssone som må være fri for kjøretøy og andre hindre for at tog-/skiftevei skal kunne fastlegges. 
+
+{{lærebokstoff|Skal hindre sammenstøt hvis sluttpunktet utilsiktet passeres av tog eller skift som ikke klarer å stoppe før sluttpunktet for togvei/skiftevei.}}
+
+== Dekning ==
+=== Dekningsgivende objekt===
+
+a) Følgende objekt kan være dekningsgivende:
+
+# Hovedsignal
+# Dvergsignal
+# Sporveksel
+# Sporsperre
+# Avsporingstunge
+# Signal E35 Stoppskilt
+
+b) Et hovedsignal skal vise signal ”Stopp” for å være dekningsgivende.
+
+c) Et dvergsignal skal vise signal ”Kjøring forbudt” for å være dekningsgivende. 
+
+d) En sporveksel skal være i kontroll og låst i den stillingen som ikke leder inn til området det gis dekning for for å være dekningsgivende.
+
+e) En sporsperre skal være i kontroll og låst i pålagt stilling for å være dekningsgivende.
+
+f) En avsporingstunge skal være i kontroll og låst i den stillingen som ikke leder inn til området det gis dekning for for å være dekningsgivende.
+
+g) Et stoppskilt er dekningsgivende når det ikke er gitt kjøretillatelse forbi stoppskiltet.
+
+== Illustrasjoner ==
+
+{{lærebokstoff|<figure id="hovedsignal eller stoppskilt">
+[[Fil:JD550 05 fig000.svg|left|100px|]]
+</figure> Symbolet illustrerer hovedsignal eller Stoppskilt.
+
+
+}}
+
+=Sikkerhetsavstand=
+
+Minste tillatte avstand mellom sluttpunkt for en kjøretillatelse og et sporområde sikret for annen aktivitet
+
+{{lærebokstoff|Annen aktivitet kan være annen tog- eller skiftevei, et område for lokal skifting/skifteområde eller arbeidsområde
+ }}
+
+
+Hvis det er fall mellom sluttpunktet for en kjøretillatelse og sporområdet som er sikret for annen aktivitet, skal det vurderes spesielt med hensyn til om sikkerhetsavstandens lengde er stor nok. Samtidige togbevegelser tillates ikke ved fall som overstiger 12,5 ‰ mellom sluttpunkt for kjøretillatelse og farepunkt. Se også [[Overbygning/Prosjektering/Sporets_trasé#Fall_og_stigninger]]. 
+
+Sikkerhetsavstander er gitt i <xr id="tab:Sikkerhetsavstander" />.
+<figtable id = "tab:Sikkerhetsavstander ">
+{| class="wikitable" style="text-align:center"
+|+ Sikkerhetsavstander
+|-
+| rowspan="2"|              ||rowspan="2"|'''Kjøring mot sluttpunkt''' || colspan="2"|'''Sikkerhetsavstander [m] mot flanke eller motrettet''' ||colspan="2"|'''Sikkerhetsavstander [m] mot'''||colspan="2"|''' Sikkerhetsavstander [m] mot parallell<ref name="Parallell"/> 
+|-
+| '''Togvei''' || '''Skiftevei''' || '''Lokalområde''' ||'''Arbeidsområde'''|| '''Togvei''' || '''Skiftevei''' 
+|-
+| rowspan="2"|'''Bak sluttpunkt ved togvei (NSS) ''' ||  på stasjon|| 250<ref name="Samtidigheter1"/><ref name="Samtidigheter2"/> ||250<ref name="Samtidigheter1"/><ref name="Samtidigheter2"/> ||   250 || 250  ||150 || 150 
+|-
+| på linjen||250|| 250|| 0 || 0 ||-|| - 
+|-
+| rowspan="2"|'''Bak sluttpunkt ved togvei FS (L2) ''' || med frislippshastiget 40 km/h<ref name="Samtrafikk"/>|| 150 || 150 || 150|| 150||150||150
+|-
+|  med frislippshastiget 20 km/h<ref name="Samtrafikk"/>|| 50|| 50 || 50||50|| 50 ||50
+|-
+| '''Bak sluttpunkt ved togvei OS/SR (L2)''' || -|| TBD|| TBD || TBD ||TBD|| TBD||TBD
+|-
+| '''Bak sluttpunkt ved skiftebevegelser''' || -|| 150<ref name="Motrettet"/>|| 0 || 0 ||0|| 150||0
+|}
+</figtable>
+<references>
+<ref name="Motrettet"> Ved motrettede bevegelser vil alltid den mest restriktive være retningsgivende. Se <xr id = "fig:Motrettede bevegelsesområder"/>.</ref>
+<ref name="Parallell"> Ved parallelle togbevegelser stilles det krav til den totale sammenlagte avstanden fra stoppunktene til middel, se <xr id = "fig:parallelle"/>.</ref>
+<ref name="Samtidigheter1"> Kan i enkelte tilfeller reduseres til 200m se <xr id = "fig:samtidige200"/>.</ref> 
+<ref name="Samtidigheter2"> Kan i enkelte tilfeller reduseres til 150m Krever virksom ATC. Se <xr id = "fig:samtidige150II"/> og <xr id = "fig:safmtidige150III"/>.</ref>
+<ref name="Samtrafikk"> På baner med blandet trafikk skal sikkerhetsavstanden prosjekteres slik at den er tilstrekkelig for alle tog som kan trafikkere strekningen.
+</references>
+
+= Forriglingskrav =
+== Togvei ==
+=== Fastlegging av togvei og sikkerhetssone ===
+==== Togvei ====
+
+<figure id="Togvei, sikkerhetssone og forriglingsobjekter">
+ [[Fil:JD550 05 fig002bb.svg|thumb|center|600px|<caption>Togvei, sikkerhetssone og forriglingsobjekter</caption>]]
+</figure>
+
+
+{{lærebokstoff|Sporveksel 1 er motrettet sporveksel som inngår i togveien, og sporveksel 2 er medrettet sporveksel i sikkerhetssonen.}}
+
+a) For at en togvei skal kunne fastlegges, skal følgende sporavsnitt være frie:
+
+# <label id="signal_forrigling_togvei_1">Sporavsnitt som inngår i togveien.</label>
+# <label id="signal_forrigling_togvei_2">Sporavsnitt mellom togveien og dekningsgivende objekt for togveien, se <xr id="fig:Sporavsnitt i forbindelse med togvei"/>.</label>
+
+'''Unntak til punkt 2:'''
+
+# Sporavsnittet mellom togveien og dekningsgivende signal kan være belagt av tog som har løst ut medrettet togvei når togets første aksel er innenfor det signalet som er dekningsgivende for togveiens flanke.
+
+<figure id="fig:Sporavsnitt i forbindelse med togvei">
+[[Bilde:JD550 05 fig003b.svg|thumb|center|600px|<caption>Sporavsnitt i forbindelse med togvei</caption>]]
+</figure> 
+
+{{lærebokstoff|Sporavsnittene 1, 2 og 3 er sporavsnitt som inngår i togveien. Sporavsnitt 1 omfatter sporvekselen inn til minimum 5 meter innenfor middel i begge spor. Sporavsnittet 4 er sporavsnitt mellom togveien og dekningsgivende objekt for togveien.}}
+
+b) For at en togvei skal kunne fastlegges, skal sporveksler og avsporingstunger som inngår i togveien være kontrollert i korrekt posisjon.
+
+c) For at en togvei skal kunne fastlegges, skal en sporsperre som inngår i togveien være kontrollert i avlagt posisjon.
+
+d) For at en togvei skal kunne fastlegges, skal en kontrollåst sporveksel foran togveiens begynnelsespunkt være kontrollert i korrekt posisjon.
+
+'''Unntak:'''
+
+# Gjelder ikke når togveien fram til begynnelsespunktet først løses ut etter at dette er passert, se <xr id="fig:Utlosning av togvei4"/>.
+
+e) For at en togvei skal kunne fastlegges, skal den ikke ha noen felles del med en annen togvei, skiftevei, arbeidsområde eller område frigitt for lokal skifting.
+
+'''Unntak:'''
+
+# Togveien kan ha felles del med en skiftevei som inngår i togveien.
+
+f) For at en togvei skal kunne fastlegges, skal den ikke ha noen felles del med sikkerhetssonen til en annen tog- eller skiftevei.
+
+'''Unntak:'''
+
+# Når kjøretillatelse er gitt, kan den togveien det er gitt kjøretillatelse for ha felles del med sikkerhetssonen til foregående tog- eller skiftevei.
+
+g) For at en togvei skal kunne fastlegges, skal den ha en sikkerhetssone som tilfredsstiller kravene beskrevet i [[Signal/Prosjektering/Forriglingsutrustning#Sikkerhetssone|Signal/Prosjektering/Forriglingsutrustning]].
+
+h) (NSS) For at en togvei skal kunne fastlegges, skal den ha et hovedsignal eller et dvergsignal i sluttpunktet som viser gyldig signalbilde.
+
+'''Unntak:'''
+
+# Gjelder ikke togvei inn i buttspor, eller togvei som på annen måte er forkortet. 
+
+i) For at en togvei skal kunne fastlegges, skal et objekt som gir dekning til togveien være dekningsgivende. 
+
+j) For at en togvei skal kunne fastlegges, skal sporveksler, avsporingstunger og sporsperrer som inngår i togveien ikke være frigitt for lokal omstilling.
+
+k) For at en togvei skal kunne fastlegges, skal togveiens begynnelsespunkt ikke være sperret i ”Stopp”.
+
+l) For at en togvei skal kunne fastlegges, skal et sporavsnitt som inngår i togveien ikke være sperret.
+
+==== Sikkerhetssone ====
+
+{{lærebokstoff|Etter en togveis sluttpunkt skal sikkerhetssonen redusere risikoen ved en eventuell feilaktig passering av sluttpunktet når det ikke er gitt kjøretillatelse for videre kjøring.}} 
+
+<figure id="Togvei med sikkerhetssone">
+[[Bilde:JD550 05 fig004b.svg|thumb|center|600px|<caption>Togvei med sikkerhetssone</caption>]]
+</figure>
+
+a) En sikkerhetssone skal ikke ha noen felles del med en annen togvei, skiftevei, arbeidsområde eller område frigitt for lokal skifting i en avstand etter togveiens sluttpunkt som tilsvarer kravene til sikkerhetsavstander gitt i <xr id="tab:Sikkerhetsavstander" />. 
+
+'''Unntak:'''
+
+# Når kjøretillatelse er gitt, kan den tog- eller skifteveien det er gitt kjøretillatelse for ha felles del med sikkerhetssonen til foregående tog- eller skiftevei.
+
+
+b) En sikkerhetssone skal ikke ha noen felles del med annen sikkerhetssone i en avstand etter togveiens sluttpunkt som tilsvarer kravene til sikkerhetsavstander gitt i <xr id="tab:Sikkerhetsavstander" />.
+
+'''Unntak:'''
+
+# Sikkerhetssonen kan ha felles del med annen sikkerhetssone når avstanden mellom sikkerhetssonenes begynnelsespunkt (togveienes sluttpunkt) tilsvarer kravet til sikkerhetssonens lengde.
+
+c) En sikkerhetssone skal være hinderfri i en gitt avstand etter togveiens sluttpunkt. Avstanden er gitt i <xr id="tab:Hinderfri del av sikkerhetssone" />.
+
+<center>
+<figtable id = "tab:Hinderfri del av sikkerhetssone">
+{| class="wikitable" style="text-align:center"
+|+ Hinderfri del av sikkerhetssone
+|-
+! Sikkerhetssonens lengde [m] !! Hinderfri del av sikkerhetssone [m]       
+|-
+|  ≤150  || Hele sikkerhetssonens lengde 
+|-
+|  >150  || ≥ 150 
+|-
+|}
+</figtable>
+</center>
+
+d) I hinderfri del av sikkerhetssonen skal følgende krav oppfylles: 
+# Sporavsnitt skal være fritt
+# Motrettet sporveksel og avsporingstunge skal være kontrollert i sikkerhetssonens retning
+# Kontrollåst sporveksel skal være kontrollert i sikkerhetssonens retning
+# Sporsperre skal være kontrollert i avlagt posisjon
+# Sporveksel, avsporingstunge og sporsperre skal ikke være frigitt for lokal omstilling
+# Sporavsnitt skal ikke være sperret for togvei
+# Objekt som gir dekning for sikkerhetssonen skal være dekningsgivende 
+
+'''Unntak fra punkt 1 - 7:'''
+
+# Kravene gjelder kun fram til hovedsignal eller stoppskilt for motrettet kjøreretning
+
+=== Dekning for togvei og sikkerhetssone ===
+==== Togvei ====
+a) En togvei skal ha dekningsgivende objekt for togveiens flanke.
+
+b) En togvei skal ha dekningsgivende sporsperre, avsporingstunge eller sporveksel mot usikret område når avstanden (A<sub>m</sub>) mellom motrettet sporveksel som leder inn til det usikrede område og togveien er kortere enn 100 meter, se <xr id="fig:Minimumsavstand mellom togvei og motrettet sporveksel mot usikret område"/>.
+
+<figure id="fig:Minimumsavstand mellom togvei og motrettet sporveksel mot usikret område">
+[[Bilde:JD550 05 fig005b.svg|thumb|center|600px|<caption>Minimumsavstand mellom togvei og motrettet sporveksel mot usikret område (eksemplet viser sporsperre som dekningsgivende objekt)</caption>]]
+</figure>
+
+==== Sikkerhetssone ====
+a) En togvei skal ha dekningsgivende sporsperre, avsporingstunge eller sporveksel mot usikret område når avstanden (A<sub>m1</sub> + A<sub>m2</sub>) mellom motrettet sporveksel som leder inn til det usikrede område og sikkerhetssonens begynnelsespunkt (signal (y)) er mindre enn 100 meter, se <xr id="fig:Minimumsavstand mellom sikkerhetssone og motrettet sporveksel mot usikret område"/> og <xr id="fig:Minimumsavstand mellom sikkerhetssonens begynnelsespunkt og motrettet sporveksel mot usikret område"/>.
+
+<figure id="fig:Minimumsavstand mellom sikkerhetssone og motrettet sporveksel mot usikret område">
+[[Bilde:JD550 05 fig006b.svg|thumb|center|600px|<caption>Minimumsavstand (A<sub>m1</sub> + A<sub>m2</sub>) mellom sikkerhetssone og motrettet sporveksel mot usikret område (eksemplet viser sporsperre som dekningsgivende objekt)</caption>]]
+</figure>
+
+<figure id="fig:Minimumsavstand mellom sikkerhetssonens begynnelsespunkt og motrettet sporveksel mot usikret område">
+[[Bilde:JD550 05 fig007b.svg|thumb|center|600px|<caption>Minimumsavstand (A<sub>m1</sub> + A<sub>m2</sub>) mellom sikkerhetssonens begynnelsespunkt og motrettet sporveksel mot usikret område (eksemplet viser sporsperre som dekningsgivende objekt)</caption>]]
+</figure>
+
+b) En sikkerhetssone som avsluttes mot et usikret område skal ha dekning mot sikkerhetssonens ende. Dekning skal utføres med sporveksel, avsporingstunge eller sporsperre.
+
+c) Dersom det i en sikkerhetssone inngår en motrettet sporveksel som leder inn til et usikret område kreves det dekning for sikkerhetssonen. Dekning skal utføres med sporveksel, avsporingstunge eller sporsperre.
+
+=== Utløsing av togvei og sikkerhetssone  ===
+
+a) For at en togvei og togveiens sikkerhetssone skal kunne utløses, skal samtlige krav til utløsing ved togpassasje eller ordre være oppfylt.
+
+==== Utløsing av togvei ved togpassasje ====
+
+a) Utløsing av en togvei, del av togveien eller objekt i en togveien skal kun skje når, se <xr id="fig:Utlosning av togvei1"/> - <xr id="fig:Utlosning av togvei4"/>:
+
+# Innledende sporavsnitt er fritt
+# Avsluttende sporavsnitt er belagt
+# Sporavsnitt foran signal for motrettet kjøreretning (signal (z)) skal være belagt med minimum en aksel (gjelder ikke for del av togvei eller objekt i togvei, se <xr id="fig:Utlosning av togvei2"/>)
+
+'''Unntak til punkt 3:'''
+
+# Gjelder ikke for togvei med sluttpunkt i innkjørhovedsignal eller et innkjørstoppskilt.
+
+
+<figure id="fig:Utlosning av togvei1">
+[[Bilde:JD550 05 fig008b.svg|thumb|center|600px|<caption>Utløsing av togvei (f.eks. innkjørtogvei)</caption>]]
+</figure>
+
+
+<figure id="fig:Utlosning av togvei2">
+[[Bilde:JD550 05 fig009b.svg|thumb|center|600px|<caption>Utløsing av togvei (f.eks. innkjørtogvei)</caption>]]
+</figure>
+
+
+<figure id="fig:Utlosning av togvei3">
+[[Bilde:JD550 05 fig010b.svg|thumb|center|600px|<caption>Utløsing av togvei (f.eks. utkjørtogvei)</caption>]]
+</figure>
+
+
+<figure id="fig:Utlosning av togvei4">
+[[Bilde:JD550 05 fig011b.svg|thumb|center|600px|<caption>Utløsing av togvei (f.eks. togvei på blokkstrekning)</caption>]]
+</figure>
+
+b) Utløsing av togvei eller del av togvei skal kun skje ved korrekt togpassasje, se <xr id="tab:Korrekt togpassasjesekvens for togvei"/>.
+
+{{lærebokstoff|Med korrekt togpassasje for togvei menes at sekvensen til to etter hverandre følgende sporavsnitt kontrolleres som vist nedenfor. Korrekt togpassasje kontrolleres normalt fra og med sporavsnittet foran togveiens begynnelsespunkt, til og med det sporavsnittet som må være belagt for at togveien skal løse ut. I tilfellet vist i <xr id="fig:Utlosning av togvei3"/> kontrolleres ikke sporavsnittet foran togveiens begynnelsespunkt.}}
+
+<center>
+<figtable id = "tab:Korrekt togpassasjesekvens for togvei">
+{| class="wikitable" style="text-align:center"
+|+ Korrekt togpassasjesekvens for togvei
+|-
+| colspan="3"|
+<figure id =Togpassasje>
+[[Bilde:JD550 05 fig012b.svg|600px|center]]
+</figure> 
+|-
+! Tilstand !! Sporavsnitt (a)!! Sporavsnitt (b)       
+|-
+|  1 || Belagt || Fritt
+|-
+|  2 || Belagt || Belagt
+|-
+|  3 || Fritt || Belagt
+|}
+</figtable>
+</center>
+
+==== Utløsing av sikkerhetssone ved togpassasje ====
+
+a) (NSS) Utløsing av sikkerhetssone skal igangsettes når et bestemt punkt i togveien er passert med togets første aksel.
+
+Med bestemt punkt menes normalt at sporavsnittet foran togveiens sluttpunkt er belagt.
+
+b) (NSS) Utløsing av sikkerhetssone skal utføres en bestemt tid etter at utløsingen ble igangsatt, avhengig av avstand (A) fra bestemt punkt i togvei til sluttpunkt, se <xr id = "tab:Utløsingstid for sikkerhetssone"/>. 
+
+c) (L2) Utløsing av sikkerhetssone skal utføres en bestemt tid etter at ombordutrusningen gir beskjed om at toget har stoppet, se <xr id = "tab:Utløsingstid for sikkerhetssone"/>. 
+
+'''Unntak:'''
+
+# Sikkerhetssonen kan utløses umiddelbart dersom det er sikret togvei fra den aktuelle togveiens sluttpunkt 
+
+<center>
+<figtable id = "tab:Utløsingstid for sikkerhetssone">
+{| class="wikitable" style="text-align:center"
+|+ Utløsingstid for sikkerhetssone
+|-
+! Avstand A [m] !! Strekning utstyrt med FATC [s] !! Strekning utstyrt med DATC [s]!! Strekning utstyrt med ETCS L2 [s]
+|-
+| 0 m ≤ A ≤ 350 m || 40 || 50||rowspan="5"| TBD<ref name="Utløsingstid ETCS"/>
+|-
+| 350 m < A ≤ 500 m || 50 || 60
+|-
+| 500 m < A ≤ 750 m || 60 || 70
+|-
+| 750 m < A ≤ 1000 m || 70 || 80
+|-
+| 1000 m < A ≤ 1500 m || 80 || 90
+|}
+</figtable>
+</center>
+<references>
+<ref name="Utløsingstid ETCS"> Tid før Utløsing av sikkerhetssone etter at toget har stoppet. </ref> 
+
+</references>
+
+{{lærebokstoff|Tid fra toget melder at det har stoppet til utløsing av togvei er ennå ikke avklart.}}
+
+d) For at en sikkerhetssone skal kunne utløses, skal togveien som sikkerhetssonen tilhører være utløst.
+
+'''Unntak:'''
+
+# Sikkerhetssonen kan utløses umiddelbart dersom det er sikret togvei fra den aktuelle togveiens sluttpunkt
+
+e) For at en sikkerhetssone skal kunne utløses, skal sporavsnitt i hinderfri del av sikkerhetssonen være fritt.
+
+f) (NSS) For at en sikkerhetssone skal kunne utløses, skal minimum ett av sporavsnittene mellom punktet for igangsetting av Utløsing av sikkerhetssonen og togveiens sluttpunkt være belagt.
+
+==== Utløsing av togvei ved ordre (NSS) ====
+
+a) Utløsing av en togvei skal bare kunne igangsettes når begynnelsespunktet viser signal ”Stopp” eller er mørkt (degradert fra ”Stopp”).
+
+b) Etter at utløsing er igangsatt, skal togveien utløses etter 90 sekunder.
+
+==== Utløsing av togvei ved ordre (L2) ====
+
+a) Utløsing av en togvei skal bare kunne igangsettes når kjøretillatelsen er trukket tilbake.
+
+b) Utløsing av togvei skal kunne skje umiddelbart bare når tilbaketrukket kjøretillatelse er bekreftet fra tog.
+
+c) Hvis bekreftelse av tilbaketrukket kjøretillatelse ikke foreligger, skal togvei ikke løse ut før det har gått 90 sekunder etter at kjøretillatelsen er trukket tilbake.
+
+==== Utløsing av sikkerhetssone ved ordre ====
+
+a) Utløsing av en togvei skal samtidig utløse togveiens sikkerhetssone.
+
+=== Forlengelse av togvei ===
+
+a) En togvei skal kunne forlenges med: 
+
+# En togvei 
+# En skiftevei (NSS)
+
+'''Unntak:'''
+
+# (NSS) En togvei som signaleres med signal ”Kjør med redusert hastighet” samtidig med ”Forsiktig kjøring” og har frittstående dvergsignal som sluttpunkt, skal ikke kunne forlenges før togveiens sikkerhetssone har løst ut.
+
+== Skiftevei ==
+=== Fastlegging av skiftevei og sikkerhetssone ===
+==== Skiftevei ====
+
+a) For at en skiftevei skal kunne fastlegges, skal sporavsnittet mellom skifteveien og dekningsgivende objekt til skifteveien være fritt.
+
+b) For at en skiftevei skal kunne fastlegges, skal sentralstilte sporveksler og avsporingstunger som inngår i skifteveien være kontrollert i korrekt posisjon.
+
+c) For at en skiftevei skal kunne fastlegges, skal sentralstilte sporsperrer som inngår i skifteveien være kontrollert i avlagt posisjon.
+
+d) For at en skiftevei skal kunne fastlegges, skal den ikke ha noen felles del med en togvei, skiftevei eller arbeidsområde.
+
+'''Unntak:'''
+
+# Skifteveien kan ha felles del med en togvei dersom skifteveien inngår i togveien.(NSS)
+# Skifteveien kan ha felles del med motrettet skiftevei til samme spor dersom sporlengden er ≥ 250 meter.
+
+e) For at en skiftevei skal kunne fastlegges, skal den ikke ha noen felles del med sikkerhetssonen til togvei.
+
+'''Unntak:'''
+
+# Skifteveien kan ha felles del med en togveis sikkerhetssone dersom skifteveien forlenger togveien.(NSS)
+
+f) For at en skiftevei skal kunne fastlegges, skal den ha en sikkerhetssone som tilfredsstiller kravene beskrevet i [[Signal/Prosjektering/Forriglingsutrustning#Sikkerhetssone_3|Signal/Prosjektering/Forriglingsutrustning]].
+
+g) For at en skiftevei skal kunne fastlegges, skal skifteveien ha et dvergsignal i sluttpunktet som viser gyldig signalbilde.
+
+'''Unntak:'''
+
+# Gjelder ikke ved skiftevei som slutter i et buttspor, i et usikret område eller dersom skifteveien er begrenset med grensestolpe.
+
+h) For at en skiftevei skal kunne fastlegges, skal et objekt som gir dekning til skifteveien være dekningsgivende. 
+
+i) For at en skiftevei skal kunne fastlegges, skal ingen sporveksler, avsporingstunger og sporsperrer som inngår i skifteveien være frigitt for lokal omstilling.
+
+j) For at en skiftevei skal kunne fastlegges, skal skifteveiens begynnelsespunkt ikke være sperret i ”Kjøring forbudt”
+
+k) For at en skiftevei skal kunne fastlegges, skal et sporavsnitt som inngår i skifteveien ikke være sperret.
+
+==== Sikkerhetssone ====
+
+{{lærebokstoff|Etter en skifteveis sluttpunkt skal sikkerhetssonen redusere risikoen ved en eventuell feilaktig passering av sluttpunktet når dette ikke gir kjøretillatelse.}} 
+
+<figure id="Skiftevei med sikkerhetssone">
+[[Bilde:JD550 05 fig013b.svg|thumb|center|600px|<caption>Skiftevei med sikkerhetssone</caption>]]
+</figure>
+
+a) En sikkerhetssone skal ikke ha noen felles del med en togvei i en avstand etter skifteveiens sluttpunkt som tilsvarer kravene til sikkerhetsavstander gitt i <xr id="tab:Sikkerhetsavstander" />. 
+
+'''Unntak:'''
+
+# (NSS) Sikkerhetssonen kan ha felles del med annen togvei som er sikret fra skifteveiens sluttpunkt. 
+
+b) En sikkerhetssone skal ikke ha noen felles del med en togveis sikkerhetssone i en avstand etter skifteveiens sluttpunkt som tilsvarer kravene til sikkerhetsavstander gitt i <xr id="tab:Sikkerhetsavstander" />.
+
+=== Dekning for skiftevei  ===
+
+a) En skiftevei skal ha dekningsgivende objekt i skifteveiens flanke.
+
+b) En skiftevei skal ha dekningsgivende sporsperre, avsporingstunge eller sporveksel mot usikret område når avstanden (A<sub>m</sub>) mellom motrettet sporveksel som leder inn til det usikrede område og skifteveien er kortere enn 100 meter, se <xr id="fig:Minimumsavstand mellom skiftevei og motrettet sporveksel mot usikret område"/>.
+
+<figure id="fig:Minimumsavstand mellom skiftevei og motrettet sporveksel mot usikret område">
+[[Bilde:JD550 05 fig014b.svg|thumb|center|600px|<caption> (eksemplet viser sporsperre som dekningsgivende objekt)</caption>]]
+</figure>
+
+=== Utløsing av skiftevei og sikkerhetssone ===
+
+a) For at en skiftevei og skifteveiens sikkerhetssone skal kunne utløses, skal samtlige krav til utløsing ved passasje eller ordre være oppfylt.
+
+==== Utløsing av skiftevei ved passasje ====
+
+a) Utløsing av skiftevei skal kun skje når, se <xr id="fig:utløsing av skiftevei1"/> - <xr id="fig:utløsing av skiftevei3"/>:
+
+# Innledende sporavsnitt er fritt 
+# Avsluttende sporavsnitt er belagt
+
+'''Unntak:'''
+
+# Dersom en skiftevei ikke inneholder et avsluttende sporavsnitt utstyrt med togdeteksjon skal skifteveien løse ut en gitt tid etter at innledende sporavsnitt har blitt fritt.
+
+I <xr id="fig:utløsing av skiftevei1"/> - <xr id="fig:utløsing av skiftevei3"/> vises hva som skal forstås med benevnelsene som benyttes for sporavsnitt i forbindelse med utløsing av skiftevei.
+
+<figure id="fig:utløsing av skiftevei1">
+[[Bilde:JD550 05 fig015b.svg|thumb|center|600px|<caption>Utløsing av skiftevei</caption>]]
+</figure>
+
+<figure id="fig:utløsing av skiftevei2">
+[[Bilde:JD550 05 fig016b.svg|thumb|center|600px|<caption>Utløsing av skiftevei</caption>]]
+</figure>
+
+<figure id="fig:utløsing av skiftevei3">
+[[Bilde:JD550 05 fig017b.svg|thumb|center|600px|<caption>Utløsing av skiftevei</caption>]]
+</figure>
+
+b) Utløsing av skiftevei skal kun skje ved korrekt sekvens ved passasje, se <xr id="tab:korrekt passasjesekvens"/>.
+
+'''Unntak:'''
+
+# Dersom en skiftevei er fastlagt mot belagt avsluttende sporavsnitt kan skifteveien løses ut når innledende sporavsnitt blir fritt.
+
+{{lærebokstoff|Med korrekt sekvens ved passasje i en skiftevei menes at sekvensen til to etter hverandre følgende sporavsnitt i skifteveien kontrolleres som vist nedenfor. Korrekt passasje kontrolleres normalt fra og med innledende sporavsnitt til og med det sporavsnittet som må være belagt for at skifteveien skal løse ut.}}
+
+<center>
+<figtable id = "tab:korrekt passasjesekvens ">
+{| class="wikitable" style="text-align:center"
+|+ Korrekt passasjesekvens for skiftevei
+|-
+| colspan="3"|
+<figure id =Togpassasje>
+[[Bilde:JD550 05 fig012b.svg|600px|center]]
+</figure> 
+|-
+! Tilstand !! Sporavsnitt (a)!! Sporavsnitt (b)       
+|-
+|  1 || Belagt || Fritt<ref name="Forrtab"/>
+|-
+|  2 || Belagt || Belagt
+|-
+|  3 || Fritt || Belagt
+|}
+</figtable>
+</center>
+<references>
+<ref name="Forrtab"> Kan være belagt hvis det ikke er krevd fritt i forriglingstabell. </ref>
+</references>
+
+==== Utløsing av sikkerhetssone ved passering ====
+
+a) Utløsing av en sikkerhetssone skal først igangsettes når et bestemt punkt i skifteveien er passert med skiftets første aksel.
+
+{{lærebokstoff|Med bestemt punkt menes normalt sporavsnittet foran skifteveiens sluttpunkt.}}
+
+b) Utløsing av en sikkerhetssone skal skje en bestemt tid etter at utløsingen ble igangsatt, avhengig av avstand (A) fra bestemt punkt i skifteveien til sluttpunkt, se <xr id="tab:Utløsingstid for sikkerhetssone for skiftevei"/>.
+
+'''Unntak:'''
+
+# Sikkerhetssonen kan utløses umiddelbart dersom det er sikret skiftevei fra den aktuelle skifteveiens sluttpunkt.
+
+c)
+<center>
+<figtable id="tab:Utløsingstid for sikkerhetssone for skiftevei">
+{| class="wikitable"
+|+ Utløsingstid for sikkerhetssone for skiftevei
+|-
+! Avstand (A) [m] !! Utløsingstid [s]
+|-
+| 0 m ≤ A ≤ 250 m || 30
+|-
+| 250 m < A ≤ 500 m || 40
+|-
+| 500 m < A ≤ 750 m || 50
+|-
+| 750 m < A ≤ 1000 m || 60
+|}
+</figtable>
+</center>
+d) For at en sikkerhetssonen skal kunne utløses, skal skifteveien som sikkerhetssonen tilhører være utløst.
+
+==== Utløsing av skiftevei ved ordre ====
+
+a) Utløsing av en skiftevei skal bare kunne igangsettes når begynnelsespunktet viser signal ”Kjøring forbudt” eller er mørkt (degradert fra ” Kjøring forbudt”).
+
+b) Etter at utløsing er igangsatt ved hjelp av ordre skal skifteveien utløses etter 10 - 30 sekund.
+
+==== Utløsing av sikkerhetssone ved ordre  ====
+
+a) Manuell utløsing av en skiftevei skal samtidig utløse skifteveiens sikkerhetssone.
+
+=== Forlengelse av skiftevei ===
+
+a) En skiftevei skal kunne forlenges med følgende:
+
+# Togvei (NSS)
+# Skiftevei
+# Område frigitt for lokal skifting / skifteområde
+
+== Samtidige togbevegelser  ==
+=== Bevegelsesområde mot flanke ===
+
+<figure id = "fig:bevegelsesområde">
+[[Bilde:JD550 06 fig008.svg|thumb|center|500px|<caption>Bevegelsesområde mot flanken til en togvei</caption>]]
+</figure>
+
+a) Når et stoppskilt, hoved- eller dvergsignal (x) skal plasseres for å tillate togbevegelse i bevegelsesområdet (a) mot flanken til bevegelsesområdet (b), skal sikkerhetsavstand gitt av <xr id = "tab:Sikkerhetsavstander"/> opprettes, se <xr id = "fig:bevegelsesområde"/>:
+
+====Alternative sikkerhetsavstander (NSS)====
+'''Alternativ I :'''
+
+Sikkerhetsavstanden kan reduseres til 200 meter under følgende forutsetninger:
+
+# Det settes opp et dvergsignal (z) 250 meter foran signal (y) som viser ”Varsom kjøring tillatt” når signal (y) viser signal ”Stopp”, se <xr id = "fig:samtidige200"/>.
+
+<figure id = "fig:samtidige200">
+[[Bilde:JD550 06 fig009.svg|thumb|center|500px|<caption>Samtidige togveier med sikkerhetsavstand 200 meter</caption>]]
+</figure>
+
+'''Alternativ II :'''
+
+Sikkerhetsavstanden kan reduseres til 150 meter under følgende forutsetninger:
+
+# ATC-systemet er prosjektert (se [[Signal/Prosjektering/ATC]]) slik at hastigheten ved balisegruppe (x) ikke er høyere enn 40 km/h når signal (y) viser signal "Stopp", og at rullende materiell vil stoppe før middel selv ved bortfall av ATC-informasjon i både balisegruppe og ved hovedsignalet, se <xr id = "fig:samtidige150II"/>.
+
+<figure id = "fig:samtidige150II">
+[[Bilde:JD550 06 fig010.svg|thumb|center|500px|<caption>Samtidige togveier med sikkerhetsavstand 150 meter</caption>]]
+</figure>
+
+'''Alternativ III :'''
+
+Dette alternativet bør som hovedregel kun benyttes ved ombygging av eksisterende anlegg.
+
+Sikkerhetsavstanden kan reduseres til 150 meter under følgende forutsetninger:
+
+# Togveien avsluttes mot et dvergsignal med signalskiltet ”Togvei slutt” på samme mast, samt at et hovedsignal er plassert i sikkerhetssonens ende, se <xr id = "fig:safmtidige150III"/>. Dvergsignalet skal vise signalbilder i henhold til TJN (Trafikkregler for Jernbaneverkets nett).
+# ATC-systemet er prosjektert (se [[Signal/Prosjektering/ATC]]) slik at hastigheten ved signal (y) ikke er høyere enn 40 km/h, og at rullende materiell vil stoppe før middel selv ved bortfall av ATC-informasjon i både balisegruppe og ved hovedsignalet.
+
+<figure id = "fig:safmtidige150III">
+[[Bilde:JD550 06 fig011.svg|thumb|center|500px|<caption>Samtidige togveier med sikkerhetsavstand 150 meter</caption>]]
+</figure>
+
+=== Parallelle bevegelsesområder  ===
+
+a) Når et stoppskilt, hoved- eller dvergsignal (x) skal plasseres for å tillate togbevegelse i bevegelsesområdet (a) parallelt mot flanken til sikkerhetssonen for bevegelsesområdet (b), skal sikkerhetsavstand gitt i <xr id = "tab:Sikkerhetsavstander"/> opprettes, se <xr id = "fig:parallelle"/>:
+
+{{lærebokstoff|Dersom et signal (y) plasseres med en avstand til middel utover 5 meter, kan denne avstanden trekkes fra kravet til sikkerhetsavstand.}}
+
+
+<figure id = "fig:parallelle">
+[[Bilde:JD550 06 fig012.svg|thumb|center|500px|<caption>Parallelle bevegelsesområder</caption>]]
+</figure>
+
+=== Motrettede bevegelsesområder ===
+
+a) Når et stoppskilt, hoved- eller dvergsignal (x) skal plasseres for å tillate togbevegelse i bevegelsesområdet (a) mot bevegelsesområdet (b), skal sikkerhetsavstand gitt i <xr id = "tab:Sikkerhetsavstander"/> opprettes, se <xr id = "fig:Motrettede bevegelsesområder"/>:
+
+
+<figure id = "fig:Motrettede bevegelsesområder">
+[[Bilde:JD550 06 fig013.svg|thumb|center|500px|<caption>Motrettede bevegelsesområder</caption>]]
+</figure>
+
+== Område for lokal skifting / midlertidig skifteområde ==
+=== Områdets avgrensning ===
+
+a) Et område som skal benyttes for lokal skifting skal avgrenses av hovedsignal, stoppskilt, dvergsignal, sporsperre, avsporingstunge eller sporveksel.
+
+'''Unntak:'''
+
+# Gjelder ikke når området ender i et buttspor, i et usikret område eller dersom området avgrenses med en grensestolpe.
+
+
+b) Et område som skal benyttes for lokal skifting skal sikres av dekningsgivende objekter.
+
+<figure id="Lokal frigitt område">
+[[Bilde:JD550 05 fig019b.svg|thumb|center|600px|<caption>Lokalt frigitt område</caption>]]
+</figure>
+
+{{lærebokstoff|Signalene merket (a) er dekningsgivende for det lokalt frigitte området. 
+
+Signalene merket (b) avgrenser det frigitte områdets utstrekning (sluttpunkt for det frigitte området). I motsatt ende er det regelen om at det ikke skal skiftes nærmere innkjørhovedsignalet eller et innkjørstoppskilt enn 20 meter som avgrenser områdets utstrekning.
+}}
+
+=== Frigiving ===
+
+a) For at et område skal kunne frigis for lokal skifting skal området ikke ha noen felles del med en togvei, en togveis sikkerhetssone eller et arbeidsområde.
+
+b) For at et område skal kunne frigis for lokal skifting, skal området ha en sikkerhetssone som ikke har noen felles del med en togvei eller togveiens sikkerhetssone i en avstand som tilsvarer kravene til sikkerhetsavstander gitt i <xr id="tab:Sikkerhetsavstander" />.
+
+c) For at et område skal kunne frigis for lokal skifting, skal objekt som gir dekning til området være dekningsgivende.
+
+d) For at et område skal kunne frigis for lokal skifting, skal objekt som begrenser skifteområdets utstrekning være dekningsgivende.
+
+e) Når et område frigis for lokal skifting, skal sporveksler og avsporingstunger som inngår i området frigis for lokal omstilling.
+
+f) Når et område frigis for lokal skifting skal sentralstilte sporsperrer som inngår i området omlegges til avlagt posisjon.
+
+=== Oppheving ===
+
+a) Når ordre om oppheving av et område som er frigitt for lokal skifting mottas, skal følgende utføres umiddelbart:
+
+# (NSS) Høyt skiftesignal skal vise signal ”Skifting forbudt” eller slukkes
+# Dvergsignal skal vise signal ”Kjøring forbudt” eller slukkes
+# Lokalstilleren skal gjøres uvirksom
+# Lampen på lokalstilleren skal slukkes
+
+b) Et område frigitt for lokal skifting skal oppheves med en forsinkelse på 10 sekund etter at ordren om oppheving er mottatt.
+
+=== Forlengelse av område frigitt for lokal skifting ===
+
+a) Et område frigitt for lokal skifting skal kunne forlenges med:
+
+# Togvei (NSS) 
+# Skiftevei
+# Område frigitt for lokal skifting
+
+==Arbeidsområder==
+
+
+=== Områdets avgrensning ===
+
+a) Grensen for et arbeidsområde skal være ved et hovedsignal, et stoppskilt, et dvergsignal, en sporsperre, en avsporingstunge eller mellom to koblede sporveksler.
+
+b) Et arbeidsområde skal sikres av dekningsgivende objekter.
+
+<figure id="Arbeidsområder">
+[[Bilde:JD550 05 fig020b.svg|thumb|center|600px|<caption>Eksempler på arbeidsområder</caption>]]
+</figure>
+
+
+{{lærebokstoff|Signalene merket (a) er dekningsgivende for arbeidsområde C. 
+
+Signalene merket (b) og (c) begrenser arbeidsområde A og B's utstrekning (sluttpunkt for arbeidsområdet). 
+
+Sporvekslene kan være dekningsgivende for enten arbeidsområde A eller arbeidsområde B. 
+}}
+
+=== Arbeidsområdenes funksjoner ===
+
+a) Et arbeidsområde skal kunne sperres. 
+{{lærebokstoff|Sperring av et arbeidsområde hindrer kjøretillatelser som er fiendtlige til arbeidsområdet. }}
+
+b) Et arbeidsområde skal kunne sikres. 
+{{lærebokstoff|Sikring av arbeidsområdet skal hindre oppheving av sperring.}}
+
+c) Et arbeidsområde skal være utstyrt med utrustning for sikring av arbeidsområdet. 
+{{lærebokstoff|Kan være nøkkelskap med nøkkel for sikring av arbeidsområdet, eller andre tekniske innretninger.}}
+
+=== Sperring og sikring===
+
+a) For at et arbeidsområde skal kunne sperres skal området ikke ha noen felles del med en togvei, en togveis sikkerhetssone eller et område frigitt for lokal skifting.
+
+b) For at et arbeidsområde skal kunne sperres, skal objekt som gir dekning til området være dekningsgivende.
+
+c) For at et arbeidsområde skal kunne sperres, skal objekt som begrenser arbeidsområdets utstrekning være dekningsgivende.
+
+d)  For at et arbeidsområde skal kunne sperres, skal utrustning for sikring fungere korrekt.
+
+e) For at et arbeidsområde skal kunne sikres, skal arbeidsområdet være sperret.
+
+f) Når et arbeidsområde er sperret og sikret, skal sporveksler, avsporingstunger og sporsperrer som inngår i området frigis for lokal omstilling.
+
+g) Når et arbeidsområde er sperret og sikret, skal samlelåser for oppbevaring av kontrollåsnøkler for kontrollåste sporveksler/sporsperrer/avsporingstunger som inngår i området frigis.
+
+h) Når to tilgrensende arbeidsområder sperres og sikres, skal koblede sporveksler innenfor de to tilgrensende arbeidsområdene skal være frigitt for lokal omstilling.
+
+=== Oppheving ===
+
+a) Sperringen av arbeidsområdet skal ikke kunne oppheves før sikring er opphevet.
+
+b) Når ordre om oppheving av et arbeidsområde mottas, skal følgende utføres umiddelbart:
+
+# Lokalstilleren skal gjøres uvirksom
+# Lampen på lokalstilleren skal slukkes
+
+=== Utvidelse av arbeidsområde ===
+
+a) Et arbeidsområde skal kunne utvides med:
+
+# Et tilgrensende arbeidsområde 
+# Et overlappende arbeidsområde
+
+== Sporveksel, avsporingstunge og sporsperre ==
+=== Generelt ===
+{{lærebokstoff|Kravene gjelder sporveksler, avsporingstunger og sporsperrer som er sikret med sporvekseldrivverk, rigel eller kontrollås/S-lås. Krav til sentralstilte sporveksler, avsporingstunger og sporsperrer gjelder kun for sporveksler, avsporingstunger og sporsperrer som er sikret med sporvekseldrivverk.}}
+
+a) For at en sporveksel, avsporingstunge eller sporsperre skal kunne omlegges, skal den ikke inngå i en tog- eller skiftevei.
+
+b) For at en sporveksel, avsporingstunge eller sporsperre skal kunne omlegges, skal den ikke være dekningsgivende objekt for en togvei, en skiftevei, et arbeidsområde eller et område frigitt for lokal skifting.
+
+c) For at en sentralstilt sporveksel, avsporingstunge eller sporsperre skal kunne omstilles sentralt, skal sporavsnittet som sporvekselen eller sporsperren inngår i være fritt.
+
+'''Unntak:'''
+
+# Når omlegging av sporveksel er igangsatt skal omleggingen være uavhengig av sporavsnittet som sporvekselen inngår i.
+
+d) For at en sentralstilt sporveksel, avsporingstunge eller sporsperre skal kunne omstilles sentralt, skal den ikke være frigitt for lokal omstilling.
+
+e) For at en sporveksel, avsporingstunge eller sporsperre skal kunne frigis for lokal omstilling, skal den ikke:
+
+# være en del av en togvei
+# være en del av en togveis sikkerhetssone 
+# være en del en skiftevei 
+# være et dekningsgivende objekt 
+# være sperret for omlegging
+
+f) For at en sporveksel, avsporingstunge eller sporsperre skal kunne omstilles lokalt, skal sporvekselen være frigitt for lokal omstilling.
+
+g) Det skal være mulig å inkludere kontroll av sveiver i forrigling.
+
+h) For at en sentralstilt sporveksel, avsporingstunge eller sporsperre skal kunne omlegges sentralt, skal sveiv(er) som er inkludert i forriglingen og som tilhører området som sporvekselen, avsporingstungen eller sporsperren ligger i, være i kontroll.
+
+'''Unntak:'''
+# Gjelder ikke når sveivenes posisjon bare skal indikeres.
+
+i) En sporveksel, avsporingstunge og sporsperre skal kunne sperres for omstilling.
+
+j) For at en sporveksel, avsporingstunge eller sporsperre skal kunne omstilles, skal den ikke være sperret for omstilling.
+
+=== Sporveksel ===
+
+a) For at en sporveksel skal kunne omlegges, skal den ikke være motrettet og inngå i en togveis sikkerhetssone.
+
+=== Avsporingstunge ===
+a) For at en avsporingstunge skal kunne omstilles, skal den ikke være motrettet og inngå i en togveis sikkerhetssone.
+
+=== Sporsperre ===
+
+a) For at en sporsperre skal kunne omlegges, skal den ikke inngå i en togveis sikkerhetssone.
+
+b) Når et område frigis for lokal skifting, skal en sporsperre som inngår i området automatisk legges av.
+
+c) Når et område som har vært frigitt for lokal skifting oppheves, skal en sporsperre som inngår i området automatisk legges på.
+
+== Hovedsignal (NSS) ==
+
+a) Et hovedsignal som ikke skal vise kjørsignal skal vise signal ”Stopp”.
+
+'''Unntak:'''
+
+# Et blokksignal skal normalt være slukket, og skal kun vise signal ”Stopp” når: 
+
+:a) signalet står på en enkeltsporet strekning, og er et sluttpunkt for en togvei, eller har vært et begynnelsespunkt for en togvei som ikke er utløst, eller er signal for kjøring mot innstilt kjøreretning
+
+:b) signalet står på en dobbeltsporet strekning, og er et sluttpunkt for en togvei, eller har vært et begynnelsespunkt for en togvei som ikke er utløst 
+
+b) Et hovedsignal som på grunn av feil ikke kan vise signal ”Stopp” som samsvarer med forriglingsutrustningen, skal være slukket.
+
+c) Et hovedsignal som på grunn av feil ikke kan vise kjørsignal som samsvarer med forriglingsutrustningen, skal vise signal ”Stopp”.
+
+d) For at et hovedsignal skal kunne vise kjørsignal, skal alle krav til fastlegging av togvei og sikkerhetssone være oppfylt.
+
+e) For at et hovedsignal skal vise kjørsignal, skal dvergsignal på samme mast og dvergsignal som inngår i togveien vise signal som samsvarer med forriglingsutrustningen.
+
+f) For at et hovedsignal skal vise kjørsignal, skal avsporingsindikator som hovedsignalet er satt i avhengighet til være i kontroll.
+
+g) For at et hovedsignal skal kunne vise signal ”Kjør”, skal følgende krav være oppfylt:
+
+# Sporveksler som inngår i togveien som signalet gjelder for skal være kontrollert og låst i stilling for kjøring med linjehastighet.
+# Togveien som signalet gjelder for skal ikke være signalert med signal ”Forsiktig kjøring”.
+
+h) Et hovedsignal skal vise signal ”Kjør med redusert hastighet” i ett eller begge følgende tilfeller:
+
+# Når togveien inneholder en sporveksel som er kontrollert og låst i stilling for kjøring med redusert hastighet (i forhold til linjehastighet).
+# Når togveien er signalert med signal ”Forsiktig kjøring” 
+
+'''Unntak til punkt 1:'''
+
+# Hovedsignalet kan vise signal ”Kjør med redusert hastighet” i visse tilfeller selv om ingen sporveksel i togveien er kontrollert og låst i stilling for kjøring med redusert hastighet.
+
+{{lærebokstoff|Unntaket forutsetter godkjent forriglingstabell.}}
+
+i) Når et hovedsignal er plassert i en togvei, skal ikke signal i togveiens begynnelsespunkt vise kjørsignal før signalet i togveien viser korrekt kjørsignal.
+
+j) For at et hovedsignal skal kunne vise signal ”Kjør med redusert hastighet” for en togveien som signaleres med signal ”Forsiktig kjøring” skal dette signalet vises korrekt signal.
+
+k) For at et hovedsignal skal vise signal ”Kjør” eller ”Kjør med redusert hastighet” skal veisikringsanlegg, rasvarslingsanlegg eller lignende anleggstyper som hovedsignalet er satt i avhengighet til, tillate passering av tog.
+
+l) Dersom et hovedsignal på grunn av feil ikke kan vise kjørsignal som samsvarer med forriglingsutrustningen, skal togvei løses ut og fastlegges på nytt for at det skal kunne vise kjørsignal etter at feil er utbedret..
+
+m) Et hovedsignal skal kunne sperres i ”Stopp”.
+
+== Forsignal (NSS) ==
+
+a) Et forsignal skal vise signal ”Vent stopp” når tilhørende hovedsignal viser ”Stopp” eller er slukket. 
+
+'''Unntak:'''
+
+# Gjelder ikke når forsignal er plassert på masten til et hovedsignal som viser ”Stopp”; eller er slukket.
+
+b) Et forsignal som på grunn av feil ikke kan vise signal ”Vent stopp” som samsvarer med tilhørende hovedsignal, skal være slukket. 
+
+c) Et forsignal som på grunn av feil ikke kan vise signal ”Vent kjør” eller ”Vent kjør med redusert hastighet” som samsvarer med tilhørende hovedsignal, skal vise signal ”Vent stopp”.
+
+d) For at et forsignal skal vise signal ”Vent kjør”, skal tilhørende hovedsignal vise ”Kjør”.
+
+e) For at et forsignal skal vise signal ”Vent kjør med redusert hastighet”, skal tilhørende hovedsignal vise ”Kjør med redusert hastighet”.
+
+f) For at et forsignal skal vise signal ”Vent kjør” eller ”Vent kjør med redusert hastighet”, skal veisikringsanlegg, rasvarslingsanlegg eller lignende anleggstyper som er plassert mellom hovedsignal og forsignal, tillate passering av tog.
+
+g) Et forsignal skal være slukket når det er plassert på masten til et hovedsignal som viser signal ”Stopp”, eller som er slukket.
+
+h) Et forsignal skal være slukket når det er plassert på samme mast som lyssignal forsiktig kjøring som viser signal ”Forsiktig kjøring”.
+
+i) Et forsignal skal være slukket når det er plassert på samme mast som et linjesignal som viser signal til et annet linje/sporområde enn det forsignalet gjelder for.
+
+== Dvergsignal (NSS) ==
+
+a) Et dvergsignal som ikke skal vise signal ”Kjøring tillatt”, ”Varsom kjøring tillatt” eller ”Frigitt for lokal skifting”, skal vise signal ”Kjøring forbudt”.
+
+b) Et dvergsignal som på grunn av feil ikke kan vise signal ” Kjøring forbudt” som samsvarer med forriglingsutrustningen, skal være slukket.
+
+c) Et dvergsignal som på grunn av feil ikke kan vise signal ”Kjøring tillatt”, ”Varsom kjøring tillatt” eller ”Frigitt for lokal skifting” som samsvarer med forriglingsutrustningen, skal vise signal ”Kjøring forbudt”.
+
+d) For at et dvergsignal skal kunne vise ”Varsom kjøring tillatt” eller ”Kjøring tillatt”, skal alle krav til fastlegging av skiftevei og sikkerhetssone være oppfylt.
+
+e) For at et dvergsignal i skiftevei skal kunne vise ”Kjøring tillatt”, skal følgende krav være oppfylt:
+
+# Samtlige sporavsnitt som inngår i skifteveien skal være frie
+# Etterfølgende dvergsignal viser ”Varsom kjøring tillatt” eller ”Kjøring tillatt”
+# Kontrollåste sporveksler er kontrollert i korrekt posisjon
+
+f) Et dvergsignal skal vise signal ”Varsom kjøring tillatt” i ett eller flere av de følgende tilfellene:
+
+# Sporavsnitt i skifteveien er belagt
+# Etterfølgende dvergsignal viser ”Kjøring forbudt”
+# Kontrollåste sporveksler som inngår i skifteveien er ikke i kontroll
+# Dvergsignalet er siste signal i skiftevei før endebutt eller usikret område.
+
+g) Når et dvergsignal inngår i en togvei skal det vise signal ”Kjøring tillatt”. 
+
+'''Unntak:'''
+
+# Når togveien ender i et buttspor eller på annen måte er avkortet, eller avstanden fra dvergsignalet til togveiens sluttpunkt er mindre enn 100 meter, skal dvergsignalet vise signal ”Varsom kjøring tillatt”.
+
+h) Når et dvergsignal som er plassert på et hovedsignals mast, inngår i en togvei, skal det vise signal ”Kjøring forbudt” når sporavsnitt mellom dvergsignalet og togveiens sluttpunkt er belagt.
+
+i) For at et dvergsignal skal kunne vise ”Frigitt for lokal skifting”, skal området som dvergsignalet gjelder for være frigitt for lokal skifting, og eventuelle sentralstilte sporsperrer som inngår i området skal være i avlagt posisjon. 
+
+j) For at et dvergsignal skal vise signal ”Varsom kjøring tillatt” eller ”Kjøring tillatt”, skal veisikringsanlegg eller lignende anleggstyper som dvergsignalet er satt i avhengighet til tillate passering av tog.
+
+k) Dersom et dvergsignal på grunn av feil ikke kan vise signal ”Kjøring tillatt”, ”Varsom kjøring tillatt” eller ”Frigitt for lokal skifting” som samsvarer med forriglingsutrustningen, skal skifteveien løses ut og fastlegges på nytt for at signalet skal kunne vise det opprinnelige signalbildet etter at feilen er utbedret.
+
+l) Et dvergsignal skal kunne sperres i ”Kjøring forbudt”.
+
+== Andre lyssignal ==
+=== Høyt skiftesignal (NSS)===
+
+a) Et høyt skiftesignal skal normalt vise signal ”Skifting forbudt”.
+
+'''Unntak:'''
+
+# Når et høyt skiftesignal kun er satt opp for å oppheve ”Stopp” i utkjørhovedsignal skal signalet normalt være slukket. 
+
+b) For at et høyt skiftesignal skal kunne vise signal ”Skifting tillatt” skal det inngå i et område som er frigitt for lokal skifting.
+
+=== Repetersignal (NSS) ===
+
+a) Et repetersignal skal dersom ikke følgende krav (b-e) er oppfylt være slukket. 
+
+b) Et repetersignal skal ikke ha feil som gjør at det ikke er i stand til å vise signal som samsvarer med forriglingsutrustningen.
+
+c) For at et repetersignal skal kunne vise signal ”Kjør” skal tilhørende hovedsignal vise signal ”Kjør”.
+
+'''Unntak:'''
+
+# Dersom det mellom repetersignalet og det tilhørende hovedsignalet befinner seg en sporveksel som ligger for kjøring i sporvekselens avvikespor, skal repetersignalet vise signal ”Kjør med redusert hastighet”.
+
+d) For at et repetersignal skal kunne vise signal ”Kjør med redusert hastighet” skal tilhørende hovedsignal vise signal ”Kjør med redusert hastighet”.
+
+e) For at et repetersignal skal vise signal ”Kjør med redusert hastighet” eller ”Kjør” skal veisikringsanlegg eller lignende anleggstyper som er plassert mellom repetersignalet og tilhørende hovedsignal, tillate passering av tog.
+
+=== Togsporsignal (NSS)===
+
+a) Et togsporsignal skal dersom ikke følgende krav (b-e) er oppfylt være slukket.
+
+b) Et togsporsignal skal ikke ha feil som gjør at det ikke er i stand til å vise signal som samsvarer med forriglingsutrustningen.
+
+c) For at et togsporsignal skal kunne vise signal ”Kjør” skal tilhørende hovedsignal vise signal ”Kjør”.
+
+'''Unntak:'''
+
+# Dersom det mellom togsporsignalet og det tilhørende hovedsignalet befinner seg en sporveksel som ligger for kjøring i sporvekselens avvikespor, skal togsporsignalet vise signal ”Kjør med redusert hastighet”.
+
+d) For at et togsporsignal skal kunne vise signal ”Kjør med redusert hastighet”, skal tilhørende hovedsignal vise signal ”Kjør med redusert hastighet”.
+
+e) For at et togsporsignal skal vise signal ”Kjør” eller ”Kjør med redusert hastighet”, skal veisikringsanlegg eller lignende anleggstyper som er plassert mellom togsporsignalet og tilhørende hovedsignal, tillate passering av tog.
+
+=== Middelkontrollampe ===
+
+a) En middelkontrollampe skal dersom ikke følgende krav (b-d) er oppfylt være slukket.
+
+b) En middelkontrollampe skal vise signal når tog som kjører i togvei har belagt sporavsnittet foran togveiens sluttpunkt, men hvor toget ikke har passert et definert punkt (for eksempel middel) i togveien med siste aksel.
+
+c) En middelkontrollampe skal slukke hvitt blinkende lys når tog som kjører i togvei har belagt sporavsnittet foran togveiens sluttpunkt, og har passert et definert punkt (for eksempel middel) i togveien med siste aksel.
+
+d) En middelkontrollampe skal avhengig av bruksområdet, kunne settes i slik avhengighet til videre fastlagt togvei at den slukkes når denne stilles.
+
+=== Lyssignal forsiktig kjøring (NSS)===
+
+a) Lyssignalet forsiktig kjøring skal dersom ikke følgende krav (b-c)) er oppfylt være slukket.
+
+b) Et lyssignal forsiktig kjøring skal ikke ha feil som gjør at det ikke er i stand til å vise signal som samsvarer med forriglingsutrustningen.
+
+c) For at lyssignalet skal kunne vise signal ”Forsiktig kjøring” skal tilhørende hovedsignal vise signal ”Kjør med redusert hastighet”.
+
+=== Linjesignal (NSS)===
+
+a) Et linjesignal skal dersom ikke følgende krav (b-c) er oppfylt være slukket.
+
+b) Et linjesignal skal ikke ha feil som gjør at det ikke er i stand til å vise signal som samsvarer med forriglingsutrustningen.
+
+c) For at et linjesignal skal kunne vise signal ”Til angitt linje/sporområde” skal tilhørende hovedsignal vise signal ”Kjør” eller ”Kjør med redusert hastighet”.
+
+=== Lyssignal avvikende kjørehastighet (NSS) ===
+
+a) Lyssignalet avvikende kjørehastighet skal dersom ikke følgende krav (b) er oppfylt være slukket.
+
+b) For at lyssignalet skal kunne vise signal ”Avvikende kjørehastighet” skal tilhørende hovedsignal vise kjørsignal til spor med avvikende hastighet.
+
+== Sperring ==
+Funksjonen sperring hindrer bruk av objekter i forrigling for å begrense togframføring. 
+=== Sperring av sporavsnitt ===
+
+Sperring av et sporavsnitt skal hindre alle tog- og skifteveier hvor sporavsnittet inngår, samt eventuelle andre tog- og skifteveier hvor sporavsnittet inngår som en del av sikkerhetssonen.
+
+=== Sperring av Hovedsignal (NSS)===
+
+Sperring av Hovedsignal skal kunne utføres slik at signalet ikke kan vise annet enn "stopp".
+
+=== Sperring av Dvergsignal ===
+Sperring av dvergsignal skal kunne utføres slik at signalet ikke kan vise annet enn "kjøring forbudt".
+
+=== Sperring av Stoppskilt (L2) ===
+
+Stoppskilt skal kunne sperres slik at kjøretillatelse ikke kan sendes.
+
+=== Sperring av Linjeblokk ===
+
+Sperring av linjeblokk skal hindre alle togveier på den strekningen som er sperret, samt eventuelle andre tog- og skifteveier hvor strekningen inngår som en del av sikkerhetssonen.
+
+= RAMS-krav =
+== Sikkerhet ==
+
+a) En forriglingsutrustning skal ha sikkerhetskritisk funksjon SKF1:
+
+''Forriglingsutrustningen skal sette korrekte utgangssignaler/sende korrekte data til styrte objekter eller RBC, gitt korrekte innsignaler/data inn til forriglingsutrustningen. ''
+
+Delfunksjoner: 
+
+# Forriglingsutrustningen skal ikke gi mindre restriktive beskjeder til et lyssignal  eller RBC enn det som er tillatt ut fra forutsetningene. 
+# Forriglingsutrustningen skal ikke gi ordre til en sporvekselutrustning uten at betingelsene er oppfylt. 
+# Forriglingsutrustningen skal ikke gi mindre restriktive beskjeder til ATC-infrastrukturutrustningen enn det som er tillatt ut fra forutsetningene.
+# Forriglingsutrustningen skal ikke gi mindre restriktive beskjeder til RBC enn det som er tillatt ut fra forutsetningene. 
+
+b) THR for den sikkerhetskritiske funksjonen SKF1 skal være lik 10<sup>-9</sup> feil/time.
+
+c) Forriglingsutrustningen skal være konstruert for minimum å ha kontroll på følgende farer:
+
+# Mindre restriktiv beskjed til lyssignal eller RBC enn det som er tillatt ut fra forutsetningene.
+# Ordre om omlegging av sporveksel eller sporsperre uten at betingelsene er oppfylt.
+# (NSS) Mindre restriktiv beskjed til ATC-infrastrukturutrustningen enn det som er tillatt ut fra forutsetningene. 
+
+d) Eventuelle hjelpesystemer, som for eksempel service-PC, skal være av en slik konstruksjon at feil på hjelpesystemet eller systemets grensesnitt ikke påvirker forriglingsutrustningen.
+
+== Tilgjengelighet ==
+
+a) En forriglingsutrustning skal ha en tilgjengelighet A ≥ 99.99975 %, det vil si en akkumulert utilgjengelighet UA ≤ 1,3 minutter pr. år. 
+
+b) Reparasjon eller utbytting og justering av en funksjonsenhet slik at den igjen fungerer korrekt, skal kunne utføres på maksimalt 15 minutter, det vil si MRT ≤ 15 minutter.
+
+== Pålitelighet ==
+
+a) Forriglingsutrustning skal ha en gjennomsnittlig tid mellom feil - MTBF ≥ 100 000 timer.
+
+b) Forriglingsutrustning skal ha en levetid på minimum 25 år.
+
+== Vedlikeholdbarhet ==
+
+a) Forriglingsutrustningen skal bestå av veldefinerte funksjonsenheter slik at hele funksjonsenheter kan byttes i forbindelse med vedlikehold.
+
+b) Funksjonsenheter som inneholder slitedetaljer, skal være konstruert slik at disse kan overvåkes/inspiseres og skiftes i sammenheng med ordinært forebyggende vedlikehold. 
+
+c) Vekt for utbyttbare funksjonsenheter skal ikke overstige 15 kg.
+
+= Vedlegg =
+[[Signal/Prosjektering/Forriglingsutrustning/Prosjektering_sikringsanlegg_NSI-63|Vedlegg a: Prosjektering sikringsanlegg NSI-63]]
+
+[[Signal/Prosjektering/Forriglingsutrustning/Prinsipper_for_tiltak_i_NSI-63_ved_ombygging_til_FATC|Vedlegg b: Prinsipper for tiltak i sikringsanlegg NSI-63 ved ombygging til FATC]]
+

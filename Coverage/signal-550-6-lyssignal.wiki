@@ -1,0 +1,1251 @@
+__NUMBEREDHEADINGS__
+
+= Hensikt og omfang =
+Kapitlet beskriver tekniske krav og funksjonskrav til lyssignal. Med et lyssignal menes et optisk signal som benyttes til å gi informasjon til lokomotivfører. Informasjonen sendes ut i form av lys i definerte farger som fast- eller blinklys. Lyssignalet gir informasjon om bl.a. kjøretillatelse eller stopp, togvei til/fra hovedtogspor eller avviketogspor, hastighet, linjevalg og skiftebevegelser.
+
+Kapitlet som helhet gjelder kun for konvensjonelle signalsystemer med utvendig signalering, og skal ikke benyttes for anlegg med ETCS L2 med mindre krav er direkte referert til fra [[Signal/Prosjektering/ERTMS]]. 
+
+<figure id = "fig:systemoversikt signalanlegg">
+[[Bilde:JD550 06 fig001.svg|thumb|center|500px|<caption>Systemoversikt signalanlegg</caption>]]
+</figure>
+
+Kapitlet omfatter følgende lyssignal:
+
+* Hovedsignal
+* Forsignal 
+* Dvergsignal
+* Høyt skiftesignal
+* Repetersignal
+* Togsporsignal
+* Middelkontrollampe
+* Lyssignal forsiktig kjøring
+* Linjesignal 
+* Lyssignal avvikende kjørehastighet
+* Sporvekselsignal 
+* Sporsperresignal 
+
+Lyssignalene for veisikringsanlegg behandles i forbindelse med [[Signal/Prosjektering/Veisikringsanlegg]], og lyssignalene for enkelt innkjørsignal og rasvarslingsanlegg behandles i forbindelse med [[Signal/Prosjektering/Andre anlegg]].
+
+== Systemdefinisjon ==
+Et lyssignal omfatter teknisk utrustning for å vise status i forriglingsutrustningen til et tog eller skift, og for å gi informasjon om signalets status til forriglingsutrustningen. 
+
+Med et lyssignal menes:
+
+* Signalhode med lyskilde (lampe/LED), bakgrunnsskjerm og skyggeskjermer
+* Mast med plattform/stige ved behov
+* Enheter for styring/kontroll av signalet med grensesnitt mot forriglingsutrustning
+
+For dagens reléanlegg vil grensesnittet mellom forriglingsutrustningen og lyssignalet være signalreleet. Det vil si at spolen i releet tilhører forriglingsutrustningen mens kontaktene i releet som styrer lyssignalet tilhører signalet. Spolen på kontrollreleet vil tilsvarende være en del av lyssignalet og kontakter på releet vil være en del av forriglingsutrustningen. 
+
+<figure id = "fig:Systemdefinisjon">
+[[Bilde:JD550 06 fig002.svg|thumb|center|500px|<caption>Systemdefinisjon av lyssignal</caption>]]
+</figure>
+
+<figure id = "fig:Systemdefinisjon">
+[[Bilde:JD550 06 fig003.svg|thumb|center|500px|<caption>Systemdefinisjon av lyssignal med eksempler på detaljer for signalhode og signalmast</caption>]]
+</figure>
+
+= Plassering av lyssignal =
+== Hovedsignal, forsignal og dvergsignal ==
+=== Generelt ===
+
+a) Hovedsignal, forsignal og dvergsignal skal plasseres til høyre for sporet i kjøreretningen eller over sporet.
+
+'''Unntak:'''
+
+# Ved to eller flere parallelle spor på en stasjon eller strekning skal signalet for sporet lengst til venstre i kjøreretningen plasseres til venstre for sporet eller over sporet. 
+# Dersom kravene til signalplassering ikke kan oppfylles til høyre for sporet på en enkeltsporet strekning, kan signalet plasseres til venstre for sporet.
+# Dersom signalet er plassert i umiddelbar nærhet av en plattform på venstre side av sporet, kan signalet plasseres til venstre for sporet.
+
+b) Dersom det ikke tydelig fremgår hvilket spor signalet gjelder for, skal signalet påsettes en pil (signal 102) som peker mot det sporet som signalet gjelder for.
+
+c) Et signal som plasseres i forhold til et sporavsnitt skal plasseres som beskrevet i vedlegg til [[Signal/Prosjektering/Togdeteksjon]].
+
+d) Der flere signal skal vises fra samme sted, skal signalene være plassert på samme signalmast.
+
+e) Lyssignal for forskjellige spor som naturlig hører sammen bør plasseres på linje, se eksempel i <xr id = "fig:Plassering av signal som naturlig hører sammen"/>.
+
+<figure id = "fig:Plassering av signal som naturlig hører sammen">
+[[Bilde:JD550 06 fig004.svg|thumb|center|500px|<caption>Plassering av signal som naturlig hører sammen</caption>]]
+</figure>
+
+=== Hovedsignal ===
+
+a) Et hovedsignal skal plasseres for å danne begynnelsespunkt for en togvei. 
+
+b) Et hovedsignal skal kunne plasseres for å danne sluttpunkt for en togvei.
+
+c) Et hovedsignal skal kunne plasseres i en togvei når det er behov for å gjenta kjøretillatelsen for et tog som har stoppet i togveien, for eksempel på grunn av av- og påstigning ved plattform.
+
+d) Et innkjørhovedsignal skal plasseres for å danne stasjonsgrense og vise signal for kjøring fra en blokkstrekning til en stasjon.
+
+e) Et utkjørhovedsignal skal plasseres for å vise signal for kjøring fra en stasjon til en blokkstrekning.
+
+f) Et indre hovedsignal skal plasseres for å vise signal for kjøring på stasjonen i de tilfeller stasjonens utforming krever dette.
+
+g) Et blokksignal skal plasseres på strekningen mellom to stasjoner for å vise signal for kjøring fra en blokkstrekning til neste blokkstrekning.
+
+h) Dersom et forsignal er plassert på et hovedsignals mast, skal hovedsignalet plasseres slik at også kravene til plassering av forsignal oppfylles.
+
+i) Et hovedsignal bør ikke plasseres i tunneler, på bruer, eller andre steder hvor en eventuell togstans og dermed muligheten for avstigning, vil medføre fare.
+
+j) Et innkjørhovedsignal skal plasseres ≥ 200 meter foran innkjørtogveiens første sentralstilte, motrettede sporveksel, se <xr id = "fig:Plassering av innkjørhovedsignal"/>.
+
+<figure id = "fig:Plassering av innkjørhovedsignal">
+[[Bilde:JD550 06 fig005.svg|thumb|center|500px|<caption>Plassering av innkjørhovedsignal</caption>]]
+</figure>
+
+k) Et innkjørhovedsignal bør plasseres slik at avstanden er tilstrekkelig til at et tog som kjører med strekningens høyeste tillatte kjørehastighet kan redusere hastigheten tilstrekkelig før innkjørtogveiens første sentralstilte sporveksel som kan være fastlagt for kjøring i sporvekselens avvikespor. 
+
+{{lærebokstoff|En slik plassering av innkjørhovedsignalet benyttes for å optimalisere strekningens kapasitet og mulig togfølgetid.
+
+Med tilstrekkelig hastighetsreduksjon menes tillatt kjørehastighet i sporvekselens avvikespor.}}
+
+l) Et hovedsignal skal plasseres slik at siktavstanden oppfyller kravene til enten “brutt sikt” eller til “ubrutt sikt” i <xr id = "Siktkrav for hovedsignal"/>
+
+<figtable id="Siktkrav for hovedsignal">
+{| class="wikitable" style="text-align:center"
+|+ Siktkrav for hovedsignal
+|-
+! rowspan="3"| Sikt !! colspan="16"| Strekningens høyeste tillatte hastighet [km/h]
+|-
+! ≤ 135 !! 140 !! 145 !! 150 !! 155 !! 160 !! 165 !! 170 !! 175 !! 180 !! 185 !! 190 !! 195 !! 200 !! 210 !! > 210
+|-
+! colspan="16"| Minimum siktavstand [m]
+|-
+! Ubrutt
+| 150 || 156 || 161 || 167 || 172 || 178 || 183 || 189 || 194 || 200 || 206 || 211 || 217 || 222 || 233 || 250
+|-
+! Brutt
+| 183 || 183 || 183 || 183 || 183 || 183 || 183 || 189 || 194 || 200 || 206 || 211 || 217 || 222 || 233 || 250
+|}
+</figtable>
+
+{{lærebokstoff|Siktkravene baserer seg på følgende: 
+
+* Stopplengden ved kjørehastighet 40 km/h
+* Samlet reaksjons- og tilsetningstid på 5,5 og 8,5 sekund ved henholdsvis ubrutt sikt og brutt sikt
+* Retardasjon 0,7 m/s<sup>2</sup>
+* Ubrutt sikt til hovedsignalet minimum de siste 4 sekund før signalpassering
+
+Når ubrutt sikt ikke er oppnåelig, kan sikt til hovedsignalet helt eller delvis være hindret (brutt sikt) i inntil 25 % av tiden, men maksimum 1 sekund av gangen med linjehastighet.}}
+
+m) Et hovedsignal skal plasseres slik at det ubrutt er synlig de siste 4 sekund før signalpassering for et tog som kjører med strekningens høyeste tillatte kjørehastighet.
+
+n) Plassering av hovedsignaler for kjøring i motsatte retninger skal koordineres med inndeling i trafikale arbeidsområder og kontaktledningsanleggets seksjonsdeler. 
+
+o) Ved prosjektering og flytting av hovedsignaler skal det gjennomføres en RAMS-analyse av grensene for de berørte arbeidsområdene, der det også tas hensyn til seksjoneringen av kontaktledningsanlegget. 
+
+{{lærebokstoff|Kontaktledningsanlegg og signalplassering skal prosjekteres slik at det oppnås nødvendig fleksibilitet i opprettelse og bruk av arbeidsområder, uten at det medfører økt risiko.  Dette betyr blant annet at innkjørhovedsignal og utkjørhovedsignal ved en stasjonsgrense på flersporet strekning skal plasseres slik at det kan bygges et seksjonsdele i kontaktledningsanlegget mellom signalene.}}
+
+=== Forsignal ===
+a) Et forsignal skal plasseres slik at avstanden er tilstrekkelig til at et tog som kjører med tillatt kjørehastighet kan stoppe foran det tilhørende hovedsignalet.
+
+{{lærebokstoff|Tillatt kjørehastighet kan være strekningens høyeste tillatte kjørehastighet, eller den kan være redusert ved bruk av ATC forsignal eller gjennomsignalering.}}
+
+b) Et forsignal skal plasseres minimum 800 m foran tilhørende hovedsignal.
+:'''Unntak:''' Kortere forsignalavstand kan benyttes der dette kan bidra til økt kapasitet. Dette skal ikke gi et uakseptabelt risikonivå, og skal i hvert tilfelle vurderes og godkjennes.
+
+c) Et frittstående forsignal skal plasseres slik at avstanden til det tilhørende hovedsignalet oppfyller krav i <xr id="tab:frittstående forsignal"/>. 
+
+:'''Unntak:''' Når det prosjekteres kortere forsignalavstand enn angitt i tabellen (ref. unntak fra krav b) kan avstanden reduseres til verdien som finnes ut fra [https://trv.jbv.no/regnestykker/atc/atc_formel%202016.html formelen] gitt i avsnitt 3.1 i [[Signal/Prosjektering/ATC#Generelt_2|Signal/Prosjektering/ATC]]. 
+
+{{lærebokstoff|Ved bruk av formelen settes målhastigheten til 0.}}
+
+ 
+<figtable id="tab:frittstående forsignal">
+{| class="wikitable" style="text-align:center"
+|+ Plassering av frittstående forsignal
+|-
+! rowspan="3"| Fall f [‰] !! colspan="15"| Strekningens høyeste tillatte kjørehastighet [km/h]
+|-
+! 60 !! 65 !! 70 !! 75 !! 80 !! 85 !! 90 !! 95 
+! 100 !! 105 !! 110 !! 115 !! 120 !! 125 !! ≥ 130
+|-
+! colspan="15"| Avstand [m]
+|-
+! f < 1
+| 800 || 800 || 800 || 800 || 800 || 800 || 800 || 800 || 800 || 841 || 911 || 984 || 1060 || 1139 || 1220
+|-
+! 1 < f < 5 
+| 800 || 800 || 800 || 800 || 800 || 800 || 800 || 800 || 816 || 888 || 963 || 1041 || 1121 || 1205 || 1292
+|-
+! 5 < f < 10 
+| 800 || 800 || 800 || 800 || 800 || 800 || 800 || 800 || 865 || 942 || 1022 || 1106 || 1193 || 1282 || 1376
+|-
+! 10 < f < 15 
+| 800 || 800 || 800 || 800 || 800 || 800 || 800 || 844 || 924 || 1007 || 1093 || 1183 || 1277 || 1374 || 1474
+|-
+! 15 < f < 20 
+| 800 || 800 || 800 || 800 || 800 || 800 || 825 || 907 || 994 || 1084 || 1178 || 1276 || 1378 || 1483 || 1593
+|-
+! 20 < f < 25 
+| 800 || 800 || 800 || 800 || 800 || 808 || 894 || 985 || 1080 || 1179 || 1282 || 1389 || 1501 || 1617 || 1738
+|}
+</figtable>
+
+
+d) Når frittstående forsignal benyttes og strekningens høyeste tillatt kjørehastighet er > 130 km/h, skal ATC forsignal plasseres slik at avstanden er tilstrekkelig til at et tog kan redusere hastigheten til 130 km/h ved det tilhørende forsignalet, se <xr id = "fig:plasseringATC"/>. For hastigheter over 210 km/h kan avstanden finnes ved å benytte regneark i [https://194.19.110.201/PDF/Signal/550/Vedlegg/T5010a01.pdf vedlegg a] til [[Signal/Prosjektering/ATC]]. Målhastigheten skal være 130 km/h. 
+
+<figure id = "fig:plasseringATC">
+[[Bilde:JD550 06 fig006.svg|thumb|center|500px|<caption>Plassering av frittstående forsignal og ATC forsignal på strekning med kjørehastighet > 130 km/h</caption>]]
+</figure>
+
+<figtable id="tab:Plassering av ATC">
+{| class="wikitable" style="text-align:center"
+|+ Plassering av ATC forsignal på strekning med kjørehastighet > 130 km/h
+|-
+! rowspan="3"| Fall f [%] !! colspan="16"| Strekningens høyeste tillatte kjørehastighet [km/h]
+|-
+! 135 !! 140 !! 145 !! 150 !! 155 !! 160 !! 165 !! 170 !! 175 !! 180 !! 185 !! 190 !! 195 !! 200 !! 205 !! 210
+|-
+! colspan="16"| Minimum avstand [m]
+|-
+! f < 1
+| 373 || 460 || 550 || 642 || 741 || 844 || 952 || 1065 || 1183 || 1306 || 1434 || 1568 || 1707 || 1852 || 2002 || 2159
+|-
+! 1 < f < 5 
+| 379 || 471 || 567 || 666 || 772 || 883 || 999 || 1120 || 1248 || 1380 || 1519 || 1664 || 1815 || 1972 || 2136 || 2308
+|-
+! 5 < f < 10 
+| 385 || 485 || 587 || 693 || 808 || 928 || 1053 || 1185 || 1323 || 1468 || 1619 || 1777 || 1943 || 2115 || 2296 || 2485
+|-
+! 10 < f < 15 
+| 393 || 501 || 612 || 726 || 850 || 981 || 1118 || 1262 || 1414 || 1572 || 1739 || 1914 || 2097 || 2288 || 2489 || 2699
+|-
+! 15 < f < 20 
+| 402 || 519 || 641 || 765 || 902 || 1045 || 1197 || 1356 || 1524 || 1700 || 1885 || 2081 || 2286 || 2501 || 2727 || 2965
+|-
+! 20 < f < 25
+| 414 || 543 || 676 || 813 || 964 || 1124 || 1293 || 1471 || 1660 || 1858 || 2068 || 2290 || 2523 || 2769 || 3029 || 3303
+|}
+</figtable>
+
+e) Dersom nødvendig stopplengde er lengre enn avstanden mellom to etterfølgende hoved­signal, skal det benyttes gjennomsignalering ved hjelp av ATC ([[Signal/Prosjektering/ATC]]), se <xr id = "fig:forsignalplassering"/>.
+
+<figure id = "fig:forsignalplassering">
+[[Bilde:JD550 06 fig007.svg|thumb|center|500px|<caption>Forsignalplassering og gjennomsignalering</caption>]]
+</figure>
+
+f) Et forsignal skal plasseres på foregående hovedsignals mast dersom avstanden mellom det tilhørende hovedsignalet og det foregående hovedsignalet er ≤ 2200 meter.
+
+g) Mellom et forsignal og det tilhørende hovedsignalet skal det ikke plasseres andre hoved- eller forsignal.
+
+h) Et forsignal skal plasseres slik at siktavstanden oppfyller kravene til enten “brutt sikt” eller til “ubrutt sikt” i <xr id = "tab:siktkrav forsignal"/>:
+
+ <span id="siktkravFS">
+<figtable id = "tab:siktkrav forsignal">
+{| class="wikitable" style="text-align:center"
+|+ Siktkrav til forsignal
+|-
+! rowspan="3"| Sikt !! colspan="19"| Strekningens høyeste tillatte kjørehastighet [km/h]
+|-
+! 40 !! 45 !! 50 !! 55 !! 60 !! 65 !! 70 !! 75 !! 80 !! 85 !! 90 !! 95 !! 100 !! 105 !! 110 !! 115 !! 120 !! 125 !! ≥130
+|-
+! colspan="19"| Siktavstand [m]
+|-
+! Ubrutt 
+| 78 || 88 || 97 || 107 || 117 || 126 || 136 || 146 || 156 || 165 || 175 || 185 || 194 || 204 || 214 || 224 || 233 || 243 || 250
+|-
+! Brutt 
+| 111 || 125 || 139 || 153 || 167 || 181 || 194 || 208 || 222 || 236 || 250 || 264 || 278 || 292 || 306 || 319 || 333 || 347 || 360 
+|}
+</figtable>
+</span>
+
+{{lærebokstoff|Siktkravene baserer seg på følgende:
+
+* Strekningens høyeste tillatte kjørehastighet opptil 130 km/h. Over dette gjelder tilsvarende siktavstand som ved kjørehastighet 130 km/h.
+* Reaksjonstid på 7 og 10 sekund ved henholdsvis ubrutt og brutt sikt. 
+
+Når ubrutt sikt ikke er oppnåelig, kan sikt til forsignalet helt eller delvis være hindret (brutt sikt) i inntil 25 % av tiden, men maksimum 1 sekund av gangen med linjehastighet.}}
+
+i) Et forsignal skal plasseres slik at det ubrutt er synlig de siste 4 sekunder før signalpassering for et tog som kjører med strekningens høyeste tillatte kjørehastighet.
+
+=== Dvergsignal ===
+
+a) Et dvergsignal skal kunne plasseres for å danne begynnelsespunkt for en skiftevei.
+
+b) Et dvergsignal skal kunne plasseres for å danne sluttpunkt for en tog- eller skiftevei.
+
+c) Et dvergsignal skal kunne plasseres i en togvei for å redusere lengden på togveiens sikkerhetssone.
+
+d) Et frittstående dvergsignal som danner sluttpunkt for en togvei skal plasseres slik at siktavstanden oppfyller minimum ett av følgende krav:
+
+# Ubrutt sikt:150 meter
+# Brutt sikt:183 meter
+
+{{lærebokstoff|Siktkravene baserer seg på følgende: 
+
+# Stopplengden ved kjørehastighet 40 km/h
+# Samlet reaksjons- og tilsetningstid på 5,5 og 8,5 sekund ved henholdsvis ubrutt sikt og brutt sikt
+# Retardasjon 0,7 m/s<sup>2</sup>
+
+I tidsperioden hvor brutt sikt tillates kan sikt til dvergsignalet helt eller delvis være hindret i 25 % av tiden, men maksimum 1 sekund av gangen.}}
+
+e) Et dvergsignal skal plasseres slik at det ubrutt er synlig på minst 50 meter avstand. 
+
+{{lærebokstoff|Ubrutt sikt forutsetter at hele signalet skal være synlig fra alle relevante førerposisjoner. Siktkravet baserer seg på at signalet skal være synlig de siste 4 sekunder før det passeres for et tog som kjører med høyeste tillatte kjørehastighet ved skifting, dvs. 40 km/h.
+Plassering av dvergsignal og siktavstand tilpasses lokale forhold.
+}}
+
+f) Et dvergsignal skal plasseres slik at avstanden fra det oppnås sikt til dvergsignalet, og fram til sluttpunktet for skifteveien som signaleres er tilstrekkelig til at et skift som kjører i 40 km/h kan stoppe før sluttpunktet. Minste avstand fra punktet det oppnås sikt til sluttpunkt for signalert skiftevei er angitt i <xr id="tab:Krav for plassering av dvergsignal"/>.
+
+<figtable id="tab:Krav for plassering av dvergsignal">
+{| class="wikitable" style="text-align:center"
+|+ Avstand fra punkt hvor sikt til dvergsignalet oppnås, fram til skifteveiens sluttpunkt.
+|-
+! Fall f [‰] !! Avstand [m]
+|-
+| f ≤ 1 || 177
+|-
+| 1 < f ≤ 5 || 184
+|-
+| 5 < f ≤ 10 || 192
+|-
+| 10 < f ≤ 15 || 201
+|-
+| 15 < f ≤ 20 || 212
+|-
+| 20 < f ≤ 25 || 226
+|}
+</figtable>
+
+g) Ved prosjektering og flytting av dvergsignaler skal det gjennomføres en RAMS-analyse av grensene for de berørte arbeidsområdene, der det også tas hensyn til seksjoneringen av kontaktledningsanlegget.
+
+== Andre lyssignal ==
+=== Høyt skiftesignal ===
+
+a) Når det på et område på en stasjon skal gjennomføres skifting, skal et høyt skiftesignal settes opp.
+
+'''Unntak:'''
+
+# Det er ikke behov for å sette opp et høyt skiftesignal for et område som skiftemessig dekkes av dvergsignal.
+
+b) Et høyt skiftesignal skal plasseres slik at det er tydelig hvilket lokalområde signalet gjelder for.
+
+{{lærebokstoff|Ved behov kan det settes opp flere høye skiftesignal for samme lokalområde.}}
+
+=== Repetersignal  ===
+
+a) Et repetersignal skal benyttes når tilstrekkelig sikt til utkjørhovedsignal eller indre hovedsignal ikke oppnås.
+
+b) Lyssignalet plasseres på egen mast eller i åk på egnet sted.
+
+=== Togsporsignal ===
+
+a) Togsporsignal kan benyttes når tilstrekkelig sikt til utkjørhovedsignal eller indre hovedsignal ikke oppnås.
+
+=== Middelkontrollampe ===
+
+a) En middelkontrollampe skal benyttes når det er behov for å signalere at et tog har passert et definert punkt i togveien med siste aksel (for eksempel middel).
+
+b) En middelkontrollampe plasseres på egen mast eller sammen med annet signal og plasseres slik at signalet er synlig for kjørende personale når de har behov for å vite om at definert punkt i togveien er passert.
+
+=== Lyssignal forsiktig kjøring ===
+
+a) Lyssignalet forsiktig kjøring skal benyttes når det tilhørende hovedsignalet viser signal til en avkortet togvei eller til et buttspor.
+
+{{lærebokstoff|Lyssignalet forsiktig kjøring kan også benyttes i andre tilfeller, men dette skal godkjennes spesielt i hvert enkelt tilfelle.}}
+
+b) Lyssignalet forsiktig kjøring skal plasseres på masten til det hovedsignalet som viser kjørsignal til den togveien som signal ”Forsiktig kjøring” skal vises for.
+
+=== Linjesignal ===
+
+a) Et linjesignal skal benyttes når et hovedsignal kan vise kjørsignal til forskjellige banestrekninger eller sporområder på en stasjon. 
+
+b) Linjesignal skal plasseres på masten til det hovedsignal som kan vise kjørsignal til forskjellige banestrekninger eller sporområder.
+
+=== Lyssignal avvikende kjørehastighet ===
+
+a) Lyssignalet avvikende kjørehastighet skal ikke benyttes på strekninger utrustet med FATC.
+
+b) Lyssignalet avvikende kjørehastighet skal benyttes når hastigheten i første motrettede sporveksel som ligger for kjøring til avvik kan variere mellom normalhastigheten (40 km/h) og/eller økte hastigheter.
+
+c) Lyssignalet avvikende kjørehastighet skal plasseres på masten til det hovedsignalet som viser kjøretillatelse over sporveksel med avvikende høyere kjørehastighet (> 40 km/h).
+
+=== Sporvekselsignal for enkel sporveksel ===
+
+a) Ved behov kan det settes opp sporvekselsignal for enkelt sporveksel.
+
+b) Sporvekselsignal for enkel sporveksel skal settes opp i nærhet av sporvekselen slik at det går fram hvilken sporveksel signalet gjelder.
+
+c) Sporvekselsignal for enkel sporveksel skal settes opp slik at det er synlig for kjørende personale.
+
+=== Sporvekselsignal for kryssveksel ===
+
+a) Ved behov kan det settes opp sporvekselsignal for kryssveksel.
+
+b) Sporvekselsignal for kryssveksel skal settes opp i nærhet av sporvekselen slik at det går fram hvilken sporveksel signalet gjelder.
+
+c) Sporvekselsignal for kryssveksel skal settes opp slik at det er synlig for kjørende personale.
+
+=== Sporsperresignal ===
+
+a) Ved behov kan det settes opp sporsperresignal.
+
+b) Sporsperresignal skal settes opp i nærhet av sporsperren slik at det går fram hvilken sporsperre signalet gjelder.
+
+c) Sporsperresignal skal settes opp slik at det er synlig for kjørende personale.
+
+= Lyssignal - tekniske krav =
+== Generelt ==
+
+a) Et lyssignal skal vise det signalbildet som samsvarer med forriglingsutrustningens status.
+
+b) Et lyssignal skal vise et godt synlig og entydig signalbilde.
+
+c) Et lyssignal skal kunne plasseres på egen mast, på samme mast som andre lyssignal eller i åk (også samplassert med andre signal), se <xr id = "fig:Eksempel på samplassering av lyssignal"/>.
+
+{{lærebokstoff|Kravene til plassering av signalhode i forhold til skinnetopp gjelder for signal plassert på mast. For signal plassert i åk vil denne avstanden i mange tilfeller øke betraktelig.}}
+
+d) Den tekniske konstruksjonen skal forhindre utilsiktet lys i signalet på grunn av indusert og/eller kapasitivt koblet spenning.
+
+e) Et lyssignal skal ikke vise falskt signalbilde på grunn av optiske forhold som refleksjoner, bakgrunnslys etc.
+
+f) Et lyssignal skal ha en optisk sikteanordning for retningsinnstilling.
+
+g) En signalmast skal utformes slik at kabler beskyttes av konstruksjonen.
+
+h) Et lyssignal skal ved behov utrustes med stige/plattform slik at nødvendig vedlikehold kan gjennomføres.
+
+i) En signalmast med fastmontert stige skal ha klatrevern.
+
+j) Stiger og plattformer skal utformes slik at krav i arbeidsmiljøloven oppfylles.
+
+=== Signalmast ===
+
+a) En signalmast med signalhode skal ikke på grunn av vindlaster eller andre eksterne laster ha horisontale bevegelser i noen retning større enn 2 % av signalets totale lengde.
+
+b) En signalmast med signalhode skal ikke på grunn av vindlaster eller andre eksterne laster ha en permanent horisontal deformering i noen retning større enn 0,04 % av signalets totale lengde.
+
+c) Overflaten på signalmasten skal ikke påvirkes av UV-stråler.
+
+=== Signalhode ===
+
+a) Et signalhode og bakgrunnsskjerm skal være farget sort (silkematt sort).
+
+b) Overflaten til et signalhode og bakgrunnsskjerm skal ikke påvirkes av UV-stråler.
+
+=== Lyskilder ===
+==== Generelt ====
+
+a) En lyskilde skal oppfattes som en sirkulær, homogen og jevnt lysende flate.
+
+b) Lysspredningen skal være slik at lysstyrken ved ± 8˚ skal være minimum 50 % av lysstyrken ved optisk akse 0˚. Se <xr id = "fig:lysspredning"/>.
+
+c) Lysstyrken 45˚ fra den optiske aksen skal være minst 1cd.
+
+d) Lyskilden skal defineres som feilaktig tent dersom lysstyrken overstiger 0,05 cd. 
+
+e) Lyskilden skal defineres som feilaktig slukket dersom lysstyrken er mindre enn 10 cd. 
+
+<figure id = "fig:lysspredning">
+[[Bilde:JD550 06 fig014.svg|thumb|center|500px|<caption>Lysspredning/lysstyrke</caption>]]
+</figure>
+
+==== Glødelampe (signallampe) ====
+
+a) En signallampe bør være utstyrt med to glødetråder, en hovedtråd og en reservetråd (dobbeltfilament).
+
+b) Sentrering av glødetråden (hovedtråden) i forhold til lampens symmetriplan A og B skal høyst avvike med 1 mm.
+
+c) En signallampe skal være utformet slik at refleksjon av sollys i lampens glass ikke skal kunne fremstå som lys i lampen. 
+
+==== Diodematrise ====
+
+a) En diodematrise skal ”tenne” maksimum 20 ms etter at korrekt spenning er mottatt på diodematrisens tilkoblinger.
+
+b) En diodematrise skal gi den spesifiserte lysstyrken maksimum 75 ms etter at korrekt spenning er mottatt på diodematrisens tilkoblinger.
+
+c) En diodematrise skal ”slukke” maksimum 20 ms etter at spenning på diodematrisens tilkoblinger er koblet bort.
+
+==== Fiberoptikk ====
+
+a) En signallampe for fiberoptikk bør utføres med to glødetråder, hovedtråd og reservetråd (dobbeltfilament).
+
+b) Avstanden mellom signalhodet og signallampen for fiberoptikk skal minimum kunne være inntil 20 meter. 
+
+<figure id = "fig:Eksempel på samplassering av lyssignal">
+[[Bilde:JD550 06 fig015.svg|thumb|center|500px|<caption>Eksempel på samplassering av lyssignal</caption>]]
+</figure>
+
+== Hovedsignal ==
+
+<figure id = "fig:hovedsignal">
+[[Bilde:JD550 06 fig016.svg|thumb|center|500px|<caption>Hovedsignal 3-lys - signalbilder</caption>]]
+</figure>
+
+a) Et hovedsignal skal kunne vise:
+
+# Signal 20 A, ”Stopp”. Blinklys i rød lampe H2, eller signal 20 B, ”Stopp”. Lys i rød lampe H2.
+# Signal 21, ”Kjør med redusert hastighet”. Lys i grønn øvre lampe H1 for 3-lys hovedsignal og lys i grønn nedre lampe H3 for 2-lys hovedsignal.
+# Signal 22, ”Kjør”. Lys i grønn øvre lampe H1 og grønn nedre lampe H3.
+
+b) En feil i lyssignalet som gjør at lyskilder ikke lyser skal kunne detekteres av forriglingsutrustningen. 
+
+c) Signalbildene i et hovedsignal skal kunne ses og oppfattes entydig på 250 meters avstand.
+
+d) Lyskildene skal ha signalfarge i henhold til [DIN 6163] og lysstyrke mål i optisk akse som vist i <xr id = "tab:hovedsignal"/>:
+
+<figtable id = "tab:hovedsignal">
+{| class="wikitable" style="text-align:center"
+|+ Hovedsignal - signalfarge og lysstyrke
+|-
+| rowspan="2"|'''Signalfarge''' || colspan="2"|'''Daglys [cd]'''|| colspan="2"|'''Nattlys [cd]'''
+|-
+| '''Minimum''' || '''Maksimum''' || '''Minimum''' || '''Maksimum'''
+|-
+| '''Rød''' || 500 || 1400 || 200 || 840
+|-
+| '''Grønn''' || 500 || 1400 || 200 || 840
+|}
+</figtable>
+
+e) Lyskilden skal kunne lyse med blinklys med blinkfrekvens 60 blink/minutt og lys/mørke-forhold 60/40.
+
+f) Et hovedsignal skal vise fast lys dersom blinklys ikke kan vises.
+
+g) Lyskilden skal ha en lysåpning på 200 ± 10 mm.
+
+h) Avstanden senter - senter mellom lyskildene skal være 350 ± 10 mm.
+
+i) Et hovedsignal som står i dagslys skal ha bakgrunnsskjerm.
+
+j) En bakgrunnsskjerm skal minimum skjerme for sollys i et område fra lyskildens ytterkant og ut til et punkt som tilsvarer lyskildens lysåpning.
+
+{{lærebokstoff|Eksisterende hovedsignal har en bakgrunnsskjerm med bredde på 800 ± 10 mm.}}
+
+k) Et hovedsignal som står i dagslys skal ha en skyggeskjerm rundt lyskildene for skjerming mot sollys. 
+
+{{lærebokstoff|Eksisterende hovedsignal har en skyggeskjerm som bygger 300 ± 10 mm ut over lyskildene og dekker ned langs sidene av lyskildene.}}
+
+l) Signalhodet bør være plassert slik at avstanden mellom den nedre lyskildens senter og skinnetopp er ca. 4,7 meter.
+
+m) Et hovedsignal skal ha et merkeskilt.
+
+n) Merkeskiltet skal plasseres slik at skiltets senter er ca. 2,7 meter over skinnetopp.
+
+o) Et innkjørhovedsignal og et blokksignal skal ha påsatt 2 stk. gule lysreflekterende markeringsstriper med 100 mm bredde og 800 ± 200 mm avstand. Markeringsstripene skal gå rundt hele signalmasten.
+
+p) Et indre hovedsignal i innkjørtogvei skal ha påsatt 2 stk. gule lysreflekterende markeringsstriper med 100 mm bredde og 800 ± 200 mm avstand. Markeringsstripene skal kun vises på signalmastens forside.
+
+q) Ugyldighetsmerket skal kunne henges opp foran signalhodet/på signalmast.
+
+r) Signalhodet bør kunne vendes vekk fra sporet.
+
+s) Signalhodet skal kunne justeres trinnløst i horisontalplanet inntil ± 20°.
+
+t) Signalhodet skal kunne justeres trinnløst i vertikalplanet inntil ± 3°.
+
+{{lærebokstoff|3° tilsvarer stigning/fall på 52 ‰ på avstand 250 meter.}}
+
+<figure id = "fig:eksempel på 3-lys hovedsignal">
+[[Bilde:JD550 06 fig017.svg|thumb|center|500px|<caption>Eksempel på 3-lys hovedsignal</caption>]]
+</figure>
+
+== Forsignal ==
+
+<figure id = "fig:forsignal - signalbilder">
+[[Bilde:JD550 06 fig018.svg|thumb|center|350px|<caption>Forsignal - signalbilder</caption>]]
+</figure>
+
+a) Et forsignal skal kunne vise:
+
+# Signal 23, ”Forvent stopp”. Blinklys i gul lampe F1.
+# Signal 24, ”Forvent kjør med redusert hastighet”. Blinklys i gul lampe F1 og grønn lampe F2.
+# Signal 25, ”Forvent kjør”. Blinklys i grønn lampe F2.
+
+b) En feil i lyssignalet som gjør at lyskilder ikke lyser skal kunne detekteres av forriglingsutrustningen.
+
+c) Signalbildene i et forsignal skal kunne ses og oppfattes entydig på 250 meters avstand.
+
+d) Lyskildene skal ha signalfarge i henhold til [DIN 6163] og lysstyrke mål i optisk akse som vist i <xr id = "tab:forsignal"/>:
+
+<figtable id = "tab:forsignal">
+{| class="wikitable" style="text-align:center"
+|+ Forsignal - signalfarge og lysstyrke
+|-
+| rowspan="2"|'''Signalfarge''' || colspan="2"|'''Daglys [cd]'''|| colspan="2"|'''Nattlys [cd]'''
+|-
+| '''Minimum''' || '''Maksimum''' || '''Minimum''' || '''Maksimum'''
+|-
+| '''Gul''' || 1250 || 3500 || 500 || 2100
+|-
+| '''Grønn''' || 500 || 1400 || 200 || 840
+|}
+</figtable>
+
+e) Lyskilden skal kunne lyse med blinklys med blinkfrekvens 60 blink/minutt og lys/mørke forhold 60/40.
+
+f) Et forsignal skal vise fast lys dersom blinklys ikke kan vises.
+
+g) Lyskilden skal ha en lysåpning på 200 ± 10 mm.
+
+h) Avstanden senter - senter mellom lyskildene skal være 350 ± 10 mm.
+
+i) Et forsignal som står i dagslys skal ha bakgrunnsskjerm.
+
+j) En bakgrunnsskjerm skal minimum skjerme for sollys i et område fra lyskildens ytterkant og ut til et punkt som tilsvarer lyskildens lysåpning.
+
+{{lærebokstoff|Eksisterende forsignal har en bakgrunnsskjerm med bredde på 800 ± 10 mm.}}
+
+k) Et forsignal som står i dagslys skal ha en skyggeskjerm rundt lyskildene for skjerming mot sollys.
+
+{{lærebokstoff|Eksisterende forsignal har skyggeskjerm som bygger 300 ± 10 mm ut over lyskildene og dekker ned langs sidene av lyskildene.}}
+
+l) Signalhodet bør være plassert slik at avstanden mellom den nedre lyskildens senter og skinnetopp er 
+
+# ca. 4,7 meter for frittstående forsignal
+# ca. 3,5 meter for forsignal på et hovedsignals mast
+
+m) Et frittstående forsignal skal ha et merkeskilt.
+
+n) Merkeskiltet skal plasseres slik at skiltets senter er minimum 2,1 meter over skinnetopp.
+
+o) Et frittstående forsignal skal ha påsatt en gul lysreflekterende markeringsstripe med 100 mm bredde på signalmast minimum 2,7 meter over skinnetopp. Markeringsstripen skal gå rundt hele signalmasten.
+
+p) Ugyldighetsmerket skal kunne henges opp foran signalhodet/på signalmast.
+
+q) Signalhodet bør kunne vendes vekk fra sporet.
+
+r) Signalhodet skal kunne justeres trinnløst i horisontalplanet inntil ± 20°.
+
+s) Signalhodet skal kunne justeres trinnløst i vertikalplanet inntil ± 3°.
+
+{{lærebokstoff|3° tilsvarer stigning/fall på 52 ‰ på avstand 250 meter.}}
+
+<figure id = "fig:eksempel frittstående">
+[[Bilde:JD550 06 fig019.svg|thumb|center|500px|<caption>Eksempel på frittstående forsignal og forsignal på hovedsignals mast</caption>]]
+</figure>
+
+== Dvergsignal ==
+
+<figure id = "fig:Dvergsignal - signalbilder">
+[[Bilde:JD550 06 fig020.svg|thumb|center|500px|<caption>Dvergsignal - signalbilder</caption>]]
+</figure>
+
+a) Et dvergsignal skal kunne vise:
+
+# Signal 43, ”Kjøring forbudt”. Lys i lampe R1 og R2
+# Signal 44, ”Varsom kjøring tillatt”. Lys i lampe R1 og R3
+# Signal 45, ”Kjøring tillatt”. Lys i lampe R1 og R4
+# Signal 46 A, ”Frigitt for lokal skifting”. Lys i lampe R3, ellerSignal 46 B, ”Frigitt for lokal skifting”. Lys i lampe R2 og R4
+
+b) En feil i lyssignalet som gjør at lyskilder ikke lyser skal kunne detekteres av forriglingsutrustningen.
+
+c) Signalbildet i et dvergsignal skal kunne ses og oppfattes entydig på 200 meters avstand.
+
+d) Lyskildene skal ha signalfarge i henhold til [DIN 6163] og lysstyrke mål i optisk akse som vist i <xr id = "tab:dvergsignal"/>:
+
+<figtable id = "tab:dvergsignal">
+{| class="wikitable" style="text-align:center"
+|+ Dvergsignal - signalfarge og lysstyrke
+|-
+| rowspan="2"|'''Signalfarge''' || colspan="2"|'''Daglys [cd]'''|| colspan="2"|'''Nattlys [cd]'''
+|-
+| '''Minimum''' || '''Maksimum''' || '''Minimum''' || '''Maksimum'''
+|-
+| '''Hvit B''' (glødelampe) || 200 || 800 || 80 || 320
+|-
+| '''Hvit A''' (LED) || 200 || 800 || 80 || 320
+|}
+</figtable>
+
+e) Lyskilden skal ha en lysåpning på 100 ± 5 mm.
+
+f) Avstanden mellom lyskilde R1 og R2, R1 og R3 og R1 og R4 skal være 205 ± 5 mm. Lyskilde R3 skal plasseres med lik avstand til R2 og R4.
+
+g) Et dvergsignal skal ha en bredde på 370 ± 10 mm og en høyde på 370 ± 10 mm med avrundede kanter som vist i eksempelet i <xr id = "fig:eksempel dvergsignal"/>.
+
+h) Et dvergsignal som står i dagslys skal ha skyggeskjerm rundt lyskildene for skjerming mot sollys.
+
+{{lærebokstoff|Dagens dvergsignal har skyggeskjerm som bygger ut 70 mm over lyskilden og dekker ned langs sidene av lyskilden.}}
+
+i) Signalhodet bør være plassert slik at avstanden mellom de nedre lyskildene og skinnetopp er minimum 1,5 meter.
+
+j) Et frittstående dvergsignal skal ha et merkeskilt plassert under signalhode.
+
+k) Signalhodet bør kunne vendes vekk fra sporet.
+
+l) Signalhodet skal kunne justeres trinnløst i horisontalplanet ± 10°.
+
+m) Signalhodet skal kunne justeres trinnløst i vertikalplanet inntil ± 3°.
+
+n) Toppen av signalhodet bør ikke være mer enn 2,0 meter over skinnetopp.
+
+{{lærebokstoff|3° tilsvarer stigning/fall på 52 ‰ på avstand 250 meter.}}
+
+<figure id = "fig:eksempel dvergsignal">
+[[Bilde:JD550 06 fig021_01.svg|thumb|center|500px|<caption>Eksempel på frittstående dvergsignal </caption>]]
+</figure>
+
+== Høyt skiftesignal ==
+
+<figure id = "fig:høyt skiftesignal og eksempel på lyssignal">
+[[Bilde:JD550 06 fig022.svg|thumb|center|500px|<caption>Høyt skiftesignal og eksempel på lyssignal</caption>]]
+</figure>
+
+a) Et høyt skiftesignal skal kunne vise:
+
+# Signal 41, ”Skifting forbudt”. Horisontal ”strek”.
+# Signal 42, ”Skifting tillatt”. 45° ”strek” opp til høyre.
+
+'''Unntak til punkt 1:'''
+
+# Det er ikke behov for at signalet skal kunne vise signal 41 dersom signal kun er satt opp for å oppheve ”Stopp” i utkjørhovedsignal
+
+
+b) Signalbildet i høyt skiftesignal skal utføres med tilstrekkelig antall lyskilder (lyspunkter) til at signalet ikke kan misforstås, og skal oppfattes som en horisontal ”strek” og 45° ”strek” opp til høyre med strektykkelse (lysåpning) 50 ± 2 mm.
+
+c) En feil i lyssignalet som gjør at lyskilder ikke lyser skal kunne detekteres av forriglingsutrustningen.
+
+d) Signalbildet i et høyt skiftesignal skal kunne ses og oppfattes entydig på 150 meters avstand.
+
+e) Lyskildene skal ha signalfarge i henhold til [DIN 6163] og lysstyrke mål i optisk akse som vist i <xr id = "tab:høyt sikftesignal"/>:
+
+<figtable id = "tab:høyt sikftesignal">
+{| class="wikitable" style="text-align:center"
+|+ Høyt skiftesignal - signalfarge og lysstyrke
+|-
+| rowspan="2"|'''Signalfarge''' || colspan="2"|'''Daglys [cd]'''|| colspan="2"|'''Nattlys [cd]'''
+|-
+| '''Minimum''' || '''Maksimum''' || '''Minimum''' || '''Maksimum'''
+|-
+| '''Hvit B''' (glødelampe) || 200 || 800 || 80 || 320
+|-
+| '''Hvit A''' (LED) || 200 || 800 || 80 || 320
+|}
+</figtable>
+
+f) Et høyt skiftesignal skal ha en bredde på 450 ± 10 mm og en høyde på 500 ± 10 mm.
+
+g) Lyskilder i et høyt skiftesignal skal plasseres på linje vertikalt og horisontalt med lik avstand senter - senter på 80 ± 2 mm i vertikal og horisontalt planet.
+
+h) Et høyt skiftesignal som står i dagslys bør ha skyggeskjerm rundt signalbildet for skjerming mot sollys.
+
+i) Et høyt skiftesignal skal kunne utføres som både 1-sidig og 2-sidig.
+
+j) Signalhodet bør være plassert slik at avstanden mellom senter av de nederste lyskildene og skinnetopp er
+
+# ca. 4,5 meter for høyt skiftesignal på egen mast
+# ca. 3,5 meter for høyt skiftesignal på et hovedsignals mast
+
+k) Et høyt skiftesignal på egen mast skal ha et merkeskilt. 
+
+l) Merkeskiltet bør plasseres slik at skiltets senter er minimum 2,7 meter over skinnetopp.
+
+m) Signalhodet bør kunne vendes vekk fra sporet.
+
+n) Signalhodet skal kunne justeres trinnløst i horisontalplanet inntil ± 10°.
+
+o) Signalhodet skal kunne justeres trinnløst i vertikalplanet inntil ± 3°.
+
+{{lærebokstoff|3° tilsvarer stigning/fall på 52 ‰ på avstand 250 meter.}}
+
+== Repetersignal ==
+
+<figure id = "fig:repetersignal - signalbilder">
+[[Bilde:JD550 06 fig023.svg|thumb|center|500px|<caption>Repetersignal - signalbilder</caption>]]
+</figure>
+
+a) Et repetersignal skal kunne vise:
+
+# Signal 21, ”kjør med redusert hastighet”. Lys i grønn øvre lampe for 2-lys signalhode og lys i grønn lampe for 1-lys signalhode.
+# Signal 22, ”Kjør”. Lys i grønn øvre lampe og grønn nedre lampe.
+
+b) En feil i lyssignalet som gjør at lyskilder ikke lyser skal kunne detekteres av forriglingsutrustningen.
+
+c) Signalbildet i repetersignal skal kunne ses og oppfattes entydig på 250 meters avstand.
+
+d) Lyskildene skal ha signalfarge i henhold til [DIN 6163] og lysstyrke mål i optisk akse som vist i <xr id ="tab:repetersignal"/>:
+
+<figtable id ="tab:repetersignal">
+{| class="wikitable" style="text-align:center"
+|+ Repetersignal - signalfarge og lysstyrke
+|-
+! rowspan="2"|Signalfarge !! colspan="2"|Daglys [cd]!! colspan="2"|Nattlys [cd]
+|-
+! Minimum !! Maksimum !! Minimum !! Maksimum
+|-
+! Grønn
+| 500 || 1400 || 200 || 840
+|}
+</figtable>
+
+e) Lyskilden skal ha en lysåpning på 200 ± 10 mm.
+
+f) Avstanden senter - senter mellom lyskilder skal være 350 ± 10 mm.
+
+g) Et repetersignal som står i dagslys skal ha bakgrunnsskjerm.
+
+h) Bakgrunnsskjerm skal minimum skjerme for sollys i et område fra lyskildens ytterkant og ut til et punkt som tilsvarer lyskildens lysåpning.
+
+{{lærebokstoff|Eksisterende repetersignal har en bakgrunnsskjerm med bredde på 800 ± 10 mm.}}
+
+i) Et repetersignal som står i dagslys skal ha skyggeskjerm rundt lyskilder for skjerming mot sollys. 
+
+{{lærebokstoff|Eksisterende repetersignal har en skyggeskjerm som bygger ut 300 ± 10 mm over lyskilden og dekker ned langs sidene av lyskilden.}}
+
+j) Signalhodet bør være plassert slik at avstanden mellom den nedre lyskilden og skinnetopp er ca. 4,7 meter.
+
+k) Et repetersignal skal ha et merkeskilt.
+
+l) Merkeskiltet bør plasseres slik at skiltets senter er minimum 2,7 meter over skinnetopp.
+
+m) Signalhodet bør enkelt kunne vendes vekk fra sporet.
+
+n) Signalhodet skal kunne justeres trinnløst i horisontalplanet inntil ± 20°.
+
+o) Signalhodet skal kunne justeres trinnløst i vertikalplanet inntil ± 3°.
+
+{{lærebokstoff|3° tilsvarer stigning/fall på 52 ‰ på avstand 250 meter.}}
+
+<figure id = "fig:eksempel repetersignal">
+[[Bilde:JD550 06 fig024.svg|thumb|center|500px|<caption>Eksempel på repetersignal</caption>]]
+</figure>
+
+== Togsporsignal ==
+
+Togsporsignaler skal ikke prosjekteres ved nye signalanlegg eller ved endringer i signalanlegg
+
+<figure id = "fig:togsporsignal">
+[[Bilde:JD550 06 fig025.svg|thumb|center|500px|<caption>Togsporsignal - signalbilder og eksempel på lyssignal</caption>]]
+</figure>
+
+a) Et togsporsignal skal kunne vise:
+
+# Signal 36 A, ”kjør med redusert hastighet”. Hvitt lys i øvre lampe T1 og hvitt lys i nedre lampe T2.
+# Signal 36 B, ”Kjør”. Grønt lys i øvre lampe T1 og grønt lys i nedre lampe T2. 
+
+b) En feil i lyssignalet som gjør at lyskilder ikke lyser skal kunne detekteres av forriglingsutrustningen.
+
+c) Signalbildet i et togsporsignal skal kunne ses og oppfattes entydig på 150 meters avstand.
+
+d) Lyskildene skal ha signalfarge i henhold til [DIN 6163] og lysstyrke målt i optisk akse som vist i <xr id = "tab:togsporsignal"/>:
+
+<figtable id = "tab:togsporsignal">
+{| class="wikitable" style="text-align:center"
+|+ Togsporsignal - signalfarge og lysstyrke
+|-
+| rowspan="2"|'''Signalfarge''' || colspan="2"|'''Daglys [cd]'''|| colspan="2"|'''Nattlys [cd]'''
+|-
+| '''Minimum''' || '''Maksimum''' || '''Minimum''' || '''Maksimum'''
+|-
+| '''Hvit B''' (glødelampe) || 200 || 800 || 80 || 320
+|-
+| '''Hvit A''' (LED) || 200 || 800 || 80 || 320
+|-
+| '''Grønn''' || 200 || 800 || 80 || 320
+|}
+</figtable>
+
+e) Lyskilden skal ha en lysåpning på 115 ± 5 mm.
+
+f) Avstanden senter - senter mellom lyskilder skal være 200 ± 10 mm.
+
+g) Et togsporsignal som står i dagslys bør ha skyggeskjerm rundt lyskildene for skjerming mot sollys.
+
+h) Et togsporsignal skal ha en bredde på 165 ± 10 mm og en høyde på 370 ± 10 mm.
+
+i) Et togsporsignal skal plasseres slik at det er best mulig synlig for personalet på plattform/holdeplass.
+
+j) Et togsporsignal skal ha et merkeskilt.
+
+k) Merkeskiltet skal plasseres umiddelbart under signalhodet.
+
+l) Signalhodet bør kunne vendes vekk fra sporet.
+
+m) Signalhodet skal kunne justeres trinnløst i horisontalplanet inntil ± 10°.
+
+n) Signalhodet skal kunne justeres trinnløst i vertikalplanet inntil ± 3°.
+
+{{lærebokstoff|3° tilsvarer stigning/fall på 52 ‰ på avstand 250 meter.}}
+
+== Middelkontrollampe ==
+
+<figure id = "fig:middelkontrollampe">
+[[Bilde:JD550 06 fig026.svg|thumb|center|500px|<caption>Middelkontrollampe - signalbilde og eksempel på lyssignal</caption>]]
+</figure>
+
+a) En middelkontrollampe skal kunne vise hvitt blinklys.
+
+b) Dersom blinklys ikke kan vises, skal middelkontrollampe lyse med fast lys.
+
+c) En feil i lyssignalet som gjør at lyskilder ikke lyser skal kunne detekteres av forriglingsutrustningen.
+
+d) Signalbildet i middelkontrollampen skal kunne ses og oppfattes entydig på 150 meters avstand.
+
+e) Lyskildene skal ha signalfarge i henhold til [DIN 6163] og lysstyrke målt i optisk akse som vist i <xr id = "tab:middelkontrollampe"/>:
+
+<figtable id = "tab:middelkontrollampe">
+{| class="wikitable" style="text-align:center"
+|+ Middelkontrollampe - signalfarge og lysstyrke
+|-
+! rowspan="2"|Signalfarge !! colspan="2"|Daglys [cd]!! colspan="2"|Nattlys [cd]
+|-
+! Minimum !! Maksimum !! Minimum !! Maksimum
+|-
+| '''Hvit B''' (glødelampe)
+| 200 || 800 || 80 || 320
+|-
+| '''Hvit A''' (LED)
+| 200 || 800 || 80 || 320
+|}
+</figtable>
+
+f) Lyskilden skal kunne lyse med blinklys med blinkfrekvens 60 blink/minutt og lys/mørke- forhold 60/40.
+
+g) En middelkontrollampe skal ha en bredde på 150 ± 10 mm og en høyde på 150 ± 10 mm.
+
+h) Lyskilden skal ha en lysåpning på 100 ± 10 mm
+
+i) En middelkontrollampe som står i dagslys skal ha en skyggeskjerm rundt signalbildet for skjerming mot sollys.
+
+j) Signalhodet bør være plassert slik at avstanden mellom senter av signalet og skinnetopp er maksimum 4,2 meter.
+
+k) Signalhodet bør kunne vendes vekk fra sporet.
+
+l) Signalhodet skal kunne justeres trinnløst i horisontalplanet inntil ± 10°
+
+m) Signalhodet skal kunne justeres trinnløst i vertikalplanet inntil ± 3°.
+
+{{lærebokstoff|3° tilsvarer stigning/fall på 52 ‰ på avstand 250 meter.}}
+
+== Lyssignal forsiktig kjøring ==
+
+<figure id = "fig:lyssignal forsiktig kjøring">
+[[Bilde:JD550 06 fig027.svg|thumb|center|500px|<caption>Lyssignal forsiktig kjøring - signalbilde og eksempel på lyssignal</caption>]]
+</figure>
+
+a) Lyssignalet forsiktig kjøring skal kunne vise signal 32, ”Forsiktig kjøring”, eller være slukket.
+
+b) Signalbildet i lyssignalet forsiktig kjøring skal utføres med tilstrekkelig antall lyskilder (lyspunkter) til at signalet ikke kan misforstås, og skal oppfattes som et lysende kryss med strektykkelse (lysåpning) 25 ± 3 mm.
+
+c) En feil i lyssignalet som gjør at lyskilder ikke lyser skal kunne detekteres av forriglingsutrustningen.
+
+d) Signalbildet i lyssignalet forsiktig kjøring skal kunne ses og oppfattes entydig på 150 meters avstand.
+
+e) Lyskildene skal ha signalfarge i henhold til [DIN 6163] og lysstyrke målt i optisk akse som vist i <xr id = "fig:lyssignal forsiktig kjøring"/>:
+
+<figtable id = "fig:lyssignal forsiktig kjøring">
+{| class="wikitable" style="text-align:center"
+|+ Lyssignal forsiktig kjøring - signalfarge og lysstyrke
+|-
+| rowspan="2"|'''Signalfarge''' || colspan="2"|'''Daglys [cd]'''|| colspan="2"|'''Nattlys [cd]'''
+|-
+| '''Minimum''' || '''Maksimum''' || '''Minimum''' || '''Maksimum'''
+|-
+| '''Hvit B''' (glødelampe)
+| 200 || 800 || 80 || 320
+|-
+| '''Hvit A''' (LED)
+| 200 || 800 || 80 || 320
+|}
+</figtable>
+
+f) Lyssignalet forsiktig kjøring skal ha en bredde på 360 ± 10 mm og en høyde på 360 ± 10 mm.
+
+g) Lyssignalet forsiktig kjøring som står i dagslys bør ha skyggeskjerm rundt signalbilde for skjerming mot sollys.
+
+h) Signalhodet bør være plassert slik at avstanden mellom senter av signalet og skinnetopp er ca. 2,3 meter.
+
+i) Signalhodet bør kunne vendes vekk fra sporet.
+
+j) Signalhodet skal kunne justeres trinnløst i horisontalplanet inntil ± 10°.
+
+k) Signalhodet skal kunne justeres trinnløst i vertikalplanet inntil ± 3°.
+
+{{lærebokstoff|3° tilsvarer stigning/fall på 52 ‰ på avstand 250 meter.}}
+
+== Linjesignal ==
+
+<figure id = "fig:linjesignal">
+[[Bilde:JD550 06 fig028.svg|thumb|center|500px|<caption>Linjesignal - signalbilde og eksempel på lyssignal</caption>]]
+</figure>
+
+a) Et linjesignal skal kunne vise Signal 35 B ”Til angitt linje/sporområde”, eller være slukket.
+
+b) Signalbildet i linjesignalet skal utføres med tilstrekkelig antall lyskilder (lyspunkter) til at signalet ikke kan misforstås, og skal oppfattes som en bokstav med strektykkelse (lysåpning) 50 ± 2 mm.
+
+c) En feil i lyssignalet som gjør at lyskilder ikke lyser skal kunne detekteres av forriglingsutrustningen.
+
+d) Signalbildet i linjesignalet skal kunne ses og oppfattes entydig på 150 meters avstand.
+
+e) Lyskildene skal ha signalfarge i henhold til [DIN 6163] og lysstyrke målt i optisk akse som vist i <xr id = "tab:linjesignal"/>:
+
+<figtable id = "tab:linjesignal">
+{| class="wikitable" style="text-align:center"
+|+ Linjesignal - signalfarge og lysstyrke
+|-
+| rowspan="2"|'''Signalfarge''' || colspan="2"|'''Daglys [cd]'''|| colspan="2"|'''Nattlys [cd]'''
+|-
+| '''Minimum''' || '''Maksimum''' || '''Minimum''' || '''Maksimum'''
+|-
+| '''Hvit B''' (glødelampe)
+| 200 || 800 || 80 || 320
+|-
+| '''Hvit A''' (LED)
+| 200 || 800 || 80 || 320
+|}
+</figtable>
+
+f) Et linjesignal skal ha en bredde på 450 ± 10 mm og en høyde på 720 ± 10 mm.
+
+g) Et linjesignal som står i dagslys bør ha skyggeskjerm rundt signalbildet for skjerming mot sollys.
+
+h) Signalhodet bør være plassert slik at avstanden mellom senter av signalet og skinnetopp er 
+
+# Ca. 3,5 meter når signalet er plassert på et hovedsignals mast
+# Ca. 2,4 meter når signalet er plassert på et hovedsignals mast sammen med forsignal
+
+i) Signalhodet bør kunne vendes vekk fra sporet.
+
+j) Signalhodet skal kunne justeres trinnløst i horisontalplanet inntil ± 10°.
+
+k) Signalhodet skal kunne justeres i trinnløst i vertikalplanet inntil ± 3°.
+
+{{lærebokstoff|3° tilsvarer stigning/fall på 52 ‰ på avstand 250 meter.}}
+
+== Lyssignal avvikende hastighet ==
+
+<figure id = "fig:Lyssignalet avvikende hastighet">
+[[Bilde:JD550 06 fig029.svg|thumb|center|500px|<caption>Lyssignalet avvikende hastighet - signalbilde og eksempel på lyssignal</caption>]]
+</figure>
+
+a) Lyssignalet avvikende hastighet skal kunne vise Signal 68 E eller være slukket.
+
+b) Signalbildet i lyssignalet avvikende hastighet skal utføres med tilstrekkelig antall lyskilder (lyspunkter) til at signalet ikke kan misforstås, og skal oppfattes som et tall med strektykkelse (lysåpning) 50± 2 mm.
+
+c) En feil i lyssignalet som gjør at lyskilder ikke lyser skal kunne detekteres av forriglingsutrustningen.
+
+d) Signalbildet i lyssignalet avvikende hastighet skal kunne ses og oppfattes entydig på 150 meters avstand.
+
+e) Lyskildene skal ha signalfarge i henhold til [DIN 6163] og lysstyrke målt i optisk akse som vist i <xr id = "tab:avvikende hastighet"/>:
+
+<figtable id = "tab:avvikende hastighet">
+{| class="wikitable" style="text-align:center"
+|+ Avvikende hastighet - signalfarge og lysstyrke
+|-
+| rowspan="2"|'''Signalfarge''' || colspan="2"|'''Daglys [cd]'''|| colspan="2"|'''Nattlys [cd]'''
+|-
+| '''Minimum''' || '''Maksimum''' || '''Minimum''' || '''Maksimum'''
+|-
+| '''Hvit B''' (glødelampe)
+| 200 || 800 || 80 || 320
+|-
+| '''Hvit A''' (LED)
+| 200 || 800 || 80 || 320
+|}
+</figtable>
+
+f) Lyssignalet avvikende hastighet skal ha en bredde på 450 ± 10 mm og en høyde på 720 ± 10 mm.
+
+g) Lyskilder i lyssignalet avvikende hastighet skal plasseres på linje vertikalt og horisontalt med lik avstand senter - senter på 80 ± 2 mm i vertikal - og horisontalplanet.
+
+h) Signalhodet skal være plassert slik at avstanden mellom senter av signalet og skinnetopp er minimum 2,4 meter.
+
+i) Signalhodet bør enkelt kunne vendes vekk fra sporet.
+
+j) Signalhodet skal kunne justeres trinnløst i horisontalplanet inntil ± 10°.
+
+k) Signalhodet skal kunne justeres trinnløst i vertikalplanet inntil ± 3°.
+
+{{lærebokstoff|3° tilsvarer stigning/fall på 52 ‰ på avstand 250 meter.}}
+
+== Sporvekselsignal for enkel sporveksel ==
+
+<figure id = "fig:Sporvekselsignal">
+[[Bilde:JD550 06 fig030.svg|thumb|center|500px|<caption>Sporvekselsignal – signalbilder og eksempel på lyssignal</caption>]]
+</figure>
+
+a) Et sporvekselsignal for enkel sporveksel skal kunne vise:
+
+# Signal 51 A, ”Rett frem”
+# Signal 51 B, ”Fra avvikespor”
+# Signal 51 C, ”Til venstre” 
+# Signal 51 D, ”Til Høyre”
+
+b) Et sporvekselsignal for enkel sporveksel skal settes i avhengighet til sporvekselens stilling.
+
+c) Signalbildet i sporvekselsignalet skal kunne ses og oppfattes entydig på 150 meters avstand.
+
+d) Lyskildene skal ha signalfarge i henhold til [DIN 6163] og lysstyrke målt i optisk akse som vist i <xr id = "tab:sporvekselsignal"/>:
+
+<figtable id = "tab:sporvekselsignal">
+{| class="wikitable" style="text-align:center"
+|+ Sporvekselsignal - signalfarge og lysstyrke
+|-
+| rowspan="2"|'''Signalfarge''' || colspan="2"|'''Daglys [cd]'''|| colspan="2"|'''Nattlys [cd]'''
+|-
+| '''Minimum''' || '''Maksimum''' || '''Minimum''' || '''Maksimum'''
+|-
+| '''Hvit B''' (glødelampe)
+| 200 || 800 || 80 || 320
+|-
+| '''Hvit A''' (LED)
+| 200 || 800 || 80 || 320
+|}
+</figtable>
+
+e) Signalhodet til sporvekselsignalet skal ha en høyde på 300 ± 10 mm og en bredde på 200 ± 10 mm for signal ”Rett fram” og bredde på 300 ± 10 mm for signal ”Fra avvikespor” og ”Til venstre” eller ”Til høyre”.
+
+f) Et sporvekselsignal for enkel sporveksel skal plasseres på egen mast.
+
+g) Signalhodet bør være plassert slik at avstanden mellom senter av signalet og skinnetopp er maksimum 1,3 meter.
+
+=== Sporvekselsignal for kryssveksel ===
+
+<figure id = "fig:Sporvekselsignal for kryssvekselsignal">
+[[Bilde:JD550 06 fig031.svg|thumb|center|500px|<caption>Sporvekselsignal for kryssvekselsignal - signalbilder og eksempel på lyssignal</caption>]]
+</figure>
+
+a) Et sporvekselsignal for kryssveksel skal kunne vise:
+
+# Signal 52 A, ”Fra venstre til høyre”
+# Signal 52 B, ”Fra høyre til venstre”
+# Signal 52 C, ”Fra venstre til venstre”
+# Signal 52 D, ”Fra høyre til høyre”
+
+b) Signalbildet i sporvekselsignal for kryssveksel skal utføres med tilstrekkelig antall lyskilder (lyspunkter) til at signalet ikke kan misforstås med strektykkelse (lysåpning) 25 ± 3 mm.
+
+c) Signalbildet i sporvekselsignal for kryssveksel skal kunne ses og oppfattes entydig på 150 meters avstand.
+
+d) Lyskildene skal ha signalfarge i henhold til [DIN 6163] og lysstyrke målt i optisk akse som vist i <xr id = "tab:kryssvekselsignal"/>:
+
+<figtable id = "tab:kryssvekselsignal">
+{| class="wikitable" style="text-align:center"
+|+ Kryssvekselsignal - signalfarge og lysstyrke
+|-
+! rowspan="2"|Signalfarge !! colspan="2"|Daglys [cd]!! colspan="2"|Nattlys [cd]
+|-
+! Minimum !! Maksimum !! Minimum !! Maksimum
+|-
+| '''Hvit B''' (glødelampe)
+| 200 || 800 || 80 || 320
+|-
+| '''Hvit A''' (LED)
+| 200 || 800 || 80 || 320
+|}
+</figtable>
+
+e) Et kryssvekselsignal skal ha en bredde på 360 ± 10 mm og en høyde på 360 ± 10 mm.
+
+f) Lyskilden skal oppfattes som en sirkulær, homogen og jevnt lysende flate.
+
+g) Et sporvekselsignal for kryssveksel skal være 2-sidig.
+
+h) Et sporvekselsignal for kryssveksel som står i dagslys bør ha skyggeskjerm rundt signalbildet for skjerming mot sollys.
+
+i) Et sporvekselsignal for kryssveksel skal plasseres på egen mast.
+
+j) Signalhodet bør være plassert slik at avstanden mellom senter av signalet og skinnetopp er maksimum 1,3 meter.
+
+== Sporsperresignal ==
+
+<figure id = "fig:Sporsperresignal">
+[[Bilde:JD550 06 fig032.svg|thumb|center|500px|<caption>Sporsperresignal – signalbilder og eksempel på lyssignal</caption>]]
+</figure>
+
+a) Et sporsperresignal skal kunne vise
+
+# Signal 53, ”Sporet sperret”.
+# Signal 54, ”Sporet fritt”.
+
+b) Et sporsperresignal skal settes i avhengighet til sporsperrens stilling.
+
+c) Signalbildet i sporsperresignalet skal kunne ses og oppfattes entydig på 150 meters avstand.
+
+d) Lyskildene skal ha signalfarge i henhold til [DIN 6163] og lysstyrke målt i optisk akse som vist i <xr id = "tab:sporsperresignal"/>:
+
+<figtable id = "tab:sporsperresignal">
+{| class="wikitable" style="text-align:center"
+|+ Sporsperresignal - signalfarge og lysstyrke
+|-
+| rowspan="2"|'''Signalfarge''' || colspan="2"|'''Daglys [cd]'''|| colspan="2"|'''Nattlys [cd]'''
+|-
+| '''Minimum''' || '''Maksimum''' || '''Minimum''' || '''Maksimum'''
+|-
+|-
+| '''Hvit B''' (glødelampe)
+| 200 || 800 || 80 || 320
+|-
+| '''Hvit A''' (LED)
+| 200 || 800 || 80 || 320
+|}
+</figtable>
+
+e) Et sporsperresignal kan istedenfor lys ha reflekterende hvite felter. Reflekterende hvite felter skal ha refleksgrad Diamond Grade (D.G.), se [[Skilt/Plassering_av_skilt_langs_sporet]].
+
+f) Signalhodet til sporsperresignalet skal ha en høyde på 300 ± 10 mm og en bredde på 200 ± 10 mm for signal ”Sporet fritt” og en bredde på 300 ± 10 mm for signal ”Sporet sperret”.
+
+g) Et sporsperresignal skal plasseres på egen mast.
+
+h) Signalhodet bør være plassert slik at avstanden mellom senter av signalet og skinnetopp er maksimum 1,3 meter.
+
+= RAMS-KRAV =
+== Sikkerhet ==
+
+a) Et lyssignal skal ha sikkerhetskritisk funksjon, SKF4:
+
+''Et lyssignal skal vise korrekt signalbilde og gi korrekt informasjon til forriglingsutrustningen om signalets status.''
+
+Delfunksjoner:
+
+# Et lyssignal skal vise korrekt signalbilde ut fra gitte betingelser.
+# Et lyssignal skal gi korrekt informasjon til forriglingsutrustningen om signalets status.
+
+b) THR for sikkerhetskritisk funksjon, SKF4, skal være lik10<sup>-9</sup> feil/time for hele lyssignalet.
+
+c) Et lyssignal skal være konstruert for å minimum ha kontroll på følgende farer:
+
+* Feilaktig informasjon om signalets status til forriglingsutrustningen.
+* Feilaktig mindre restriktivt signalbilde.
+
+== Tilgjengelighet ==
+
+a) Et lyssignal (eksklusiv glødelampe/diodematrise) skal ha en tilgjengelighet A ≥ 99.99975 % pr. signal, det vil si en akkumulert utilgjengelighet UA ≤ 1,3 minutter pr. år. 
+
+b) Reparasjon eller utbytting og justering av en funksjonsenhet slik at den igjen fungerer korrekt, skal kunne utføres på maksimalt 15 minutter, det vil si MRT ≤ 15 minutter.
+
+== Pålitelighet ==
+
+a) Et lyssignal (eksklusiv glødelampe/diodematrise) skal ha en gjennomsnittlig tid mellom feil - MTBF ≥ 100.000 timer (11,4 år) pr. lyssignal.
+
+=== Glødelampe (signallampe) ===
+
+a) En glødelampe skal ha en gjennomsnittlig tid mellom feil - MTBF ≥ 2000 brenntimer ved merkespenning for hovedtråd og MTBF ≥ 300 timer for reservetråd.
+
+=== Diodematrise ===
+
+a) En diodematrise skal ha en gjennomsnittlig tid mellom feil - MTBF ≥ 100.000 timer for alle feil som medfører at den ikke kan lyse når det er behov for dette.
+
+b) En diodematrise skal ha en levetid ≥ 20 år.
+
+c) Den enkelte lysdiode skal kobles slik at en svikt i en lysdiode ikke medfører større tap enn 20 % av diodematrisens totale lysstyrke.
+
+== Vedlikeholdbarhet ==
+=== Generelt ===
+
+a) Et lyssignal skal være bygd av veldefinerte funksjonsenheter slik at hele funksjonsenheter kan byttes ved reparasjon i felt.
+
+b) Vekt for utbyttbare enheter skal ikke overstige 15 kg.
+
+c) Funksjonsenheter skal kunne monteres og demonteres uten bruk av spesialverktøy.
+
+d) For funksjonsenheter som inneholder slitedetaljer, skal vedlikeholdet skje forebyggende gjennom at de utbyttbare enhetene skiftes i sammenheng med ordinært vedlikehold av lyssignalet. 
+
+=== Diodematrise ===
+
+a) En diodematrise skal være vedlikeholdsfri.
+
+b) En diodematrise skal være slik at hele diodematrisen kan byttes ved reparasjon i felt.
+
+= Vedlegg =
+
+[[Signal/Prosjektering/Lyssignal/Merking_av_lyssignal|Vedlegg a: Merking av lyssignal]]
+
+[[Signal/Prosjektering/Lyssignal/Typegodkjente_lyssignal|Vedlegg b: Typegodkjente lyssignal]]
+
+[[Signal/Prosjektering/Lyssignal/Signallamper|Vedlegg c: Signallamper]]
+

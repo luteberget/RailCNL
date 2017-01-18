@@ -1,0 +1,389 @@
+__NUMBEREDHEADINGS__
+
+=Hensikt og omfang=
+Kapitlet beskriver tekniske krav og funksjonskrav til togdeteksjon. 
+
+<figure id ="Systemoversikt signalanlegg">
+[[Bilde:JD550 07 fig001.png|thumb|center|350px|<caption>Systemoversikt signalanlegg</caption>]]
+</figure>
+
+Kapittelet omfatter følgende systemer for togdeteksjon:
+
+*Sporfelt.
+**Vekselstrømssporfelt - 95/105 Hz - Isolert sporfelt som kan benyttes på stasjon og linjen.
+**Likestrømssporfelt - Isolert sporfelt som kan benyttes på stasjon og linjen på ikke elektrifiserte strekninger.
+**Vekselstrømssporfelt - 10/50 kHz - Skjøteløse korte frekvensfelter som kan benyttes ved veisikringsanlegg, rasvarslingsanlegg, sidespor på linjen og lignende.
+**FTG S - Audiofrekvent sporfelt som kan benyttes på stasjon og linjen.
+**TI21 - Audiofrekvent sporfelt som kan benyttes på stasjon og linjen.
+*Akseltellere.
+
+==Systemdefinisjon==
+===Generelt===
+Togdeteksjon omfatter all teknisk utrustning for å detektere tog i et sporavsnitt og for å gi informasjon om sporavsnittets status til forriglingsutrustningen. 
+
+Det finnes i hovedsak to forskjellige typer togdeteksjon:
+*Kontinuerlig togdeteksjon - herunder sporfelt 
+*Punktbasert togdeteksjon - herunder akselteller 
+
+<figure id ="Systemdefinisjon - togdeteksjon">
+[[Bilde:JD550 07 fig002.png|thumb|center|350px|<caption>Systemdefinisjon - togdeteksjon</caption>]]
+</figure>
+
+a) '''Valg av togdeteksjonssystem:''' Det skal velges akseltellersystem som togdeteksjon 
+* Ved bygging av ERTMS.
+* Ved nybygging eller endring av signalsystemer som nødvendiggjør bygging av nytt togdeteksjonssystem
+
+:#'''Unntak:''' Akseltellersystemer kan ikke benyttes på strekninger med eksisterende sikringsanlegg av annen type enn NSI‐63, eller der det er sikringsanlegg NSI-63 med flere enn 3 sikrede togspor, eller der det ikke er en leverandør som tar ansvar for implementering av funksjon for sikring av arbeidsområder i sikringsanlegget (dette gjelder inntil det er etablert en løsning for sikring av arbeid i og ved spor).
+:# '''Presisering:''' Strekning med akseltellere skal omfatte lengre strekninger enn ett kryssingsspor og skal fortrinnsvis ligge innenfor en toglederstrekning. Utbygging på tilgrensende strekninger må vurderes slik at “øyer” med prinsipielt forskjellige togdeteksjonssystem unngås. 
+:# '''Presisering:'''  Innenfor samme stasjon eller strekning mellom to stasjoner skal samme type togdeteksjonssystem benyttes. 
+b) '''Grense mellom togdeteksjonssystemer:''' Grense mellom akselteller‐ og sporfeltstrekning skal være ved innkjørhovedsignal.
+
+===Sporfelt===
+<figure id ="Systemdefinisjon - sporfelt">
+[[Bilde:JD550 07 fig003.png|thumb|center|350px|<caption>Systemdefinisjon - sporfelt</caption>]]
+</figure>
+
+Et sporfelt består typisk av en sender/tilførsel i en ende av sporavsnittet og en mottaker/retur i den andre enden av sporavsnittet og et sporfeltrele som angir sporavsnittets status til forriglingsutrustningen. Sporfeltet begrenses av en isolert skjøt eller en elektrisk overgangssone i begge ender av sporavsnittet.
+
+===Akselteller===
+<figure id ="Systemdefinisjon - akseltellersystem">
+[[Bilde:JD550 07 fig004.png|thumb|center|350px|<caption>Systemdefinisjon - akseltellersystem</caption>]]
+</figure>
+
+Et sporavsnitt detektert med akselteller består av en detektor - tellepunkt i hver ende av sporavsnittet og en evalueringsenhet som behandler informasjon fra tellepunktene og angir sporavsnittets status til forriglingsutrustningen.
+
+a) Ved prosjektering av strekning med akseltellere skal det gjennomføres RAMS-analyser av bruk av akseltellere som togdeteksjon på den aktuelle strekningen, herunder analyse av inndeling av arbeidsområder, lokalisering av nøkkelskap og bruk av forberedende resetting.
+
+=Plassering og utstrekning=
+Dette avsnittet angir generelle regler for plassering og utstrekning av system for togdeteksjon i forhold annet utstyr i infrastrukturen. Detaljerte krav er gitt i vedlegg.
+
+==Generelt==
+
+a) Ingen sporavsnitt skal være kortere enn 21 meter.
+
+b) Ingen dødsoner skal være lenger enn 3 meter. 
+{{lærebokstoff|Dødsoner er soner hvor en togaksel ikke er sikkert detektert, og bør unngås.}}
+
+c) Dødsoner skal ikke forekomme ved middel eller i andre kritiske punkter.
+
+d) Vekselstrømssporfelt - 95/105 Hz skal prosjekteres som beskrevet i [[Signal/Prosjektering/Togdeteksjon/Vekselstrømsporfelt_-_95/105_Hz|Vedlegg a]].
+
+e) Likestrømsporfelt skal prosjekteres som beskrevet i [[Signal/Prosjektering/Togdeteksjon/Likestrømsporfelt|Vedlegg b]].
+
+f) Vekselstrømssporfelt - 10/50 kHz skal prosjekteres som beskrevet i [[Signal/Prosjektering/Togdeteksjon/Vekselstrømsporfelt_-_10/50_kHz|Vedlegg c]].
+
+g) FTG S skal prosjekteres som beskrevet i [[Signal/Prosjektering/Togdeteksjon/Audiofrekvent_sporfelt_-_FTG_S|Vedlegg d]].
+
+h) TI21 skal prosjekteres som beskrevet i [[Signal/Prosjektering/Togdeteksjon/Audiofrekvent_sporfelt_-_TI21|Vedlegg e]].
+
+i) Akseltellere skal prosjekteres som beskrevet i [[Signal/Prosjektering/Togdeteksjon/Akselteller|Vedlegg f]].
+
+==Sporavsnitt ved hovedsignal og dvergsignal==
+<figure id ="Sporavsnitt ved hovedsignal og dvergsignal">
+[[Bilde:JD550 07 fig005.png|thumb|center|350px|<caption>Sporavsnitt ved hovedsignal og dvergsignal</caption>]]
+</figure>
+
+a) Sporavsnittet (2) bak signalet skal være detektert som fritt når tog befinner seg foran signalet. 
+
+b) Sporavsnittet (1) foran signalet skal være detektert som fritt når tog har passert signalet.
+
+==Sporavsnitt i sporveksler==
+<figure id ="fig:Sporavsnitt i sporveksel">
+[[Bilde:JD550 07 fig006.png|thumb|center|350px|<caption>Sporavsnitt i sporveksel</caption>]]
+</figure>
+
+a) Et sporavsnitt i en sporveksel skal være detektert som belagt når et togs første (siste) aksel er mindre enn 5 meter innenfor middel mot nabospor, se <xr  id ="fig:Sporavsnitt i sporveksel"/>.
+
+b) En sporveksel eller flere sporveksler som naturlig hører sammen skal ha et eget sporavsnitt.
+
+c) Dersom akseltellere brukes som togdeteksjon skal tellepunkt som ikke passeres ved forberedende resett ligge 5 meter fra middel til togvei/skiftevei som kjøres ved forberedende resett.
+
+==Sporavsnitt ved sporsperre==
+<figure id ="fig:Sporavsnitt ved sporsperre">
+[[Bilde:JD550 07 fig007.png|thumb|center|350px|<caption>Sporavsnitt ved sporsperre</caption>]]
+</figure>
+
+a) Et sporavsnitt ved en sporsperre skal være detektert som belagt senest når toget er ved sporsperrens bakkant, se <xr id ="fig:Sporavsnitt ved sporsperre"/>.
+{{lærebokstoff|Sporsperren skal plasseres minimum fem meter innenfor middel, ref. [[Signal/Prosjektering/Sporveksel- og sporsperreutrustning]].}}
+
+==Sporavsnitt ved sporkryss/kryssveksel==
+<figure id ="fig:Sporavsnitt ved sporkryss">
+[[Bilde:JD550 07 fig008.png|thumb|center|350px|<caption>Sporavsnitt ved sporkryss/kryssveksel</caption>]]
+</figure>
+
+a) Et sporavsnitt i et sporkryss eller en kryssveksel skal ha en utstrekning som vist i <xr  id ="fig:Sporavsnitt ved sporkryss"/>.
+
+==Sporavsnitt ved overkjøringsspor==
+<figure id ="fig:Sporavsnitt ved overkjøringsspor">
+[[Bilde:JD550 07 fig009.png|thumb|center|350px|<caption>Sporavsnitt ved overkjøringsspor</caption>]]
+</figure>
+
+<figure id ="fig:Sporavsnitt ved overkjøringsspor med sporkryss">
+[[Bilde:JD550 07 fig010.png|thumb|center|350px|<caption>Sporavsnitt ved overkjøringsspor med sporkryss</caption>]]
+</figure>
+
+a) Sporavsnittene ved overkjøringsspor skal prosjekteres på en av følgende måter, ref. <xr  id ="fig:Sporavsnitt ved overkjøringsspor"/> og <xr id ="fig:Sporavsnitt ved overkjøringsspor med sporkryss"/>:
+#Eget system for togdeteksjon i sporavsnittet (3) i overkjøringssporet.
+#Systemet for togdeteksjon i sporavsnittet i et eller begge hovedtogspor inkluderer sporavsnittet i overkjøringssporet.
+
+=Tekniske krav=
+==Generelt==
+
+a) Et system for togdeteksjon skal kunne detektere et sporavsnitt som belagt eller fritt, det vil si om det befinner seg rullende materiell på sporavsnittet eller ikke.
+
+b) Status belagt eller fritt for et sporavsnitt skal sikkert kunne overføres til forriglingsutrustningen.
+
+c) Et system for togdeteksjon skal detektere rullende materiell med hastighet inntil 300 km/h.
+
+d) Et system for togdeteksjon skal levere status belagt til forriglingsutrustningen maksimum 1 sekund etter at tog (første aksel) har kommet inn på sporavsnittet.
+
+e) Et system for togdeteksjon skal levere status belagt til forriglingsutrustningen maksimum 1 sekund etter at feil har oppstått i system for togdeteksjon.
+
+f) Et system for togdeteksjon skal levere status fritt til forriglingsutrustningen maksimum 2 sekunder etter at tog (siste aksel) har forlatt sporavsnittet.
+
+g) Et system for togdeteksjon skal ved feil levere korrekt feilmelding til forriglingsutrustningen senest 2 sekunder etter at feilen har oppstått.
+
+==Sporfelt==
+
+a) Når det er rullende materiell på sporavsnittet, skal sporfeltet, selv med mest ugunstig togshunt, høyeste tilførselspenning og minste avledning (G = 0 S/km), være belagt.
+
+b) Når det ikke er rullende materiell på sporavsnittet, skal sporfeltet selv ved største avledning og ved minste tilførselspenning, være fritt.
+
+c) Ved feil i en isolert skjøt eller en skjøteløs overgangssone skal minimum ett av sporfeltene oppfattes som belagt av forriglingsutrustningen.
+
+d) Ett skinnebrudd i et sporavsnitt skal ikke føre til feilaktig fritt sporavsnitt.
+
+e) Skinnens kjøreflate skal være slik at det oppnås god elektrisk kontakt mellom hjul og skinne.
+{{lærebokstoff|Skinnens kjøreflate skal være fri for synlig korrosjon i en bredde på minimum 12 mm.}}
+
+f) Sporfelt skal detektere et sporavsnitt som belagt dersom skinnestrengene i sporavsnittet er kortsluttet med togshunt T:
+# ≤ 0,5 Ω for sporavsnitt på stasjon.
+# ≤ 0,2 Ω for sporavsnitt på linjen.
+{{lærebokstoff|Med togshunt T menes den motstand som shunter (”kortslutter”) spofeltkretsen. Normalt er dette den motstanden som finnes mellom hver skinnestreng og hjul, og i hjul og aksel. I rullende materiell skal motstand fra hjul til hjul i en aksel være ≤ 0,1 Ω. Når kravet er at sporfelt skal detektere sporavsnittet som belagt med togshunt T 0,2 Ω eller 0,5 Ω er nødvendige sikkerhetsmarginer tatt inn.}}
+
+{{lærebokstoff|Når et sporfelt shuntes vil en restspenning kunne måles i sporet. Denne spenningen omtales som togshuntspenning. Et sporfelt skal være konstruert og prosjektert slik at togshuntspenningen kan forutsettes å være tilstrekkelig lav til at sporavsnittet detekterer rullende materiells aksler.}}
+
+g) Sporfelt skal fungere med en avledning G:
+# < 0,6 S/km på stasjon.
+# < 0,5 S/km på linjen.
+Unntak til punkt 2:
+# < 0,2 S/km når sporfeltets lengde overstiger 5 km.
+{{lærebokstoff|Avledning G er en betegnelse som angir strømlekkasje mellom skinnestrengene i et sporfelt og angis i S/km. Avledningen forutsettes å være høyere på stasjon enn på linjen.}}
+
+h) Sporfelt med isolert skjøt skal fungere når den isolerte skjøten har en konduktivitet ≤ 0,003 S.
+
+i) Det mest trafikkerte sporet i en sporveksel bør være uten isolerte skjøter.
+
+==Akselteller==
+===Generelt===
+
+a) Akseltellersystemet skal detektere et sporavsnitt som belagt eller fritt ved å telle antall aksler inn og ut av sporavsnittet.
+
+b) Akseltellersystemet skal detektere et sporavsnitt som belagt inntil summen av aksler inn i sporavsnitt = summen av aksler ut av sporavsnitt, uavhengig av hvilke av sporavsnittets tellepunkt som teller aksler inn og ut.
+
+c) Dersom det oppstår feil i akseltellersystemet skal tilhørende sporavsnitt gå til tilstand belagt.
+
+d) Akseltellersystemet skal ha kapasitet til å telle minimum 800 aksler for hvert sporavsnitt.
+
+e) Akseltellersystemet skal kunne benyttes på sporavsnitt på stasjon og linjen.
+
+f) Akseltellersystemet skal detektere alle hjul som oppfyller tekniske regler for hjul, beskrevet i [[Rolling stock/Supplementary information and regulations]].
+
+g) Akseltellersystemets hjuldetektor skal festes til skinnelivet med gjennomgående bolter. Galvanisk potensial i boltene skal ikke være høyere enn i skinna (karbonstål) for å unngå anodisk korrosjon av skinna. Alternativ festemåte kan benyttes dersom denne har samme egenskaper med hensyn til stabilitet, tilgjengelighet, sikkerhet og vedlikeholdbarhet.
+
+h) Dersom akseltellersystemets hjuldetektor blir demontert fra skinnelivet skal tilhørende sporavsnitt gå til tilstand belagt.
+
+i) Ved alle hjuldetektorer på linjen skal det være anordnet oppkjørsbjelker av hensyn til sporrensere og andre vedlikeholdsmaskiner.
+
+j) Akseltellersystemer skal ha avbruddsfri strømtilførsel med en batterikapasitet tilpasset kravet til MTTR, inklusive tidene for MLD (Mean Logistic Delay) for strekningen.
+
+===Forberedende resetting===
+
+a) Akseltellersystemet skal ha en funksjon for forberedende resetting av hvert enkelt sporavsnitt. 
+
+b) Forberedende resetting skal endre tilstand for et sporavsnitt fra belagt til fritt, etter at ordre er gitt og tog har kjørt over sporavsnittet og korrekt telling har funnet sted.
+
+c) Ordre om forberedende resetting skal kunne utføres sikkert fra lokal operatørplass og fra fjernstyringsanlegg. 
+
+d) Utføringen av forberedende resetting fra lokal operatørplass skal så langt det er mulig og hensiktsmessig benytte samme funksjonalitet og indikering, samt hente data fra samme sted, som fjernstyringen på strekningen.
+
+===Direkte resetting===
+
+a) Akseltellersystemet skal ha en funksjon for direkte resetting av hvert enkelt sporavsnitt. 
+
+b) Direkte resetting skal endre tilstand for et sporavsnitt fra belagt til fritt.
+
+c) Ordre om direkte resetting skal bare kunne utføres fra eget betjeningsutstyr i teknisk rom.
+
+d) Betjeningsutstyr for direkte resetting i teknisk rom skal være konstruert for å unngå feilbetjening. 
+
+e) Betjeningspanel for direkte resetting i teknisk rom skal være konstruert for å unngå feilbetjening, med indikeringer, lås og knapp samlokalisert og entydig merket for det enkelte sporavsnitt.
+
+f) Hvert sporavsnitt skal være utstyrt med én knapp for direkte resetting, uansett om det benyttes enkelt eller dublert akseltellersystem.
+
+g) Indikeringer, lås og knapp for et sporavsnitt skal være lokalisert ovenfra og ned i denne rekkefølgen.
+
+h) Nøkkel for lås for direkte resetting skal være permanent opphengt ved betjeningspanelet og lett synlig for den som betjener panelet.
+
+i) Låsen for direkte resetting skal være åpen kun når nøkkelen er satt i og vridd mot høyre.
+
+j) Knapp for direkte resetting av sporavsnittet skal iverksette resetting kun når den samlokaliserte låsen er åpen.
+
+k) Iverksatt resetting for det aktuelle sporavsnittet skal indikeres i panelet (sporavsnitt fritt).
+
+l) Betjeningspanelet skal være beskyttet av en skapdør.
+
+m) Forklaring til panelet skal være oppslått på skapdørens bakside, lett synlig for den som betjener panelet. 
+
+n) Feil i betjeningsutstyr for direkte resetting i teknisk rom skal ikke kunne medføre feilaktig resetting av sporavsnitt, dvs. være av failsafe-utførelse.
+
+===Arbeidsområder===
+
+====Utførelse====
+
+a) Arbeidsområder skal ha den utstrekning som er nødvendig og tilstrekkelig til at arbeidet kan utføres sikkert.
+
+b) Grensen for arbeidsområdet skal ligge ved hovedsignal, dvergsignal eller i koblet sporveksel.
+
+c) Inndeling i arbeidsområder skal koordineres med plassering av objekter som kan gi dekning for togveier utenfor arbeidsområdet.
+
+d) Det skal for hvert arbeidsområde utarbeides en beskrivelse med skjematisk plan, som viser arbeidsområdets avgrensing og nøkkelskapenes plassering og angrepspunkt.
+
+e) Beskrivelsen av arbeidsområdet skal være tilgjengelig for hovedsikkerhetsvakt. 
+
+====Skilt====
+
+a) Arbeidsområdeskilt skal monteres på alle hovedsignaler i arbeidsområdet eller arbeidsområdegrensen.
+
+b) Arbeidsområdeskilt skal monteres på alle dvergsignaler i arbeidsområdegrensen, og kun ved disse dvergsignalene.
+
+c) Arbeidsområdeskiltene skal plasseres langs med sporet.
+
+d) Fremsiden av arbeidsområdeskiltet skal vende inn mot sporet det gjelder for.
+
+e) Dobbeltsidige arbeidsområdeskilt kan benyttes kun der hvor baksiden av skiltet ikke vender inn mot andre spor i umiddelbar nærhet.
+
+f) Arbeidsområdeskiltene skal indikere retningen for arbeidsområdet, eventuelt begge retninger dersom det er innenfor arbeidsområdet.
+
+g) Arbeidsområdeskiltet på grensen mellom to arbeidsområder skal angi retningene for begge arbeidsområdene.
+
+h) Arbeidsområdeskiltet på grensen mellom akseltellere og sporfelt skal angi retningen for arbeidsområdet og retningen for sporfeltområdet.
+
+i) Dersom det ikke er plass til arbeidsområdeskilt på signalet, skal skiltet plasseres så nær signalet som mulig.
+
+j) På arbeidsområder med tomtebelysning skal arbeidsområdeskiltene ved dvergsignalene være godt synlige og lesbare under alle forhold uten bruk av ekstra belysning.
+
+k) Referansemerke skal settes opp ved alle sporveksler innenfor arbeidsområdet.
+
+l) Referansemerket ved sporvekselen skal under alle forhold være godt synlig fra sporvekselen.
+
+===Nøkkelskap===
+
+====Generelt====
+
+a) Arbeidsområder der akseltellere benyttes for togdeteksjon på hele eller deler av området skal være utstyrt med nøkkelskap.
+
+====Funksjoner====
+
+a) Nøkkelskapet for et gitt arbeidsområde skal være utstyrt med en nøkkel for sikring som kan tas ut hvis og bare hvis arbeidsområdet er sperret.
+
+b) Nøkkelskapet skal ikke være utstyrt med nøkler for sikring av andre arbeidsområder enn det nøkkelskapet dekker.
+
+c) Ved feil på nøkkelbryter, skal ordre for sperring av arbeidsområdet være utilgjengelig.
+
+d) Sperringen av arbeidsområdet skal ikke kunne oppheves før nøkkel for sikring er satt inn igjen.
+
+e) En ikke koblet sporveksel innenfor et arbeidsområde skal være frigitt for lokal omstilling hvis nøkkelen for arbeidsområdet er tatt ut.
+
+f) Koblede sporveksler innenfor to ulike arbeidsområder skal være frigitt for lokal omstilling hvis nøklene for begge arbeidsområder er tatt ut.
+
+g) Samlelåser for oppbevaring av kontrollåsnøkler for kontrollåste sporveksler/sporsperrer innenfor et arbeidsområde skal være frigitt hvis nøkkelen for arbeidsområdet er tatt ut.
+
+====Utførelse====
+
+
+a) Nøkkelskapet skal være merket med et lett synlig, unikt skapnummer på utsiden av skapdøren.
+
+b) Nøkkelskapet skal være utstyrt med et lett synlig kart som entydig viser hvilket arbeidsområde nøkkelskapet dekker.
+
+c) Nøkkelskapets kart over arbeidsområdet skal gjennom en skjematisk fremstilling entydig vise hvilke spor som omfattes av arbeidsområdet.
+
+d) Nøkkelskapets kart over arbeidsområdet skal også vise tilstøtende arbeidsområder, men på en slik måte at disse ikke forveksles med arbeidsområdet nøkkelskapet dekker.
+
+e) Nøkkelskapets kart over arbeidsområdet skal entydig vise nøkkelskapets plassering relativt til arbeidsområdet, med en posisjonsangivelse merket “Du står her”.
+
+f) For strekninger med to spor, skal alle kilometermerker, nøkkelskap og nøkler for høyre hovedspor i retning fra Oslo innenfor arbeidsområdet påmonteres referansemerke, med tilsvarende merking av kart i nøkkelskap.
+
+g) For strekninger med tre eller flere spor, skal nøkkelskap og nøkler for ulike spor påmonteres ulike referansemerker, med tilsvarende merking av kart i nøkkelskap.
+
+{{lærebokstoff|Trekantskilt benyttes til å indikere høyre hovedspor i retning fra Oslo på strekninger med to eller flere spor}}
+
+====Plassering====
+
+a) Nøkkelskapet skal være plassert innenfor sitt arbeidsområde.
+
+b) Nøkkelskapet skal være plassert i samsvar med hva som er naturlig angrepspunkt for hovedsikkerhetsvakten.
+
+c) Nøkkelskapet skal være plassert slik at det er lett tilgjengelig uten unødig kryssing av spor.
+
+d) Nøkkelskapet skal være plassert slik at kartet, når det leses, stemmer overens med omgivelsene med hensyn til geografisk posisjon og orientering.
+
+e) Nøkkelskapet skal være plassert slik at skapet eller betjening av skapet ikke kommer i konflikt med fritt profil.
+
+f) Nøkkelskapet skal være plassert slik at det ikke hindrer sikt til signaler, se siktkrav for lyssignaler.
+
+g) Nøkkelskapet skal være plassert nær det naturlige utgangspunktet for visitasjon av arbeidsområdet.
+
+=RAMS-krav=
+==Sikkerhet==
+
+a) Togdeteksjon skal ivareta sikkerhetskritisk funksjon, SKF3:
+
+Et system for togdeteksjon skal detektere et fritt sporavsnitt og gi korrekt informasjon til forriglingsutrustningen om belagt eller fritt sporavsnitt. 
+
+Delfunksjoner:
+# Et system for togdeteksjon skal sikkert detektere om et sporavsnitt er fritt av tog.
+# Et system for togdeteksjon skal gi korrekt informasjon til forriglingsutrustningen om sporavsnittet er belagt eller fritt.
+
+b) THR for sikkerhetskritisk funksjon, SKF3, skal være lik 10<sup>-9</sup> feil/time for ett sporavsnitt.
+
+c) System for togdeteksjon skal være konstruert for å minimum ha kontroll på følgende farer:
+*Feilaktig fritt sporavsnitt.
+*Feilaktig informasjon om fritt sporavsnitt til forriglingsutrustningen.
+
+d) Eventuelle hjelpesystemer for togdeteksjon, som for eksempel service-PC, skal være konstruert slik at feil på hjelpesystem eller systemets grensesnitt ikke skal påvirke systemet for togdeteksjon.
+
+==Tilgjengelighet==
+
+a) System for togdeteksjon skal ha en tilgjengelighet A ≥ 99.9997 % pr. sporavsnitt, det vil si en akkumulert utilgjengelighet UA ≤ 1,5 minutter pr. år. 
+
+b) Reparasjon eller utbytting og justering av en funksjonsenhet slik at den igjen fungerer korrekt, skal kunne utføres på maksimalt 15 minutter, det vil si MRT ≤ 15 minutter.
+
+==Pålitelighet==
+
+a) System for togdeteksjon skal ha en gjennomsnittlig tid mellom feil - MTBF ≥ 87600 timer (10 år) pr. sporavsnitt.
+
+b) Konstruksjoner i sporet skal ha en levetid på minimum 30 år.
+
+==Vedlikeholdbarhet==
+
+a) System for togdeteksjon skal bestå av veldefinerte funksjonsenheter, slik at hele funksjonsenheter kan byttes i forbindelse med vedlikehold.
+
+b) Funksjonsenheter som inneholder slitedetaljer skal være konstruert slik at disse kan overvåkes/inspiseres og skiftes i sammenheng med ordinært forebyggende vedlikehold. 
+
+c) Vekt for utbyttbare funksjonsenheter skal ikke overstige 15 kg.
+
+= Vedlegg =
+
+[[Signal/Prosjektering/Togdeteksjon/Vekselstrømsporfelt_-_95/105_Hz|Vedlegg a: Vekselstrømsporfelt - 95/105 Hz]]
+
+[[Signal/Prosjektering/Togdeteksjon/Likestrømsporfelt|Vedlegg b: Likestrømsporfelt]]
+
+[[Signal/Prosjektering/Togdeteksjon/Vekselstrømsporfelt_-_10/50_kHz|Vedlegg c: Vekselstrømsporfelt - 10/50 kHz]]
+
+[[Signal/Prosjektering/Togdeteksjon/Audiofrekvent_sporfelt_-_FTG_S|Vedlegg d: Audiofrekvent sporfelt - FTG S]]
+
+[[Signal/Prosjektering/Togdeteksjon/Audiofrekvent_sporfelt_-_TI21|Vedlegg e: Audiofrekvent sporfelt - TI21]]
+
+[[Signal/Prosjektering/Togdeteksjon/Akselteller|Vedlegg f: Akselteller]]
+

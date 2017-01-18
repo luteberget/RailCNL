@@ -1,0 +1,246 @@
+__NUMBEREDHEADINGS__
+= Omfang =
+{{lærebokstoff|Sporets overbygning omfatter sporets trasé, skinner, sviller, sporveksler, skinnebefestigelse, skjøter, ballast og planoverganger. Sporet deles inn i overbygningsklasser og kvalitetsklasser.}}
+
+
+{{lærebokstoff|Det skilles mellom hovedspor og øvrige spor.
+
+Med hovedspor menes her
+
+* [[Definisjon:Linjen|linjen]]
+* togspor på stasjoner
+* andre spor som er sterkt trafikkerte
+
+Med øvrige spor menes alle andre spor.}}
+
+a) Kapittelet beskriver generelle bestemmelser og tekniske krav for overbygning. Kravene i dette dokumentet gjelder for nye anlegg og ved ytelsesendringer i eksisterende anlegg. Ved endringer som bare berører et delsystem, skal regelverket for dette delsystemet følges, dersom ikke annet er angitt.
+
+{{lærebokstoff|For eksempel er bytte av en sporveksel å betrakte som en ytelsesendring dersom den nye sporvekselens øker tillatt aksellast eller hastighet. En ren utskifting/fornyelse eller vedlikeholdsaktivitet er ikke å betrakte som en ytelsesendring. Dette gjelder f.eks. bytte av mellomlegg, bytte av isolert skjøt eller andre bytter ”en til en”.}}
+
+= Overbygningsklasser =
+Sporets overbygningsklasse angir sporets konstruksjon med hensyn til skinneprofil og svilleavstand. Innenfor en bestemt overbygningsklasse stilles det forskjellige krav til sporets konstruksjon.
+
+Overbygningsklassen er en av flere bestemmende faktorer for hvilken trafikk som kan tillates på sporet. 
+
+a) <xr id="tab:Tillatt hastighet og maksimal aksellast for overbygningsklasser" /> angir største tillatte hastigheter med tilhørende øvre grense for tillatte aksellaster for persontog, motorvognsett og godsvogner for hver overbygningsklasse.
+
+Merk at det er flere faktorer enn overbygningsklasse som begrenser hastigheten i sporet, bl.a. sporets horisontalgeometri. [https://194.19.110.201/PDF/Infrastrukturens%20egenskaper/590/Vedlegg/T9003d02.pdf Krav til aksellaster og metervekter pga. bruenes bæreevne] kan begrense aksellaster utover verdiene i <xr id="tab:Tillatt hastighet og maksimal aksellast for overbygningsklasser" />.
+
+{{lærebokstoff|Nominell aksellast er definert som "Normal design payload (PND) i standarden EN 15663.}}
+
+<figtable id="tab:Tillatt hastighet og maksimal aksellast for overbygningsklasser">
+{| class="wikitable"
+|+ Tillatt hastighet og maksimal aksellast for overbygningsklasser 
+! rowspan="2"| Overbygningsklasse
+! colspan="2"| Vogner i persontog
+! colspan="2"| Motorvognsett
+! colspan="3"| Godstog/arbeidsmaskiner
+|- align="center"
+| Nominell <br> aksellast <br> (tonn)
+| Maks <br> hastighet <br> (km/h)
+| Nominell <br> aksellast <br> (tonn)
+| Maks <br> hastighet <br> (km/h)
+| Nominell <br> aksellast <br> (tonn)
+| Maks <br> hastighet <br> (km/h)
+| Maks hastighet <br> boggier godkjent iht <br> EN 14363 <br> (km/h)
+|- align="center"
+| '''a'''
+| 16
+| 90
+| 16
+| 90
+| 22,5 <br> 16,5
+| 30 <br> 70
+| 30 <br> 70
+|- align="center"
+| '''b'''
+| 18
+| 100
+| 18
+| 100
+| 22,5 <br> 20,5 <br> 18
+| 30 <br> 70 <br> 80
+| 30 <br> 70 <br> 80
+|- align="center"
+| '''c'''
+| 18
+| 160
+| 20,5 <br> 18
+| 130 <br> 160
+| 22,5 <br> 20,5 <br> 18
+| 80 <br> 90 <br> 100
+| 90 <br> 100 <br> 110
+|- align="center"
+| '''c+'''
+| 18
+| 160
+| 20,5
+| 160
+| 24<sup>1</sup> <br> 22,5 <br> 20,5 <br> 18
+| 50 <br> 90 <br> 100 <br> 110
+| 50 <br> 100 <br> 110 <br> 120
+|- align="center"
+| '''d'''
+| 18
+| 230
+| 20,5 <br> 20 <br> 18 <br> 17
+| 160 <br> 200 <br> 250 <br> 300
+| 25 <br> 22,5 <br> 18
+| 70 <br> 100 <br> 110
+| 70 <br> 120 <br> 120
+|- align="center"
+| '''Ofotbanen'''
+| 18
+| 130
+| 20,5
+| 130
+| 30 <br> 22,5
+| 50 <br> 70<sup>2</sup>
+| 50 <br> 70<sup>2</sup>
+|}
+</figtable>
+1) Gjelder bare Nordlandsbanen mellom Guldsmedvik (km 499,517) og Ørtfjell (km 534,630)<br>
+2) Maksimal hastighet for tomme malmvogner er 60 km/h
+
+
+<xr id="tab:Tillatt hastighet og maksimal aksellast for overbygningsklasser" /> bygger på følgende forutsetninger:
+
+* maks aksellast for lokomotiv i persontog er 22,5 tonn.
+* den dynamiske hjullasten skal ikke overstige verdiene gitt i [[Supplementary_information_and_regulations#Maximum_acceptable_dynamic_wheel_load]]
+* den maksimale aksellasten for enkeltaksler skal ikke overstige ''nominell aksellast x 1,04''
+* for nærtrafikktog tillates aksellast for enkeltlaster å bli overskredet med mellom 4 og10 % i opp til 2 % av trafikktilfellene
+* den totale massen av toget skal ikke overstige ''maks. nominell aksellast x antall aksler x 1,02'' (lokomotiv i persontog holdes utenfor i denne beregning.)
+
+
+b) For blandede godstog og containerekspresser tillates kombinasjonen 22,5 tonn aksellast og hastighet 90 km/h i overbygningsklasse c under forutsetning av at andel av togstammen med 22,5 tonn aksellast ikke overstiger 25%.
+
+c) I <xr id="tab:Skinneprofil med tilhørende største svilleavstand for overbygningsklasser" /> er det angitt skinneprofiler som tillates benyttet i de forskjellige overbygningsklasser med tilhørende største tillatte svilleavstand.
+
+
+<figtable id="tab:Skinneprofil med tilhørende største svilleavstand for overbygningsklasser">
+{| class="wikitable"
+|+ Skinneprofil
+! Overbygningsklasse
+! Skinneprofil
+! Største svilleavstand
+|- align="center"
+| rowspan="3"| '''a'''
+| [[Overbygning/Prosjektering/Sporkonstruksjoner/Vedlegg/Skinneprofiler#35,7 kg|35,7 kg]]
+| 730 mm
+|- align="center"
+| [[Overbygning/Prosjektering/Sporkonstruksjoner/Vedlegg/Skinneprofiler#S41|S41]]
+| 750 mm
+|- align="center"
+| [[Overbygning/Prosjektering/Sporkonstruksjoner/Vedlegg/Skinneprofiler#49E1|49E1]]
+| 750 mm
+|- align="center"
+| rowspan="3"| '''b'''
+| [[Overbygning/Prosjektering/Sporkonstruksjoner/Vedlegg/Skinneprofiler#35,7 kg|35,7 kg]]
+| 610 mm
+|- align="center"
+| [[Overbygning/Prosjektering/Sporkonstruksjoner/Vedlegg/Skinneprofiler#NSB40|NSB40]]
+| 610 mm
+|- align="center"
+| [[Overbygning/Prosjektering/Sporkonstruksjoner/Vedlegg/Skinneprofiler#S41|S41]]
+| 660 mm
+|- align="center"
+| rowspan="5"| '''c'''
+| [[Overbygning/Prosjektering/Sporkonstruksjoner/Vedlegg/Skinneprofiler#49E1|49E1]] 
+| 660 mm
+|- align="center"
+| [[Overbygning/Prosjektering/Sporkonstruksjoner/Vedlegg/Skinneprofiler#54E3|54E3]]
+| 660 mm
+|- align="center"
+| [[Overbygning/Prosjektering/Sporkonstruksjoner/Vedlegg/Skinneprofiler#54E2|54E2]]
+| 650 mm
+|- align="center"
+| [[Overbygning/Prosjektering/Sporkonstruksjoner/Vedlegg/Skinneprofiler#54E1|54E1]]
+| 670 mm
+|- align="center"
+| [[Overbygning/Prosjektering/Sporkonstruksjoner/Vedlegg/Skinneprofiler#S64|S64]]
+| 750 mm
+|- align="center"
+| rowspan="4"| '''c+'''
+| [[Overbygning/Prosjektering/Sporkonstruksjoner/Vedlegg/Skinneprofiler#49E1|49E1]]
+| 600 mm
+|- align="center"
+| [[Overbygning/Prosjektering/Sporkonstruksjoner/Vedlegg/Skinneprofiler#54E3|54E3]] 
+| 600 mm
+|- align="center"
+| [[Overbygning/Prosjektering/Sporkonstruksjoner/Vedlegg/Skinneprofiler#54E1|54E1]] 
+| 600 mm
+|- align="center"
+| [[Overbygning/Prosjektering/Sporkonstruksjoner/Vedlegg/Skinneprofiler#54E2|54E2]] 
+| 600 mm
+|- align="center"
+| '''d'''
+| [[Overbygning/Prosjektering/Sporkonstruksjoner/Vedlegg/Skinneprofiler#60E1|60E1]] 
+| 600 mm
+|- align="center"
+| rowspan="2"| '''Ofotbanen'''
+| [[Overbygning/Prosjektering/Sporkonstruksjoner/Vedlegg/Skinneprofiler#54E4|54E4]]
+| 520 mm
+|- align="center"
+| [[Overbygning/Prosjektering/Sporkonstruksjoner/Vedlegg/Skinneprofiler#60E2|60E2]]
+| 520 mm
+|}
+</figtable>
+
+Ved nyanlegg og sporombygging til overbygningsklasse c skal det alltid anvendes svilleavstand 600 mm.
+
+= Kvalitetsklasser =
+Sporet er delt inn i kvalitetsklasser med hensyn til strekningshastighet (<xr id="tab:Kvalitetsklasser" />). Innenfor hver kvalitetsklasse stilles det krav til sporgeometri, sporets beliggenhet samt utforming av geodetisk fastmerkenett. Parametrene det stilles krav til er:
+
+* sporvidde
+* høydebeliggenhet (relativ og absolutt)
+* ujevnheter i overhøyde
+* sidebeliggenhet (pilhøydefeil og absolutt beliggenhet)
+* vindskjevhet
+* kvalitetstall
+* utforming av fastmerkenett
+
+a) Krav til vedlikehold av sporets geometri og beliggenhet er gitt i [[Overbygning/Vedlikehold/Sporjustering og stabilisering]].
+
+b) Krav til prosjektering og bygging av geodetisk fastmerkenett og utfesting av sporet er gitt i [[Overbygning/Prosjektering/Utfesting og fastmerkenett]].
+
+<figtable id="tab:Kvalitetsklasser">
+{| class="wikitable"
+|+ Kvalitetsklasser
+! Kvalitetsklasse
+! Hastighet (km/h)
+|- align="center"
+| K0
+| 145 -
+|- align="center"
+| K1
+| 125 - 140
+|- align="center"
+| K2
+| 105 - 120
+|- align="center"
+| K3
+| 75 - 100
+|- align="center"
+| K4
+| 45 - 70
+|- align="center"
+| K5
+| - 40
+|}
+</figtable>
+
+{{lærebokstoff|Ved bygging av nye spor kan det noen ganger være fordelaktig bygge til en bedre kvalitetsklasse enn hva hastigheten tilsier. Valg av bedre kvalitesklasse ved bygging gir ingen føringer for valg av kvalitetsklasse i driftsfasen}}
+
+= Sidevind =
+a) Ved prosjektering av nye baner med kvalitetsklasse 0 skal steder hvor særlig sterk sidevind kan forekomme identifiseres.
+
+b) Et referansetog skal kunne trafikkere sikkert på utsatte steder under de mest kritiske operative forutsetninger med hensyn til sidevind. Sikkerhet mot velting skal vises gjennom beregninger hvor karakteristiske vindkurver (CWC) for referansetoget i henhold til EN 14067-6:2010 inngår.
+
+c) På utsatte steder hvor sikkerhet mot velting ikke kan verifiseres gjennom b) skal det gjennomføres et eller flere av nedenstående tiltak. 
+
+* Innføre operasjonelle regler for lokal midlertidig hastighetsnedsettelse i perioder hvor særlig sterk sidevind kan ventes basert på meteogrammer
+* Installere konstruksjoner som skjermer sporet for kritisk sidevind
+* Redusere manglende overhøyde
+
+{{lærebokstoff|For identifisering av steder hvor særlig sterk sidevind kan forekomme, er det bare lange/høye bruer, utsatte høyfjellspartier, spor mot åpent hav og andre steder med spesiell topografi som skal vurderes.}}
+

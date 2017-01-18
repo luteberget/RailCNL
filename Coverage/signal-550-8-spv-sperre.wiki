@@ -1,0 +1,660 @@
+__NUMBEREDHEADINGS__
+
+=Hensikt og omfang=
+
+Kapittelet beskriver tekniske krav og funksjonskrav til sporveksel- og sporsperreutrustning. 
+
+<figure id ="Systemoversikt signalanlegg">
+[[Bilde:JD550 08 fig001.png|thumb|center|350px|<caption>Systemoversikt signalanlegg</caption>]]
+</figure>
+
+Kapittelet omfatter følgende delsystemer/komponenter:
+
+Sporvekselutrustning, herunder:
+*	Sporvekseldrivverk
+*	Sporvekselkontrollpunkt
+*	Kontrollås og rigel
+Sporsperreutrustning, herunder:
+*	Sporsperre
+*	Sporsperredrivverk
+*	Kontrollås og rigel
+Lokalstiller
+ 
+==Systemdefinisjon==
+
+===Generelt===
+<figure id ="Systemdefinisjon sporveksel- og sporsperreutrustning">
+[[Bilde:JD550 08 fig002.png|thumb|center|350px|<caption>Systemdefinisjon sporveksel- og sporsperreutrustning</caption>]]
+</figure>
+
+Med sporveksel- og sporsperreutrustning menes enhet for styring/kontroll av sporveksel- og sporsperreutrustning og nødvendige utvendige enheter for omlegging, låsing og kontroll (av låsing og posisjon).
+
+I tillegg inngår for håndstilt sporveksel- og sporsperreutrustning nødvendige enheter for sperring for omlegging.
+
+===Sporvekselutrustning===
+<figure id ="Systemoversikt - Sporvekselutrustning">
+[[Bilde:JD550 08 fig003.png|thumb|center|350px|<caption>Systemoversikt - Sporvekselutrustning</caption>]]
+</figure>
+
+Med sporvekselutrustning for en sentralstilt sporveksel menes all nødvendig utrustning for å utføre omlegging, låsing, kontroll av låsing og kontroll av posisjonen til sporvekseltungene og sporvekselkryss med bevegelig krysspiss. 
+
+En sporvekselutrustning for en sentralstilt sporveksel består av sporvekseldrivverk og sporvekselkontrollpunkt. Antall og plassering av sporvekseldrivverk og sporvekselkontrollpunkt er avhengig av sporvekselens skinneprofil, stigning og radius. 
+
+Med sporvekselutrustning for en håndstilt sporveksel menes all nødvendig utrustning for å utføre sperring av omlegging og kontroll av posisjonen til sporvekseltungene. 
+
+Sporvekselutrustning for håndstilt sporveksel består av kontrollås eller rigel.
+
+===Sporsperreutrustning===
+
+{{lærebokstoff|Sporsperre skal hindre at rullende materiell kommer inn i middel til nabospor enten ved å stoppe materiellet før dette skjer eller som siste utvei å avspore materiellet.}}
+
+<figure id ="Systemoversikt - Sporsperreutrustning">
+[[Bilde:JD550 08 fig004.png|thumb|center|350px|<caption>Systemoversikt - Sporsperreutrustning</caption>]]
+</figure>
+
+Med sporsperreutrustning for en sentralstilt sporsperre menes all nødvendig utrustning for å utføre omlegging, låsing, kontroll av låsing og kontroll av posisjon av sporsperre.
+
+Sporsperreutrustning for sentralstilt sporsperre består av sporsperredrivverk. 
+
+Med sporsperreutrustning for en håndstilt sporsperre menes all nødvendig utrustning for å utføre sperring for omlegging og kontroll av posisjon av sporsperre. 
+
+Sporsperreutrustning for håndstilt sporsperre består av kontrollås eller rigel.
+
+===Lokalstiller===
+<figure id ="Systemoversikt - Lokalstiller">
+[[Bilde:JD550 08 fig005.png|thumb|center|350px|<caption>Systemoversikt - Lokalstiller</caption>]]
+</figure>
+
+Med lokalstiller menes utrustning for lokal betjening og lokal indikering av sentralstilt sporveksel og/eller sporsperre.
+
+=Plassering av utstyr=
+
+==Bestykning av sporveksel==
+
+a) En sporveksel som skal inngå i en togvei skal være sikret ved hjelp av en sporvekselutrustning og være bestykket som beskrevet i dette avsnittet.
+
+{{lærebokstoff|Dette betyr at sentralstilte sporveksler i usikret område, eller som bare kan inngå i skifteveier kan bestykkes på annen måte enn det som er beskrevet i kravene i dette kapitlet. Dette må vurderes i hvert enkelt tilfelle.
+
+Eksakt plassering av sporvekselutrustningen avgjøres av sporvekselleverandøren og blir fastlagt i de forskjellige sporvekslenes typetegninger.
+
+Typetegninger over alle sporveksler i infrastrukturen, med korrekt bestykning, finnes her: [[Overbygning/Prosjektering/Sporveksler/Vedlegg/Oversikt_over_sporvekseltegninger]]
+}}
+
+b) En sporveksel med tillatt hastighet > 130 km/h skal være utrustet med sporvekseldrivverk og eventuelt sporvekselkontrollpunkt.
+
+c) Sporveksel med tillatt hastighet i avvikespor > 40 km/h skal være utrustet med sporvekseldrivverk og eventuelt sporvekselkontrollpunkt.
+
+d) Sporveksler med stigning 1:9 skal kunne sikres med kontrollås eller rigel. Øvrige sporveksler skal sikres med sporvekseldrivverk og eventuelt sporvekselkontrollpunkt. 
+
+e) Sporveksel sikret med kontrollås eller rigel skal ha egen utrustning for låsing og omlegging, [[Overbygning/Prosjektering/Sporveksler]].
+
+{{lærebokstoff|Bestykning av sporvekslene nevnt i <xr id="Bestykning av sporveksel 1:9"/>, <xr id="Bestykning av sporveksel med stigning 1:12 til 1:18,4"/>, <xr id="Bestykning av sporveksel med stigning 1:18,4"/> og <xr id="Bestykning av sporveksel UIC60, R2500, 1:26,1"/>, er basert på følgende forutsetninger:
+* Sporviddereduksjon ≥ 10 mm skal detekteres
+* Maksimal åpning tunge - stokkskinne ved tungespiss <nowiki>=</nowiki> 3 mm
+* Maksimal åpning tunge - stokkskinne ved sporvekseldrivverk/sporvekselkontrollpunkt <nowiki>=</nowiki> 1 mm
+* Omleggingskraft for sporvekseldrivverk: 4 kN eller 6,5 kN
+* Friksjonskoeffisient mellom sporvekseltunge og glideplater <nowiki>=</nowiki> 0,3
+* Sporvekseltunge med tungeprofil ZU-54 eller 60D
+}}
+
+===Sporveksel med stigning 1:9===
+<figure id ="Bestykning av sporveksel1">
+[[Bilde:JD550 08 fig006.png|thumb|center|350px|<caption>Bestykning av sporveksel 1:9</caption>]]
+</figure>
+
+<figtable id="Bestykning av sporveksel 1:9">
+{| class="wikitable"
+|+ Bestykning av sporveksel 1:9
+|-
+|rowspan = "2"| '''Type''' || rowspan = "2"|   || colspan = "2"|'''Tungeparti'''
+|-
+| '''1''' || '''2'''
+|-
+|rowspan = "4"| 1:9
+
+R190
+
+S54
+ || Bestykning || dv || kp
+|-
+| Fastholdekraft - tilliggende tunge [kN] || ≥ 40 || (≥ 6)
+|-
+| Fastholdekraft - fraliggende tunge [kN] || ≥ 10* || (≥ 6*)
+|-
+| Omleggingskraft [kN] || ≤ 6,5 || (≤ 6,5)
+|-
+|rowspan = "4"| 1:9
+
+R300
+
+S54 /
+
+UIC60
+ || Bestykning || dv || dv
+|-
+| Fastholdekraft - tilliggende tunge [kN] || ≥ 40 || ≥ 6
+|-
+| Fastholdekraft - fraliggende tunge [kN] || ≥ 10* || ≥ 6*
+|-
+| Omleggingskraft [kN] || ≤ 6,5 || ≤ 6,5
+|}
+</figtable>
+
+dv - sporvekseldrivverk, kp - sporvekselkontrollpunkt.
+
+<nowiki>*</nowiki> Fastholdekraft på fraliggende tunge skal begrenses slik at tungen ikke deformeres ved oppkjøring.
+
+{{lærebokstoff|For sporveksel med stigning 1:9 kan dv (sporvekseldrivverk) være utført som kontrollås/rigel og med egen utrustning for låsing og omlegging.}}
+
+===Sporveksel med stigning 1:12 til 1:18,4 (fast kryss)=== 
+<figure id ="Bestykning av sporveksel2">
+[[Bilde:JD550 08 fig007.png|thumb|center|350px|<caption>Bestykning av sporveksel med stigning 1:12 til 1:18,4</caption>]]
+</figure>
+
+<figtable id="Bestykning av sporveksel med stigning 1:12 til 1:18,4">
+{| class="wikitable"
+|+ Bestykning av sporveksel med stigning 1:12 til 1:18,4
+|-
+|rowspan = "2"| '''Type''' || rowspan = "2"|   || colspan = "3"|'''Tungeparti'''
+|-
+|'''1''' || '''2''' || '''3'''
+|-
+|rowspan = "4"|1:12 R500 S54/UIC60
+|Bestykning||dv||kp||dv
+|-
+|Fastholdekraft - tilliggende tunge [kN] || ≥ 40 || (≥ 6) || ≥ 6
+|-
+|Fastholdekraft - fraliggende tunge [kN] || ≥ 10* || (≥ 6*) || ≥ 6*
+|-
+|Omleggingskraft [kN] || ≤ 6,5 || (≤ 6,5) || ≤ 6,5
+|-
+|rowspan = "4"|1:14 R760 S54 
+| Bestykning || dv || dv || dv
+|-
+|Fastholdekraft - tilliggende tunge [kN] || ≥ 40 || ≥ 6 || ≥ 6
+|-
+|Fastholdekraft - fraliggende tunge [kN] || ≥ 10* || ≥ 6* || ≥ 6*
+|-
+|Omleggingskraft [kN] || ≤ 4 || ≤ 4 || ≤ 4
+|-
+|rowspan = "4"|1:14/15 R760 UIC60 
+| Bestykning || dv || dv || dv
+|-
+|Fastholdekraft - tilliggende tunge [kN] || ≥ 40 || ≥ 6 || ≥ 6
+|-
+|Fastholdekraft - fraliggende tunge [kN] || ≥ 10* || ≥ 6* || ≥ 6*
+|-
+|Omleggingskraft [kN] || ≤ 6,5 || ≤ 6,5 || ≤ 6,5
+|-
+|rowspan = "4"|1:18,4 R1200 UIC60 
+| Bestykning || dv || dv || dv
+|-
+|Fastholdekraft - tilliggende tunge [kN] || ≥ 40 || ≥ 6 || ≥ 6
+|-
+|Fastholdekraft - fraliggende tunge [kN] || ≥ 10* || ≥ 6* || ≥ 6*
+|-
+|Omleggingskraft [kN] || ≤ 4 || ≤ 4 || ≤ 4
+|}
+</figtable>
+
+dv - sporvekseldrivverk, kp - sporvekselkontrollpunkt.
+
+<nowiki>*</nowiki> Fastholdekraft på fraliggende tunge skal begrenses slik at tungen ikke deformeres ved oppkjøring.
+
+===Sporveksel med stigning 1:18,4 (bevegelig kryss)=== 
+
+<figure id ="Bestykning av sporveksel3">
+[[Bilde:JD550 08 fig007b.svg|thumb|center|350px|<caption>Bestykning av sporveksel med stigning 1:18,4</caption>]]
+</figure>
+
+<figtable id="Bestykning av sporveksel med stigning 1:18,4">
+{| class="wikitable"
+|+  Bestykning av sporveksel med stigning 1:18,4
+|-
+|rowspan = "2"| '''Type''' || rowspan = "2"|   || colspan = "5"|'''Tungeparti'''
+|-
+|'''1''' || '''2''' || '''3'''|| '''4''' || '''5'''
+|-
+|rowspan = "4"|1:18,4 R1200 UIC60 
+| Bestykning || dv || dv || dv || dv || dv
+|-
+|Fastholdekraft - tilliggende tunge [kN] || ≥ 40 || ≥ 6 || ≥ 6 || ≥ 40 || ≥ 6
+|-
+|Fastholdekraft - fraliggende tunge [kN] || ≥ 10* || ≥ 6* || ≥ 6* || || 
+|-
+|Omleggingskraft [kN] || ≤ 4 || ≤ 4 || ≤ 4 || ≤ 6,5 || ≤ 6,5
+|}
+</figtable>
+
+dv - sporvekseldrivverk, kp - sporvekselkontrollpunkt.
+
+<nowiki>*</nowiki> Fastholdekraft på fraliggende tunge skal begrenses slik at tungen ikke deformeres ved oppkjøring.
+
+===Sporveksel med stigning 1:26,1===
+<figure id ="Bestykning av sporveksel3">
+[[Bilde:JD550 08 fig008.png|thumb|center|350px|<caption>Bestykning av sporveksel UIC60, R2500, 1:26,1</caption>]]
+</figure>
+
+<figtable id="Bestykning av sporveksel UIC60, R2500, 1:26,1">
+{| class="wikitable"
+|+ Bestykning av sporveksel UIC60, R2500, 1:26,1
+|-
+|rowspan = "2"| '''Type''' || rowspan = "2"|   || colspan = "7"|'''Tungeparti'''|| colspan = "2"|'''Krysspiss'''
+|-
+|'''1''' || '''2''' || '''3''' || '''4''' || '''5''' || '''6''' || '''7''' || '''8''' || '''9'''
+|-
+
+|rowspan = "4"|1:26,1
+
+R2500
+
+UIC60
+|| Bestykning || dv || kp || dv || kp || dv || kp || dv || dv || dv
+|-
+|Fastholdekraft - tilliggende tunge [kN] || ≥ 40 || (≥ 6) || ≥ 6 || (≥ 6) || ≥ 6 || (≥ 6) || ≥ 6 || ≥ 40 || ≥ 6
+|-
+|Fastholdekraft - fraliggende tunge [kN] || ≥ 10* || (≥ 6*) || ≥ 6* || (≥ 6*) || ≥ 6* || (≥ 6*) || ≥ 6* ||  || 
+|-
+|Omleggingskraft [kN] || ≤ 6,5 || (≤ 6,5) || ≤ 6,5 || (≤ 6,5) || ≤ 6,5 || (≤ 6,5) || ≤ 6,5 || ≤ 6,5 || ≤ 6,5
+|}
+</figtable>
+
+dv - sporvekseldrivverk, kp - sporvekselkontrollpunkt.
+
+<nowiki>*</nowiki> Fastholdekraft på fraliggende tunge skal begrenses slik at tungen ikke deformeres ved oppkjøring.
+
+===Enkel og dobbel kryssveksel===
+
+a) Enkel og dobbel kryssveksel skal bestykkes med ett sporvekseldrivverk i tungespiss.
+
+==Plassering av sporsperre==
+
+a) En sporsperre skal plasseres minimum 5 meter innenfor middel til nabospor.
+
+b) En sporsperre skal plasseres på en av skinnestrengene.
+
+c) For avsporing til venstre skal sporsperren plasseres på venstre skinnestreng og for avsporing til høyre skal sporsperren 
+plasseres på høyre skinnestreng.
+
+d) En sporsperre skal styre avsporingen slik at avsporing skjer i retning bort fra mest trafikkerte spor.
+
+==Plassering av lokalstiller==
+a) En lokalstiller skal plasseres 1-2 meter foran tungespiss.
+
+b) Ved koblede sporveksler i en sporvekselsløyfe (to veksler som betjenes med samme ordre) skal lokalstilleren plasseres ved den sporvekselen som omlegges sist. 
+{{lærebokstoff|Omlegges begge sporvekslene samtidig skal lokalstilleren plasseres der det er mest hensiktsmessig for bruker.}}
+
+=Sporvekselutrustning - tekniske krav=
+
+==Generelt==
+
+a) Sporvekselutrustningen skal sikre at kontroll av låsing og posisjon kun oppnås når avstanden mellom tilliggende sporvekseltunge/krysspiss og stokkskinne/vingeskinne er ≤ 3 mm i tungespiss.
+
+b) Sporvekselutrustningen skal sikre at kontroll av låsing og posisjon kun oppnås når avstanden mellom tilliggende tunge og stokkskinne er ≤ 10 mm på noe punkt i anleggsflaten bak tungespiss.
+
+c) Sporvekselutrustningen skal sikre at kontroll av posisjon kun oppnås når avstanden mellom fraliggende sporvekseltunge og stokkskinne er > 58 mm i hele tungepartiet.
+
+d) Det mekaniske grensesnittet mot tunge skal tåle en tungevandring ±40 millimeter fra nøytraltemperaturpunktet.
+
+e) Sporvekselutrustningen skal tåle en vertikal bevegelse av sporvekseltungen/krysspissen på ±10 mm i forhold til stokkskinne/vingeskinne uten at kontroll av låsing og posisjon påvirkes.
+
+f) Mekaniske fester til tunge, stokkskinne og vingeskinne, skal være boret og skrudd.
+
+g) Skrudde fester til tunge, stokkskinne og vingeskinne, skal være sikret mekanisk mot utilsiktet løsning av festene.
+
+h) De deler av utrustning for omlegging, låsing og kontroll av posisjon som er justerbare skal være utført slik at justering ikke kan endres utilsiktet.
+
+i) Sporvekselutrustningen for sentralstilt sporveksel skal være bygd inn i kassesville.
+
+==Sporvekseldrivverk==
+
+a) Sporvekseldrivverket skal kunne gi informasjon om kontroll av låsing og posisjon til forriglingsutrustningen.
+
+b) Sporvekseldrivverket skal kunne motta og effektuere ordre om omlegging fra forriglingsutrustningen.
+
+c) Sporvekseldrivverket skal kunne legge sporveksel tilbake til opprinnelig posisjon, dersom en omlegging av sporveksel ikke fullføres.
+
+d) Omlegging, låsing, og kontroll av sporvekseltunger/krysspiss skal følge sekvensen: 
+
+# Kontroll oppheves
+# Låsing oppheves
+# Omlegging
+# Låsing
+# Kontroll av låsing
+# Kontroll av posisjon
+
+===Utrustning for omlegging===
+
+a) Sporvekseldrivverket skal ha tilstrekkelig omleggingskraft til å kunne legge over sporvekseltunger/krysspiss med maksimalverdier som angitt i [[Signal/Prosjektering/Sporveksel-_og_sporsperreutrustning#Bestykning_av_sporveksel|bestykning av sporveksel]].
+{{lærebokstoff|Med omleggingskraft menes den kraft som sporvekseldrivverket påfører sporveksel¬tungene/krysspissen under omlegging.}}
+
+b) Omlegging av sporvekseltunger skal kunne skje med en horisontal bevegelse av sporvekseltunger på 58 – 160 mm. 
+{{lærebokstoff|Normalavstand mellom fraliggende sporvekseltunge og stokkskinn i tungespiss skal være 110 mm, men for en sporveksel med bare ett sporvekseldrivverk skal avstanden være 160 mm for å oppnå minsteavstand på 58 mm bakover i sporvekselen.}}
+
+c) Omlegging av krysspiss skal kunne skje med en horisontal bevegelse på krysspiss på 35 – 60 millimeter.
+
+d) Den horisontale bevegelsen i utrustning for omlegging skal være justerbar i trinn ≤ 2 mm.
+
+e) Omlegging skal kunne skje i løpet av < 6 sekunder.
+
+f) Manuell omlegging skal kunne gjøres ved hjelp av sveiv eller lignende.
+
+g) Ved manuell omlegging skal sporvekseldrivverket hindre automatisk omlegging av sporvekselen.
+
+h) Utrustning for omlegging skal holde sporvekseltungene/krysspiss på plass slik at de ikke beveges ved en horisontal kraft ≤ 2 kN normalt på sporvekseltungene/krysspissen, selv uten låsing.
+{{lærebokstoff|Dette for å sikre en fastholdekraft på sporvekseltungene/krysspissen slik at sporveksel kan passeres i 10 km/t etter visuell kontroll av posisjon til sporvekseltungene/krysspissen.}}
+
+===Utrustning for låsing===
+
+a) Sporvekseldrivverket skal ha en fastholdekraft som angitt i [[Signal/Prosjektering/Sporveksel-_og_sporsperreutrustning#Bestykning_av_sporveksel|bestykning av sporveksel]].
+
+{{lærebokstoff|Med fastholdekraft menes den kraft som sporvekseldrivverket holder sporvekseltunge og krysspiss på plass med i tilliggende og fraliggende stilling.}}
+
+b) Ved oppkjøring av en sporveksel skal låsingen av både tilliggende og fraliggende sporvekseltunge oppheves uten at låsemekanismen ødelegges. 
+
+{{lærebokstoff|Med oppkjøring av en sporveksel menes at fraliggende sporvekseltunge utsettes for en horisontal kraft normalt på tunga større enn fastholdekraften.}}
+
+c) Utrustningen for låsing skal låse bare når sporvekseltungene/krysspissen er i korrekt posisjon. 
+
+d) Utrustningen for låsing av tilliggende sporvekseltunge/krysspiss i forhold til stokkskinne/vingeskinne skal være justerbar i området 0,5 – 10 mm.
+
+e) Utrustningen for låsing av fraliggende sporvekseltunge i forhold til stokkskinne skal være justerbar i området 58 – 110 millimeter (160 millimeter ved bare ett sporvekseldrivverk).
+
+f) Utrustningen for låsing av sporvekseltunge/krysspiss i forhold til stokkskinne/vingeskinne skal være justerbar i trinn ≤0,5 mm.
+
+g) Ved oppkjøring skal kun en lett utskiftbar komponent (oppkjøringssikring) deformeres eller ødelegges.
+
+===Utrustning for kontroll av låsing===
+
+a) Kontroll av låsing av sporvekseltungene/krysspissen skal være uavhengig av kontroll av posisjon.
+
+b) Kontroll av låsing omfatter både fraliggende og tilliggende sporvekseltunge.
+
+c) Kontroll av låsing for sporvekseldrivverk skal kun oppnås når både fraliggende og tilliggende sporvekseltunge er låst.
+
+d) Kontroll av låsing til sporvekseltunger skal ikke oppnås dersom oppkjøringssikring er ødelagt/deformert.
+
+e) Ved manuell omlegging skal sporvekseldrivverket oppheve kontroll av låsing.
+
+===Utrustning for kontroll av posisjon===
+
+a) Kontroll av posisjon av sporvekseltungene/krysspissen skal være uavhengig av kontroll av låsing.
+
+b) Utrustningen for kontroll av posisjon til tilliggende sporvekseltunge/krysspiss i forhold til stokkskinne/vingeskinne skal være justerbart i området 0,5 – 10 mm.
+
+c) Utrustningen for kontroll av posisjon til fraliggende sporvekseltunge i forhold til stokkskinne skal være justerbar i området 58 – 110 millimeter (160 millimeter ved bare ett sporvekseldrivverk).
+
+d) Utrustningen for kontroll av posisjon til sporvekseltunger i forhold til stokkskinne/vingeskinne skal være justerbar i trinn ≤0,5 millimeter.
+
+e) Kontroll av posisjon til sporvekseltunger skal ikke oppnås dersom oppkjøringssikring er ødelagt/deformert.
+
+f) Ved manuell omlegging skal sporvekseldrivverket oppheve kontroll av posisjon.
+
+==Sporvekselkontrollpunkt==
+
+a) Sporvekselkontrollpunktet skal kunne gi informasjon om kontroll av posisjon til forriglingsutrustningen.
+
+b) Utrustningen for kontroll av posisjon til tilliggende sporvekseltunge/krysspiss i forhold til stokkskinne/vingeskinne skal være justerbart i området 0,5 – 10 mm.
+
+c) Utrustningen for kontroll av posisjon til fraliggende sporvekseltunge i forhold til stokkskinne skal være justerbar i området 58 – 110 millimeter.
+
+d) Utrustningen for kontroll av posisjon til sporvekseltunger i forhold til stokkskinne/vingeskinne skal være justerbar i trinn ≤0,5 millimeter.
+
+==Kontrollås og rigel for sporveksel==
+
+{{lærebokstoff|En håndstilt sporveksel sikret med kontrollås eller rigel er normalt utstyrt med stillbukk (kastelodd)
+for omlegging og palstengsel eller hakestengsel for låsing. Dette er utstyr som følger
+sporvekselen og som er overbygning sitt ansvar. Utstyr for omlegging og låsing av håndstilt
+sporveksel blir derfor ikke beskrevet nærmere her.}}
+
+a) Kontrollås og rigel skal kontrollere posisjon til sporvekseltunger i sporveksel.
+
+b) Kontrollås og rigel skal sperre for omlegging av sporvekseltunger i sporveksel.
+
+===Kontroll av posisjon===
+
+a) En håndstilt sporveksel skal være utstyrt med kontrollås eller rigel for kontroll av posisjon til sporvekseltungene.
+
+b) For en sporveksel som er sikret med kontrollås, skal kontrollåsnøkkelen bare kunne tas ut av låsen når sporvekseltungene ligger i korrekt posisjon innenfor toleransegrensene i en på forhånd valgt stilling.
+
+{{lærebokstoff|Kontroll av sporvekseltungenes stilling oppnås ikke før kontrollåsnøkkelen settes inn i nøkkelapparat med kontrollutstyr, for eksempel S-lås.}}
+
+c) For en sporveksel som er sikret med rigel, skal rigelen gi informasjon til sikringsanlegget når sporvekseltungene ligger i korrekt posisjon innenfor toleransegrensene i en på forhånd valgt normalstilling.
+
+===Sperring for omlegging===
+
+a) Om en sporveksel forsøkes omlagt med en kraft på inntil 4 kN, skal kontrollås eller rigel i låst stilling hindre at tungelåsingen går ut av inngrep.
+
+=Sporsperreutrustning - tekniske krav=
+
+==Generelt==
+
+a) Sporsperreutrustningen skal sikre at sporsperreklossen låst i pålagt stilling ikke kan løftes ut av sporet i støttejernet. 
+
+b) Sporsperreutrustningen skal sikre at sporsperreklossen låst i pålagt stilling ikke kan løftes mer enn 10 mm over skinnetopp.
+
+c) Sporsperreutrustningen skal sikre at sporsperreklossen låst i avlagt stilling ikke kan løftes mer enn til 30 mm over SOK.
+
+d) De deler av utrustning for omlegging, låsing og kontroll av posisjon som er justerbare skal være utført slik at justeringen ikke kan endres utilsiktet.
+
+==Sporsperredrivverk==
+
+a) Sporsperredrivverket skal kunne gi informasjon om kontroll av låsing og posisjon til forriglingsutrustningen.
+
+b) Sporsperredrivverket skal kunne motta og utføre ordre om omlegging fra forriglingsutrustningen.
+
+c) Sporsperredrivverket skal kunne legge sporsperren tilbake til opprinnelig posisjon, dersom omlegging av sporsperren ikke fullføres.
+
+d) Omlegging, låsing, og kontroll av sporsperrens posisjon skal følge sekvensen: 
+
+# Kontroll oppheves
+# Låsing oppheves
+# Omlegging
+# Låsing
+# Kontroll av låsing
+# Kontroll av posisjon
+
+===Utrustning for omlegging===
+
+a) Omleggingskraften skal være tilstrekkelig til å legge over sporsperre under alle normale driftsforhold, men ikke større enn 6,5 kN.
+
+b) Omlegging av sporsperre skal kunne skje med en horisontal bevegelse på 160 – 230 mm.
+
+c) Den horisontale bevegelsen i utrustning for omlegging av sporsperre skal være justerbar i trinn ≤ 2 mm.
+
+d) Omlegging skal kunne skje i løpet av < 6 sekunder.
+
+e) Manuell omlegging skal kunne gjøres ved hjelp av sveiv eller lignende.
+
+f) Ved manuell omlegging skal sporsperredrivverket hindre automatisk omlegging av sporsperren.
+
+g) Drivverkets motor skal være beskyttet mot skader ved overbelastning under omlegging.
+
+===Utrustning for låsing===
+
+a) Sporsperredrivverket skal tåle en horisontal kraft normalt på sporet på minimum 4 kN uten at låsingen påvirkes.
+
+b) Dersom utrustning for låsing utsettes for en horisontal kraft normalt på sporet større enn 4 kN skal låsingen oppheves uten at låsemekanismen ødelegges.
+
+c) Sporsperren skal kunne låses i både pålagt og avlagt posisjon.
+
+d) Utrustning for låsing skal ikke låse uten at sporsperren er i korrekt posisjon.
+
+===Utrustning for kontroll av låsing===
+
+a) Sporsperredrivverket skal kontrollere låsing av sporsperren i pålagt og avlagt stilling.
+
+b) Ved manuell omlegging skal sporsperredrivverket oppheve kontroll av låsing.
+
+===Utrustning for kontroll av posisjon===
+
+a) Sporsperredrivverket skal kontrollere posisjon av sporsperren i pålagt og avlagt stilling.
+
+b) Deteksjonen av sporsperrens posisjon skal kunne justeres 0,5 - 50 mm fra omleggingsutrustningens endeposisjoner.
+
+c) Deteksjonen av sporsperrens posisjon skal være justerbar i trinn ≤ 0,5 mm.
+
+d) Ved manuell omlegging skal sporsperredrivverket oppheve kontroll av posisjon.
+
+==Kontrollås og rigel for sporsperre==
+
+a) Kontrollås og rigel skal kontrollere posisjon til sporsperre.
+
+b) Kontrollås og rigel skal sperre for omlegging av sporsperre.
+
+c) Kontrollås og rigel for sporsperre skal kunne låse sporsperren i pålagt og avlagt stilling.
+
+d) Rigel skal kunne justeres slik at kontroll kun oppnås når sporsperren ligger i korrekt posisjon innenfor toleransegrensene i pålagt eller avlagt stilling.
+
+===Kontroll av posisjon===
+
+a) En håndstilt sporsperre skal være utstyrt med kontrollåst eller rigel for kontroll av posisjon til sporsperren.
+
+b) For sporsperre som er sikret med kontrollås, skal kontrollåsnøkkelen bare kunne tas ut av låsen når sporsperren ligger i korrekt posisjon innenfor toleransegrensene i en på forhånd valgt stilling.
+
+{{lærebokstoff|Kontroll av sporsperrens stilling oppnås ikke før kontrollåsnøkkelen settes inn i nøkkelapparat med kontrollutstyr, for eksempel S-lås.}}
+
+c) For sporsperre som er sikret med rigel, skal rigelen gi informasjon til sikringsanlegget når sporsperren ligger i korrekt posisjon innenfor toleransegrensene i pålagt eller avlagt stilling.
+
+d) Deteksjonen av sporsperrens posisjon skal kunne justeres 0,5 - 50 mm fra omleggingsutrustningens endeposisjoner.
+
+e) Deteksjonen av sporsperrens posisjon skal være trinnløs justerbar eller justerbar i trinn ≤ 0,5 mm.
+
+===Sperring for omlegging===
+
+a) Om sporsperren forsøkes omlagt med en kraft på inntil 4 kN skal kontrollås eller rigel i låst stilling hindre at låsingen går ut av inngrep.
+
+=Lokalstiller - tekniske krav=
+
+a) Lokalstilleren skal utstyres med en eller to trykknapper som:
+
+# er uvirksomme når sporveksel/sporsperre ikke er frigitt for lokalomlegging
+# gir ordre om omlegging av sporveksel/sporsperre til forriglingsutrustning når trykknapp trykkes inn.
+
+b) Lokalstilleren skal utstyres med lampe som:
+
+# er slukket når sporveksel/sporsperre ikke er frigitt for lokalomlegging,
+# lyser når sporveksel/sporsperre er frigitt for lokalomlegging og sporvekseltungene er låst og kontrollert i korrekt posisjon og
+# er slukket når sporveksel ikke er i kontroll.
+
+c) Lampe på lokalstiller skal ha hvitt lys.
+
+d) Lampe på lokalstiller skal spre lyset i alle retninger (360°).
+
+e) Utstyres lokalstilleren med to trykknapper skal disse merkes med “h” og ”v”, som angir høyre eller venstre kjøreretning gjennom sporvekselen sett fra tungespiss. 
+
+f) Lokalstilleren bør merkes med identifikasjon av objektene som betjenes fra lokalstilleren. 
+{{lærebokstoff|Merkingen skal ha formatet V.xxxx for enkeltobjekter, og Sp.xxxx/V.yyyy, eller V.xxxx/V.yyyy for objekter som enten er koblede, eller går samtidig. .yyyy er nærmest lokalstilleren.}}.
+
+=Sveivskap=
+
+{{lærebokstoff|Det kan være nødvendig å gi mulighet for å lokal oppbevaring av utrustning for manuell omlegging av sporveksler og sporsperrer, som for eksempel sveiver for drivmaskiner. I slike tilfeller kan det settes opp sveivskap.}}
+
+a) Et sveivskap skal inneholde sveiv(er) for omlegging av sporveksler og sporsperrer.
+
+b) Et sveivskap skal begrense tilgang til sveivene. 
+
+c) Et sveivskap skal ha utgang(er) som gir indikering og/eller kontroll av om sveivene er på plass.
+
+=RAMS - krav=
+
+==Sikkerhet==
+
+===Sporvekselutrustning===
+
+a) En sporvekselutrustning skal ivareta sikkerhetskritisk funksjon, SKF2:
+
+''En sporvekselutrustning skal låse sporvekselen og gi korrekt informasjon til forriglingsutrustningen om posisjon og låsestatus.''
+
+Delfunksjoner:
+# En sporvekselutrustning skal låse sporvekselen når betingelsene for låsing er oppfylt, og sørge for at sporvekselen forblir låst.
+# En sporvekselutrustning skal gi korrekt informasjon til forriglingsutrustningen om kontroll av låsing og posisjon.
+
+b) THR for sikkerhetskritisk funksjon SKF2 skal være lik 10<sup>-8</sup> feil/time for hele sporvekselutrustning.
+
+c) En sporvekselutrustning skal være konstruert for å minimum ha kontroll på følgende farer:
+# Kontroll i feil posisjon
+# Kontroll i korrekt posisjon med for stor toleranse
+# Kontroll i korrekt posisjon med manglende låsing
+# Utilsiktet opplåsning
+# Sporviddereduksjon
+# Sporviddeutvidelse
+# Feilaktig informasjon om kontroll av låsing og posisjon til forriglingsutrustning
+
+===Sporsperreutrustning===
+
+a) En sporsperreutrustning skal ivareta tilsvarende sikkerhetskritisk funksjon som sporvekselutrustning:
+
+''En sporsperreutrustning skal låse sporsperre og gi korrekt informasjon om posisjon og låsestatus til forriglingsutrustning.''
+
+Delfunksjoner:
+# En sporsperreutrustning skal låse sporsperren når betingelsene for låsing er oppfylt, og sørge for at sporsperren forblir låst.
+# En sporsperreutrustning skal gi korrekt informasjon om kontroll av låsing og posisjon til forriglingsutrustningen.
+
+b) THR for sikkerhetskritisk funksjon til sporsperreutrustning skal være tilsvarende som THR for sikkerhetskritisk funksjon SKF2 dvs. lik 10<sup>-8</sup> feil/time for hele sporsperreutrustningen.
+
+c) En sporvekselutrustning skal være konstruert for å minimum ha kontroll på følgende farer:
+
+# Kontroll i feil posisjon
+# Kontroll i korrekt posisjon med for stor toleranse
+# Kontroll i korrekt posisjon med manglende låsing
+# Utilsiktet opplåsning
+# Feilaktig informasjon om kontroll av låsing og posisjon til forriglingsutrustning
+
+==Tilgjengelighet==
+
+a) En sporveksel-/sporsperreutrustning skal ha en tilgjengelighet A ≥ 99.99975 % pr. sporveksel/sporsperre, det vil si en akkumulert utilgjengelighet UA ≤ 1,3 minutter pr. år pr. sporveksel/sporsperre.
+
+b) Reparasjon eller utbytting og justering av en funksjonsenhet slik at den igjen fungerer korrekt, skal kunne utføres på maksimalt 15 minutter, det vil si MRT ≤ 15 minutter.
+
+==Pålitelighet==
+
+a) Sporveksel- /sporsperreutrustningen skal ha en gjennomsnittlig tid mellom feil - MTBF ≥ 100 000 timer (11,4 år) pr. sporveksel.
+
+b) Konstruksjoner i sporet skal ha en levetid på minimum 30 år.
+
+c) Sporveksel- /sporsperreutrustningen bør være slik dimensjonert at den ved normal drift og normalt vedlikehold har en levetid sammenlignbar med sporveksel/sporsperre.
+
+==Vedlikeholdbarhet==
+
+===Generelt===
+
+a) Sporveksel- og sporsperreutrustningen skal være bygd av veldefinerte funksjonsenheter, det vil si at ved reparasjon i felt skal hele funksjonsenheten byttes.
+
+===Tilgang til sporvekselutrustningen===
+
+a) Sporveksel- og sporsperreutrustningen skal beskyttes på en slik måte at ukyndige personer ikke skal kunne påvirke sporvekselens/sporsperrens innstillinger og koblinger, verken elektriske eller mekaniske, uten at det utøves hærverk.
+
+b) Det skal være maksimalt to låser på hvert beskyttelsesdeksel til sporveksel-/sporsperreutrustningen.
+
+c) Det skal være en nøkkel til hele sporveksel-/sporsperreutrustningen.
+
+d) Det skal være mulig å benytte Jernbaneverkets låsesystem for låsing av sporveksel-/sporsperreutrustningen. 
+
+===Reservedeler/utbyttbare deler===
+
+a) Vekt for utbyttbare enheter skal ikke overstige 15 kg.
+
+b) Drivverkets motor skal være vedlikeholdsfri.
+
+===Sporvedlikehold===
+
+a) Pakking av ballast og øvrig sporvedlikehold skal så langt som mulig kunne skje med maskinelt utstyr.
+
+b) Konstruksjoner i sporet skal tåle påkjenninger forårsaket av vedlikeholdsmaskiner for spor.
+
+c) Sporveksel- og sporsperreutrustningen skal tåle maskinell snørydding.
+
+d) Sporveksel- og sporsperreutrustningen skal ikke ta skade ved maskinell pakking av ballast.
+
+e) Sporveksel- og sporsperreutrustningen skal være bygd slik at manuell pakking ikke er nødvendig.
+
+f) Sporveksel- og sporsperreutrustningen skal tåle påfylling av ballast med maskinelt utstyr.
+
+g) Sporveksel- og sporsperreutrustningen skal tåle utjevning av ballast ved hjelp av ballastfordeler.
+
+h) Sporveksel- og sporsperreutrustningen skal tåle vibrasjoner fra sporstabilisator.
+
+= Vedlegg =
+Vedlegg a: Oversikt over drivmaskiner og komponenter som brukes i sporveksler og sporsperrer i infrastrukturen (under utarbeidelse).
+

@@ -1,0 +1,1573 @@
+__NUMBEREDHEADINGS__
+
+= Hensikt og omfang =
+
+ATC-systemet har som formål å overvåke togs kjørehastigheter, med utgangspunkt i banebetingede hastighetsbegrensninger og/eller kjøretillatelser gitt ved lyssignal. Hastighetsinformasjonen overføres til tog via informasjonspunkter i sporet. Informasjonspunktene består av 2 - 4 baliser.
+
+<figure id ="fig:Systemoversikt signalanlegg">
+[[Bilde:JD550 10 fig001.png|thumb|center|600px|<caption>Systemoversikt signalanlegg</caption>]]
+</figure>
+
+Dette dokument omfatter de hovedregler som skal følges ved prosjektering av ATC. Det som ikke er omtalt i dokumentet hører ikke inn under begrepet “prosjektering”. Dokumentet angir hvordan ATC-systemet skal benyttes i de enkelte prosjekteringstilfeller, samt hvordan prosjekteringen skal dokumenteres. Prosjekteringsdokumentasjonen omfatter balisesymboler inntegnet på “Signal- og baliseplassering” og “Kodetabeller”.
+
+Dette dokument har som hensikt å sikre en enhetlig og sikkerhetsmessig korrekt prosjektering, og en éntydig prosjekteringsdokumentasjon. Prosjekteringsdokumentasjonen skal danne grunnlag for bygging, kontroll og vedlikehold av ATC-anlegg.
+
+==Føringer for utbygging av FATC==
+
+a) '''Overvåkningsgrad:''' Strekninger der det bygges automatisk hastighetsovervåkning og strekninger med delvis automatisk hastighetsovervåkning som ombygges, ''skal'' utbygges med fullstendig automatisk hastighetsovervåkning.
+
+{{lærebokstoff|
+Krav a) gjelder ved ombygging i et slikt omfang at det kreves ny tillatelse fra SJT til å ta det strukturelle delsystemet i bruk.
+
+Ved prioritering av strekninger som bygges ut med FATC er det hensiktsmessig å vurdere følgende:
+* Trafikkmengde 
+* Forekomst av planoverganger med stor vegtrafikk
+* Strekninger med spesielt krevende sikt- og værforhold
+* Strekninger med stor rasfare
+* Mengden av kritiske hastighetsendringer
+* Kontinuitet i utbygging av FATC-strekniger 
+* Vedtatte implementeringsplaner for ERTMS
+}}
+
+= Delvis utrustet område (DATC) =
+
+== Generelt == 
+
+a) Delvis utrustet område skal ikke benyttes ved linjehastighet  >130 km/h.
+
+b) C-balise skal benyttes ved gjennomsnittlig fall ≥ 10 ‰. 
+
+c) C-balise skal kodes i henhold til Tabell 9. Gjennomsnittlig fall (‰) over balisegruppens målavstand skal benyttes, forhøyet til nærmeste 10, 15, 20, 25 eller 55 ‰. 
+:'''Unntak:''' Dersom gjennomsnittlig fall på de siste 2/3 av balisegruppens målavstand er større enn gjennomsnittlig fall, skal dette fallet benyttes, forhøyet til nærmeste 10, 15, 20, 25 eller 55 ‰.
+
+== Signalbalisegruppe ==
+
+a) Hastighet skal kodes i henhold til <xr id = "tab:signalbalisegruppe og L"/>.
+
+# ”Kjør”-hastighet skal normalt kun kodes til 0 og 270 km/h.
+# ”Vent”-hastighet i forsignal for innkjørhovedsignal og blokksignal skal kodes til 80 km/h ved avvik og 270 km/h ved rettspor.
+# ”Vent”-hastighet i forsignal for utkjørhovedsignal skal kodes til ”sporvekselhastighet” ved avvik og 270 km/h ved rettspor. 
+#:Unntak 1: Dersom det er plassert SVG (sporvekselbalisegruppe) ved utkjørhovedsignal kodes ”Vent”-hastigheten til 80 km/h ved avvik. 
+#:Unntak 2: Samtidig togbevegelse, se avsnitt [[Signal/Prosjektering/ATC#Samtidig_togbevegelse|samtidig togbevegelse]]. 
+# Når hovedsignal viser signal 20, kodes ”Vent”-hastighet i tilhørende forsignal til 0 km/h.
+#:Unntak: Samtidig togbevegelse, se avsnitt [[Signal/Prosjektering/ATC#samtidig togbevegelse|samtidig togbevegelse]].
+# Repeterbalisegrupper skal ikke ha C-balise. Dersom det er behov for fallinformasjon skal dette gis i foregående forsignal. 
+
+b) Signalbalisegruppe skal plasseres ved alle hoved- og forsignaler samt som repeterbalisegrupper for forsignalinformasjon.
+
+c) Signalbalisegruppe ved frittstående forsignal skal lenkes til første hovedsignal.
+
+d) Signalbalisegruppe ved hovedsignal skal lenkes til første signal eller lenkingsbalisegruppe i henhold til avsnitt [[Signal/Prosjektering/ATC#Lenkingsbalisegruppe_(L)|lenkingsbalisegruppe (L)]] punkt a) 1. 
+
+e) Signalbalisegruppe ved kombinert signal skal lenkes til første hovedsignal. 
+:Unntak: Samtidig togbevegelse, se avsnitt [[Signal/Prosjektering/ATC#samtidig togbevegelse|samtidig togbevegelse]].
+
+f) En repeterbalisegruppe skal til enhver tid gi informasjon tilsvarende en balisegruppe ved et frittstående forsignal, jf. krav 2.7.a) i [[Signal/Prosjektering/Forriglingsutrustning#Forsignal]].
+
+g) Repeterbalisegruppe skal lenkes til første hovedsignal 
+:Unntak: Samtidig togbevegelse, se avsnitt [[Signal/Prosjektering/ATC#samtidig togbevegelse|samtidig togbevegelse]], angående repeterbalisegrupper som målpunkt for hovedsignal.
+
+h) Ved indre hovedsignal som kun kan vise signal ”kjør” når utkjørhovedsignalet viser signal ”kjør”, gjelder følgende:
+
+# Dersom dvergsignal på indre hovedsignals mast kan vise signal 44 eller 45 når det indre hovedsignalet viser signal 20, skal signalbalisegruppens A - balise (AX=4) gi informasjonen ”kjør 40”, ”vent 0”.
+# Når indre hovedsignal viser signal 21 og utkjørhovedsignalet etterfølges av en sporveksel i avvik, skal A – balisen i indre hovedsignals balisegruppe gi “vent” – hastighet lik tillatt hastighet over sporvekselen etter utkjørhovedsignalet.
+# I øvrige tilfeller skal signalbalisegruppens A - balise gi “vent” – hastighet lik balisens “kjør” – hastighet.
+
+== Lenkingsbalisegruppe (L) ==
+
+a) A-balisen i L kodes alltid AX=4, AY=14 og AZ=14, og
+# skal brukes ved oppdatering av lenkingsavstand på linjen.
+# skal brukes ved oppdatering av lenkingsavstand ved [[Signal/Prosjektering/ATC#Samtidig_togbevegelse|samtidig togbevegelse]].
+
+=== Plassering av lenkingsbalisegrupper på linjen ===
+
+<figure id ="fig:Plassering av lenkingsbalisegrupper på linjen">
+[[Bilde:JD550 10 fig002.png|thumb|center|350px|<caption>Plassering av lenkingsbalisegrupper på linjen</caption>]]
+</figure>
+
+a) Lenkingsbalisegrupper på linjen skal ikke legges på strekninger som dekkes av et forsignal.
+
+b) Lenkingsbalisegrupper på linjen skal ikke legges inn dersom <math>0,2 \cdot D +100 m < 0,5 \cdot dl</math>
+
+c) Lenkingsbalisegrupper på linjen skal lenkes til første lenkingsbalisegruppe eller forsignal.
+
+d) Lenkingsavstand dm bør angis i 250 m-trinn fra og med 750 m.
+
+e) Lenkingsavstanden dm skal være større enn eller lik 20 % av foregående lenkingsavstand + 200 m.
+{{lærebokstoff|Dvs:	<math>dm \geq 0.2*(D-dm) + 200</math> [m]}}
+
+f) 20 % av lenkingsavstanden til forsignal + 100 m skal være kortere enn eller lik halve forsignal-avstanden dl
+{{lærebokstoff|Dvs:	<math>dl/2 \geq 0.2* dm + 100</math> [m].}}
+
+=== Plassering av lenkingsbalisegrupper på stasjoner bygget for samtidig togbevegelse ===
+
+a) Lenkingsbalisegrupper på stasjoner bygget for samtidig togbevegelse skal prosjekteres i henhold til avsnitt [[Signal/Prosjektering/ATC#Samtidig_togbevegelse|samtidig togbevegelse]].
+
+== Sporvekselbalisegruppe (SVG) ==
+
+a) SVG skal kodes i henhold til <xr id = "tab:H, H(K1), H(K2), SVG og RVG"/>. Kodet målhastighet skal ikke være høyere enn 70 km/h.  
+
+b) SVG kan plasseres ved innkjørhovedsignal.
+
+c) SVG kan plasseres ved utkjørhovedsignal dersom avstanden fra utkjørhovedsignal til avvikende sporveksel > 100 m. Dersom SVG ikke er styrt, kan balisegruppen legges etter signalbalisegruppen.
+
+d) SVG skal ikke følges av H i målpunktet.
+
+e) SVG skal ha målpunkt ved første avvikende sporveksel. Målpunktet skal ligge ved stokkskinneskjøt eller bakkant sporveksel, avhengig av hva som er nærmest SVG. 
+
+f) SVG skal annulleres når sporveksel ligger til rettspor.
+
+g) Når SVG er plassert ved hovedsignal og hovedsignalet viser signal ”Stopp”, skal kodet hastighet være lik den laveste målhastigheten.
+
+== Rasvarslingsbalisegruppe (RVG) ==
+
+a) RVG skal kodes i henhold til <xr id = "tab:H, H(K1), H(K2), SVG og RVG"/>.
+
+b) RVG skal plasseres ved rasvarslingssignal.
+
+c) RVG skal ikke følges av H i målpunktet.
+
+d) RVG skal ha målpunkt ved begynnelse av rasfarlig strekning. 
+
+e) Målhastighet skal være 10 km/h ved signal 59 og ved mørkt signal.
+
+f) RVG skal annulleres når signal 60 vises.
+
+== Balisegruppe for ATC forsignal (FF) ==
+
+a) FF skal ikke benyttes.
+
+== Gjennomsignalering ==
+
+a) Gjennomsignalering skal ikke benyttes.
+
+== Signalhøyningsbalisegruppe (SH ) ==
+
+a) SH skal ikke benyttes.
+
+== Hastighetsignalbalisegruppe (H) ==
+
+a) H skal ikke benyttes.
+
+== Ekstra hastighetsignalbalisegruppe (ERH, EH, SEH ) ==
+
+a) ERH, EH og SEH skal prosjekteres i henhold til avsnitt 6 og kodes i henhold til <xr id = "tab:ERH og HG"/> og <xr id = "tab:EH, BU, SU, GMO, GMD, BHT, SHT, SEH og SH"/>.
+
+== Grensebalisegrupper (GMO, GMD, BU, SU, HG) ==
+
+a) Grensebalisegrupper skal kodes i henhold til <xr id = "tab:ERH og HG"/> og <xr id = "tab:EH, BU, SU, GMO, GMD, BHT, SHT, SEH og SH"/>. 
+
+=== Grense mot ikke utrustet område (GMO) ===
+
+a) GMO skal plasseres mellom ytterste sporveksel og innkjørhovedsignal på den utrustede stasjonen.
+
+b) Ønskes en spesifikk overvåkningshastighet i det ikke utrustede området, skal det plasseres en HG med GMO som målpunkt og den ønskede overvåkningshastigheten som målhastighet.
+	
+=== Grense mot utbyggingsområde (BU, SU) ===
+
+a) Hvis ATC skal settes midlertidig ut av drift i et område, skal det plasseres balisegrupper ved begynnelsen (BU) og slutten (SU) av området. Balisegrupper ved begynnelse og slutt av utbyggingsområde (BU og SU) skal dubleres.
+Dersom tog av rutemessige årsaker skal snu i området, skal det plasseres ytterligere BU.
+
+b) BU skal plasseres foran første balisegruppe som ønskes satt ut av drift, med en avstand som tilsvarer minimum 7 sekunders kjøretid.
+
+c) Ønskes en spesifikk overvåkningshastighet i utbyggingsområdet, skal det plasseres en HG med BU som målpunkt og den ønskede overvåkningshastigheten som målhastighet. 
+SU må i dette tilfellet etterfølges av en GMD for å oppheve overvåkningshastigheten.
+
+== Planovergang ==
+
+a) Planoverganger skal ikke overvåkes av ATC.
+
+== Annullering av spesifikke balisegrupper ==
+
+Dersom balisegrupper ikke er fjernet fra sporet eller dekket til med balisedeksler gjelder følgende krav for annullering av gruppene:
+
+a) Signalbalisegrupper, L, SH, SVG, RVG og øvrige balisegrupper hvor A-balisen er styrt, skal annulleres ved at A-balisens X-ord kodes til 10. 
+
+b) Øvrige balisegrupper skal annulleres ved at A-balisens Z-ord kodes til 14.
+
+c) Øvrige X-, Y- og Z-ord i balisegruppen skal ikke endres.
+
+{{lærebokstoff|Hvis kodingen for øvrig er feilaktig, eller baliseplugger mangler, medfører dette balisefeil.}}
+
+= Fullstendig utrustet område (FATC) =
+== Generelt ==
+
+a) Fullstendig utrustet område skal benyttes ved linjehastighet > 130 km/h.
+
+b) Alle balisegrupper som inneholder målavstand og som ikke ligger ved signaler skal plasseres i henhold til følgende generelle formel for målavstand:
+{{lærebokstoff|Formelen danner grunnlag for målavstandstabellene i [[Signal/Prosjektering/ATC/Målavstandstabeller|vedlegg a]].
+
+Formelen er basert på en bremsemodell hvor toget først kjører en tid ved linjehastigheten, og deretter bremser med konstant retardasjon (negativ akselerasjon).}}
+
+<math>\text{MA} = \frac{L}{3,6}\cdot T+\frac{L^2-\text{MH}^2}{2 R\cdot 3,6^2} [m]</math>
+
+hvor:
+
+MA = målavstand [m]
+
+L = linjehastighet [km/h]
+
+MH = målhastighet [km/h]
+
+T = summen av reaksjonstid og tilsetningstid. For signalbalisegrupper benyttes T = 8 s, og for faste hastighetsbalisegrupper benyttes T = 13 s.
+
+<math>R = \text{retardasjon} = -0,2\cdot \frac{L-150}{150}-\frac{C}{100}+0,7 [m/s^2]</math>.
+
+Første ledd i formelen bare brukes dersom <math>L>150 km/h</math>
+
+<math>C=</math>''fall''. Gjennomsnittlig fall (‰) over målavstanden skal benyttes, forhøyet til nærmeste 1, 5, 10, 15, 20, 25 eller 55 ‰.
+
+:Unntak: Dersom gjennomsnittlig fall på de siste 2/3 av balisegruppens målavstand er større enn gjennomsnittlig fall, skal dette fallet benyttes, forhøyet til nærmeste 1, 5, 10, 15, 20, 25 eller 55 ‰.
+
+
+Fall har positivt fortegn.
+
+[https://trv.jbv.no/regnestykker/atc/atc_formel%202016.html Lenke] til formel.
+
+{{lærebokstoff|Dersom hastigheten <math> \le 150 km/h</math> og <math>C=0</math> blir <math>R</math> lik ”grunnretardasjonen” som er <math>0,7 m/s^2</math>.}}
+
+c) Fall.
+# C-balise skal benyttes ved gjennomsnittlig fall ≥ 5 ‰.
+# C-balise skal kodes i henhold til <xr id = "tab:fall"/>. Gjennomsnittlig fall (‰) over balisegruppens målavstand skal benyttes, forhøyet til nærmeste 5, 10, 15, 20, 25 eller 55 ‰.
+:'''Unntak:''' Dersom gjennomsnittlig fall på de siste 2/3 av balisegruppens målavstand er større enn gjennomsnittlig fall, skal dette fallet benyttes, forhøyet til nærmeste 5, 10, 15, 20, 25 eller 55 ‰.
+
+== Signalbalisegruppe ==
+
+a) Ved A-bortflytting skal “kjør”- hastighet kodes lik målhastighet. 
+
+b) Repeterbalisegrupper skal kodes som foregående forsignal, men til 220 km/h ved kjøring til rettspor dersom balisegruppen er utstyrt med en P-balise som er kodet med P-bortflytting.{{lærebokstoff|220 km/h må brukes ved oppdatering av P-bortflytting på grunn av en feil i ombordutrustningen på tog.}}
+
+c) For øvrig skal reglene for DATC benyttes, se avsnitt [[Signal/Prosjektering/ATC#Signalbalisegruppe|signalbalisegruppe]].
+
+== Lenkingsbalisegruppe (L) ==
+
+a) Reglene for DATC skal benyttes.
+
+== Sporvekselbalisegruppe (SVG) ==
+
+a) SVG skal kodes i henhold til <xr id = "tab:H, H(K1), H(K2), SVG og RVG"/>.
+
+b) SVG skal benyttes der A-bortflytting ikke er hensiktsmessig eller tilstrekkelig.
+
+{{lærebokstoff|Dette kan for eksempel være dersom sporvekselhastigheten er lavere enn 40 km/h, eller der hvor det kan være flere avvikende sporveksler i togveien.}}
+
+c) SVG følges av H (AX=7) plassert innen +/-10% av målavstand regnet fra målpunktet. 
+{{lærebokstoff|Om hastigheten skal økes etter utgang av sporvekselen, må ny H legges.}}
+
+d) SVG skal ha målpunkt ved første avvikende sporveksel. Målpunktet skal ligge ved stokkskinneskjøt eller bakkant sporveksel, avhengig av hva som er nærmest SVG.
+
+e) SVG skal annulleres når sporveksel ligger til rettspor.
+
+f) Når SVG er plassert ved hovedsignal og hovedsignalet viser signal ”Stopp”, skal kodet hastighet være lik den laveste målhastigheten.
+
+== Rasvarslingsbalisegruppe (RVG) ==
+
+a) RVG følges av H (AX=7) plassert innen +/-10% av målavstand regnet fra målpunktet.
+{{lærebokstoff|H inneholder også hastigheten for motsatt kjøreretning. H skal annulleres når signal 60 vises.}}
+
+b) For øvrig skal reglene for DATC benyttes, se avsnitt [[Signal/Prosjektering/ATC#Rasvarslingsbalisegruppe_(RVG)|rasvarslingsbalisegruppe (RVG)]] under [[Signal/Prosjektering/ATC#Delvis_utrustet_område_(DATC)|delvis utrustet område (DATC)]].
+
+== Balisegruppe for ATC forsignal (FF) ==
+
+a) FF skal kodes i henhold til <xr id = "tab:signalbalisegruppe og L"/>.
+
+b) FF kan flyttes til foregående hovedsignal, slik at dette ATC - messig blir et kombinert signal.
+
+c) FF kan utføres på to måter:
+
+# Trappesignalering via frittstående forsignal: FF skal lenkes til frittstående forsignal. Når frittstående forsignal viser signal 23 eller 24 skal FF kodes til den målhastighet som tilsvarer frittstående forsignals plassering i forhold til tilhørende hovedsignal. Når frittstående forsignal viser signal 25 skal FF kodes til målhastighet 270 km/h. Eventuell A-bortflytting initieres ved frittstående forsignal.
+# Dersom gjeldende krav til målavstander ikke kan oppfylles ved å anvende trappesignalering via frittstående forsignal, kan ATC - forsignalet lenkes direkte til hovedsignalet. Eventuell A-bortflytting initieres ved FF. Balisegruppen ved det frittstående forsignalet fungerer i dette tilfellet som en repeterbalisegruppe for FF.
+
+== Gjennomsignalering (A-/P-bortflytting) ==
+
+=== A-bortflytting ===
+
+a) A-bortflytting skal initieres ved forsignal som viser signal 24 og ha målpunkt ved første avvikende sporveksel.
+
+b) {{lærebokstoff|I enkelte tilfeller vil A-bortflytting kunne medføre for høy tillatt hastighet ved passering av hovedsignalet som viser signal 21 - sett i forhold til eventuelt signal 20 i neste hovedsignal. Hastigheten skal da tilpasses ved at målhastigheten ved sporveksel reduseres.}}
+Denne beregnes etter følgende formel:
+
+<math>\text{MH}_V = 3,6* \sqrt{2 \text{MA}_V*R} [km/h]</math>
+
+hvor:
+
+<math>\text{MA}_V = </math> avstanden mellom stokkskinneskjøt og neste hovedsignal [m]
+
+<math>R = </math> retardasjon som definert i avsnitt [[#Generelt_2|3.1]].
+
+Dersom <math>MH_V</math> er lavere enn maksimal tillatt sporvekselhastighet, skal <math>MH</math> for A-bortflytting settes til første hastighetsverdi lik eller lavere enn <math>MH_V</math> som er delelig med 10.
+
+c) {{lærebokstoff|Ved A-bortflytting er MA avstanden fra forsignal som viser signal 24 til stokkskinneskjøt/bakkant sporveksel, og MH tillatt hastighet over sporveksel til avvikespor. Dersom forsignalet er plassert på et hovedsignals mast, og innsetting av L og MH i formel for <math>MA_{GEN}</math> (under [[Signal/Prosjektering/ATC#Generelt_2|generelt]]) gir en verdi for MA som er lengere enn den virkelige MA, må tillatt hastighet ved passasje av signalet reduseres i forhold til linjehastigheten. Dette gjøres ved hjelp av forberedende P-bortflytting.}}
+A-bortflytting skal ved for høy linjehastighet forberedes med P-bortflytting 2 signalstrekninger foran hovedsignal som viser signal 21. P-bortflyttingen skal ha målpunkt ved dette hovedsignal og målhastighet lik XP (X = tillatt hastighet gjennom sporvekselen i avvikende stilling). Dersom sporvekselhastighet ≤ 40 km/h eller hovedsignal som viser signal 21 samtidig viser signal 32, skal 0P benyttes.
+
+{{lærebokstoff|X kan være begrenset av blant annet avstand til hovedsignal som viser signal 20.}}
+ 
+d) Initieres A-bortflyttingen ved frittstående forsignal, skal denne om nødvendig forberedes av ATC forsignalgruppe (FF), eller tilsvarende funksjoner i foregående hovedsignal.
+
+=== P-bortflytting ===
+
+a) P-bortflytting skal ha målpunkt ved hovedsignal. Unntak: se avsnitt 4. 
+MA skal maksimalt være 2 signalstrekninger.
+
+b) P-bortflytting skal ha målhastighet 0P ved hovedsignal som viser signal 20. Ved hovedsignal som viser signal 21 eller 22 skal målhastigheten være 270 dersom P-bortflyttingen initieres av balisegruppe ved hovedsignal, og 220 dersom den initieres av repeterbalisegruppe. Unntak: Se avsnitt 3.7.1 punkt c.
+
+c) Forkortet P-avstand:
+
+Dersom 2. signalstrekning har høyere fall-verdi enn 1. signalstrekning, beregnes P - avstand (P) etter følgende formel
+
+<math>P = S_2 * \frac{70-G_2}{70-G_1}[m]</math>
+
+hvor:
+
+<math>S_2 =</math> 2.signalstreknings lengde[m]
+
+<math>G_1 =</math> Fall[‰] over 1.signalstrekning.
+
+<math>G_2 =</math> Fall[‰] over 2.signalstrekning.
+
+{{lærebokstoff|Fall beregnes på samme måte som for C-baliser, forhøyet til nærmeste kodbare verdi.}}
+
+== Signalhøyningsbalisegruppe (SH) ==
+
+a) SH skal kodes i henhold til <xr id = "tab:EH, BU, SU, GMO, GMD, BHT, SHT, SEH og SH"/>.
+
+b) SH skal benyttes der man ønsker å øke en ”Kjør”-hastighet som tidligere er mottatt fra en signalbalisegruppe.
+
+c) SH skal fortrinnsvis brukes i forbindelse med sporveksler.
+
+d) SH lenkes til neste balisegruppe på samme måte som L eller repeterbalisegrupper.
+
+e) SH plasseres etter hastighetsignalbalisegruppe, i kjøreretning, der hvor begge benyttes.
+
+== Hastighetsignalbalisegruppe (H) ==
+
+a) H skal kodes i henhold til <xr id = "tab:H, H(K1), H(K2), SVG og RVG"/>.
+
+b) H (dobbeltrettet balisegruppe AX=7) skal benyttes ved endring/oppdatering av  linjehastighet, samt som målpunkt for SVG og RVG.
+
+c) Forberedelse for hastighetsreduksjon skal angis med enkeltrettet balisegruppe (AX=2/6). Dersom linjehastigheten skal reduseres med 40 km/h eller mer, skal det benyttes en ekstra balisegruppe plassert ca 100 m foran (i kjøreretningen) den opprinnelige. Balisegruppene kodes til samme målpunkt.
+
+{{lærebokstoff|Signal 68a plasseres ved den siste balisegruppa }}
+
+d) H(K1) og H(K2) kan benyttes for å tillate overhastighet for enkelte togslag. Dette betinger at linjens største tillatte hastighet på forhånd er angitt i en balisegruppe av type H (AX=7)
+
+e) H (AX=3 og AY=3) benyttes i stedet for H (AX=7) ved hastigheter < 70 km/h på strekninger med overhastighet.
+
+== Ekstra hastighetssignalbalisegruppe (ERH, EH, SEH) ==
+
+a) ERH, EH og SEH skal prosjekteres i henhold til avsnitt [[Signal/Prosjektering/ATC#Midlertidige_hastighetsnedsettelser|midlertidige hastighetsnedsettelser]] og kodes i henhold til <xr id = "tab:ERH og HG"/> og <xr id = "tab:EH, BU, SU, GMO, GMD, BHT, SHT, SEH og SH"/>.
+
+== Grensebalisegruppe (GMO, GMD, BU, SU, HG) ==
+
+a) Grensebalisegrupper skal kodes i henhold til <xr id = "tab:ERH og HG"/> og <xr id = "tab:EH, BU, SU, GMO, GMD, BHT, SHT, SEH og SH"/>.
+
+=== Grense mot ikke utrustet område (GMO) ===
+
+a) GMO skal plasseres mellom ytterste sporveksel og innkjørhovedsignal på stasjonen som har FATC.
+
+b) Ønskes en spesifikk overvåkningshastighet i det ikke utrustede området, kan det plasseres en HG med GMO som målpunkt og den ønskede overvåkningshastigheten som målhastighet. 
+
+c) En bremsekurve som må påbegynnes i et område med FATC og avsluttes utenfor skal overvåkes fram til målpunktet. I dette tilfellet legges ikke baliser i målpunktet.
+
+=== Grense mot delvis utrustet område (GMD) ===
+
+a) GMD skal plasseres mellom ytterste sporveksel og innkjørhovedsignal på stasjonen som har DATC.
+
+b) GMD skal kodes 130 km/h.
+
+c) En bremsekurve som må påbegynnes i et område med FATC og avsluttes utenfor skal overvåkes fram til målpunktet. BHT skal benyttes i målpunktet. Umiddelbart etter BHT skal det legges ut en SHT.
+
+=== Grense mot Utbyggingsområdet (BU, SU) ===
+
+a) Hvis ATC skal settes midlertidig ut av drift i et område, skal det plasseres balisegrupper ved begynnelsen (BU) og slutten (SU) av området. Balisegrupper ved begynnelse og slutt av utbyggingsområde (BU og SU) skal dubleres.
+
+Dersom tog av rutemessige årsaker skal snu i området, skal det plasseres ytterligere BU.
+
+b) BU skal plasseres foran første balisegruppe som ønskes satt ut av drift, med en avstand som tilsvarer minimum 7 sekunders kjøretid.
+
+c) Ønskes en spesifikk overvåkningshastighet i utbyggingsområdet, skal det plasseres en HG med BU som målpunkt og den ønskede overvåkningshastigheten som målhastighet. 
+SU må i dette tilfellet etterfølges av en H (AX=7 eller eventuelt AX=3) for å oppheve overvåkningshastigheten.
+
+d) Dersom en eksisterende grensebalisegruppe GMD forekommer på strekningen med utbyggingsområde (gjelder i hele området fra HG balisegruppen til SU balisegruppen), skal GMD i den eksisterende gruppen midlertidig annulleres samtidig som det etableres en ny midlertidig balisegruppe med GMD. Balisegruppen plasseres umiddelbart etter avsluttet strekning med utbyggingsområde.
+
+Dersom det er benyttet HG–balisegruppe med målpunkt i GMD, skal også HG–balisegruppen annulleres.
+
+== Planovergang ==
+Dersom forholdene tilsier at planfri kryssing ikke er oppnåelig, skal planovergangen ATC-overvåkes. Dette skal utføres på følgende måte:
+# H (AX=2/6) plasseres i henhold til [[Signal/Prosjektering/Veisikringsanlegg]].
+# H skal kodes til 40km/h når planovergangen ikke er sperret. For øvrig skal H være annullert.
+# Målpunktet til balisegruppen H skal ligge 150 meter foran planovergangssignalet. {{lærebokstoff|Baliseplaseringen vil ikke gi tilstrekkelig bremseavstand for driftsbrems til målpunktet etter normale forutsetninger. Nødbrems skal aktiveres dersom V-signalet passeres uten at veisikringsanlegget er i kontroll. 150 m gir tilstrekkelig margin for nedbremsing fra 40 km/h til stopp.}}
+{{lærebokstoff|Innkoplingsfelt for planovergang tegnes inn på signal- og baliseplasseringstegning.}}
+
+== Annullering av spesifikke balisegrupper ==
+
+a) Reglene for DATC skal benyttes. 
+
+= Samtidig togbevegelse =
+
+== Sikkerhetsavstand 200 meter ==
+
+{{lærebokstoff|Kravene gjelder ved samtidige togbevegelser hvor sikkerhetsavstanden er 200 meter, jfr. [[Signal/Prosjektering/Forriglingsutrustning#label-fig:samtidige200|Signal/Prosjektering/Forriglingsutrusning]]. 
+
+Det frittstående dvergsignalet som er plassert 250 meter foran hovedsignalet markerer togvei slutt, men tillater fremtrekk (signal 44) til hovedsignalet.}} 
+
+a) Ved signal 23 i forsignal for hovedsignal, skal ATC gi “vent 40 km/h” mot frittstående dvergsignal. Har man P-bortflytting forbi foregående hovedsignal, skal denne gi ”0P” mot frittstående dvergsignal. 
+
+b) Ved signal 24 i forsignal for hovedsignal skal ATC gi ”vent sporvekselhastighet” mot frittstående dvergsignal. Fra frittstående dvergsignal gis også ”vent sporvekselhastighet” . 
+
+c) Ved signal 24 i forsignal for hovedsignal skal overvåking av hastighet over sporveksel gjøres ved hjelp av SVG i DATC-område, og ved hjelp av A-bortflytting i FATC-område.
+
+<figure id ="fig:Prosjektering av DATC ved samtidige togbevegelser">
+[[Bilde:JD550 10 fig003.png|thumb|center|350px|<caption>Prosjektering av DATC ved samtidige togbevegelser med sikkerhetsavstand 200 meter</caption>]]
+</figure>
+
+<figure id ="fig:Prosjektering av FATC ved samtidige togbevegelser">
+[[Bilde:JD550 10 fig004.png|thumb|center|350px|<caption>Prosjektering av FATC ved samtidige togbevegelser med sikkerhetsavstand 200 meter</caption>]]
+</figure>
+
+== Sikkerhetsavstand 150 meter ==
+
+{{lærebokstoff|Kravene gjelder ved samtidige togbevegelser hvor sikkerhetsavstanden er 150 meter, jfr. [[Signal/Prosjektering/Forriglingsutrustning#label-fig:samtidige150II|Signal/Prosjektering/Forriglingsutrustning]].}}
+
+a) Det skal plasseres en Rep#-gruppe 250 meter foran utkjørhovedsignalet.
+
+: ''Unntak:'' Ved konflikt med baliser for Rep#-balisegruppe i motsatt kjøreretning skal avstanden fra Rep#-balisegruppen til tilhørende utkjørhovedsignal være så nærme 250 meter som mulig. Avstanden fra Rep# til tilhørende utkjørhovedsignal skal ikke være mindre enn 225 meter eller større enn 275 meter. 
+
+b) Ved signal 23 i forsignal for hovedsignal, skal ATC gi “vent 40 km/h” med Rep# som målpunkt. Har man P-bortflytting forbi foregående hovedsignal, skal denne gi ”0P” med Rep# som målpunkt.
+
+c) Ved signal 24 i forsignal for hovedsignal skal ATC gi ”vent sporvekselhastighet” med Rep# som målpunkt. Fra Rep# gis også ”vent sporvekselhastighet” 
+
+d) En lenkingsbalisegruppe skal oppdatere avstandsinformasjonen ca 250 meter foran repeterbalisegruppa. {{lærebokstoff|Eventuelt bortfall av rep-gruppen vil da gi feilmelding ca 100 m før utkjørhovedsignalet passeres.}}
+
+<figure id ="fig:Prosjektering av ATC ved samtidige togbevegelser1">
+[[Bilde:JD550 10 fig005.svg|thumb|center|350px|<caption>Prosjektering av ATC ved samtidige togbevegelser med sikkerhetsavstand 150 meter</caption>]]
+</figure>
+
+== Sikkerhetsavstand 150 meter, ombygging ==
+
+{{lærebokstoff|Kravene gjelder ved samtidige togbevegelser hvor sikkerhetsavstanden er 150 meter, jfr. [[Signal/Prosjektering/Forriglingsutrustning#label-fig:safmtidige150III|Signal/Prosjektering/Forriglingsutrustning]]. 
+Denne metoden for å kunne tillate samtidige togbevegelser skal kun benyttes ved ombygging av eksisterende stasjoner med utkjørhovedsignal plassert i middel.}}
+
+a) Ved signal 23 i forsignal for hovedsignal, skal ATC gi “vent 40 km/h” med Rep# som målpunkt. Har man P-bortflytting forbi foregående hovedsignal, skal denne gi ”0P” med Rep# som målpunkt. 
+
+b) Ved frittstående dvergsignal skal det være plassert en signalbalisegruppe (AX=4) med fast kodet ”vent”-hastighet og styrt ”kjør”-hastighet.
+
+c) Ved signal 24 i forsignal for hovedsignal skal ATC gi ”vent sporvekselhastighet” med Rep# som målpunkt. Repeterbalisegruppen Rep# skal gi MA 250 m. Fra Rep# gis også ”vent sporvekselhastighet”. Hastighet over sporveksel overvåkes som vanlig ikke i DATC-område, men ved koding av ”sporvekselhastighet” i hovedsignal i FATC-område.
+
+d) En lenkingsbalisegruppe skal oppdatere avstandsinformasjonen ca 250 meter foran repeterbalisegruppa. {{lærebokstoff|Eventuelt bortfall av rep-gruppen vil da gi feilmelding ca 100 m før utkjørhovedsignalet passeres.}}
+
+
+<figure id ="fig:Prosjektering av ATC ved samtidige togbevegelser2">
+[[Bilde:JD550 10 fig006.svg|thumb|center|350px|<caption>Prosjektering av ATC ved samtidige togbevegelser med sikkerhetsavstand 150 meter, ombygging </caption>]]
+</figure>
+
+= ATC-kryssingsbarriere =
+
+{{lærebokstoff|
+ATC kryssingsbarriere benyttes for å forhindre at tog som har stoppet på stasjonen for av- og påstigning, og settes i bevegelse selv om hovedsignalet ikke viser kjørsignal, kommer i konflikt med fiendtlig togvei. Dette gjelder på stasjoner hvor det ikke er dekningssporveksel eller sikkerhetssone som gir tilstrekkelig sikkerhetsavstand mellom hovedsignal og fiendtlig togvei. Kryssingsbarrieren innbefatter balisegrupper som ved normal togfremføring fungerer som repeterbalisegrupper for forsignal for utkjørhovedsignalet. Dersom tog i innkjørtogvei passerer balisene etter at en gitt tid har løpt ut, og det ikke vises signal for videre kjøring, gir gruppene informasjonen "stopp" som ved hovedsignal.}}  
+
+a)  '''Funksjoner i nye sikringsanlegg:''' Nye sikringsanlegg skal kunne prosjekteres med funksjoner for kryssingsbarriere.
+
+b)  '''Skilt:''' Det skal settes opp skilt (signal 74) der det bygges kryssingsbarriere.
+
+{{lærebokstoff|
+De påførte lengdene og plasseringene til Signal 74 “Toglengdeskilt“ av skal samsvare med togmateriellet som har faste stopp på stasjonen. Spørsmål til lokale forhold (kriterier til effektiv passasjerutvekslingen, heis, rampe m.m.) avklares i hvert enkelt tilfelle. Om nødvendig må plassering av toglengdeskilt gjennomgås, evalueres og ved behov endres.}}
+
+c)  '''Utforming av ATC kryssingsbarriere:''' Baliser for ATC kryssingsbarriere skal plasseres så nærme etter stedet tog stopper (Signal 74) som mulig.
+
+d)  '''Utforming av ATC kryssingsbarriere:''' Baliser for ATC kryssingsbarriere skal ikke plasseres nærmere tilhørende signal 74 enn 10 m.
+
+e) '''Skilt:''' ATC kryssingsbarrieregrupper skal utstyres med Signal 60 C “ATC nødbrems” som plasseres ved balisegruppens A-balise.
+
+f)  '''Minimumsavstander:''' Avstand fra baliser for ATC kryssingsbarriere til middel for fiendtlig togvei (L<sub>STOPP</sub>) skal ikke være kortere enn 50m (se <xr id = "fig:Eksempel på minsteavstand der korte og lange passasjertog har samme stoppested"/> og <xr id = "fig:Eksempel på minsteavstand der korte og lange passasjertog har forskjellig stoppested"/>).
+
+g) ''' Minimumsavstander:''' Avstand fra baliser for ATC kryssingsbarriere til tilhørende hovedsignal skal ikke være kortere enn 40m (se se <xr id = "fig:Eksempel på minsteavstand der korte og lange passasjertog har samme stoppested"/> og <xr id = "fig:Eksempel på minsteavstand der korte og lange passasjertog har forskjellig stoppested"/>).
+
+
+<figure id ="fig:Eksempel på minsteavstand der korte og lange passasjertog har samme stoppested">
+[[Bilde:JD550 10 fig008.svg|thumb|center|750px|<caption> Eksempel på minsteavstand der korte og lange passasjertog har samme stoppested </caption>]]
+</figure>
+
+<figure id ="fig:Eksempel på minsteavstand der korte og lange passasjertog har forskjellig stoppested">
+[[Bilde:JD550 10 fig009.svg|thumb|center|750px|<caption> Eksempel på minsteavstand der korte- og lange passasjertog har forskjellig stoppested </caption>]]
+</figure>
+
+
+h)  '''Minimumsavstander:''' Avstand fra baliser for ATC kryssingsbarriere til middel skal være i følge <xr id = "tab:Avstander"/>.
+
+
+<figtable id ="tab:Avstander">
+{| class="wikitable"
+|+ Avstander for prosjektering av baliser for kryssingsbarriere
+|-
+|Avstand mellom Signal 74 og balise [L<sub>START</sub>]:||Minste tillatte avstand fra balise til middel [L<sub>STOPP</sub>]:
+|-
+|L<sub>START</sub> ≤10m||50 m
+|-
+|10 m < L<sub>START</sub>  ≤ 15 m||55 m
+|-
+|15 m < L<sub>START</sub>  ≤ 20 m||60 m
+|-
+|20 m < L<sub>START</sub>  ≤ 25 m||65 m
+|-
+|25 m < L<sub>START</sub>  ≤ 30 m||70 m
+|-
+|30 m < L<sub>START</sub>  ≤ 35 m||73 m
+|-
+|35 m < L<sub>START</sub>  ≤ 40 m||76 m
+|-
+|40 m < L<sub>START</sub>  ≤ 45 m||79 m
+|-
+|45 m < L<sub>START</sub>  ≤ 50 m||82 m
+|-
+|50 m < L<sub>START</sub>  ≤ 55 m||85 m
+|-
+|55 m < L<sub>START</sub>  ≤ 60 m||88 m
+|-
+|60 m < L<sub>START</sub>  ≤ 65 m||91 m
+|-
+|65 m < L<sub>START</sub>  ≤ 70 m||94 m
+|-
+|70 m < L<sub>START</sub>  ≤ 75 m||97 m
+|-
+|75 m < L<sub>START</sub>  ≤ 80 m||100 m
+|-
+|L<sub>START</sub>  > 80 m||> 100 m
+|}
+</figtable>
+
+
+i)  '''Forskjellige toglengder:''' Ved ulike stoppmønster på grunn av forskjellige toglengder kan inntil to balisegrupper (med tilhørende skilt) utplasseres innenfor verdiene angitt i <xr id = "tab:Avstander"/> (se eksempel <xr id ="fig:Eksempel der man nytter 2 balisegrupper etter hverandre med ATC kryssingsbarriere på grunn av forskjellig stoppunkt for tog med ulike lengder"/>).
+
+
+<figure id ="fig:Eksempel der man nytter 2 balisegrupper etter hverandre med ATC kryssingsbarriere på grunn av forskjellig stoppunkt for tog med ulike lengder">
+[[Bilde:JD550 10 fig011.svg|thumb|center|750px|<caption> Eksempel der man nytter 2 balisegrupper etter hverandre med ATC kryssingsbarriere på grunn av forskjellig stoppunkt for tog med ulike lengder
+ </caption>]]
+</figure>
+
+j)  '''Koding av baliser:''' Balisegruppen skal kodes med AX=4.
+
+k)  '''Koding av baliser:''' Balisegruppen skal kodes med MA (målavstand) lik avstanden frem til utkjørhovedsignalet.
+
+l)  '''Koding av baliser:''' Balisegruppen skal fungere som repetergruppe når tilhørende utkjørhovedsignal viser signal 21 eller signal 22.
+
+m)  '''Koding av baliser:''' Balisegruppen skal fungere som repetergruppe inntil kryssingbarrieretiden har løpt ut.
+
+n)  '''Koding av baliser:''' Balisegruppen skal fungere som signalbalisegruppe (AY=0) i tilfeller ikke nevnt i krav l) eller m).
+
+o)  '''Kryssingsbarrieretid:''' Kryssingbarrieretid skal i utgangspunktet settes til:
+
+
+<math> t = \frac{\text{Avstand mellom startpunkt for tidsutm}\mathrm{\dot{a}}\text{ling og balise}[\text{m}]}{4,2[\text{m/s}]}</math>,avrundet til nærmeste 5 s.
+
+{{lærebokstoff|
+Tid vil være den tiden et tog med gjennomsnittshastighet 15km/t bruker fra kryssingsbarrieretiden starter tidsutmåling til balisene passeres, avrundet til nærmeste 5s. Tiden kan tilpasses i forbindelse med installasjon og kontroll.}}
+
+p) '''Maksimal kryssingsbarrieretid:''' Kryssingsbarrieretid skal ikke overstige kryssingslåsingstiden.
+
+= Midlertidige hastighetsnedsettelser = 
+
+== Generelt ==
+
+a) Bestemmelsene nedenfor skal anvendes ved alle midlertidige hastighetsnedsettelser på strekninger med utbygd ATC dersom:
+# Togframføringsforskriften krever bruk av baliser.
+# det av andre grunner (arbeid ved spor etc.) er ønskelig med ATC–overvåking.
+
+b) Alle installasjoner skal være helutrustede (EH/SEH skal benyttes).
+
+Unntak: Der hvor dette kravet kan føre til at ATC–installasjonen forsinkes, kan installasjonen være halvutrustet (bare ERH). 
+
+Dette gjelder
+# når strekningen med midlertidig nedsatt kjørehastighet er kortere enn 400m, eller:
+# i akutte tilfeller (se avsnitt [[Signal/Prosjektering/ATC#Akutte_tilfeller|akutte tilfeller]]).
+
+c) JBV skal prosjektere<sup>1</sup>, kontrollere og administrere midlertidige hastighetsnedsettelser.
+
+<sup>1</sup> Ved behov kan andre prosjektere hastighetsnedsettelser.
+
+== Baliseplassering ==
+
+=== ERH ===
+
+a) ERH skal benyttes ved alle ATC–utrustede midlertidige hastighetsnedsettelser.
+
+b) ERH skal plasseres ved signal 69A.
+
+{{lærebokstoff|Signal 69A plasseres på tabellavstand + 150m til markeringsmerket, se [[Skilt/Plassering_av_skilt_langs_sporet/Skiltoversikt#Signal_69_A_.C2.ABMidlertidig_nedsatt_hastighet.C2.BB|Skilt/Plassering av skilt langs sporet/Skiltoversikt]].}}
+
+c) ERH skal kodes med MH lik hastigheten angitt på signal 69A.
+
+d) ERH skal kodes med MA lik avstanden mellom signal 69A og signal 68D (markeringsmerke). 
+
+e) ERH skal ikke ha kortere avstand frem til første hovedsignal i kjøreretningen enn 150m.
+
+=== EH/SEH ===
+
+a) EH/SEH skal benyttes ved alle helutrustede midlertidige hastighetsnedsettelser.
+{{lærebokstoff|EH er første balise som passeres ved kjøring inn i området med midlertidig nedsatt kjørehastighet. SEH er første balise som passeres ved kjøring ut av området.}}
+
+b) Dersom signal 68D og signal 69B står i samme punkt skal EH/SEH realiseres som én balisegruppe. 
+
+c) Dersom signal 68D og signal 69B ikke står i samme punkt, skal EH/SEH realiseres som 2 balisegrupper der B - balisene annulleres.
+
+d) Dersom tog rutemessig snur i området, skal det plasseres ytterligere EH/SEH hvor SEH er annullert.
+
+== Flersporet strekning ==
+
+a) Dersom nabospor ikke skal berøres av den midlertidige hastighetsnedsettelsen, skal overkjøringsmulighetene som forekommer i området sperres ved å utføre følgende:  
+# Sporvekslene legges til rettspor.
+# Sporvekslene hindres omlagt ved at drivstrømssikringer tas ut, samt at togleder om mulig sperrer sporvekslene ved ordre.
+
+== Akutte tilfeller ==
+
+a) Det tillates bruk av forenklet prosjektering/forhåndsprogrammerte baliser (”Balisepakker”) til bruk i unntakstilfeller hvor man ikke har tid eller ressurser til detaljprosjektering av en midlertidig hastighetsnedsettelse. Det presiseres at slike installasjoner ved første mulighet, og senest innen 48 timer, skal bringes i samsvar med hovedreglene.
+
+b) ”Balisepakken” kan inneholde:
+:1. A-baliser kodet til MH 20 km/h (ekstremtilfelle).
+:2. A-baliser kodet til MH 40 km/h (normaltilfelle).
+:3. B-baliser kodet til MA 1000/1500/2000/3500m avhengig av linjehastighet i aktuelt område.
+{{lærebokstoff|Dette tilsvarer linjehastighet 100/130/160/210 km/h og MH 40km/h ved 6-10‰ fall}}
+:4. C-baliser kodes til 6-10‰  fall.
+
+c) En balisegruppe (A, B og C – balise) og signal 69A plasseres på hver side av den aktuelle strekning, på MA fra signal 68D.
+
+== Ved overgang mellom DATC og FATC ==
+
+a) Dersom en eksisterende grensebalisegruppe GMD forekommer på strekningen med midlertidig nedsatt hastighet (gjelder i hele området fra ERH balisegruppen til SEH/EH balisegruppen):
+# Skal GMD-balisen i gruppen midlertidig annulleres samtidig som det etableres en ny midlertidig balisegruppe med GMD, som plasseres umiddelbart etter avsluttet strekning med midlertidig nedsatt hastighet.
+# Dersom det er benyttet HG–balisegruppe med målpunkt i GMD, skal også HG–balisegruppen annulleres.
+# Dersom det er benyttet en BHT i området med midlertidig nedsatt hastighet må BHT gruppen annulleres. 
+
+{{lærebokstoff|Den faktiske grensen mellom DATC og FATC flyttes ikke, og skilting endres ikke.}}
+
+= Prosjekteringsdokumentasjon =
+
+== Enkeltrettede balisegrupper ==
+
+a) Prosjektering skal dokumenteres i henhold til <xr id="tab:Prosjekteringsdokumentasjon, enkeltrettede balisegrupper"/>  nedenfor.
+
+<figtable id ="tab:Prosjekteringsdokumentasjon, enkeltrettede balisegrupper">
+{| class="wikitable"
+|+ Prosjekteringsdokumentasjon, enkeltrettede balisegrupper
+|-
+! Balisegrupper !! Symbol på 
+
+signal- og
+
+baliseplassering, 
+
+plan- og kabelplan 
+! Angis i
+
+kodetabellen i
+
+kolonne Sign./Type
+
+som:
+! colspan = "4"| Mulige baliser
+
+I gruppen
+|-
+|  ||  ||  || P || A || B || C
+|-
+| colspan = "2"| Enkeltrettede balisegrupper (mulige kombinasjoner)||  ||  ||  ||  ||  
+|-
+| rowspan = "4" valign="top"| Signalbalisegruppe 
+
+# Rep. i kjøreretn. Rep.<nowiki>#</nowiki>
+# Rep. i kjøreretn. Rep.<nowiki>#</nowiki>U
+# Rep. i kjøreretn. Rep.<nowiki>#</nowiki>V
+# Rep. i kjøreretn. Rep.<nowiki>#</nowiki>W
+
+Rep og FF angis med
+
+<nowiki>Rep#/FF#</nowiki> under symbol,
+
+hvor <nowiki>#</nowiki> erstattes med
+
+objektets signalnr./litra.
+
+| &#9650;&#916; 
+|<nowiki>Sign.nr./litra, F#,</nowiki>
+
+<nowiki>FF# eller Rep.#</nowiki> 
+| 
+| X 
+| X 
+|  
+|-
+| &#9650;&#916;&#916; 
+| <nowiki>Sign.nr./litra, F#,</nowiki>
+
+<nowiki>eller FF#</nowiki> 
+|  
+| X 
+| X 
+| X 
+|-
+| P
+
+&#9650;&#916;&#916; 
+| <nowiki>Sign.nr./litra, F#,</nowiki>
+
+<nowiki>FF#  eller Rep.#</nowiki> 
+| X 
+| X 
+| X 
+|  
+|-
+| P
+
+&#9650;&#916;&#916;&#916; 
+| <nowiki>Sign.nr./litra, F#</nowiki>
+
+<nowiki>eller FF#</nowiki> 
+| X 
+| X 
+| X 
+| X 
+|-
+|rowspan = "2" valign="top"| H
+
+H, H(K1) eller H(K2) angis
+
+over symbol.
+
+"XXX"-H"ZZ" angis
+
+under symbol.
+
+| 
+<table style="border:0px solid">
+  <tr>
+    <td style="border:0px solid; padding: 0">H/H(K1)/H(K2)</td>
+  </tr>
+  <tr>
+    <td style="border:0px solid; padding: 0"><big>&#9650;&#916;</big></td>
+  </tr>
+ </table>
+
+|| H, H(K1) eller H(K2) 
+|  
+| X 
+| X 
+|  
+|-
+| <table style="border:0px solid">
+  <tr>
+    <td style="border:0px solid; padding: 0"; valign = "bottom">H/H(K1)/H(K2)</td>
+  </tr>
+  <tr>
+    <td style="border:0px solid; padding: 0"><big>&#9650;&#916;&#916;</big></td>
+  </tr>
+</table>
+
+| H, H(K1) eller H(K2) 
+|  
+| X 
+| X 
+| X 
+|-
+|rowspan = "2" valign="top"| ERH 
+
+ERH angis over symbol.
+
+"XXX"-E"ZZ" angis
+
+under symbol.
+| <table style="border:0px solid; align: center">
+  <tr>
+    <td style="border:0px solid; padding: 0; valign = "bottom">ERH</td>
+  </tr>
+  <tr>
+    <td style="border:0px solid; padding: 0"><big>&#9650;&#916;</big></td>
+  </tr>
+</table>
+
+| ERH 
+|   
+| X 
+| X 
+|  
+|-
+| <table style="border:0px solid; align: center">
+  <tr>
+    <td style="border:0px solid; padding: 0""; valign = "bottom">ERH</td>
+  </tr>
+  <tr>
+    <td style="border:0px solid; padding: 0"><big>&#9650;&#916;&#916;</big></td>
+  </tr>
+ </table>
+
+| ERH 
+|   
+| X 
+| X 
+| X 
+|-
+|rowspan = "2" valign="top"| SVG 
+
+SVG angis over symbol.
+
+"XXX"-V"ZZ" angis
+
+under symbol.
+| SVG
+
+&#9650;&#916;
+| SVG 
+|   
+| X 
+| X 
+|  
+|-
+| SVG
+
+&#9650;&#916;&#916;
+| SVG 
+|   
+| X 
+| X 
+| X 
+|-
+|rowspan = "2" valign="top"| RVG 
+
+RVG angis over symbol.
+
+"XXX"-V"ZZ" angis
+
+under symbol.
+| RVG
+
+&#9650;&#916;
+| RVG 
+|   
+| X 
+| X 
+|  
+|-
+| RVG
+
+&#9650;&#916;&#916;
+| RVG 
+|   
+| X 
+| X 
+| X 
+|-
+|rowspan = "2" valign="top"| HG 
+
+HG angis over symbol.
+
+"XXX"-G"ZZ" angis
+
+under symbol.
+| HG
+
+&#9650;&#916;
+| HG 
+|   
+| X 
+| X 
+|  
+|-
+| HG
+
+&#9650;&#916;&#916;
+| HG 
+|   
+| X 
+| X 
+| X 
+|-
+|L 
+
+L angis over symbol.
+
+"XXX"-L"ZZ" angis
+
+under symbol.
+
+| L
+
+&#9650;&#916;
+| L 
+|   
+| X 
+| X 
+|  
+|-
+|SH 
+
+SH angis over symbol.
+
+"XXX"-S"ZZ" angis
+
+under symbol.
+
+
+| SH
+
+&#9650;&#916;
+| SH 
+|   
+| X 
+| X 
+|  
+|}
+</figtable>
+"XXX" og "ZZ", se <xr id = "tab:Baliseidentitet"/>.
+
+b)	Styrte baliser skal angis med overstrekning:  [[Bilde:JD550 10 001.svg|40px]]
+
+c) Ved navngivning av enkel balise internt i balisegruppen (f.eks. kabelplan) belyttes balisegruppenavnet angitt i <xr id="tab:Prosjekteringsdokumentasjon, enkeltrettede balisegrupper"/> og <xr id = "tab:Prosjekteringsdokumentasjon, dobbeltrettede balisegrupper"/> og hvilken balise i gruppen med et mellomrom (P,A,B eller C). Eks: "Rep.<nowiki>#</nowiki>P", "Rep.<nowiki>#</nowiki>A", "Rep.<nowiki>#</nowiki>B".
+
+== Dobbeltrettede balisegrupper ==
+
+a) Prosjektering skal dokumenteres i henhold til <xr id = "tab:Prosjekteringsdokumentasjon, dobbeltrettede balisegrupper"/> nedenfor.
+
+<figtable id ="tab:Prosjekteringsdokumentasjon, dobbeltrettede balisegrupper">
+{| class="wikitable"
+|+ Prosjekteringsdokumentasjon, dobbeltrettede balisegrupper
+|-
+| Balisegrupper || Symbol på 
+
+signal- og
+
+baliseplassering, 
+
+plan- og kabelplan 
+| Angis i kodetabellen i
+
+Kolonne Sign./Type
+
+som:
+| colspan = "2"| Mulige
+
+baliser i
+
+gruppen:
+|-
+|  ||  ||  || A || B 
+|-
+|valign="top"| Dobbeltrettede balisegrupper || Generelt: 
+
+Begge baliser er aktive:
+
+<table style="border:0px solid">
+  <tr>
+    <td style="border:0px solid; padding: 0"></td>
+    <td style="border:0px solid; padding: 0">H</td>
+    <td style="border:0px solid; padding: 0">H</td>
+  </tr>
+  <tr>
+    <td style="border:0px solid; padding: 0">Eks.</td>
+    <td style="border:0px solid; padding: 0">▲</td>
+    <td style="border:0px solid; padding: 0">▲</td>
+  </tr>
+</table>
+
+||  ||  ||  
+|-
+| || En balise er annulert:
+
+<table style="border:0px solid">
+  <tr>
+    <td style="border:0px solid; padding: 0"></td>
+    <td style="border:0px solid; padding: 0">H</td>
+    <td style="border:0px solid; padding: 0"></td>
+  </tr>
+  <tr>
+    <td style="border:0px solid; padding: 0">Eks.</td>
+    <td style="border:0px solid; padding: 0">▲</td>
+    <td style="border:0px solid; padding: 0">▲</td>
+  </tr>
+</table>
+||  ||  ||  
+|-
+|H 
+
+H, H(K1) eller H(K2) angis 
+
+over symbol.
+
+"XXX"-H"ZZ" angis
+
+under symbol.
+
+||<table style="border:0px solid">
+  <tr>
+    <td style="border:0px solid; padding: 0">H/H(K1)/H(K2)</td>
+  </tr>
+  <tr>
+    <td style="border:0px solid; padding: 0">▲▲<sup>1)</sup></td>
+  </tr>
+</table>
+||H, H(K1) eller H(K2)|| X || X 
+|-
+|EH, SEH
+
+EH eller SEH angis over
+
+symbol.
+
+"XXX"-E"ZZ" angis
+
+under symbol.
+|<table style="border:0px solid">
+  <tr>
+    <td style="border:0px solid; padding: 0">EH</td>
+    <td style="border:0px solid; padding: 0">SEH</td>
+  </tr>
+  <tr>
+    <td style="border:0px solid; padding: 0">▲▲<sup>1)</sup></td>
+    <td style="border:0px solid; padding: 0">▲▲<sup>1)</sup></td>
+  </tr>
+</table>
+||EH eller SEH || X || X 
+|-
+|BU
+
+BU angis over symbol.
+
+"XXX"-G"ZZ" angis
+
+under symbol.
+|<table style="border:0px solid">
+  <tr>
+
+    <td style="border:0px solid; padding: 0">BU</td>
+  </tr>
+  <tr>
+
+    <td style="border:0px solid; padding: 0">▲▲<sup>1)</sup></td>
+  </tr>
+</table>
+|| BU || X || X 
+|-
+|SU 
+
+SU angis over symbol.
+
+"XXX"-G"ZZ" angis
+
+under symbol.
+|<table style="border:0px solid">
+  <tr>
+
+    <td style="border:0px solid; padding: 0">SU</td>
+  </tr>
+  <tr>
+
+    <td style="border:0px solid; padding: 0">▲▲<sup>1)</sup></td>
+  </tr>
+</table>
+||SU || X || X 
+|-
+|GMO, GMD, BHT, SHT 
+
+GMO, GMD, BHT eller SHT angis over
+
+symbol.
+
+"XXX"-G"ZZ" angis
+
+under symbol.
+|<table style="border:0px solid">
+  <tr>
+    <td style="border:0px solid; padding: 0">GMO</td>
+    <td style="border:0px solid; padding: 0">GMD</td>
+  </tr>
+  <tr>
+    <td style="border:0px solid; padding: 0">▲▲<sup>1)</sup></td>
+    <td style="border:0px solid; padding: 0">▲▲<sup>1)</sup></td>
+  </tr>
+ <tr>
+    <td style="border:0px solid; padding: 0">BHT</td>
+    <td style="border:0px solid; padding: 0">SHT</td>
+  </tr>
+  <tr>
+    <td style="border:0px solid; padding: 0">▲▲<sup>1)</sup></td>
+    <td style="border:0px solid; padding: 0">▲▲<sup>1)</sup></td>
+  </tr>
+</table>
+|| GMO, GMD, BHT eller SHT || X || X 
+|}
+</figtable>
+<sup>1)</sup> Kan være H, H(K1), H(K2), EH, SEH, BU, SU, GMD eller GMO.
+
+"XXX" og "ZZ", se <xr id = "tab:Baliseidentitet"/>.
+
+b) Styrte baliser skal angis med overstrekning:  [[Bilde:JD550 10 001.svg|40px]]
+
+c) Ved navngivning av enkel balise internt i balisegruppen (f.eks. kabelplan) belyttes balisegruppenavnet angitt i <xr id="tab:Prosjekteringsdokumentasjon, enkeltrettede balisegrupper"/> og <xr id = "tab:Prosjekteringsdokumentasjon, dobbeltrettede balisegrupper"/> og hvilken balise i gruppen med et mellomrom (P,A,B eller C). Eks: "Rep.<nowiki>#</nowiki>P", "Rep.<nowiki>#</nowiki>A", "Rep.<nowiki>#</nowiki>B".
+
+== Tabell for H, H(K1), H(K2), SVG og RVG ==
+
+Enkeltrettede balisegrupper.	
+* AX = 6 med BX = 9
+* AX = 2 med BX = 9 og CX = 14 
+
+Dobbeltrettede balisegrupper
+* AX = 7, BX = 3, 5 eller 7
+
+a) <xr id = "tab:H, H(K1), H(K2), SVG og RVG"/> benyttes ved prosjektering.
+
+<figtable id ="tab:H, H(K1), H(K2), SVG og RVG">
+{| class="wikitable"
+|+ H, H(K1), H(K2), SVG og RVG
+|-
+| AZ\AY ||0||1||2||3||4||5||6||7||8
+|-
+|0|| ||70||140|| ||70||140|| ||70||140
+|-
+|1||5||75||150||5||75||150||5||75||150
+|-
+|2||10||80||160||10||80||160||10||80||160
+|-
+|3||15||85||170||15||85||170||15||85||170
+|-
+|4||20||90||180||20||90||180||20||90||180
+|-
+|5||25||95||190||25||95||190||25||95||190
+|-
+|6||30||100||200||30||100||200||30||100||200
+|-
+|7||35||105||210||35||105||210||35||105||210
+|-
+|8||40||110||220||40||110||220||40||110||220
+|-
+|9||45||115||230||45||115||230||45||115||230
+|-
+|10||50||120||240||50||120||240||50||120||240
+|-
+|11||55||125||250||55||125||250||55||125||250
+|-
+|12||60||130||260||60||130||260||60||130||260
+|-
+|13||65||135||270||65||135||270||65||135||270
+|-
+|14||A||A||A||A||A||A||A||A||A
+|-
+| ||colspan="3"|H, SVG og RVG ||colspan="3"| H(K1) ||colspan="3"| H(K2)
+|}
+</figtable>
+A = Balisegruppen er annullert.
+
+{{lærebokstoff|<nowiki>H(AX=7 og AY=0) gir balisefeil på strekninger med overhastighet. H(AX=3 og AY=3) benyttes ved hastigheter < 70 km/h på strekninger med overhastighet.</nowiki>
+}}
+
+== Tabell for signalbalisegruppe og L ==
+
+AX = 4, BX = 9, (CX = 14)
+
+a) <xr id = "tab:signalbalisegruppe og L"/> benyttes ved prosjektering.
+<figtable id ="tab:signalbalisegruppe og L">
+{| class="wikitable"
+|+ Signalbalisegruppe og L
+|-
+|rowspan = "2"|AY||rowspan = "2"|"Kjør"-hastighet [km/h]||rowspan = "2"|AZ||colspan = "3"|"Vent"-hastighet [km/h]|| 	
+|-
+|Uten bortflytting||P-bortflytting||A-bortflytting
+|-
+|0||0||0||0||Ingen||Ingen
+|-
+|1||40||1||40||0P||4A
+|-
+|2||50||2||50||5P||5A
+|-
+|3||60||3||60||6P||6A
+|-
+|4||70||4||70||7P||7A
+|-
+|5||80||5||80||8P||8A
+|-
+|6||90||6||90||9P||9A
+|-
+|7||100||7||100||10P||10A
+|-
+|8||130||8||130||13P||13A
+|-
+|9||160||9||160||16P||16A
+|-
+|10||190||10||190||19P||19A
+|-
+|11||220||11||220||22P||22A
+|-
+|12||270||12||270||Ingen||Ingen
+|-
+||13|| || || || ||
+|-
+|14||Ingen||14||colspan = "3"|Ingen
+|}
+</figtable>
+
+== Tabell for ERH og HG ==
+
+AX = 5, BX = 9, (CX = 14)
+
+a) <xr id = "tab:ERH og HG"/> benyttes ved prosjektering.
+<figtable id ="tab:ERH og HG">
+{| class="wikitable"
+|+ ERH og HG
+|-	
+|AZ\AY||12||13||14
+|-
+|0||0||140|| 
+|-
+|1||10||150||10
+|-
+|2||20||160||20
+|-
+|3||30||170||30
+|-
+|4||40||180||40
+|-
+|5||50||190||50
+|-
+|6||60||200||60
+|-
+|7||70||210||70
+|-
+|8||80||220||80
+|-
+|9||90||230||90
+|-
+|10||100||240||100
+|-
+|11||110||250||110
+|-
+|12||120||260||120
+|-
+|13||130||270||	
+|-
+|14||A||A||A
+|-
+| ||colspan = "2"|ERH||HG
+|}
+</figtable>
+{{lærebokstoff|<nowiki>A = Balisegruppen er annullert.</nowiki>}}
+
+== Tabell for avstand i B-balise i enkeltrettede grupper ==
+BX=9
+
+a) <xr id = "tab:B-avstand"/> benyttes ved prosjektering.
+
+b) Ved koding av avstand benyttes nærmeste tabellverdi under den virkelige verdi.
+
+c) Dersom det ikke er fall på strekningen, skal avstanden kodes i henhold til tabellen nedenfor.
+
+d) Hvis det er fall på strekningen, skal avstanden kodes BZ=0 og CX=14. BY og CY skal kodes i henhold til tabellen nedenfor, mens CZ skal kodes i henhold til <xr id = "tab:fall"/>.
+
+
+<figtable id ="tab:B-avstand">
+{| class="wikitable"
+|+ B-avstand
+|-
+|BY||rowspan = "2"|0||rowspan = "2"|1||rowspan = "2"|2||rowspan = "2"|3||rowspan = "2"|4||rowspan = "2"|5||rowspan = "2"|6||rowspan = "2"|7||rowspan = "2"|8||rowspan = "2"|9||rowspan = "2"|10||rowspan = "2"|11||rowspan = "2"|12||rowspan = "2"|13
+|-
+|BZ/CY
+|-
+|1||12,5||187,5||362,5||537,5||725||1075||1450||2200||3600||5000||6400||7800||9200||10600
+|-
+|2||25||200||375||550||750||1100||1500||2300||3700||5100||6500||7900||9300||10700
+|-
+|3||37,5||212,5||387,5||562,5||775||1125||1550||2400||3800||5200||6600||8000||9400||10800
+|-
+|4||50||225||400||575||800||1150||1600||2500||3900||5300||6700||8100||9500||10900
+|-
+|5||62,5||237,5||412,5||587,5||825||1175||1650||2600||4000||5400||6800||8200||9600||11000
+|-
+|6||75||250||425||600||850||1200||1700||2700||4100||5500||6900||8300||9700||11100
+|-
+|7||87,5||262,5||437,5||612,5||875||1225||1750||2800||4200||5600||7000||8400||9800||11200
+|-
+|8||100||275||450||625||900||1250||1800||2900||4300||5700||7100||8500||9900||11300
+|-
+|9||112,5||287,5||462,5||637,5||925||1275||1850||3000||4400||5800||7200||8600||10000||11400
+|-
+|10||125||300||475||650||950||1300||1900||3100||4500||5900||7300||8700||10100||11500
+|-
+|11||137,5||312,5||487,5||662,5||975||1325||1950||3200||4600||6000||7400||8800||10200||11600
+|-
+|12||150||325||500||675||1000||1350||2000||3300||4700||6100||7500||8900||10300||11700
+|-
+|13||162,5||337,5||512,5||687,5||1025||1375||2050||3400||4800||6200||7600||9000||10400||11800
+|-
+|14||175||350||525||700||1050||1400||2100||3500||4900||6300||7700||9100||10500||11900
+|-
+| ||colspan = "4" align = "center"|12,5m trinn||colspan = "2" align = "center"|25m trinn||align = "center"|50m trinn||colspan = "7" align = "center"|100m trinn
+|}
+</figtable>
+
+Dersom BZ = 0 og C-balisen mangler vil man få balisefeil. Dersom CY = 0 vil man også få balisefeil. Fall kodes i C-balisens Z-ord.
+
+<figure id ="fig:fig">
+[[Bilde:JD550 10 fig007.png|thumb|center|350px]]
+</figure>
+
+== Tabell for EH, BU, SU, GMO, GMD, BHT, SHT, SEH og SH ==
+
+AX = 5, BX = 3, 5 eller 7
+
+a) <xr id = "tab:EH, BU, SU, GMO, GMD, BHT, SHT, SEH og SH"/> benyttes ved prosjektering.
+
+<figtable id = "tab:EH, BU, SU, GMO, GMD, BHT, SHT, SEH og SH">
+{| class="wikitable"
+|+ EH, BU, SU, GMO, GMD, BHT, SHT, SEH og SH
+|-
+| ||colspan = "5"|Gjelder ved A(5)+B(3), A(5)+B(5) og A(5)+B(7)||A(5)+B(9)
+|-
+|AZ\AY||2||3||4||5||6||7
+|-
+|0||0|| || || ||30||
+|-
+|1||10|| || || ||40||
+|-
+|2||20|| || || ||50||50
+|-
+|3||30|| || || ||60||60
+|-
+|4||40|| || || ||70||70
+|-
+|5||50|| || || ||80||80
+|-
+|6||60|| || || ||90||90
+|-
+|7||70|| ||GMO|| ||100||100
+|-
+|8||80|| || || ||110||130
+|-
+|9||90|| || || ||120||160
+|-
+|10||100|| || ||SEH||130||190
+|-
+|11||110|| ||BU||SU||140||220
+|-
+|12||120|| || || ||150||270
+|-
+|13||130|| || BHT || SHT ||160|| 
+|-
+|14||A|| ||A||A||A||A
+|-
+| ||EH|| || || ||GMD||SH
+|}
+</figtable>
+
+{{lærebokstoff|<nowiki>A = Balisegruppen er annullert</nowiki>}}
+
+== Tabell for fall ==
+CX=14.
+
+a) <xr id = "tab:fall"/> benyttes ved prosjektering.
+
+<figtable id ="tab:fall">
+{| class="wikitable"
+|+ Fall
+|-
+|CZ||Fall [‰]
+|-
+|0||36 - 40
+|-
+|1||31 - 35
+|-
+|2||26 - 30
+|-
+|3||21 - 25
+|-
+|4||16 - 20
+|-
+|5||11 - 15
+|-
+|6||6 - 10
+|-
+|7||5
+|}
+</figtable>
+
+== Tabell for A- og P-bortflytting ==
+PX=8
+
+a) <xr id = "tab:Bortflyttingsavstand"/> benyttes ved prosjektering.
+
+b) Annullering av P-balise skal skje ved PZ=0.
+
+<figtable id = "tab:Bortflyttingsavstand">
+{| class="wikitable"
+|+ Bortflyttingsavstand
+|-
+|PZ\PY||2||3||4||5||6||7||8||9||10||11||12||13||14
+|-
+|0||0||0||0||0||0||0||0||0||0||0||0||0||0
+|-
+|1||25||375||725||1075||1450||50||800||2200||3600||5000||6400||7800||9200
+|-
+|2||50||400||750||1100||1500||100||900||2300||3700||5100||6500||7900||9300
+|-
+|3||75||425||775||1125||1550||150||1000||2400||3800||5200||6600||8000||9400
+|-
+|4||100||450||800||1150||1600||200||1100||2500||3900||5300||6700||8100||9500
+|-
+|5||125||475||825||1175||1650||250||1200||2600||4000||5400||6800||8200||9600
+|-
+|6||150||500||850||1200||1700||300||1300||2700||4100||5500||6900||8300||9700
+|-
+|7||175||525||875||1225||1750||350||1400||2800||4200||5600||7000||8400||9800
+|-
+|8||200||550||900||1250||1800||400||1500||2900||4300||5700||7100||8500||9900
+|-
+|9||225||575||925||1275||1850||450||1600||3000||4400||5800||7200||8600||10000
+|-
+|10||250||600||950||1300||1900||500||1700||3100||4500||5900||7300||8700||10100
+|-
+|11||275||625||975||1325||1950||550||1800||3200||4600||6000||7400||8800||10200
+|-
+|12||300||650||1000||1350||2000||600||1900||3300||4700||6100||7500||8900||10300
+|-
+|13||325||675||1025||1375||2050||650||2000||3400||4800||6200||7600||9000||10400
+|-
+|14||350||700||1050||1400||2100||700||2100||3500||4900||6300||7700||9100||10500
+|-
+!rowspan ="2"| !!colspan = "4"|25 m trinn!!50 m!!50 m!!colspan = "7"|100 m trinn
+|-
+|colspan = "5"|A- Bortflytting||colspan = "8"|P-bortflytting
+|}
+</figtable>
+
+== Feiltelegram for seriebaliser ==
+
+a) <xr id = "tab:Feiltelegram"/> benyttes ved prosjektering.
+
+b) Feiltelegrammet skal føres inn i kodetabell som siste telegram ved alle styrte baliser.  
+
+c) "K" skal føres i alle aktuelle rubrikker for signalbilde og informasjon der dette er mulig, i øvrige tilfeller føres den i kommentarfeltet. Betydningen av "K" fremgår av kodetabellen.
+
+<figtable id ="tab:Feiltelegram">
+{| class="wikitable"
+|+ Feiltelegram
+|-
+!width = "40%"|BALISE!!colspan="3"|KODEORD
+|-
+| ||width = "20%"|X||width = "20%"|Y||width = "20%"|Z
+|-
+|A-balise ved  hovedsignal||4/1||0||K
+|-
+|A-balise ved F, FF eller Rep.||4/1||15||K
+|-
+|B-balise  i balisegruppe uten C-balise||9||K||0
+|-
+|B-balise  i balisegruppe med C-balise||9||0||0
+|-
+|C-balise||14||0||K
+|-
+|P-balise||8||15||K
+|-
+|A-balise i SH||5||0||K
+|-
+|A-balise i SVG, RVG og H||2/3/6/7||colspan="2"|Kodes til nærmeste mer restriktive hastighet som har 5-tall i laveste posisjon
+|}
+</figtable>
+
+== Baliseidentitet ==
+
+a) Balisegruppens ID (i kodetabellens "ID-kolonne") utformes i henhold til <xr id = "tab:Baliseidentitet"/>.
+
+b) Ved enhver endring av prosjektering/prosjekteringsforslag skal opprinnelig ID beholdes. En ID som tilhørte en slettet balisegruppe skal ikke gjenbrukes.
+
+<figtable id = "tab:Baliseidentitet">
+{| class="wikitable"
+|+ Baliseidentitet
+|-
+!Balisegruppe!!Tegn 1 - 3!!Tegn 4!!Tegn 5!!Tegn 6 - 7
+|-
+|Hovedsignal med unikt nr.
+|Stasjonsbetegnelse
+
+("XXX")
+|_ ("underscore")
+|colspan = "2"|3 siste siffer i signalnr.
+|-
+|Øvrige hovedsignaler||	" ||M/O/S/Y/Æ/Å
+
+L/N/P/T/X/Ø
+|colspan="2"|"
+|-
+|Dvergsignal jfr. avsn. 4.3||"||m/o/s/y/æ/å
+
+l/n/p/t/x/ø
+|colspan ="2"|"
+|-
+|Frittstående forsignal||"||F||colspan ="2"|"
+|-
+|FF||"||Z||colspan ="2"|"
+|-
+|1.Rep. i kjøreretn.||"||R||colspan ="2"|"
+|-
+|2.Rep. i kjøreretn.||"||U||colspan ="2"|"
+|-
+|3.Rep. i kjøreretn.||"||V||colspan ="2"|"
+|-
+|4.Rep. i kjøreretn.||"||W||colspan ="2"|"
+|-
+|L||"||- (bindestrek)||L||01-99 ("ZZ") *)
+|-
+|SVG, RVG||"||"||V||"
+|-
+|SH||"||"||S||"
+|-
+|H, H(K1), H(K2)||"||"||H||"
+|-
+|ERH, EH, SEH||"||"||E||"
+|-
+|GMD, GMO, HG, BU, SU, BHT, SHT||"||"||G||"
+|}
+</figtable>
+
+Stasjonsbetegnelse "XXX" kan være enten to eller tre bokstaver. Ved to bokstaver er tegn 3 blank.
+
+<nowiki>*</nowiki>) Det skal brukes ulike tall i A-retning og like tall i B-retning.
+
+== Rettledning for utfylling av kodetabell ==
+
+a) Mellom hver balisegruppe i kodetabellen skal det være minst én åpen linje.
+
+b) Det skal være egne kodetabeller for de enkelte kjøreretninger. Balisegrupper skal føres i kilometerrekkefølge. 
+
+<figure id ="fig:ATC-kodetabell">
+[[Bilde:JD550 10 tab013.png|thumb|center|650px]]
+</figure>	
+																
+{| class="wikitable"
+|-
+|Sign/Type||Signalbalisegruppe angis med signalnr. og eventuell bokstav. For øvrig skal forkortelser angitt på kodetabell brukes.
+|-
+|Posisjon (Km.)||Her angis balisegruppens kilometerangivelse.
+|-
+|ID||Balisegruppeidentitet. 7 tegn (3+4) på balisegruppens øverste linje
+|-
+|H||Hovedsignalets signal ved signalbalisegrupper eller signalavhengig SVG
+|-
+|F/D||Forsignals eller fremtrekksdvergs signal. For kombinert signal angis forsignal som "-" (minus) ved signal 20.
+
+ATC forsignal angis som optisk forsignal. Fast "vent" hastighet angis med "F" på hver linje.
+|-
+|F/H||Neste forsignal eller hovedsignals signal.
+
+Benyttes ved gjennomsignalering.
+|-
+|Kjør||"Kjør"-hastighet.
+|-
+|Vent||"Vent" - hastighet.
+
+Ved signal 20 i hovedsignal uten aktiv fremtrekksdverg skal cellen være blank. Aktiv gjennomsignalering angis som "0P" - 22P eller "4A" - "22A"
+|-
+|P-balise||Fast kodet P-balise avstand angis kun i balisegruppens første linje. Ved styrt balise angis avstand i linjer som inneholder "0P" - 22P eller "4A" - "22A" i "vent" - kolonnen For de hastigheter der P-balisen må annulleres eksplisitt markeres dette med "0" (null).
+|-
+|B-balise||Fast kodet B-balise avstand angis kun i balisegruppens første linje. Ved styrt balise markeres avstand i alle øvrige linjer.
+|-
+|Fall||Fast kodet fallangivelse angis kun i balisegruppens første linje. Ved varierende fall markeres dette i alle øvrige linjer.
+|}
+= Vedlegg =
+
+[[Signal/Prosjektering/ATC/Målavstandstabeller|Vedlegg a: Målavstandstabeller]]
+

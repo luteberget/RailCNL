@@ -1,0 +1,1099 @@
+__NUMBEREDHEADINGS__
+
+=Hensikt og omfang=
+
+Dette kapitlet beskriver tekniske krav og funksjonskrav til veisikringsanlegg. 
+
+<figure id="Systemoversikt signalanlegg">
+[[Bilde:JD550 09 fig001.png|thumb|center|600px|<caption>Systemoversikt signalanlegg</caption>]]
+</figure>
+
+Kapitlet omfatter følgende delsystemer/komponenter:
+
+Veisikringsanlegg, dvs.
+* Veisignalanlegg (La). Planovergang sikret med lyssignal mot tog og lys- og lydsignal mot vei.
+* Veibomanlegg, dvs.
+:* Halvbomanlegg (1/2 Ba). Planovergang sikret med lyssignal mot tog, og lyssignal, lydsignal (før fysisk stengsel er etablert) og fysisk stengsel (halvbom) mot veitrafikk, eller
+:* Helbomanlegg (Ba). Planovergang sikret med lyssignal mot tog og lyssignal, lydsignal (før fysisk stengsel er etablert) og fysisk stengsel (helbom) mot veitrafikk.
+
+I tillegg beskrives følgende forenklede veisikringsanlegg 
+* Enkelt veisignalanlegg. Planovergang sikret med lys- og lydsignal mot vei.
+* Varsellampe
+* Varsellys
+
+== Krav på jernbanesystemnivå ==
+a) '''Varsle kryssende trafikk''' Et veisikringsanlegg skal hindre veifarende å krysse over planovergangen når det ikke er trygt.
+
+b) '''Hindring av veitrafikk''' Hindring av veifarende over planovergang skal være tydelig, og bør være med fysisk sperring / bom.
+
+c) '''Sperretid''' Tiden en planovergang er sperret skal være tilstrekkelig lang til at veifarende som er for nærme planovergangen til å stoppe kan passere trygt, men skal forøvrig være så kort som mulig.
+
+d) '''Vise at det virker''' Et veisikringsanlegg skal vise veifarende at det er i drift og fungerer normalt.
+
+e) '''Deteksjon av feil''' Ved feil på veisikringsanlegget som gjør at sperring av planovergangen ikke skjer som forventet skal dette detekteres så snart som mulig.
+
+f) '''Sikker tilstand''' Når et veisikringsanlegg ikke er i drift skal det innta en sikker tilstand som gir veifarende mulighet til å krysse planovergangen trygt fram til feilen er utbedret.
+
+g) '''Rømningsmulighet''' Det bør alltid være mulig for veifarende å rømme ut fra planovergang
+
+h) '''Hinderdeteksjon''' Hinderdeteksjon kan benyttes for å detektere et veikjøretøy som har blitt stående fast på en planovergang når veisikringsanlegget aktiveres.
+
+==Systemdefinisjon==
+<figure id="Systemdefinisjon veisikringsanlegg">
+[[Bilde:JD550 09 fig002.png|thumb|center|600px|<caption>Systemdefinisjon veisikringsanlegg (NSS)</caption>]]
+</figure>
+
+
+<figure id="Systemdefinisjon veisikringsanlegg L2">
+[[Bilde:Systemdefinisjon veisikringsanlegg L2.svg|thumb|center|600px|<caption>Systemdefinisjon veisikringsanlegg (L2)</caption>]]
+</figure>
+
+==Tilstander og tiltandsoverganger==
+'''Veisikringsanlegg i normalstilling''' Et veisikringsanlegg er i normalstilling når veisignalene (V1 og V2) viser hvitt lys, eventuelle bommer er i hevet endestilling og lydsignal er av.
+
+'''Innkobling av veisikringsanlegg''' Når et veisikringsanlegg innkobles vil det utføre nødvendige endringer for å gå fra normalstilling til planovergang sperret.
+
+'''Planovergang sperret''' En planovergang er sperret når veisignalene og eventuelle fysiske barrierer hindrer veitrafikk over planovergangen.
+
+'''Utløsning av veisikringsanlegg''' Ved utløsning av et veisikringsanlegg utføres nødvendige aktiviteter for å gå fra tilstand planovergang sperret til normalstilling.
+
+'''Feil på veisikringsanlegg''' Tilstanden indikerer at det finnes feil på veisikringsanlegget som medfører at planovergangen ikke kan sperres som forventet.
+
+=Forriglingskrav=
+==Innkobling av veisikringsanlegg ==
+
+=== Automatisk innkobling (NSS)===
+
+a) Et veisikringsanlegg skal automatisk innkobles når et tog som kjører mot planovergangen kommer til innkoblingspunktet. 
+:'''Unntak:'''
+:#Dersom det er plassert et hovedsignal mellom innkoblingspunktet og planovergangen skal automatisk innkobling kun skje når det er fastlagt en togvei over planovergangen.
+
+b) Et veisikringsanlegg skal automatisk innkobles når det sikres togvei over en planovergang som er satt i avhengighet til et sikringsanlegg, og tog som kjører mot planovergangen har passert innkoblingspunktet.
+
+c) Et veisikringsanlegg skal automatisk innkobles når det sikres skiftevei med dvergsignal over en planovergang som er satt i avhengighet til et sikringsanlegg.
+
+=== Automatisk innkobling (L2) ===
+
+a) Et veisikringsanlegg skal automatisk kobles inn minst 30 sekunder før tog som kjører i FS eller OS  passerer planovergangen.
+
+b) Et veisikringsanlegg skal automatisk kobles inn når FS- eller OS-togvei stilles over planovergangen for tog som står mindre enn 30  sekunder kjøretid foran planovergangen.
+
+c) Et veisikringsanlegg skal automatisk kobles inn når skiftevei som signaleres med dvergsignal stilles over planovergangen.
+
+=== Manuell innkobling ===
+
+a) Et veisikringsanlegg skal kunne innkobles manuelt fra:
+:# Betjeningsskap på kiosk
+
+b) Et veisikringsanlegg som er satt i avhengighet til et sikringsanlegg skal kunne innkobles manuelt fra:
+:# Lokal operatørplass
+:# Fjernstyringsanlegg
+
+=== Forbikobling ===
+
+a) '''Forbikobling:''' Innkobling av veisikringsanlegg bør kunne forbikobles slik at veisikringsanlegget ikke innkobles når et tog som kjører mot planovergangen normalt ville ha koblet inn veisikringsanlegget.
+:# Utførelse: Innkoblingen skal ikke kunne forbikobles utilsiktet.
+:# Utførelse: Tilbakestilling av forbikoblingen skal skje automatisk og ikke kreve en separat manuell operasjon.
+:# Utførelse (NSS): Forbikoblingen skal være tohåndsbetjent ved bruk av forbikoblingsknapp og vrider.
+::: Unntak: Annen utforming kan benyttes dersom den er godkjent av infrastrukturforvalter
+
+b) '''Seriekoblede veisikringsanlegg (NSS):''' Et innkoblingsfelt som kobler inn flere veisikringsanlegg skal kunne forbikobles.
+
+==Veisikringsanleggets avhengighet til sikringsanlegg (NSS)==
+a) Når et hovedsignal er satt i avhengighet til veisikringsanlegget skal innkobling av veisikringsanlegget kun igangsettes dersom togvei er sikret fra hovedsignalet.
+
+b) Et veisikringsanlegg på en stasjon skal ikke utløses under kryssing ved første togs passering av planovergangen når ny togvei i motsatt retning er magasinert over planovergangen og tog som skal krysse står foran planovergangen.
+
+c) Et veisikringsanlegg hvor innkobling/utløsning er satt i avhengighet til sikringsanlegget skal fungere uten disse avhengighetene når sikringsanlegget er strømløst.
+
+d) Et veisikringsanlegg med avhengighet til sikringsanlegget skal fungere uten denne avhengigheten for minimum ett av stasjonens togspor dersom sikringsanlegget er strømløst.
+
+==Lyssignal mot tog (NSS)==
+
+===Planovergangsignal===
+
+a) Et planovergangssignal som ikke skal vise signal ”Planovergang kan passeres” skal vise signal ”Stopp foran planovergang”.
+
+b) Et planovergangssignal som på grunn av feil ikke kan vise signal ”Planovergang kan passeres” eller ” Stopp foran planovergang” som samsvarer med forriglingsutrustningen, skal være slukket.
+
+c) For at et planovergangsignal skal kunne vise signal ”Planovergang kan passeres” skal følgende krav være oppfylt:
+:# Signal mot vei viser ikke hvitt lys
+:# Eventuelle bommer er kontrollert i senket endestilling
+:'''Unntak til punkt 2:'''
+:#Dersom veisikringsanlegget er utrustet med halvbommer og kravet til varslingstid (30 sekund) oppfylles er det tilstrekkelig at bommene er 2° ut av hevet endestilling.
+
+{{lærebokstoff|Dette innebærer at det ved et halvbomanlegg kreves at bommene er i senket endestilling i følgende tilfeller (hovedsakelig når det er avhengighet mellom sikringsanlegg og veisikringsanlegg):
+# Når planovergangen er plassert nærmere et togs normale punkt for avgang enn 250 meter.
+# Når planovergangen er plassert nærmere et hovedsignal enn 250 meter, og veisikringsanlegget ikke koblet inn når toget passerte innkoblingspunktet.}}
+
+===Forsignal for planovergangsignal===
+
+a) Et forsignal for planovergangsignal skal vise signal ”Planovergangsignal viser stopp foran planovergang” når tilhørende planovergangsignal viser ” Stopp foran planovergang” eller er slukket.
+
+b) Et forsignal for planovergangsignal som på grunn av feil ikke kan vise signal ”Planovergangsignal viser at planovergangen kan passeres” eller ”Planovergangsignal viser stopp foran planovergang” som samsvarer med tilhørende planovergangsignal, skal være slukket.
+
+c) For at et forsignal for planovergangsignal skal vise signal ” Planovergangsignal viser at planovergangen kan passeres”, skal tilhørende planovergangssignal vise signal ”Planovergang kan passeres”.
+
+==Lyssignals avhengighet til veisikringsanlegg (NSS)==
+
+a) Et hovedsignal eller forsignal som er satt i avhengighet til et veisikringsanlegg skal kun vise kjørsignal eller vent-kjørsignal når planovergangen er sperret og planovergangsignalet viser ”Planovergang kan passeres”.
+
+b) Et hovedsignal som tillater kjøring over en planovergang på en stasjon skal settes i avhengighet til veisikringsanlegget, se <xr id = "Planovergang i togsporene"/>, <xr id = "Planovergang mellom inn- og utkjørhovedsignalene"/>, <xr id = "Planovergang midt på stasjonen"/>, <xr id = "Planovergang mellom innkjørhovedsignal og tilhørende forsignal"/>.
+
+c) Et hovedsignal som tillater kjøring over en planovergang på linjen skal settes i avhengighet til veisikringsanlegget når avstand mellom hovedsignalet og forsignalet for planovergangssignal er < 500 meter eller avstand mellom hovedsignalet og planovergangen er < 1000 meter.
+Når hovedsignalet settes i avhengighet til planovergangen, skal forsignalet for planovergangssignal fjernes, se avsnitt [[Signal/Prosjektering/Veisikringsanlegg#Forsignal_for_planovergangsignal|forsignal for planovergangsignal]].
+
+d) Et hovedsignal som er plassert etter en planovergang på en stasjon skal settes i avhengighet til veisikringsanlegget når togveien frem til hovedsignalet ender foran planovergangen, se <xr id = "Planovergang i togsporene"/>.
+:'''Unntak:'''
+:#Avhengigheten gjelder ikke når hovedsignalet skal vise kjørsignal for et tog som befinner seg mellom hovedsignalet og planovergangen.
+
+e) Et forsignal for hovedsignal skal settes i avhengighet til veisikringsanlegget i de tilfeller planovergangen ligger mellom forsignalet og tilhørende hovedsignal.
+
+<figure id="Planovergang i togsporene">
+[[Bilde:JD550 09 fig007.png|thumb|center|600px|<caption>Planovergang i togsporene</caption>]]
+</figure>
+
+<figure id="Planovergang mellom inn- og utkjørhovedsignalene">
+[[Bilde:JD550 09 fig008.png|thumb|center|600px|<caption>Planovergang mellom inn- og utkjørhovedsignalene.</caption>]]
+</figure>
+
+<figure id="Planovergang midt på stasjonen">
+[[Bilde:JD550 09 fig009.png|thumb|center|600px|<caption>Planovergang midt på stasjonen.</caption>]]
+</figure>
+
+<figure id="Planovergang mellom innkjørhovedsignal og tilhørende forsignal">
+[[Bilde:JD550 09 fig010.png|thumb|center|600px|<caption>Planovergang mellom innkjørhovedsignal og tilhørende forsignal</caption>]]
+</figure>
+
+f) Et dvergsignal som tillater skiftevei over planovergangen skal settes i avhengighet til veisikringsanlegget, slik at dvergsignalet kun kan vise "Skifting tillatt" eller "Varsom skifting tillatt" når planovergangen er sperret.
+
+g) Høye skiftesignal skal ikke settes i avhengighet til veisikringsanlegg.
+
+h) Et togsporsignal eller repetersignal som viser kjørsignal over en planovergang skal settes i avhengighet til veisikringsanlegget slik at signalene kun kan vise kjørsignal når planovergangen er sperret.
+
+==Kjøretillatelses avhengighet til veisikringsanlegg (L2)==
+
+a) Kjøretillatelse for FS og OS over en planovergang med veisikringsanlegg skal kun gis dersom planovergangen er sperret.
+
+b) Eventuelle dvergsignal skal ikke kunne vise "varsom kjøring tillatt" / "kjøring tillatt" over en planovergang med veisikringsanlegg dersom planovergangen ikke er sperret.
+
+c) Et veisikringsanlegg skal ikke kobles inn dersom sluttpunktet for en kjøretillatelse i retning mot planovergangen ligger foran planovergangen.
+
+==Signal mot vei==
+
+===Veisignal===
+
+a) Et veisignal skal vise hvitt lys kun når veisikringsanlegget er i normalstilling.
+
+b) Et veisignal skal vise rødt lys når veisignalet ikke er i normalstilling.
+
+c) Et veisignal som på grunn av feil ikke kan vise hvitt eller rødt lys som samsvarer med veisikringsanleggets forriglingsutrustningen, skal være slukket.
+
+===Lydsignal===
+
+a) Et lydsignal skal varsle når veisikringsanlegget ikke er i normalstilling. 
+:'''Unntak:'''
+:# Dersom veisikringsanlegget er utstyrt med veibommer skal lydsignalet opphøre når bommene er senket.
+
+===Veibomlykt===
+
+a) En veibomlykt skal vise rødt lys når veisignalet ikke er i normalstilling.
+
+==Veibomdrivmaskin==
+
+a) For at en veibom skal kunne senkes til senket endestilling skal veisignalene ikke tillate veitrafikk over planovergangen.
+
+b) For at en veibom skal kunne heves til hevet endestilling skal planovergangsignalene ikke tillate togtrafikk over planovergangen.
+
+c) Veibommer skal senkes en gitt tid (forringingstid) etter at tog som kjører mot planovergangen har koblet inn veisikringsanlegget, se <xr id ="tab:instilling av forringingstid"/>. 
+
+d) For veisikringsanlegg med fire veibommer skal senking av veibommene som står til høyre for veien sett mot planovergangen, igangsettes en gitt tid før de andre veibommene senkes, se <xr id ="tab:instilling av forringingstid"/>. 
+
+e) Veibommer skal heves samtidig.
+
+f) Veibommer skal ikke kunne stoppes når de er under heving.
+
+g) Veibommer som heves skal ikke kunne senkes igjen før etter normal forringingstid.
+
+==Utløsning av veisikringsanlegg==
+
+a) Et veisikringsanlegg skal automatisk utløses når det toget som har koblet inn veisikringsanlegget har passert planovergangen.  
+
+=== Manuell utløsning av veisikringsanlegg (NSS) ===
+
+a) Et veisikringsanlegg skal kunne utløses manuelt fra:
+:# Betjeningsskap på kiosk
+
+b) Et veisikringsanlegg som er satt i avhengighet til et sikringsanlegg bør kunne utløses manuelt fra:
+:# Lokal operatørplass
+
+c) Et veisikringsanlegg som er satt i avhengighet til et sikringsanlegg skal kunne tidsutløses fra:
+:# Lokal operatørplass 
+:# Fjernstyringsanlegg
+
+d) For at et veisikringsanlegg skal kunne tidsutløses skal planovergangen være sperret og forutsetninger for tidsutløsning skal være oppfylt.
+
+Følgende forutsetninger gjelder for et veisikringsanlegg for en planovergang på en stasjon: 
+:# Det har gått 90 sekund etter at tidsutløsning ble igangsatt
+:# Ingen tog- eller skifteveier er sikret på stasjonen
+:# Samtlige sporavsnitt på stasjonen er frie
+:# Stasjonen er ikke frigitt for lokal skifting
+
+Følgende forutsetninger gjelder for et veisikringsanlegg for en planovergang på linjen: 
+:# Det har gått 90 sekund etter at tidsutløsning ble igangsatt
+:# Ingen togveier er sikret over planovergangen.
+:# Samtlige sporavsnitt mellom det signalet som er satt i avhengighet til veisikringsanlegget og det sporavsnittet hvor innkoblingspunktet er plassert skal være frie.
+
+=== Manuell utløsning av veisikringsanlegg (L2) ===
+
+a) Et veisikringsanlegg skal kunne utløses manuelt fra:
+:# Betjeningsskap på kiosk
+:# Lokal operatørplass 
+:# Fjernstyringsanlegg
+
+b)	Løsning for manuell utløsning av veisikringsanlegg skal sikre at ikke noe rullende materiell kan passere over planovergangen uten at den er sperret.
+
+=Plassering av utstyr=
+
+==Signal mot vei==
+
+===Veisignal===
+
+a) Et veisignal skal plasseres til høyre for veien.
+
+b) Et veisignal skal plasseres så nær kjørebanen som mulig, men aldri nærmere enn 0,5 meter fra skulderkant (asfaltkant) eller 1 meter fra kjørebanekant (kantlinje), se <xr id = "fig:Plassering av utstyr for veisikringsanlegg"/>.
+
+c) Et veisignal skal i tillegg plasseres på venstre side av veien når veibredden er større enn 6 meter eller på grunn av andre stedlige siktbehov. 
+
+d) Dersom flere veier grener ut fra planovergangen, skal det settes opp flere signalhoder slik at alle veiene dekkes. 
+
+e) Et veisignal skal plasseres så nære sporet som mulig, men aldri nærmere nærmeste skinnestreng enn 3 meter, <xr id = "fig:Plassering av utstyr for veisikringsanlegg"/>.
+
+f) Trafikkskiltet 138 Jernbanespor (andreaskors) skal plasseres på veisignalets mast.
+
+g) Veisignalene til høyre for veien skal benevnes V1 og V2 med V1 nærmest banens kilometer 0. Veisignal utover disse skal benevnes V3, V5 osv. på samme side av sporet som V1 og V4, V6 osv. på samme side som V2. Veisignal skal ikke merkes, se <xr id = "fig:Plassering av utstyr for veisikringsanlegg"/>.
+
+<figure id="fig:Plassering av utstyr for veisikringsanlegg">
+[[Bilde:JD550 09 fig003.png|thumb|center|600px|<caption>Plassering av utstyr for veisikringsanlegg</caption>]]
+</figure>
+
+===Lydsignal===
+
+a) Et lydsignal skal plasseres til høyre for veien, normalt på veisignalet.
+
+b) Et lydsignal skal i tillegg plasseres på venstre side av veien når stedlige behov tilsier det.
+
+c) Dersom flere veier grener ut fra planovergangen, kan det settes opp flere lydsignal, slik at alle veiene dekkes.
+
+===Veibomlykt===
+
+a) Samtlige bommer skal ha veibomlykt. 
+
+{{lærebokstoff|Ved kun to bommer bør veibomlykten settes opp så langt ut mot midten av veien som mulig, slik at den også kan sees fra den venstre kjørebanen. 
+}}
+
+b) Ved veibomanlegg som er spesielt utsatt for bompåkjørsler kan det settes opp flere veibomlykter på samme bom.
+
+==Veibom==
+
+a) En veibom skal plasseres til høyre for veien. For veisikringsanlegg hvor fire veibommer benyttes, skal det plasseres veibom også til venstre for veien.
+
+b) En veibom skal plasseres så nær veien som mulig, men aldri nærmere enn 0,5 meter fra skulderkant (asfaltkant) eller 1 meter fra kjørebanekant (kantlinje), se <xr id = "fig:Plassering av utstyr for veisikringsanlegg"/>.
+
+c) En halvbom skal plasseres vinkelrett i forhold til veibanen, se <xr id = "fig:Plassering av utstyr for veisikringsanlegg"/>.
+
+d) En helbom skal plasseres parallelt med sporet, se <xr id = "fig:Plassering av utstyr for veisikringsanlegg"/>.
+
+e) En veibom skal plasseres så nære sporet som mulig, men aldri nærmere nærmeste skinnestreng enn 2 meter, se <xr id = "fig:Plassering av utstyr for veisikringsanlegg"/>.
+
+==Signal mot tog==
+
+===Signal for planovergang===
+
+{{lærebokstoff|Signal for planovergang kan være planovergangssignal (NSS) eller skilt for veisikringsanlegg (L2). Det kan også bli behov for optisk signal mot tog på strekninger med L2. Dette er ikke endelig utredet eller konkludert.}}
+a) Et signal for planovergang skal plasseres til høyre for sporet. 
+:'''Unntak:'''
+:# Dersom kravene til signalplassering ikke kan oppfylles til høyre for sporet på en enkeltsporet strekning, kan signalet plasseres til venstre for sporet.
+
+b) Dersom en planovergang krysser to eller flere spor, skal det settes opp ett signal for planovergang for hvert spor.
+
+:'''Unntak:''' Dersom det ikke kan befinne seg to tog eller skift i hvert sitt spor på den ene siden av planovergangen samtidig er det tilstrekkelig med ett signal for planovergang på denne siden.
+
+c) Et signal for planovergang skal plasseres så nær planovergangen som mulig og aldri lengre fra enn 25 meter, se <xr id = "fig:Plassering av utstyr for veisikringsanlegg"/>.
+
+d) Et signal for planovergang skal aldri plasseres nærmere planovergangslemmen enn 0,5 meter, se <xr id = "fig:Plassering av utstyr for veisikringsanlegg"/>.
+
+e) Sikt: 
+* Et planovergangsignal skal plasseres slik at det er synlig i en avstand på ≥ 200 meter. (NSS)
+:'''Unntak:'''
+:# Dersom et hovedsignal står i slik avhengighet til veisikringsanlegg at det ikke kan vise kjørsignal før planovergangen er sperret, kan siktavstanden reduseres til ≥ 100 meter.
+
+* Et skilt for veisikringsanlegg skal plasseres slik at det er synlig i en avstand på ≥ 100 meter. (L2)
+
+f) Et signal for planovergang som gjelder for kjøring i retning med økende kilometer skal benevnes W1 - W3 og signal for planovergang som gjelder for kjøring i retning med avtagende kilometer skal benevnes W2 - W4, se <xr id = "fig:Plassering av utstyr for veisikringsanlegg"/>.
+
+===Forsignal for planovergangsignal (NSS)===
+
+a) Et forsignal for et planovergangsignal skal plasseres til høyre for sporet.
+:'''Unntak:'''
+:# Dersom kravene til signalplassering ikke kan oppfylles til høyre for sporet på en enkeltsporet strekning, kan signalet plasseres til venstre for sporet.
+
+b) Et forsignal for et planovergangssignal skal plasseres slik at det er synlig i minimum 3 sekunder før raskeste tog passerer planovergangsskilt. 
+
+c) Et forsignal for et planovergangssignal skal plasseres slik at det er synlig i minimum 7 sekunder (ubrutt sikt) for raskeste tog, se  Tabell [[Signal/Prosjektering/Lyssignal#siktkravFS|4 Signal/Prosjektering/Lyssignal]].
+
+d) Når et hovedsignal er satt i slik avhengighet til veisikringsanlegget at det kun kan vise kjørsignal når planovergangen er sperret, og hovedsignalet er plassert foran planovergangen, skal forsignalet for et planovergangsignal sløyfes.
+
+e) Dersom planovergangen gjelder som togvei slutt for en togvei, kan kravene til sikt og avstand mellom forsignalet og planovergangen reduseres men avstand fra det punkt hvor forsignalet kan ses til planovergangen skal være ≥ 300 meter.
+
+f) Et forsignal for et planovergangsignal som gjelder for kjøring i retning med økende kilometer skal benevnes WA og forsignal for planovergangsignal som gjelder for kjøring i retning med avtagende kilometer skal benevnes WB, se <xr id = "fig:Plassering av utstyr for veisikringsanlegg"/>.
+
+===Planovergangsskilt (NSS)===
+
+a) For en planovergang med automatisk veisikringsanlegg skal det settes opp et planovergangsskilt, ref. [[Skilt/Plassering av skilt langs sporet]].
+:'''Unntak:'''
+:# Planovergangsskilt skal ikke settes opp i de tilfellene forsignal for planovergangen ikke er satt opp på grunn av at hovedsignalet er satt i slik avhengighet til veisikringsanlegget at det kun kan vise kjørsignal når planovergangen er sperret.
+
+b) {{lærebokstoff|Bremseavstanden B beregnes etter følgende formel:
+
+<math>
+B = \frac{V}{3,6}\cdot\text{BrT}-\frac{1}{6}(a+0,01s)\cdot\text{BrT}^2 + \frac{(\frac{V}{3,6}-\frac{1}{2}(a+0,01s)\text{BrT})^2}{2(a+0,01s)}
+</math>
+
+Det beregnes en bremseavstand <math>B</math> for både persontog og godstog.
+
+<math>V =</math> høyeste skiltede hastighet [km/h] for persontog/godstog + 10 km/h
+
+:For godstog benyttes maksimalt 100 km/h (90 km/h + 10 km/h). Dette skyldes at det gjelder spesielle krav til bremseprosent (og aksellast) for godstog som har lov til å kjøre fortere enn 90 km/h, og de vil derfor ha bremseegenskaper som gjør det mulig å bruke samme bremseavstand.
+
+BrT [tilsetningstid for bremser] <math>= 2</math> sekunder for persontog og 4 sekunder for godstog
+
+a [retardasjon <nowiki>=</nowiki> negativ akselerasjon] <math>= 1,25 m/s^2</math> for persontog og <math>0,7 m/s^2</math> for godstog
+
+<math>s =</math> stigning/fall [‰], fall gir negativt fortegn for <math>s</math>
+
+'''Eksempel:''' 
+
+Høyeste skiltede hastighet [km/h] <math>=</math> 120 km/h
+
+Høyeste hastighet for godstog [km/h] <math>=</math> 90 km/h
+
+Stigning <math>=</math> -10 ‰ (dvs. 10 ‰ fall)
+
+<math>Vp = 120 km/h + 10 km/h = 130 km/h</math>
+
+<math>Vg = 90 km/h + 10 km/h = 100 km/h</math>
+
+<math>B (persontog) = 72,22 m - 0,77 m + 531,43 m = 603 m</math>
+
+<math>B (godstog) = 111,11 m - 1,6 m + 588,65 m = 698 m</math>
+
+<math>B = 698 m</math>
+}}
+
+Planovergangsskilt skal plasseres i en avstand fra planovergangssignalet minst tilsvarende bremseavstand <math>B</math>. Det velges lengste avstand av bremseavstanden for godstog og persontog. Planovergangsskilt kan plasseres på masten til forsignalet for et planovergangsignal.
+
+==Kiosk for veisikringsanlegg==
+
+a) Kiosken skal plasseres så nær planovergangen som mulig, men ikke nærmere enn 3 meter fra veiskulder og nærmeste skinne, se <xr id = "fig:Plassering av utstyr for veisikringsanlegg"/>.
+
+b) Kiosken skal plasseres slik at den ikke hindrer fri sikt fra veien mot linjen.
+
+c) Betjeningsskapet skal plasseres slik på kiosken at den som betjener anlegget har full oversikt over veitrafikken.
+
+==Innkoblingspunkt (NSS)==
+
+===Generelt===
+
+{{lærebokstoff|Ved beregning av avstanden mellom et innkoblingspunkt og en planovergang skal det tas hensyn til skiltede hastighetsendringer på strekningen mellom innkoblingspunktet og det punkt hvor forsignal for planovergangsignalet skal ses.}}
+
+a) Et innkoblingspunkt for veisikringsanlegg skal plasseres slik at varslingstiden er minst 30 sekund for et tog som kjører med strekningens høyeste tillatte kjørehastighet. 
+:'''Unntak:'''
+:# Kravet gjelder ikke når toget som planovergangen kobles inn for befinner seg umiddelbart foran planovergangen og har lav hastighet eller står stille.
+{{lærebokstoff|Med varslingstid menes tiden fra et tog som kjører mot planovergangen har koblet inn veisikringsanlegget til toget er på planovergangen.}}
+
+b) Et innkoblingspunkt for halvbomanlegg skal plasseres slik at varslingstiden ikke overstiger 90 sekund for et tog som kjører med den rutemessig laveste kjørehastighet på strekningen.
+
+c) Et innkoblingspunkt for veisignalanlegg og enkelt veisignalanlegg skal plasseres slik at varslingstiden ikke overstiger 60 sekund for et tog som kjører med lavest rutemessig kjørehastighet.
+
+d) Ved beregning av plasseringen av et innkoblingspunkt skal forringingstider (FrT) som vist i <xr id = "tab:instilling av forringingstid"/> benyttes:
+<figtable id ="tab:instilling av forringingstid">
+{| class="wikitable"
+|+Innstilling av forringingstid (FrT) ved ulike planovergangslengder
+!colspan = "4"|<center>Forringingstid FrT [sek]</center>
+|-
+!rowspan = "2"|Planovergangens lengde<sup>1</sup> [meter] !! rowspan = "2" | Halvbomanlegg !! colspan = "2"| Helbomanlegg
+|-
+! 2 bommer !! 4 bommer<sup>2</sup>
+|-
+|6 - 14 || 7 || 10 || 14
+|-
+|16 || 7 || 11 || 14
+|-
+|18 || 7 || 12 || 14
+|-
+|20 || (Ba bør benyttes) || 13 || 14
+|-
+|≥ 21 || (Ba bør benyttes)|| colspan = "2"|<math>\text{Planovergangens lengde}/1,5</math>
+|}
+</figtable>
+
+1 Planovergangens lengde er avstanden mellom veibommene.
+
+2 Når 7 sekund av forringingstiden har gått skal senking av veibommene på høyre side av veien igangsettes.
+		
+e) Ved beregning av plasseringen av et innkoblingspunkt skal senketiden (SeT) for den typen veibomdrivmaskin som benyttes legges til grunn.
+
+{{lærebokstoff|For et halvbomanlegg hvor 2° ut av hevet endestilling skal benyttes ved beregning av plassering av innkoblingsfelt settes senketiden (SeT) til 1 sekund.}}
+
+===Veisikringsanlegg uten avhengighet til forsignal eller hovedsignal===
+
+a) Et innkoblingspunkt for veisikringsanlegg skal plasseres slik at planovergangen er sperret når et tog med strekningens høyeste tillatte kjørehastighet har minimum 3 sekunder igjen til passering av planovergangsskilt, se <xr id = "Plassering av et innkoblingspunkt ved veibomanlegg uten avhengighet til forsignal eller hovedsignal"/>.
+{{lærebokstoff|For et veibomanlegg skal det ved beregning av avstand fra innkoblingspunkt til planovergangsskilt tas hensyn til forringingstid (FrT), ref. <xr id = "tab:instilling av forringingstid"/>, senketid for veibommene (SeT) og hastighet for et tog med høyeste tillatte kjørehastighet, samt krav til bremseavstand. Formel for beregning av bremseavstand <math>B</math> er angitt i avsnitt [[Signal/Prosjektering/Veisikringsanlegg#Planovergangsskilt|planovergangsskilt]]. Formel for beregning av avstand <math>A</math> er som følger:
+
+
+<math>A = B +\frac{V}{3,6}\cdot(\text{FrT}+\text{SeT}+3)</math>, <math>V = \text{hastighet}[km/h]</math>
+}}
+<figure id="Plassering av et innkoblingspunkt ved veibomanlegg uten avhengighet til forsignal eller hovedsignal">
+[[Bilde:JD550 09 fig004.png|thumb|center|600px|<caption>Plassering av et innkoblingspunkt ved veibomanlegg uten avhengighet til forsignal eller hovedsignal</caption>]]
+</figure>
+
+===Veisikringsanlegg med avhengighet til forsignal eller hovedsignal===
+
+a) Når et forsignal eller et hovedsignal er satt i avhengighet til et veisikringsanlegg skal innkoblingspunktet plasseres slik at planovergangen er sperret i tilstrekkelig tid til at siktkravene oppfylles for signalet ”Vent kjør” eller ”Vent kjør” (med avvik) i forsignalet for et tog med strekningens høyeste tillatte kjørehastighet, se <xr id = "Plassering av et innkoblingspunkt ved veibomanlegg med avhengighet til forsignal eller hovedsignal"/>.
+
+{{lærebokstoff|For et veibomanlegg skal det ved beregning av avstand fra innkoblingspunktet til forsignalet tas hensyn til forringingstid (FrT), ref.<xr id = "tab:instilling av forringingstid"/>, senketid (SeT) og hastighet for hurtigste tog, samt krav til siktavstand (se [[Signal/Prosjektering/Lyssignal]]). Formel for beregning av avstand <math>A</math> er som følger:
+
+<math>A = \frac{V}{3,6}\cdot(\text{FrT}+\text{SeT})+\text{siktavstand}</math>, <math>V = \text{hastighet}[km/h]</math>
+}}
+ 
+<figure id="Plassering av et innkoblingspunkt ved veibomanlegg med avhengighet til forsignal eller hovedsignal">
+[[Bilde:JD550 09 fig005.png|thumb|center|600px|<caption>Plassering av et innkoblingspunkt ved veibomanlegg med avhengighet til forsignal eller hovedsignal.</caption>]]
+</figure>
+
+=== Veisikringsanlegg på strekning utrustet med FATC ===
+
+a) På strekninger utrustet med FATC skal det plasseres en balisegruppe ved planovergangsskiltet (se avsnitt 3.3.3 b)). Balisegruppen skal kodes i henhold til avsnitt 3.12 i [[Signal/Prosjektering/ATC]].
+
+{{lærebokstoff|Ved ombygging til FATC er det ikke nødvendig å flytte innkoblingsfelt som er i henhold til dagens krav. Dersom innkoblingsfelt skal prosjekteres eller flyttes anbefales det at det legges til minimum ett sekunds kjøretid på bremseavstanden ved plassering av planovergangsskiltet / balisegruppen.}}
+
+==Utløsningspunkt==
+
+a) Et utløsningspunkt for et veisikringsanlegg skal plasseres slik at utløsningen starter når siste aksel på det rullende materiellet som skal løse ut veisikringsanlegget har passert planovergangen med minimum 5, maksimum 24 meter.
+
+=Betjening og Betjeningsutstyr=
+
+==Betjening fra betjeningsskap på kiosk==
+
+a) Et veisikringsanlegg skal kunne betjenes fra betjeningsskapet.
+
+b) Fra betjeningsskapet på kiosk skal følgende betjeningsmuligheter finnes: 
+# Innkobling av veisikringsanlegget
+# Utløsning av veisikringsanlegget når det er innkoblet fra betjeningsskapet
+# Nødutløsning av veisikringsanlegget når det er koblet inn av et tog 
+# Stoppe senking av bom som er på vei fra hevet til senket endestilling
+# Hindre utløsning av veisikringsanlegget slik at tog som passerer planovergangen ikke løser ut veisikringsanlegget
+# Skru på/av veisikringsanlegget 
+# Skifte objektsikringene i veisikringsanlegget (dersom slike finnes)
+
+{{lærebokstoff|Dersom veisikringsanlegget er koblet inn fra betjeningsskapet, og et tog passerer tilhørende innkoblingspunkt skal det ikke være mulig å utløse veisikringsanlegget (j.fr. pkt 2).}}
+
+c) Utstyr for nødutløsning skal være utført slik at nødutløsningen ikke kan igangsettes utilsiktet.
+
+d) Ved utkobling av veisikringsanlegget skal veisignalet slukkes og strøm til veibomdrivmaskiner kobles fra.
+
+==Lokal operatørplass==
+
+a) Et veisikringsanlegg som er satt i avhengighet til et sikringsanlegg skal kunne betjenes fra lokal operatørplass.
+
+b) Fra lokal operatørplass skal følgende betjeningsmuligheter finnes: 
+:1. Innkobling av veisikringsanlegget 
+:2. Utløsning av veisikringsanlegget når det er innkoblet fra lokal operatørplass
+
+:{{lærebokstoff|3. Anleggene lages normalt uten denne betjeningsmuligheten, men ligger planovergangen slik at trafikken over overgangen kan observeres fra lokal operatørplass, skal det være mulig å heve bommene med egen ordre.}}
+:4.  Hindre utløsning av veisikringsanlegget slik at tog som passerer planovergangen ikke løser ut veisikringsanlegget
+:5. Utløsning av veisikringsanlegget ved hjelp av tidsutløsning
+
+{{lærebokstoff|Dersom veisikringsanlegget er koblet inn fra lokal operatørplass, og et tog passerer tilhørende innkoblingspunkt skal det ikke være mulig å utløse veisikringsanlegget (j.fr. pkt 2).}}
+
+==Fjernstyringsanlegg==
+
+a) Et veisikringsanlegg som er satt i avhengighet til et sikringsanlegg skal kunne betjenes fra fjernstyringsanlegget.
+
+b) Fra fjernstyringsanlegget skal følgende betjeningsmuligheter finnes: 
+:# Innkobling av veisikringsanlegget 
+:# Utløsning av veisikringsanlegget ved hjelp av tidsutløsning
+
+c) Når veisikringsanlegget ligger på et stasjonsområde skal veisikringsanlegget kunne betjenes fra fjernstyringsanlegget.
+
+==Indikeringer==
+
+a) Alle veisikringsanlegg skal indikeres hos togleder eller på lokal operatørplass med døgnbemanning.
+
+b) Et veisikringsanlegg  som er satt i avhengighet til et sikringsanlegg skal indikeres i både fjernstyringsanlegget og i lokalt betjeningsanlegg.
+
+c) Et veisikringsanlegg skal kunne indikere følgende:
+:# Veisikringsanlegget er i normalstilling
+:# Planovergang er sperret 
+:# Veisikringsanlegget har inntatt en feiltilstand som påvirker normal togfremføring
+:::'''Unntak:''' For eksisterende anlegg som ikke har mulighet til deteksjon av feiltilstander er det tilstrekkelig at anlegget kan indikere at det har vært ute av normalstilling i > 5 minutter.
+
+= Tekniske krav=
+
+==Signal mot vei==
+
+===Veisignal===
+<figure id="Veisignal - Signalbilder">
+[[Bilde:JD550 09 fig011.png|thumb|center|350px|<caption>Veisignal - Signalbilder</caption>]]
+</figure>
+
+<figure id="Veisignal - Signalbilder">
+[[Bilde:JD550 09 fig011b.svg|thumb|center|350px|<caption>Veisignal - Signalbilder</caption>]]
+</figure>
+
+a) Et veisignal skal være utformet i samsvar med skiltforskriften, og kunne vise:
+:# Ett eller to røde blinklys som angir at trafikanten skal stanse ved stopplinjen eller i betryggende avstand foran signalet. Signalet vises enten med blinklys i rød lampe VS1 eller med vekselblink i røde lamper VS1a og VS1b.
+:# Hvitt blinklys som angir at planovergangen kan passeres i samsvar med trafikkreglenes bestemmelser. Blinklys i hvit lampe VS2.
+
+b) Et veisignal skal vise signalbilde i samsvar med status til forriglingsutrustningen.
+
+c) Et veisignal skal vise fast lys dersom blinklys ikke kan vises.
+
+d) En feil som fører til at lyskilder ikke lyser i et veisignal skal detekteres av forriglingsutrustningen.
+
+e) Signalbildet i et veisignal skal kunne ses og oppfattes entydig på 250 meters avstand.
+
+f) Lyskildene skal ha signalfarge i henhold til [DIN 6163] og lysstyrke målt i optisk akse som vist i <xr id = "veisignal - signalfarge og lysstyrke"/>:
+
+<figtable id ="veisignal - signalfarge og lysstyrke">
+{| class="wikitable"
+|+ Veisignal - signalfarge og lysstyrke
+|-
+! rowspan = "2"|Signalfarge !! colspan = "2"| Dagslys [cd] !! colspan = "2"| Nattlys [cd]
+|-
+! Minimum !! Maksimum !! Minimum !! Maksimum
+|-
+| Rød E || 200 || 800 || 80 || 480
+|-
+| Hvit E || 200 || 800 || 80 || 480
+|}
+</figtable>
+
+{{lærebokstoff|Ref. Håndbok 062 Trafikksikkerhetsutstyr Del 3: Trafikksignalanlegg og EN 12368.}}
+
+g) Et veisignal skal oppfylle krav til lysspredning som angitt i [[Signal/Prosjektering/Lyssignal]].
+
+h) Et veisignal skal for hvitt lys ha blinkfrekvens på 45 blink/minutt og lys/mørke-forhold på 1:3.
+
+i) Et veisignal skal for rødt lys ha blinkfrekvens på 90 blink/minutt og lys/mørke-forhold på 1:1.
+
+j) Lyskildene skal ha en lysåpning på 200 ± 10 mm.
+
+k) Avstanden senter - senter mellom lyskildene skal være 350 +10/-80 mm.
+
+l) Et veisignal som står i dagslys skal ha en skyggeskjerm rundt lyskildene for skjerming mot sollys.
+
+m) Senter av den øvre lyskilden (rødt lys) i et veisignal skal være ca. 2,1 meter over kjørebane.
+
+n) Hele masten eller den flaten som vender mot veitrafikken skal markeres med røde og hvite felter av 500 mm lengde.
+
+o) Trafikkskilt 138 Jernbanespor (andreaskors) skal monteres på veisignalets mast.
+# Ca. 2,8 meter over vei for ”andreaskors” (ett spor)
+# Ca. 3,0 meter over vei for ”andreaskors” (flere spor)
+
+<figure id="Veisignal">
+[[Bilde:JD550 09 fig012.png|thumb|center|600px|<caption>Veisignal</caption>]]
+</figure>
+
+===Lydsignal===
+
+a) Et lydsignal skal ha (justerbart) volum i området 74 dB(A) til 92 dB(A) målt på 2 meters avstand fra lydkilde i kildens midtlinje.
+
+===Veibomlykt===
+
+<figure id="Veibomlykt">
+[[Bilde:JD550 09 fig013.png|thumb|center|600px|<caption>Veibomlykt</caption>]]
+</figure>
+
+a) En veibomlykt skal:
+# Være slukket når veisikringsanlegg er i normalstilling.
+# Vise rødt blinklys når veisikringsanlegg ikke er i normalstilling.
+
+b) En veibomlykt skal vise signalbilde i samsvar med status til forriglingsutrustningen.
+
+c) En veibomlykt skal vise fast lys dersom blinklys ikke kan vises.
+
+d) En feil som fører til at lyskilden ikke lyser i en veibomlykt skal detekteres av forriglingsutrustningen.
+
+e) Signalbildet i en veibomlykt skal kunne ses og oppfattes entydig på 200 meters avstand.
+
+f) Lyskilden skal ha signalfarge i henhold til [DIN 6163] og lysstyrke målt i optisk akse som vist i <xr id = "tab:Veibomlykt - signalfarge og lysstyrke"/>:
+
+<figtable id ="tab:Veibomlykt - signalfarge og lysstyrke">
+{| class="wikitable"
+|+ Veibomlykt - signalfarge og lysstyrke
+|-
+! rowspan = "2"|Signalfarge !! colspan = "2"| Dagslys [cd] !! colspan = "2"| Nattlys [cd]
+|-
+! Minimum !! Maksimum !! Minimum !! Maksimum
+|-
+| Rød E || 200 || 800 || 80 || 480
+|}
+</figtable>
+
+{{lærebokstoff|Ref. Håndbok 062 Trafikksikkerhetsutstyr Del 3: Trafikksignalanlegg og EN 12368.}}
+
+g) En veibomlykt skal oppfylle krav til lysspredning som angitt i [[Signal/Prosjektering/Lyssignal]].
+
+h) Lyskilden skal ha blinkfrekvens på 90 blink/minutt og lys/mørke-forhold på 1:1.
+
+i) Lyskilden skal ha en lysåpning på 130 ± 10 mm.
+
+j) En veibomlykt som står i dagslys skal ha en skyggeskjerm rundt lyskilden for skjerming mot sollys.
+
+k) Ved flere veibomlykter på en veibom bør disse blinke vekselvis.
+
+==Veibom og veibomdrivmaskin==
+
+<figure id="Eksempel på veibom">
+[[Bilde:JD550 09 fig014.png|thumb|center|600px|<caption>Eksempel på veibom</caption>]]
+</figure>
+
+===Generelt===
+
+a) Veibommer skal sperre for veitrafikk over planovergangen.
+# Halvbom skal sperre halve kjørebanen, og det skal være plass til at kjøretøy på vei ut fra planovergangen kan passere en senket bom
+# Helbom skal sperre hele kjørebanen
+
+b) Veibommer skal kunne heves og senkes manuelt (ved håndkraft).
+
+===Veibom===
+
+a) En veibom skal være farget gulgrønn fluorescerende, og ha røde reflekterende felter på 75 (minimum) x 500 mm med 500 mm mellomrom på siden mot veitrafikken. De reflekterende feltene kan ha samme bredde som bommen.
+
+b) En veibom skal ha en bredde på 100 - 200 mm.
+
+c) En veibom skal kunne ha lengde fra 4 til 10,5 meter.
+
+d) En veibom med lengde 5 meter eller kortere skal ikke ha veibombein.
+
+e) Dersom et veibombein benyttes skal dette ikke komme i konflikt med veitrafikken når veibommen er i hevet endestilling.
+
+f) Kabel til veibomlykt bør kunne føres fra bomfestet fram til lykten innvendig i veibommen. 
+
+g) En veibom skal være fri for grader, utspring eller annet som kan medføre at personer kan komme til skade ved berøring av veibommen.
+
+h) I hevet endestilling skal veibommen være konstruert slik at den umuliggjør klatring.
+
+i) For å lette håndtering ved montering og reparasjoner skal veibommen bygges opp av elementer på minst 2,5 meter og maksimalt 5 meter lengder.
+
+j) En veibom skal være oppbygd av materialer som ikke er elektrisk ledende.
+
+k) En veibom skal være oppbygd av materialer som ikke i vesentlig grad påvirkes av ultrafiolett stråling (sollys).
+
+l) En veibom skal være oppbygd av materiale som ikke trekker til seg vann.
+
+m) En veibom skal være oppbygd av materialer som er vedlikeholdsfrie.
+
+n) En veibom skal være oppbygd av materialer slik at følgende styrkekrav tilfredsstilles i senket endestilling:
+# En vertikal kraft på 400 N på veibommen skal ikke føre til mer enn 10 cm nedbøyning.
+# En horisontal kraft på 400 N vinkelrett på veibommen skal ikke føre til et sideutslag på mer enn 10 cm.
+# Dersom veibombein eller anslag fjernes skal nedbøyningen i spissen være maksimalt 10 cm.
+
+o) En veibom skal være oppbygd slik at en personbil skal kunne kjøre gjennom veibommen uten å bli vesentlig hindret.
+
+p) Bommer på et helbomanlegg skal mot sporet være utstyrt med skilt nr. OB.800080-000 "Skilt for plassering på innside av bom ved planovergang".
+
+===Veibomdrivmaskin===
+
+a) En veibomdrivmaskin skal ha tilstrekkelig kraft til å heve og senke veibommen under alle normale driftsforhold.
+
+b) En veibomdrivmaskin skal ikke ha så stor kraft at den deformerer veibommen ved unormale driftsforhold.
+
+c) En veibomdrivmaskin skal ha trinnløs justering av veibommens posisjon i hevet og senket endestilling.
+
+d) Heving og senking av veibommen skal skje skånsomt slik at veibommen med tilhørende utstyr ikke skades. 
+
+e) Heving og senking av veibommen skal skje i løpet av minimum 6 sekunder og maksimum 10 sekunder.
+
+f) En veibomdrivmaskin skal være konstruert slik at heving og senking av veibommen skal kunne gjøres manuelt.
+
+g) En veibomdrivmaskin skal være beskyttet mot skader ved overbelastning under heving og senking.
+
+h) En veibomdrivmaskin skal holde veibommen i hevet og senket endestilling med en holdekraft på ≥ 2 kN. 
+
+i) En veibomdrivmaskin skal kunne justeres slik at en punktlast ytterst på veibommen på 10 kg hindrer heving av veibommen.
+
+j) Det skal være kontroll av posisjon av veibommen i hevet endestilling, 2° ut av hevet endestilling og i senket endestilling.
+
+k) Posisjonene hevet endestilling, 2° ut av hevet endestilling og senket endestilling skal kunne justeres trinnløst eller i trinn på 0,5°.
+
+l) En veibomdrivmaskin skal når veibommen er i hevet endestilling, 2° ut av hevet endestilling og i senket endestilling kunne justeres ± 10°.
+
+m) De deler av veibomdrivmaskinen som utfører omlegging, låsing og kontroll av veibommen og som er justerbare skal være utført slik at justeringen ikke kan endres utilsiktet. 
+
+n) Ved manuell heving og senking av en veibom skal veibommen ikke kunne heves eller senkes automatisk.
+
+==Signal mot tog (NSS)==
+
+===Planovergangsignal===
+
+<figure id="fig:Planovergangsignal - signalbilder">
+[[Bilde:JD550 09 fig015.png|thumb|center|350px|<caption>Planovergangsignal - signalbilder</caption>]]
+</figure>
+
+a) Et planovergangsignal skal kunne vise:
+# Signal 55, ”Stopp foran planovergang”. Blinklys i rød lampe WS1.
+# Signal 56 ”Planovergang kan passeres”. Blinklys i hvit lampe WS2.
+
+b) Et planovergangsignal skal vise signalbilde i samsvar med status til forriglingsutrustningen.
+
+c) Et planovergangsignal skal vise fast lys dersom blinklys ikke kan vises.
+
+d) En feil som fører til at lyskilder ikke lyser i et planovergangsignal skal detekteres av forriglingsutrustningen.
+
+e) Signalbilde i et planovergangsignal skal kunne ses og oppfattes entydig på 250 meters avstand.
+
+f) Lyskildene skal ha signalfarge i henhold til [DIN 6163] og lysstyrke målt i optisk akse som vist i <xr id = "tab:planovergangsignal1"/>:
+
+<figtable id="tab:planovergangsignal1">
+{| class="wikitable"
+|+ Planovergangsignal - signalfarge og lysstyrke
+|-
+! rowspan = "2"|Signalfarge !! colspan = "2"| Dagslys [cd] !! colspan = "2"| Nattlys [cd]
+|-
+! Minimum !! Maksimum !! Minimum !! Maksimum
+|-
+| Rød E || 500 || 1400 || 200 || 840
+|-
+| Hvit E || 500 || 1400 || 200 || 840
+|}
+</figtable>
+
+g) Et planovergangsignal skal oppfylle krav til lysspredningen som angitt i [[Signal/Prosjektering/Lyssignal]].
+
+h) Et planovergangsignal skal vise rødt blinklys (45 blink/minutt og lys/mørke-forhold = 1:3) når planovergangen ikke er sperret.
+
+:'''Unntak:''' Ved endringer i veisikringsanlegg kan eksisterende funksjonalitet, med blinkfrekvens 90 blink/min og lys/mørke-forhold 1:1 fra planovergangen er koblet inn til planovergangen er sperret, beholdes.
+
+i) Et planovergangsignal skal vise hvitt blinklys (90 blink/minutt og lys/mørke-forhold = 1:1) når planovergangen er sperret.
+
+j) Lyskildene skal ha en lysåpning på 200 ± 10 mm.
+
+k) Avstanden senter - senter mellom lyskildene skal være 350 ± 10 mm.
+
+l) Et planovergangsignal som står i dagslys skal ha bakgrunnsskjerm.
+
+m) Bakgrunnskjermen skal ha en bredde på 500 ± 10 mm og høyde på 850 ± 10 mm.
+
+n) Et planovergangsignal som står i dagslys skal ha en skyggeskjerm rundt lyskildene for skjerming mot sollys. 
+
+o) Et planovergangsignal skal plasseres på en egen frittstående mast.
+
+p) Senter av den nedre lyskilden (hvitt lys) i planovergangsignalet skal være ca. 2,2 meter over skinnetopp.
+
+q) Et planovergangsignal skal ha merkeskilt.
+
+r) Senter av merkeskiltet skal plasseres på signalmasten minimum 1,4 meter over skinnetopp.
+
+s) Et planovergangsignal skal utrustes med en stige/plattform slik at nødvendig vedlikehold kan gjennomføres.
+
+t) Signalhodet skal kunne justeres trinnløst i horisontalplanet inntil ± 20°.
+
+u) Signalhodet skal kunne justeres i trinnløst i vertikalplanet inntil ± 5°.
+
+<figure id="fig:Planovergangsignal">
+[[Bilde:JD550 09 fig016.png|thumb|center|350px|<caption>Planovergangsignal/forsignal for planovergangsignal</caption>]]
+</figure>
+
+===Forsignal for planovergangsignal===
+
+<figure id="fig:Forsignal for planovergangsignal - signalbilder">
+[[Bilde:JD550 09 fig017.png|thumb|center|350px|<caption>Forsignal for planovergangsignal - signalbilder</caption>]]
+</figure>
+
+a) Et forsignal for planovergangsignal skal kunne vise:
+# Signal 57, ”Planovergangsignal viser stopp foran planovergang”. Blinklys i fiolett lampe WFS1.
+# Signal 58, ”Planovergangsignal viser at planovergangen kan passeres”. Blinklys i hvit lampe WFS2.
+
+b) Et forsignal for et planovergangsignal skal vise signalbilde i samsvar med status til forriglingsutrustningen.
+
+c) Et forsignal for et planovergangsignal skal vise fast lys dersom blinklys ikke kan vises.
+
+d) En feil som fører til at lyskilder ikke lyser i et planovergangsignal skal detekteres av forriglingsutrustningen.
+
+e) Signalbildet i forsignalet for et planovergangsignal skal kunne ses og oppfattes entydig på 250 meters avstand.
+
+f) Lyskildene skal ha signalfarge i henhold til [DIN 6163] (fiolett ikke definert) og lysstyrke målt i optisk akse som vist i <xr id = "tab:planovergangsignal"/>:
+
+<figtable id="tab:planovergangsignal">
+{| class="wikitable"
+|+ Planovergangsignal - signalfarge og lysstyrke
+|-
+! rowspan = "2"|Signalfarge !! colspan = "2"| Dagslys [cd] !! colspan = "2"| Nattlys [cd]
+|-
+! Minimum !! Maksimum !! Minimum !! Maksimum
+|-
+| Fiolett || 500 || 1400 || 200 || 840
+|-
+| Hvit E || 500 || 1400 || 200 || 840
+|}
+</figtable>
+
+g) Et forsignal for planovergangsignal skal oppfylle krav til lysspredningen som angitt i [[Signal/Prosjektering/Lyssignal]].
+
+h) Et forsignal for et planovergangsignal skal vise fiolett blinklys når planovergangsignalet viser rødt blinklys, med samme blinkfrekvens og lys/mørke-forhold som planovergangsignalet.
+
+i) Et forsignal for et planovergangsignal skal vise hvitt blinklys når planovergangsignalet viser hvitt blinklys, med samme blinkfrekvens og lys/mørke-forhold som planovergangsignalet.
+
+j) Lyskildene skal ha en lysåpning på 200 ± 10 mm.
+
+k) Avstanden senter - senter mellom lyskildene skal være 350 ± 10 mm.
+
+l) Et forsignal for et planovergangsignal som står i dagslys skal ha bakgrunnsskjerm.
+
+m) Bakgrunnskjermen skal ha en bredde på 500 ± 10 mm og høyde på 850 ± 10 mm.
+
+n) Et forsignal for planovergangssignal som står i dagslys skal ha en skyggeskjerm rundt lyskildene for skjerming mot sollys. 
+
+o) Et forsignal for et planovergangssignal skal plasseres på en egen frittstående mast.
+
+p) Senter av den nedre lyskilden (hvitt lys) i forsignalet for et planovergangssignal skal være ca. 2,2 meter over skinnetopp.
+
+q) Et forsignal for et planovergangsignal skal ha merkeskilt.
+
+r) Senter av merkeskiltet skal plasseres på signalmasten minimum 1,4 meter over skinnetopp.
+
+s) Et forsignal for et planovergangsignal skal utrustes med en stige/plattform slik at nødvendig vedlikehold kan gjennomføres.
+
+t) Signalhodet skal kunne justeres trinnløst i horisontalplanet inntil ± 20°.
+
+u) Signalhodet skal kunne justeres i trinnløst i vertikalplanet inntil ± 5°.
+
+==Signal mot tog (L2)==
+
+Under utarbeidelse.
+
+==Kiosk for veisikringsanlegg==
+
+{{lærebokstoff|Kiosk er den vanlige betegnelsen på "relehuset" i et veisikringsanlegg. Kiosken inneholder forriglingsutrustning, strømforsyning (batterier med mer) og utvendig betjeningsskap, samt utstyr for håndbetjening av anlegget.}}
+
+{{lærebokstoff|Det monteres to skap på kiosken, ett for betjeningsapparatet og ett for oppbevaring av sperremateriell. I skap for sperremateriell oppbevares røde flagg med tau for sperring av veien, et rødt og et hvitt flagg for signalering mot tog, skilt "Signal ute av drift", sikringer og frikoplingsnøkkel for veibom. I beskyttelseskap for betjening monteres betjeningsutstyr og her bør også instruks for betjening av anlegget plasseres.}}
+
+=Varsellampe=
+
+==Systemdefinisjon==
+
+<figure id="Systemdefinisjon varsellampe">
+[[Bilde:JD550 09 fig018.png|thumb|center|600px|<caption>Systemdefinisjon varsellampe</caption>]]
+</figure>
+
+==Plassering av utstyr==
+
+a) En varsellampe skal plasseres slik at den er godt synlig fra veien og slik at den blir minst mulig synlig fra linjen.
+
+b) En varsellampe skal plasseres så nære sporet som mulig, men aldri nærmere nærmeste skinnestreng enn 3 meter.
+
+c) En varsellampe skal plasseres så nær kjørebanen som mulig, men aldri nærmere enn 0,5 meter fra skulderkant (asfaltkant) eller 1 meter fra kjørebanekant (kantlinje).
+
+==Tekniske krav==
+
+===Generelt===
+
+a) Varsellampen skal i normalstilling vise hvitt fast lys når tilhørende sporavsnitt er frie.
+
+b) Varsellampen skal slukke når ett eller flere av varslingsområdets sporavsnitt er belagt.
+
+{{lærebokstoff|Varsellampen registrerer ikke togets kjøreretning og forblir slukket en tid etter at toget har passert planovergangen.}}
+
+c) Varsellampen skal slukke slik at varslingstiden er minst 60 sekund for tog som kjører med strekningens høyeste kjørehastighet. 
+{{lærebokstoff|Dersom planovergangen ligger i forbindelse med stasjon bør varsling og varslingstid begrenses ved å legge inn enkle avhengigheter til sikringsanlegget.}}
+
+===Varsellampe===
+
+<figure id="Varsellampe">
+[[Bilde:JD550 09 fig019.png|thumb|center|350px|<caption>Varsellampe</caption>]]
+</figure>
+
+a) Lys i varsellampen skal kunne ses og oppfattes entydig på 150 meters avstand.
+
+b) Lyskilden skal ha signalfarge i henhold til [DIN 6163] og lysstyrke målt i optisk akse som vist i <xr id = "tab:varsellampe"/>:
+
+<figtable id ="tab:varsellampe">
+{| class="wikitable"
+|+ Varsellampe - signalfarge og lysstyrke
+|-
+! rowspan = "2"|Signalfarge !! colspan = "2"| Dagslys [cd] !! colspan = "2"| Nattlys [cd]
+|-
+! Minimum !! Maksimum !! Minimum !! Maksimum
+|-
+| Hvit E || 200 || 800 || 80 || 480
+|}
+</figtable>
+
+{{lærebokstoff|Ref. Håndbok 062 Trafikksikkerhetsutstyr Del 3: Trafikksignalanlegg og EN 12368.}}
+
+c) En varsellampe skal være rundtstrålende (360°).
+
+d) En varsellampe skal ha en bredde på 150 ± 10 mm og høyde på 200 ± 10 mm.
+
+e) En varsellampe skal plasseres på en ca. 2 meter høy mast.
+
+=Varsellys (NSS)=
+
+{{lærebokstoff|Et varsellys kan benyttes der annen utvidet sikring ikke er aktuelt, for å sikre trafikk på vei som krysser spor på en stasjon eller driftsbanegård, eller annen varsling som er ønskelig i forhold til bestemt personale. Ved varsling for vei, skal denne være spesielt merket og kun brukes av infrastrukturforvalters eller operatørens personale, som har fått instruksjon i varsellysets virkemåte.}}
+
+==Systemdefinisjon==
+
+<figure id="fig:Systemdefinisjon varsellys">
+[[Bilde:JD550 09 fig020.png|thumb|center|600px|<caption>Systemdefinisjon varsellys</caption>]]
+</figure>
+
+==Plassering av utstyr==
+
+a) Et varsellys skal plasseres slik at den lyser langs veien eller det området som skal varsles, og slik at den blir minst mulig synlig fra linjen.
+
+==Tekniske krav==
+
+===Generelt===
+
+a) Et varsellys skal:
+# Være slukket når det ikke er stilt togvei/skiftevei over planovergangen eller inn i det området som skal varsles.
+# Vise hvitt blinkende lys når det stilles togvei/skiftevei over planovergang.
+
+b) Et varsellys skal kunne slukkes av egnede sporavsnitt eller gjøres tidsavhengig, men skal godkjennes spesielt i hver enkelt tilfelle.
+
+c) Hovedsignal/dvergsignal skal ikke kunne vises for tog- eller skiftevei dersom varsellys ikke viser hvitt blinkende lys.
+
+d) Et varsellys bør ha lampe med dobbeltfilament og lampekontroll og det skal da gis alarm/indikering ved feil på første filament (hovedfilament).
+
+e) Et varsellys skal ha indikering i lokal operatørplass.
+
+f) Det skal gis alarm ved feil på varsellyset.
+
+===Varsellys===
+
+<figure id="fig:Varsellys">
+[[Bilde:JD550 09 fig021.png|thumb|center|350px|<caption>Varsellys</caption>]]
+</figure>
+
+a) Lys i varsellyset skal kunne ses og oppfattes entydig på 150 meters avstand.
+
+b) Lyskilden skal ha signalfarge i henhold til [DIN 6163] og lysstyrke målt i optisk akse som vist i <xr id = "tab:varsellys"/>:
+
+<figtable id = "tab:varsellys">
+{| class="wikitable"
+|+ Varsellys - signalfarge og lysstyrke
+|-
+! rowspan = "2"|Signalfarge !! colspan = "2"| Dagslys [cd] !! colspan = "2"| Nattlys [cd]
+|-
+! Minimum !! Maksimum !! Minimum !! Maksimum
+|-
+| Hvit E || 200 || 800 || 80 || 480
+|}
+</figtable>
+
+c) Lyskilden skal kunne lyse med blinklys med blinkfrekvens 60 blink/minutt og lys/mørke forhold 60/40.
+
+d) Lyskildene skal ha en lysåpning på 130 ± 10 mm.
+
+e) Et varsellys skal ha bredde og høyde på 180 ± 10 mm .
+
+f) Et varsellys skal plasseres slik at signalhodet er minimum 1,5 meter over skinnetopp.
+
+=RAMS-krav=
+
+==Sikkerhet==
+
+a) Veisikringsanleggets forriglingsutrustning skal ha sikkerhetskritiske funksjon SKF<sub>VS</sub>1:
+
+''Veisikringsanleggets forriglingsutrustning skal sette korrekte utgangssignaler/sende korrekte data til styrte objekter, gitt korrekte innsignaler/data inn til forriglingsutrustningen.''
+
+Delfunksjoner: 
+* Veisikringsanleggets forriglingsutrustningen skal ikke gi mindre restriktive beskjeder til lys og lydsignalene enn det som er tillatt ut fra forutsetningene.
+* Veisikringsanleggets forriglingsutrustningen skal ikke igangsette veibommenes drivmaskiner uten at betingelsene er oppfylt.
+
+b) THR for veisikringsanleggets forriglingsutrustning skal være lik 10<sup>-8</sup> feil/time for hele forriglingsutrustningen.
+
+c) Lyssignal mot vei og tog skal ha sikkerhetskritisk funksjon SKF<sub>VS</sub>2:
+
+''Et lyssignal skal vise korrekt signalbilde mot vei og tog og gi korrekt informasjon til veisikringsanleggets forriglingsutrustningen om status på lyssignalet.''
+
+Delfunksjoner:
+* Et lyssignal skal vise korrekt signalbilde mot tog og vei ut fra gitte betingelser.
+* Et lyssignal skal gi korrekt informasjon til veisikringsanleggets forriglingsutrustning om status på signalet.
+
+d) THR for lyssignal mot vei og tog skal være lik 10<sup>-8</sup> feil/time for hele lyssignalet.
+
+e) Systemet for deteksjon av rullende materiell ved innkobling og utløsning av veisikringsanlegget skal ha sikkerhetskritiske funksjon SKF<sub>VS</sub>3:
+
+''Et system for togdeteksjon skal detektere et fritt sporavsnitt og gi korrekt informasjon om belagt eller fritt sporavsnitt til veisikringsanleggets forriglingsutrustningen.''
+
+Delfunksjoner:
+* Et system for togdeteksjon skal sikkert detektere om et sporavsnitt er fritt for tog.
+* Et system for togdeteksjon skal gi korrekt informasjon om sporavsnittet er belagt eller fritt til veisikringsanleggets forriglingsutrustning.  
+
+f) THR for deteksjon av rullende materiell ved innkobling og utløsning av veisikringsanlegget skal være lik 10<sup>-8</sup> feil/time for hele utrustningen for togdeteksjon.
+
+g) En veibomdrivmaskin skal ha sikkerhetskritiske funksjon SKF<sub>VS</sub>4:
+
+''En veibomdrivmaskin skal gi korrekt informasjon om posisjon og låsestatus til veisikringsanleggets forriglingsutrustning.''
+
+h) THR for en veibomdrivmaskin skal være lik 10<sup>-7</sup> feil/time.
+
+i) Et veisikringsanlegg skal være konstruert for å minimum ha kontroll på følgende farer:
+* Feilaktig informasjon om status til veisikringsanlegget til trafikanter.
+* Feilaktig informasjon om status til veisikringsanlegget til tog.
+
+j) Et veisikringsanlegg skal være slikt konstruert at alle feil i systemet som kan føre til en farlig situasjon, skal medføre at systemet inntar en sikker tilstand som forhindrer dette.
+
+==Tilgjengelighet==
+
+{{lærebokstoff|Krav til tilgjengelighet er gitt for veisikringsanleggets enkelte delsystemer. Det er ikke gitt tilgjengelighetskrav for et sammenstilt veisikringsanlegg.}}
+
+a) Veisikringsanleggets forriglingsutrustning skal ha en tilgjengelighet på A ≥ 99.99975 %, det vil si en akkumulert utilgjengelighet UA ≤ 1,3 minutter pr. år.
+
+b) Signal mot vei og signal mot tog (eksklusiv glødelampe/diodematrise) skal ha en tilgjengelighet på A ≥ 99.99975 %, det vil si en akkumulert utilgjengelighet UA ≤ 1,3 minutter pr. år for hvert lyssignal.
+
+c) Systemet for deteksjon av rullende materiell ved innkobling og utkobling av veisikringsanlegget skal ha en tilgjengelighet på A ≥ 99.99975 %, det vil si en akkumulert utilgjengelighet UA ≤ 1,3 minutter pr. år for hvert innkoblings-/utkoblingspunkt.
+
+d) Veibomdrivmaskin skal ha en tilgjengelighet på A ≥ 99.99975 %, det vil si en akkumulert utilgjengelighet UA ≤ 1,3 minutter pr. år for hver veibomdrivmaskin.
+
+e) Reparasjon eller utbytting og justering av en funksjonsenhet slik at den igjen fungerer korrekt, skal kunne utføres på maksimalt 15 minutter, det vil si MRT ≤ 15 minutter.
+
+==Pålitelighet==
+
+{{lærebokstoff|Krav til pålitelighet er gitt for veisikringsanleggets enkelte delsystemer. Det er ikke gitt pålitelighetskrav for et sammenstilt veisikringsanlegg.}}
+
+a) Veisikringsanleggets forriglingsutrustning skal ha en gjennomsnittlig tid mellom feil - MTBF ≥ 100 000 timer (11,4 år).
+
+b) Et signal mot vei/signal mot tog (eksklusiv glødelampe/diodematrise) skal ha en gjennomsnittlig tid mellom feil - MTBF ≥ 100 000 timer (11,4 år) for hvert lyssignal.
+
+c) Systemet for deteksjon av rullende materiell ved innkobling og utkobling av veisikringsanlegg skal ha en gjennomsnittlig tid mellom feil - MTBF ≥ 100 000 timer (11,4 år) for hvert innkoblings-/utkoblingspunkt.
+
+d) Veibomdrivmaskin skal ha en gjennomsnittlig tid mellom feil - MTBF ≥ 100 000 timer (11,4 år) for hver veibom, tilsvarende som for sporvekselutrustning, se [[Signal/Prosjektering/Lyssignal]].
+
+e) Et veisikringsanlegg skal ha en levetid på minimum 30 år.
+
+===Glødelampe (signallampe)===
+
+a) En glødelampe skal ha en gjennomsnittlig tid mellom feil - MTBF ≥ 2000 brenntimer ved merkespenning for hovedtråd og MTBF ≥ 300 timer for reservetråd.
+
+===Diodematrise===
+
+a) En diodematrise skal ha en gjennomsnittlig tid mellom feil - MTBF ≥ 100.000 timer for alle feil som medfører at den ikke kan lyse når det er behov for dette.
+
+b) En diodematrise skal ha en levetid ≥ 20 år.
+
+c) Den enkelte lysdiode skal kobles slik at en svikt i en lysdiode ikke medfører større tap enn 20 % av diodematrisens totale lysstyrke.
+
+==Vedlikeholdbarhet==
+
+a) Et veisikringsanlegg skal være bygd av veldefinerte funksjonsenheter, slik at hele funksjonsenheter kan byttes ved reparasjon i felt.
+
+b) For funksjonsenheter som inneholder slitedetaljer, skal vedlikeholdet skje forebyggende gjennom at de utbyttbare enhetene skiftes i sammenheng med ordinært vedlikehold av veisikringsanlegget. 
+
+c) Vekt for utbyttbare enheter skal ikke overstige 15 kg.
+:'''Unntak:''' 
+:# Gjelder ikke for batterier i veisikringsanlegget.
+

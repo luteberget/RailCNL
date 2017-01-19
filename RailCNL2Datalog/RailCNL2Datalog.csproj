@@ -29,6 +29,7 @@
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />
+    <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Program.cs" />
@@ -38,6 +39,8 @@
     <Compile Include="EmitDatalog.cs" />
     <Compile Include="Exceptions.cs" />
     <Compile Include="Relexer.cs" />
+    <Compile Include="RailConsXML.cs" />
+    <Compile Include="Transform.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
   <ItemGroup>

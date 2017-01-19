@@ -18,6 +18,7 @@ namespace RailCNL2Datalog
 
 	public class Converter
 	{
+
 		private struct Subject
 		{
 			public ConjL RulePrefixes;

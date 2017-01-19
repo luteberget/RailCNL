@@ -65,20 +65,20 @@ def get_text_by_id(i):
     #content.append(paragraph(rule_classification["missing"]))
     header_str += rule_classification["missing"]
   else:
-    rule = rules[0]
-    rule_class = rule.attrib.get("class","no-class")
-    if rule_class in css_classification: css_class = css_classification[rule_class]
+    for rule in rules:
+      rule_class = rule.attrib.get("class","no-class")
+      if rule_class in css_classification: css_class = css_classification[rule_class]
 
-    for cnl in [cnl for cnl in rule if cnl.tag == "railcnl"]:
-      content.append(paragraph_key_value("RailCNL", cnl.text))
+      for cnl in [cnl for cnl in rule if cnl.tag == "railcnl"]:
+        content.append(paragraph_key_value("RailCNL", cnl.text))
 
-    for ast in [ast for ast in rule if ast.tag == "ast"]:
-      content.append(paragraph_key_value("AST",ast.text))
+      for ast in [ast for ast in rule if ast.tag == "ast"]:
+        content.append(paragraph_key_value("AST",ast.text))
 
-    for datalog in [datalog for datalog in rule if datalog.tag == "datalog"]:
-      content.append(paragraph_key_value("Datalog",bullet_list(datalog.text.strip().split("\n"))))
+      for datalog in [datalog for datalog in rule if datalog.tag == "datalog"]:
+        content.append(paragraph_key_value("Datalog",bullet_list(datalog.text.strip().split("\n"))))
 
-    header_str += rule_classification[rule_class]
+      header_str += rule_classification[rule_class]
 
   content = [paragraph(header_str)] + content
 

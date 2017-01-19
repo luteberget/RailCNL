@@ -2,16 +2,21 @@
 <scope name="skilt-515-plassering">
   <rule class="definition" textref="skilt1">
     <railcnl>
-  En skilt har refleksevne høy eller lav.
+En skilt har refleksevne høy eller lav.
     </railcnl>
   </rule>
   
   <rule class="static-infrastructure-datalog" textref="skilt2">
     <railcnl>
-En skilt bør ha vinkel 94.
+En skilt bør ha vinkel til sportangenten som er større enn 94.
     </railcnl>
   </rule>
   
+  <rule class="static-infrastructure-datalog" textref="skilt2">
+    <railcnl>
+En skilt bør ha vinkel som er større enn 94.
+    </railcnl>
+  </rule>
   <rule class="datalog" textref="skilt3">
     <railcnl>
   Et skilt eller merke bør ha innpakning på under lagring og transport.

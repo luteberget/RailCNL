@@ -1,13 +1,14 @@
+<RailConsXML>
 <scope name="skilt-515-plassering">
   <rule class="definition" textref="skilt1">
     <railcnl>
-  Et skilt har refleksevne høy eller lav.
+  En skilt har refleksevne høy eller lav.
     </railcnl>
   </rule>
   
   <rule class="static-infrastructure-datalog" textref="skilt2">
     <railcnl>
-  Et skilt eller merke bør ha vinkel til sportangent som er større enn 94.
+En skilt bør ha vinkel 94.
     </railcnl>
   </rule>
   
@@ -23,3 +24,4 @@
     </railcnl>
   </rule>
 </scope>
+</RailConsXML>

@@ -1,10 +1,27 @@
+.container {
+margin-left: 1em;
+}
+
+.container, p, li {
+line-height: 2.0em;
+}
+
+.details, .details p, .details li {
+line-height: 1.25em;
+}
+.details p {
+margin: 0.50em 0.0em;
+}
+
+
 .details {
 float:right;
 padding: 0.5em;
 margin: 0.1em;
+margin-right: -27em;
 border: 1px solid black;
 clear: both;
-  width: 25em;
+  width: 45em;
 }
 
 .section { display:inline; }
@@ -12,7 +29,6 @@ clear: both;
 .section label {
   padding: 0.25em 0.5em;
   display:inline;
-  line-height: 2.0em;
   vertical-align: top;
   -webkit-transform: perspective(1px) translateZ(0);
   transform: perspective(1px) translateZ(0);

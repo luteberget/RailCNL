@@ -22,15 +22,15 @@ in {
     BridgeArea = bridge_CN;
     LocalReleaseArea = localreleasearea_CN;
 
-    NamedArea s = strCN s.s;
-    SpecificArea s a = mkCN a (strNP s.s);
+    NamedArea s = strCN Par.masculine s.s;
+    SpecificArea s a = mkCN a (strNP Par.masculine s.s);
 
     AreaPropertyRestriction area restr = mkCN area
      (mkRS (mkRCl which_RP Syn.have_V2 (restr))) ;
 
     ObjectArea obj area = mkCN obj (areaAdv area) ;
     SubjectArea subj area = mkNP subj (areaAdv area); 
-    AreaCondition a = { np = mkNP (strN "plassering"); cls = OnlyProperty };
+    AreaCondition a = { np = mkNP (mkNP (Par.mkN "plassering")) (areaAdv a); cls = OnlyProperty };
 
 }
 

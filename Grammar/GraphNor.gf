@@ -26,10 +26,10 @@ in {
   lin
 
   -- Objects in general
-    ObjectClass cls =  (strCN cls);
-    ObjectOther cls = mkCN other_A (strCN cls);
+    ObjectClass cls =  (cls);
+    ObjectOther cls = mkCN other_A (cls);
     ObjectOtherImplied = another_CN;
-    ObjectPropertyRestriction cls restr =  (mkCN (strCN cls)
+    ObjectPropertyRestriction cls restr =  (mkCN (cls)
      (mkRS (mkRCl which_RP Syn.have_V2 (restr))) );
 
 

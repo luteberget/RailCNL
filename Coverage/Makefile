@@ -2,6 +2,7 @@ TEMPLATE = template.html
 STYLE = --css template.css --css style.css --toc --toc-depth 3
 RAILCNL2DATALOG = ../RailCNL2Datalog/bin/Debug/RailCNL2Datalog.exe
 ANNOTATE = annotate.py
+PGF = ../Grammar/RailCNL.pgf
 
 SOURCES := $(wildcard *.wiki)
 OUTPUTS := $(SOURCES:wiki=html)
@@ -17,7 +18,7 @@ index.html: index.md
 %.html : %.unannotated %.railcons.proc $(ANNOTATE)
 	python $(ANNOTATE) $^ > $@
 
-%.railcons.proc : %.railcons
+%.railcons.proc : %.railcons $(PGF)
 	$(RAILCNL2DATALOG) $< $@
 
 # Don't delete proc files, for inspection.

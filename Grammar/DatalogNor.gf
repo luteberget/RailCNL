@@ -10,12 +10,12 @@ in {
     Conjunction = S;
     Literal = Cl;
     Term = Str;
-    Predicate = Str;
-
+    Predicate = CN;
 
 
   lin
 
+    --StringTerm rs = strCN (Par.masculine) rs.s;
     StringTerm rs = rs.s;
 
     -- Commenting these out for now, to reduce
@@ -24,21 +24,21 @@ in {
     --FloatTerm f = f.s;
 
 
-    StringPredicate rs = rs.s;
+    StringPredicate rs = strCN (Par.masculine) rs.s;
 
-    Literal0 pred = mkCl (strNP pred);
-    Literal1 pred a = mkCl (strNP a) (strNP pred);
-    Literal2 pred a b = mkCl (strNP b) (x_of_y (strNP pred) (strNP a)) ;
-    -- Literal3 pred a b c = mkCl (strNP pred)
+    Literal0 pred = mkCl (pred);
+    Literal1 pred a = mkCl (strNP_m a) (pred);
+    Literal2 pred a b = mkCl (strNP_m b) (x_of_y (mkNP pred) (strNP_m a)) ;
+    -- Literal3 pred a b c = mkCl (mkNP pred)
     -- Literal 4
 
-    GtLit  a b = mkS (cmpCl big_A           a b );
-    GteLit a b = mkS (cmpCl gte_A2          a b );
-    LtLit  a b = mkS (cmpCl small_A         a b );
-    LteLit a b = mkS (cmpCl lte_A2          a b );
-    EqLit  a b = mkS (cmpCl equal_to_A2     a b );
-    NeqLit a b = negCl (cmpCl equal_to_A2     a b ) |
-              mkS (cmpCl not_equal_to_A2 a b );
+    GtLit  a b = mkS (cmpCl big_A           (strNP_m a) (strNP_m b) );
+    GteLit a b = mkS (cmpCl gte_A2           (strNP_m a) (strNP_m b)  );
+    LtLit  a b = mkS (cmpCl small_A           (strNP_m a) (strNP_m b) );
+    LteLit a b = mkS (cmpCl lte_A2            (strNP_m a) (strNP_m b) );
+    EqLit  a b = mkS (cmpCl equal_to_A2       (strNP_m a) (strNP_m b) );
+    NeqLit a b = negCl (cmpCl equal_to_A2      (strNP_m a) (strNP_m b) ) |
+              mkS (cmpCl not_equal_to_A2  (strNP_m a) (strNP_m b) );
 
 
     SimpleConj = mkS;

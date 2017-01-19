@@ -15,8 +15,8 @@ in {
 
 
   lincat
-    Class = Str;
-    Property = Str;
+    Class = CN;
+    Property = CN;
     Value = Str;
     Subject = NP;
     Condition = { np : NP ; cls : ConditionRec };
@@ -55,22 +55,26 @@ in {
         };
 
   lin
-    StringClass rts = rts.s;
+
+    StringClass rts = strCN Par.masculine rts.s;
+    StringClassGen1 rts = strCN Par.neutrum rts.s;
+    StringClassGen2 rts = strCN Par.feminine rts.s;
+
     -- StringAdjective rts class = rts.s ++ class;
-    StringProperty rts = rts.s;
+    StringProperty rts = strCN Par.masculine rts.s;
 
     MkValue t = t;
 
-    SubjectClass cls = forall_CN (strCN cls);
-    SubjectPropertyRestriction cls restr = forall_CN (mkCN (strCN cls)
+    SubjectClass cls = forall_CN (cls);
+    SubjectPropertyRestriction cls restr = forall_CN (mkCN (cls)
      (mkRS (mkRCl which_RP Syn.have_V2 (restr))) );
 
-    Gt val =  { ap = mkAP big_A (strNP val);       np = strNP val; typ = RestrRS };
-    Gte val =  { ap = mkAP gte_A2 (strNP val);     np = strNP val; typ = RestrRS };
-    Lt val =  { ap = mkAP small_A (strNP val);     np = strNP val; typ = RestrRS };
-    Lte val =  { ap = mkAP lte_A2 (strNP val);     np = strNP val; typ = RestrRS };
-    Eq val =  { ap = mkAP equal_to_A2 (strNP val); np = strNP val; typ = RestrNP };
-    Neq val =  { ap = mkAP not_equal_to_A2 (strNP val); np = strNP val; typ = RestrRS };
+    Gt val =  { ap = mkAP big_A (strNP_m val);       np = strNP_m val; typ = RestrRS };
+    Gte val =  { ap = mkAP gte_A2 (strNP_m val);     np = strNP_m val; typ = RestrRS };
+    Lt val =  { ap = mkAP small_A (strNP_m val);     np = strNP_m val; typ = RestrRS };
+    Lte val =  { ap = mkAP lte_A2 (strNP_m val);     np = strNP_m val; typ = RestrRS };
+    Eq val =  { ap = mkAP equal_to_A2 (strNP_m val); np = strNP_m val; typ = RestrNP };
+    Neq val =  { ap = mkAP not_equal_to_A2 (strNP_m val); np = strNP_m val; typ = RestrRS };
 
     AndRestr = conj_Restriction and_Conj;
     OrRestr = conj_Restriction or_Conj;
@@ -79,11 +83,11 @@ in {
     OrPropRestr = conj_NP or_Conj;
 
     MkPropertyRestriction prop restr = case restr.typ of {
-      RestrRS => mkNP (mkCN (strCN prop) (mkCmpRS restr.ap));
-      RestrNP => mkNP (mkCN (strCN prop) restr.np)
+      RestrRS => mkNP (mkCN prop (mkCmpRS restr.ap));
+      RestrNP => mkNP (mkCN prop restr.np)
     };
 
-    ConditionClass cls = { np = mkNP a_Det (strCN cls) ; cls = WithClass };
+    ConditionClass cls = { np = mkNP a_Det (cls) ; cls = WithClass };
     ConditionPropertyRestriction prop = { np = prop ; cls = OnlyProperty };
 
     AndCond = conj_Condition and_Conj;

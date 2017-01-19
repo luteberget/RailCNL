@@ -27,6 +27,8 @@ abstract Ontology = RailCNLStatement, Datalog ** {
 
   -- Classes, properties, values
     StringClass : String -> Class;
+    StringClassGen1 : String -> Class;
+    StringClassGen2 : String -> Class;
     StringAdjective : String -> Class -> Class;
     StringProperty : String -> Property;
     MkValue : Term -> Value; -- ConstTerm?
@@ -60,6 +62,5 @@ abstract Ontology = RailCNLStatement, Datalog ** {
 
   -- Statements
     Obligation, Constraint, Recommendation : Subject -> Condition -> Statement;
-      -- TODO: add Heuristic?
 
 }

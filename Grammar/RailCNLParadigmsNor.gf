@@ -20,23 +20,27 @@ resource RailCNLParadigmsNor = open
     x_of_y : NP -> NP -> NP
      = \mother,king -> mkNP mother (Syn.mkAdv possess_Prep king) ;
 
-    strPN : Str -> PN
-      = \str -> lin PN { s = \\_ => str; g = Diff.ngen2gen neutrum } ;
+    strPN : DiffNor.NGenderNor -> Str -> PN
+      = \g,str -> lin PN { s = \\_ => str; g = Diff.ngen2gen g } ;
 
-    strN : Str -> N
-      = \str -> lin N { s = \\_ => \\_ => \\_  => str ; g = masculine ; co = str }
-      ;
+     strN : DiffNor.NGenderNor -> Str -> N
+     = \g,str -> 
+lin N { s = \\_ => \\_ => \\_  => str ; g = g ; co = str }
+     ;
 
-    strCN : Str -> CN = \str -> mkCN (strN str);
+    strCN : DiffNor.NGenderNor -> Str -> CN = \g,str -> mkCN (strN g str);
 
-    strNP : Str -> NP = \str -> mkNP (strPN str);
+    strNP : DiffNor.NGenderNor -> Str -> NP = \g,str -> mkNP (strPN g str);
+
+    strNP_m : Str -> NP = \s -> strNP Par.masculine s;
+
 
     cmpCl = overload {
-       cmpCl : A -> Str -> Str -> Cl  =
-         \adj,a,b -> mkCl (strNP a) (mkAP adj (strNP b)) ;
+       cmpCl : A -> NP -> NP -> Cl  =
+         \adj,a,b -> mkCl a (mkAP adj b) ;
 
-       cmpCl : A2 -> Str -> Str -> Cl
-	 = \adj,a,b -> mkCl (strNP a) (mkAP adj (strNP b)) ;
+       cmpCl : A2 -> NP -> NP -> Cl
+	 = \adj,a,b -> mkCl a (mkAP adj b) ;
     };
 
     negCl : Cl -> S = mkS presentTense negativePol;

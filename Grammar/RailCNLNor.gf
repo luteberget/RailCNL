@@ -1,1 +1,7 @@
-concrete RailCNLNor of RailCNL = OntologyNor, GraphNor, AreaNor ** {};	
+concrete RailCNLNor of RailCNL = 
+  OntologyNor, 
+  GraphNor, 
+  AreaNor,
+  TracksideObjectNor
+
+** {};	

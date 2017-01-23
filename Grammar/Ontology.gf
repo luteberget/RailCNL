@@ -19,6 +19,8 @@ abstract Ontology = RailCNLStatement, Datalog ** {
                          -- "color red or blue"
                          -- "color red or length 15.0"
 
+    ClassRestriction;
+
     Restriction;        -- "less than 200 m"
                         -- "red"
                         -- "red or blue"
@@ -42,6 +44,9 @@ abstract Ontology = RailCNLStatement, Datalog ** {
    MkPropertyRestriction : Property -> Restriction -> PropertyRestriction;
    AndPropRestr, OrPropRestr : PropertyRestriction -> PropertyRestriction -> PropertyRestriction;
 
+   MkClassRestriction : Class -> ClassRestriction;
+   AndClassRestr, OrClassRestr : ClassRestriction -> ClassRestriction -> ClassRestriction;
+
   -- Subjects
 
     -- alle spor / et spor ...
@@ -49,6 +54,8 @@ abstract Ontology = RailCNLStatement, Datalog ** {
 
     -- alle spor som har ...
     SubjectPropertyRestriction : Class -> PropertyRestriction -> Subject;
+    SubjectClassRestriction : Class -> ClassRestriction -> Subject;
+    SubjectClassAndPropertyRestriction : Class -> ClassRestriction -> PropertyRestriction -> Subject;
 
 
   -- Conditions

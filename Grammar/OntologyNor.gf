@@ -21,6 +21,7 @@ in {
     Subject = NP;
     Condition = { np : NP ; cls : ConditionRec };
     PropertyRestriction = NP;
+    ClassRestriction = NP;
     Restriction = { ap : AP; np : NP; typ : RestrictionType} ;
     Statement = Utt;
 
@@ -69,6 +70,12 @@ in {
     SubjectPropertyRestriction cls restr = forall_CN (mkCN (cls)
      (mkRS (mkRCl which_RP Syn.have_V2 (restr))) );
 
+    SubjectClassRestriction cls restr = forall_CN (mkCN (cls)
+     (mkRS (mkRCl which_RP (restr))) );
+
+    -- SubjectClassAndPropertyRestriction cls restr = forall_CN (mkCN (cls)
+     -- (mkRS (mkRCl which_RP (restr))) );
+
     Gt val =  { ap = mkAP big_A (strNP_m val);       np = strNP_m val; typ = RestrRS };
     Gte val =  { ap = mkAP gte_A2 (strNP_m val);     np = strNP_m val; typ = RestrRS };
     Lt val =  { ap = mkAP small_A (strNP_m val);     np = strNP_m val; typ = RestrRS };
@@ -86,6 +93,11 @@ in {
       RestrRS => mkNP (mkCN prop (mkCmpRS restr.ap));
       RestrNP => mkNP (mkCN prop restr.np)
     };
+
+    MkClassRestriction cls = mkNP cls;
+    AndClassRestr = conj_NP and_Conj;
+    OrClassRestr = conj_NP or_Conj;
+
 
     ConditionClass cls = { np = mkNP a_Det (cls) ; cls = WithClass };
     ConditionPropertyRestriction prop = { np = prop ; cls = OnlyProperty };

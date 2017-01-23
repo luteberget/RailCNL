@@ -6,9 +6,25 @@ namespace RailCNL2Datalog
 {
 	public class Transform
 	{
+		public static PGF.Expression FlattenGender (PGF.Expression expr)
+		{
+			return expr.Accept (new PGF.Expression.Visitor<PGF.Expression> {
+				fVisitApplication = (fn, args) => {
+					if (fn == "StringClassGen1" || fn == "StringClassGen2") {
+						return new PGF.Application ("StringClass", args);
+					}
+
+					return new PGF.Application (fn, args);
+				},
+				fVisitLiteralFlt = i => new PGF.LiteralFloat (i),
+				fVisitLiteralInt = i => new PGF.LiteralInt (i),
+				fVisitLiteralStr = i => new PGF.LiteralString (i),
+			});
+		}
+
 		public static string ConvertToDatalogString (PGF.Expression expression, string name)
 		{
-			var statement = RailCNL.Statement.FromExpression (expression);
+			var statement = RailCNL.Statement.FromExpression (FlattenGender (expression));
 			var conv = new Converter ();
 			var rules = conv.ConvertStatement (statement, name);
 
@@ -18,8 +34,6 @@ namespace RailCNL2Datalog
 			}
 			return stringBuilder.ToString ();
 		}
-
-
 
 		public static void TransformContents (PGF.Concrete language, RailConsXML root, Action<string> warning)
 		{
@@ -54,6 +68,8 @@ namespace RailCNL2Datalog
 						var datalogString = ConvertToDatalogString (expression, rule.TextRef);
 						rule.Datalog = new TextElement{ Text = datalogString };
 						rule.Class = RuleClass.StaticInfrastructureDatalog;
+					} catch (UnsupportedExpressionException e) {
+						rule.Class = RuleClass.Definition;
 					} catch (Exception e) {
 						warning ($"Failed to convert AST expression to Datalog: {e.Message}");
 						continue;

@@ -28,9 +28,9 @@ namespace RailCNL2Datalog
 			public IList<RailCNL.Rule> Rules;
 		}
 
-		static readonly string CMP_ERROR_MSG = "Constraint implying a comparison operator is not supported by Datalog output.";
-		static readonly string NEGATION_ERROR_MSG = "Constraint implying a negative term is not supported by Datalog output.";
-		static readonly string DISJ_ERROR_MSG = "Constraint implying a disjunction is not supported by Datalog output.";
+		public static readonly string CMP_ERROR_MSG = "Constraint implying a comparison operator is not supported by Datalog output.";
+		public static readonly string NEGATION_ERROR_MSG = "Constraint implying a negative term is not supported by Datalog output.";
+		public static readonly string DISJ_ERROR_MSG = "Constraint implying a disjunction is not supported by Datalog output.";
 
 		static readonly string FINDSUFFIX = "found";
 
@@ -40,12 +40,19 @@ namespace RailCNL2Datalog
 		static readonly string PRED_OPPOSITE_DIRECTION = "opposite_dir"; // railML
 		static readonly string PRED_SWITCH = "switch"; // railML
 
+
+
+		public IList<RailCNL.Rule> Optimize(IList<RailCNL.Rule> rules) {
+			rules = OptimizationPasses.InlineNegation.InlineNegations (rules);
+			return rules;
+		}
+
 		int fresh = 0;
 		string ruleId;
 		public IList<RailCNL.Rule> ConvertStatement (RailCNL.Statement statement, string ruleId)
 		{
 			this.ruleId = ruleId;
-			return statement.Accept (new RailCNL.Statement.Visitor<IList<RailCNL.Rule>> (
+			var code = statement.Accept (new RailCNL.Statement.Visitor<IList<RailCNL.Rule>> (
 
 				// TODO: this is not finished.
 				// AllPathsCONTAIN-obligation
@@ -153,6 +160,9 @@ namespace RailCNL2Datalog
 				VisitRecommendation: (subj,cond) => FindResults("recommendation", subj, cond)
 
 			));
+
+			code = Optimize (code);
+			return code;
 		}
 
 		// Et signal som har type main eller distant må ha høyde som er større enn 500.

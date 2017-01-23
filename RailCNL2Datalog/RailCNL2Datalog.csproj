@@ -41,6 +41,7 @@
     <Compile Include="Relexer.cs" />
     <Compile Include="RailConsXML.cs" />
     <Compile Include="Transform.cs" />
+    <Compile Include="OptimizationPasses\InlineNegation.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
   <ItemGroup>
@@ -48,5 +49,8 @@
       <Project>{81C13B1B-FE00-4A56-A831-964D55032CDD}</Project>
       <Name>LibPGFSharp</Name>
     </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="OptimizationPasses\" />
   </ItemGroup>
 </Project>

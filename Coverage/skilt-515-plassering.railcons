@@ -2,7 +2,7 @@
 <scope name="skilt-515-plassering">
   <rule class="definition" textref="skilt1">
     <railcnl>
-Et skilt har refleksevne høy eller lav.
+En skilt har refleksevne høy eller lav.
     </railcnl>
   </rule>
   

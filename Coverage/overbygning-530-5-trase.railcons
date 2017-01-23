@@ -1,4 +1,9 @@
 <RailConsXML>
 <scope>
+<rule textref="overbygning_generelt_1">
+<railcnl>
+En prosjekt som har nybygg false bør ha krav normale.
+</railcnl>
+</rule>
 </scope>
 </RailConsXML>

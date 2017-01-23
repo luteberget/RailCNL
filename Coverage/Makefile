@@ -18,7 +18,7 @@ index.html: index.md
 %.html : %.unannotated %.railcons.proc $(ANNOTATE)
 	python $(ANNOTATE) $^ > $@
 
-%.railcons.proc : %.railcons $(PGF)
+%.railcons.proc : %.railcons $(PGF) $(RAILCNL2DATALOG)
 	$(RAILCNL2DATALOG) $< $@
 
 # Don't delete proc files, for inspection.

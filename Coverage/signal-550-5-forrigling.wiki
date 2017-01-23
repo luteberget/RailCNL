@@ -4,11 +4,11 @@ __NUMBEREDHEADINGS__
 Dette kapitlet beskriver krav til forriglingsutrustningen for sikringsanlegg. 
 
 <figure id="Systemoversikt signalanlegg">
-[[Bilde:JD550 05 fig001.png|thumb|center|600px|<caption>Systemoversikt signalanlegg</caption>]]
+[[Image:JD550 05 fig001.png|thumb|center|600px|Systemoversikt signalanlegg]]
 </figure>
 
 <figure id="Systemoversikt signalanlegg ETCS L2">
-[[Fil:JD550 05 fig001b.svg||thumb|center|600px|<caption>Systemoversikt signalanlegg ETCS L2</caption>]]
+[[File:JD550 05 fig001b.svg.png|thumb|center|600px|Systemoversikt signalanlegg ETCS L2]]
 </figure>
 
 Krav som kun gjelder ETCS-L2 er merket med L2. Dersom L2 står i forbindelse med overskrift for delkapittel, er hele delkapittelet kun gyldig for trafikkstyring av strekning utrustet med ETCS-L2. Dersom et enkeltkrav er merket med L2, så er det kun dette kravet som er spesifikt for ETCS-L2. Krav som kun gjelder infrastruktur utstyrt med forriglingsutrustning som styrer hovedsignaler og eventuelt ATC, er på tilsvarende måte merket med NSS. Der hverken L2 eller NSS er angitt, så gjelder kravene universelt.
@@ -109,7 +109,7 @@ g) Et stoppskilt er dekningsgivende når det ikke er gitt kjøretillatelse forbi
 == Illustrasjoner ==
 
 {{lærebokstoff|<figure id="hovedsignal eller stoppskilt">
-[[Fil:JD550 05 fig000.svg|left|100px|]]
+[[File:JD550 05 fig000.svg|left|100px|]]
 </figure> Symbolet illustrerer hovedsignal eller Stoppskilt.
 
 
@@ -161,7 +161,7 @@ Sikkerhetsavstander er gitt i <xr id="tab:Sikkerhetsavstander" />.
 ==== Togvei ====
 
 <figure id="Togvei, sikkerhetssone og forriglingsobjekter">
- [[Fil:JD550 05 fig002bb.svg|thumb|center|600px|<caption>Togvei, sikkerhetssone og forriglingsobjekter</caption>]]
+ [[File:JD550 05 fig002bb.svg.png|thumb|center|600px|Togvei, sikkerhetssone og forriglingsobjekter]]
 </figure>
 
 
@@ -177,7 +177,7 @@ a) For at en togvei skal kunne fastlegges, skal følgende sporavsnitt være frie
 # Sporavsnittet mellom togveien og dekningsgivende signal kan være belagt av tog som har løst ut medrettet togvei når togets første aksel er innenfor det signalet som er dekningsgivende for togveiens flanke.
 
 <figure id="fig:Sporavsnitt i forbindelse med togvei">
-[[Bilde:JD550 05 fig003b.svg|thumb|center|600px|<caption>Sporavsnitt i forbindelse med togvei</caption>]]
+[[Image:JD550 05 fig003b.svg.png|thumb|center|600px|Sporavsnitt i forbindelse med togvei]]
 </figure> 
 
 {{lærebokstoff|Sporavsnittene 1, 2 og 3 er sporavsnitt som inngår i togveien. Sporavsnitt 1 omfatter sporvekselen inn til minimum 5 meter innenfor middel i begge spor. Sporavsnittet 4 er sporavsnitt mellom togveien og dekningsgivende objekt for togveien.}}
@@ -225,7 +225,7 @@ l) For at en togvei skal kunne fastlegges, skal et sporavsnitt som inngår i tog
 {{lærebokstoff|Etter en togveis sluttpunkt skal sikkerhetssonen redusere risikoen ved en eventuell feilaktig passering av sluttpunktet når det ikke er gitt kjøretillatelse for videre kjøring.}} 
 
 <figure id="Togvei med sikkerhetssone">
-[[Bilde:JD550 05 fig004b.svg|thumb|center|600px|<caption>Togvei med sikkerhetssone</caption>]]
+[[Image:JD550 05 fig004b.svg.png|thumb|center|600px|Togvei med sikkerhetssone]]
 </figure>
 
 a) En sikkerhetssone skal ikke ha noen felles del med en annen togvei, skiftevei, arbeidsområde eller område frigitt for lokal skifting i en avstand etter togveiens sluttpunkt som tilsvarer kravene til sikkerhetsavstander gitt i <xr id="tab:Sikkerhetsavstander" />. 
@@ -278,18 +278,18 @@ a) En togvei skal ha dekningsgivende objekt for togveiens flanke.
 b) En togvei skal ha dekningsgivende sporsperre, avsporingstunge eller sporveksel mot usikret område når avstanden (A<sub>m</sub>) mellom motrettet sporveksel som leder inn til det usikrede område og togveien er kortere enn 100 meter, se <xr id="fig:Minimumsavstand mellom togvei og motrettet sporveksel mot usikret område"/>.
 
 <figure id="fig:Minimumsavstand mellom togvei og motrettet sporveksel mot usikret område">
-[[Bilde:JD550 05 fig005b.svg|thumb|center|600px|<caption>Minimumsavstand mellom togvei og motrettet sporveksel mot usikret område (eksemplet viser sporsperre som dekningsgivende objekt)</caption>]]
+[[Image:JD550 05 fig005b.svg.png|thumb|center|600px|Minimumsavstand mellom togvei og motrettet sporveksel mot usikret område (eksemplet viser sporsperre som dekningsgivende objekt)]]
 </figure>
 
 ==== Sikkerhetssone ====
 a) En togvei skal ha dekningsgivende sporsperre, avsporingstunge eller sporveksel mot usikret område når avstanden (A<sub>m1</sub> + A<sub>m2</sub>) mellom motrettet sporveksel som leder inn til det usikrede område og sikkerhetssonens begynnelsespunkt (signal (y)) er mindre enn 100 meter, se <xr id="fig:Minimumsavstand mellom sikkerhetssone og motrettet sporveksel mot usikret område"/> og <xr id="fig:Minimumsavstand mellom sikkerhetssonens begynnelsespunkt og motrettet sporveksel mot usikret område"/>.
 
 <figure id="fig:Minimumsavstand mellom sikkerhetssone og motrettet sporveksel mot usikret område">
-[[Bilde:JD550 05 fig006b.svg|thumb|center|600px|<caption>Minimumsavstand (A<sub>m1</sub> + A<sub>m2</sub>) mellom sikkerhetssone og motrettet sporveksel mot usikret område (eksemplet viser sporsperre som dekningsgivende objekt)</caption>]]
+[[Image:JD550 05 fig006b.svg.png|thumb|center|600px|Minimumsavstand (A<sub>m1</sub> + A<sub>m2</sub>) mellom sikkerhetssone og motrettet sporveksel mot usikret område (eksemplet viser sporsperre som dekningsgivende objekt)]]
 </figure>
 
 <figure id="fig:Minimumsavstand mellom sikkerhetssonens begynnelsespunkt og motrettet sporveksel mot usikret område">
-[[Bilde:JD550 05 fig007b.svg|thumb|center|600px|<caption>Minimumsavstand (A<sub>m1</sub> + A<sub>m2</sub>) mellom sikkerhetssonens begynnelsespunkt og motrettet sporveksel mot usikret område (eksemplet viser sporsperre som dekningsgivende objekt)</caption>]]
+[[Image:JD550 05 fig007b.svg.png|thumb|center|600px|Minimumsavstand (A<sub>m1</sub> + A<sub>m2</sub>) mellom sikkerhetssonens begynnelsespunkt og motrettet sporveksel mot usikret område (eksemplet viser sporsperre som dekningsgivende objekt)]]
 </figure>
 
 b) En sikkerhetssone som avsluttes mot et usikret område skal ha dekning mot sikkerhetssonens ende. Dekning skal utføres med sporveksel, avsporingstunge eller sporsperre.
@@ -314,22 +314,22 @@ a) Utløsing av en togvei, del av togveien eller objekt i en togveien skal kun s
 
 
 <figure id="fig:Utlosning av togvei1">
-[[Bilde:JD550 05 fig008b.svg|thumb|center|600px|<caption>Utløsing av togvei (f.eks. innkjørtogvei)</caption>]]
+[[Image:JD550 05 fig008b.svg.png|thumb|center|600px|Utløsing av togvei (f.eks. innkjørtogvei)]]
 </figure>
 
 
 <figure id="fig:Utlosning av togvei2">
-[[Bilde:JD550 05 fig009b.svg|thumb|center|600px|<caption>Utløsing av togvei (f.eks. innkjørtogvei)</caption>]]
+[[Image:JD550 05 fig009b.svg.png|thumb|center|600px|Utløsing av togvei (f.eks. innkjørtogvei)]]
 </figure>
 
 
 <figure id="fig:Utlosning av togvei3">
-[[Bilde:JD550 05 fig010b.svg|thumb|center|600px|<caption>Utløsing av togvei (f.eks. utkjørtogvei)</caption>]]
+[[Image:JD550 05 fig010b.svg.png|thumb|center|600px|Utløsing av togvei (f.eks. utkjørtogvei)]]
 </figure>
 
 
 <figure id="fig:Utlosning av togvei4">
-[[Bilde:JD550 05 fig011b.svg|thumb|center|600px|<caption>Utløsing av togvei (f.eks. togvei på blokkstrekning)</caption>]]
+[[Image:JD550 05 fig011b.svg.png|thumb|center|600px|Utløsing av togvei (f.eks. togvei på blokkstrekning)]]
 </figure>
 
 b) Utløsing av togvei eller del av togvei skal kun skje ved korrekt togpassasje, se <xr id="tab:Korrekt togpassasjesekvens for togvei"/>.
@@ -343,7 +343,7 @@ b) Utløsing av togvei eller del av togvei skal kun skje ved korrekt togpassasje
 |-
 | colspan="3"|
 <figure id =Togpassasje>
-[[Bilde:JD550 05 fig012b.svg|600px|center]]
+[[Image:JD550 05 fig012b.svg.png|600px|center]]
 </figure> 
 |-
 ! Tilstand !! Sporavsnitt (a)!! Sporavsnitt (b)       
@@ -480,7 +480,7 @@ k) For at en skiftevei skal kunne fastlegges, skal et sporavsnitt som inngår i 
 {{lærebokstoff|Etter en skifteveis sluttpunkt skal sikkerhetssonen redusere risikoen ved en eventuell feilaktig passering av sluttpunktet når dette ikke gir kjøretillatelse.}} 
 
 <figure id="Skiftevei med sikkerhetssone">
-[[Bilde:JD550 05 fig013b.svg|thumb|center|600px|<caption>Skiftevei med sikkerhetssone</caption>]]
+[[Image:JD550 05 fig013b.svg.png|thumb|center|600px|Skiftevei med sikkerhetssone]]
 </figure>
 
 a) En sikkerhetssone skal ikke ha noen felles del med en togvei i en avstand etter skifteveiens sluttpunkt som tilsvarer kravene til sikkerhetsavstander gitt i <xr id="tab:Sikkerhetsavstander" />. 
@@ -498,7 +498,7 @@ a) En skiftevei skal ha dekningsgivende objekt i skifteveiens flanke.
 b) En skiftevei skal ha dekningsgivende sporsperre, avsporingstunge eller sporveksel mot usikret område når avstanden (A<sub>m</sub>) mellom motrettet sporveksel som leder inn til det usikrede område og skifteveien er kortere enn 100 meter, se <xr id="fig:Minimumsavstand mellom skiftevei og motrettet sporveksel mot usikret område"/>.
 
 <figure id="fig:Minimumsavstand mellom skiftevei og motrettet sporveksel mot usikret område">
-[[Bilde:JD550 05 fig014b.svg|thumb|center|600px|<caption> (eksemplet viser sporsperre som dekningsgivende objekt)</caption>]]
+[[Image:JD550 05 fig014b.svg.png|thumb|center|600px| (eksemplet viser sporsperre som dekningsgivende objekt)]]
 </figure>
 
 === Utløsing av skiftevei og sikkerhetssone ===
@@ -519,15 +519,15 @@ a) Utløsing av skiftevei skal kun skje når, se <xr id="fig:utløsing av skifte
 I <xr id="fig:utløsing av skiftevei1"/> - <xr id="fig:utløsing av skiftevei3"/> vises hva som skal forstås med benevnelsene som benyttes for sporavsnitt i forbindelse med utløsing av skiftevei.
 
 <figure id="fig:utløsing av skiftevei1">
-[[Bilde:JD550 05 fig015b.svg|thumb|center|600px|<caption>Utløsing av skiftevei</caption>]]
+[[Image:JD550 05 fig015b.svg.png|thumb|center|600px|Utløsing av skiftevei]]
 </figure>
 
 <figure id="fig:utløsing av skiftevei2">
-[[Bilde:JD550 05 fig016b.svg|thumb|center|600px|<caption>Utløsing av skiftevei</caption>]]
+[[Image:JD550 05 fig016b.svg.png|thumb|center|600px|Utløsing av skiftevei]]
 </figure>
 
 <figure id="fig:utløsing av skiftevei3">
-[[Bilde:JD550 05 fig017b.svg|thumb|center|600px|<caption>Utløsing av skiftevei</caption>]]
+[[Image:JD550 05 fig017b.svg.png|thumb|center|600px|Utløsing av skiftevei]]
 </figure>
 
 b) Utløsing av skiftevei skal kun skje ved korrekt sekvens ved passasje, se <xr id="tab:korrekt passasjesekvens"/>.
@@ -545,7 +545,7 @@ b) Utløsing av skiftevei skal kun skje ved korrekt sekvens ved passasje, se <xr
 |-
 | colspan="3"|
 <figure id =Togpassasje>
-[[Bilde:JD550 05 fig012b.svg|600px|center]]
+[[Image:JD550 05 fig012b.svg.png|600px|center]]
 </figure> 
 |-
 ! Tilstand !! Sporavsnitt (a)!! Sporavsnitt (b)       
@@ -616,7 +616,7 @@ a) En skiftevei skal kunne forlenges med følgende:
 === Bevegelsesområde mot flanke ===
 
 <figure id = "fig:bevegelsesområde">
-[[Bilde:JD550 06 fig008.svg|thumb|center|500px|<caption>Bevegelsesområde mot flanken til en togvei</caption>]]
+[[Image:JD550 06 fig008.svg.png|thumb|center|500px|Bevegelsesområde mot flanken til en togvei]]
 </figure>
 
 a) Når et stoppskilt, hoved- eller dvergsignal (x) skal plasseres for å tillate togbevegelse i bevegelsesområdet (a) mot flanken til bevegelsesområdet (b), skal sikkerhetsavstand gitt av <xr id = "tab:Sikkerhetsavstander"/> opprettes, se <xr id = "fig:bevegelsesområde"/>:
@@ -629,7 +629,7 @@ Sikkerhetsavstanden kan reduseres til 200 meter under følgende forutsetninger:
 # Det settes opp et dvergsignal (z) 250 meter foran signal (y) som viser ”Varsom kjøring tillatt” når signal (y) viser signal ”Stopp”, se <xr id = "fig:samtidige200"/>.
 
 <figure id = "fig:samtidige200">
-[[Bilde:JD550 06 fig009.svg|thumb|center|500px|<caption>Samtidige togveier med sikkerhetsavstand 200 meter</caption>]]
+[[Image:JD550 06 fig009.svg.png|thumb|center|500px|Samtidige togveier med sikkerhetsavstand 200 meter]]
 </figure>
 
 '''Alternativ II :'''
@@ -639,7 +639,7 @@ Sikkerhetsavstanden kan reduseres til 150 meter under følgende forutsetninger:
 # ATC-systemet er prosjektert (se [[Signal/Prosjektering/ATC]]) slik at hastigheten ved balisegruppe (x) ikke er høyere enn 40 km/h når signal (y) viser signal "Stopp", og at rullende materiell vil stoppe før middel selv ved bortfall av ATC-informasjon i både balisegruppe og ved hovedsignalet, se <xr id = "fig:samtidige150II"/>.
 
 <figure id = "fig:samtidige150II">
-[[Bilde:JD550 06 fig010.svg|thumb|center|500px|<caption>Samtidige togveier med sikkerhetsavstand 150 meter</caption>]]
+[[Image:JD550 06 fig010.svg.png|thumb|center|500px|Samtidige togveier med sikkerhetsavstand 150 meter]]
 </figure>
 
 '''Alternativ III :'''
@@ -652,7 +652,7 @@ Sikkerhetsavstanden kan reduseres til 150 meter under følgende forutsetninger:
 # ATC-systemet er prosjektert (se [[Signal/Prosjektering/ATC]]) slik at hastigheten ved signal (y) ikke er høyere enn 40 km/h, og at rullende materiell vil stoppe før middel selv ved bortfall av ATC-informasjon i både balisegruppe og ved hovedsignalet.
 
 <figure id = "fig:safmtidige150III">
-[[Bilde:JD550 06 fig011.svg|thumb|center|500px|<caption>Samtidige togveier med sikkerhetsavstand 150 meter</caption>]]
+[[Image:JD550 06 fig011.svg.png|thumb|center|500px|Samtidige togveier med sikkerhetsavstand 150 meter]]
 </figure>
 
 === Parallelle bevegelsesområder  ===
@@ -663,7 +663,7 @@ a) Når et stoppskilt, hoved- eller dvergsignal (x) skal plasseres for å tillat
 
 
 <figure id = "fig:parallelle">
-[[Bilde:JD550 06 fig012.svg|thumb|center|500px|<caption>Parallelle bevegelsesområder</caption>]]
+[[Image:JD550 06 fig012.svg.png|thumb|center|500px|Parallelle bevegelsesområder]]
 </figure>
 
 === Motrettede bevegelsesområder ===
@@ -672,7 +672,7 @@ a) Når et stoppskilt, hoved- eller dvergsignal (x) skal plasseres for å tillat
 
 
 <figure id = "fig:Motrettede bevegelsesområder">
-[[Bilde:JD550 06 fig013.svg|thumb|center|500px|<caption>Motrettede bevegelsesområder</caption>]]
+[[Image:JD550 06 fig013.svg.png|thumb|center|500px|Motrettede bevegelsesområder]]
 </figure>
 
 == Område for lokal skifting / midlertidig skifteområde ==
@@ -688,7 +688,7 @@ a) Et område som skal benyttes for lokal skifting skal avgrenses av hovedsignal
 b) Et område som skal benyttes for lokal skifting skal sikres av dekningsgivende objekter.
 
 <figure id="Lokal frigitt område">
-[[Bilde:JD550 05 fig019b.svg|thumb|center|600px|<caption>Lokalt frigitt område</caption>]]
+[[Image:JD550 05 fig019b.svg.png|thumb|center|600px|Lokalt frigitt område]]
 </figure>
 
 {{lærebokstoff|Signalene merket (a) er dekningsgivende for det lokalt frigitte området. 
@@ -739,7 +739,7 @@ a) Grensen for et arbeidsområde skal være ved et hovedsignal, et stoppskilt, e
 b) Et arbeidsområde skal sikres av dekningsgivende objekter.
 
 <figure id="Arbeidsområder">
-[[Bilde:JD550 05 fig020b.svg|thumb|center|600px|<caption>Eksempler på arbeidsområder</caption>]]
+[[Image:JD550 05 fig020b.svg.png|thumb|center|600px|Eksempler på arbeidsområder]]
 </figure>
 
 

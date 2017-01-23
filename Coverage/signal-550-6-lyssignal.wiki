@@ -6,7 +6,7 @@ Kapitlet beskriver tekniske krav og funksjonskrav til lyssignal. Med et lyssigna
 Kapitlet som helhet gjelder kun for konvensjonelle signalsystemer med utvendig signalering, og skal ikke benyttes for anlegg med ETCS L2 med mindre krav er direkte referert til fra [[Signal/Prosjektering/ERTMS]]. 
 
 <figure id = "fig:systemoversikt signalanlegg">
-[[Bilde:JD550 06 fig001.svg|thumb|center|500px|<caption>Systemoversikt signalanlegg</caption>]]
+[[Image:JD550 06 fig001.svg.png|thumb|center|500px|Systemoversikt signalanlegg]]
 </figure>
 
 Kapitlet omfatter følgende lyssignal:
@@ -38,11 +38,11 @@ Med et lyssignal menes:
 For dagens reléanlegg vil grensesnittet mellom forriglingsutrustningen og lyssignalet være signalreleet. Det vil si at spolen i releet tilhører forriglingsutrustningen mens kontaktene i releet som styrer lyssignalet tilhører signalet. Spolen på kontrollreleet vil tilsvarende være en del av lyssignalet og kontakter på releet vil være en del av forriglingsutrustningen. 
 
 <figure id = "fig:Systemdefinisjon">
-[[Bilde:JD550 06 fig002.svg|thumb|center|500px|<caption>Systemdefinisjon av lyssignal</caption>]]
+[[Image:JD550 06 fig002.svg.png|thumb|center|500px|Systemdefinisjon av lyssignal]]
 </figure>
 
 <figure id = "fig:Systemdefinisjon">
-[[Bilde:JD550 06 fig003.svg|thumb|center|500px|<caption>Systemdefinisjon av lyssignal med eksempler på detaljer for signalhode og signalmast</caption>]]
+[[Image:JD550 06 fig003.svg.png|thumb|center|500px|Systemdefinisjon av lyssignal med eksempler på detaljer for signalhode og signalmast]]
 </figure>
 
 = Plassering av lyssignal =
@@ -66,7 +66,7 @@ d) Der flere signal skal vises fra samme sted, skal signalene være plassert på
 e) Lyssignal for forskjellige spor som naturlig hører sammen bør plasseres på linje, se eksempel i <xr id = "fig:Plassering av signal som naturlig hører sammen"/>.
 
 <figure id = "fig:Plassering av signal som naturlig hører sammen">
-[[Bilde:JD550 06 fig004.svg|thumb|center|500px|<caption>Plassering av signal som naturlig hører sammen</caption>]]
+[[Image:JD550 06 fig004.svg.png|thumb|center|500px|Plassering av signal som naturlig hører sammen]]
 </figure>
 
 === Hovedsignal ===
@@ -92,7 +92,7 @@ i) Et hovedsignal bør ikke plasseres i tunneler, på bruer, eller andre steder 
 j) Et innkjørhovedsignal skal plasseres ≥ 200 meter foran innkjørtogveiens første sentralstilte, motrettede sporveksel, se <xr id = "fig:Plassering av innkjørhovedsignal"/>.
 
 <figure id = "fig:Plassering av innkjørhovedsignal">
-[[Bilde:JD550 06 fig005.svg|thumb|center|500px|<caption>Plassering av innkjørhovedsignal</caption>]]
+[[Image:JD550 06 fig005.svg.png|thumb|center|500px|Plassering av innkjørhovedsignal]]
 </figure>
 
 k) Et innkjørhovedsignal bør plasseres slik at avstanden er tilstrekkelig til at et tog som kjører med strekningens høyeste tillatte kjørehastighet kan redusere hastigheten tilstrekkelig før innkjørtogveiens første sentralstilte sporveksel som kan være fastlagt for kjøring i sporvekselens avvikespor. 
@@ -188,7 +188,7 @@ c) Et frittstående forsignal skal plasseres slik at avstanden til det tilhøren
 d) Når frittstående forsignal benyttes og strekningens høyeste tillatt kjørehastighet er > 130 km/h, skal ATC forsignal plasseres slik at avstanden er tilstrekkelig til at et tog kan redusere hastigheten til 130 km/h ved det tilhørende forsignalet, se <xr id = "fig:plasseringATC"/>. For hastigheter over 210 km/h kan avstanden finnes ved å benytte regneark i [https://194.19.110.201/PDF/Signal/550/Vedlegg/T5010a01.pdf vedlegg a] til [[Signal/Prosjektering/ATC]]. Målhastigheten skal være 130 km/h. 
 
 <figure id = "fig:plasseringATC">
-[[Bilde:JD550 06 fig006.svg|thumb|center|500px|<caption>Plassering av frittstående forsignal og ATC forsignal på strekning med kjørehastighet > 130 km/h</caption>]]
+[[Image:JD550 06 fig006.svg.png|thumb|center|500px|Plassering av frittstående forsignal og ATC forsignal på strekning med kjørehastighet > 130 km/h]]
 </figure>
 
 <figtable id="tab:Plassering av ATC">
@@ -224,7 +224,7 @@ d) Når frittstående forsignal benyttes og strekningens høyeste tillatt kjøre
 e) Dersom nødvendig stopplengde er lengre enn avstanden mellom to etterfølgende hoved­signal, skal det benyttes gjennomsignalering ved hjelp av ATC ([[Signal/Prosjektering/ATC]]), se <xr id = "fig:forsignalplassering"/>.
 
 <figure id = "fig:forsignalplassering">
-[[Bilde:JD550 06 fig007.svg|thumb|center|500px|<caption>Forsignalplassering og gjennomsignalering</caption>]]
+[[Image:JD550 06 fig007.svg.png|thumb|center|500px|Forsignalplassering og gjennomsignalering]]
 </figure>
 
 f) Et forsignal skal plasseres på foregående hovedsignals mast dersom avstanden mellom det tilhørende hovedsignalet og det foregående hovedsignalet er ≤ 2200 meter.
@@ -441,7 +441,7 @@ d) Lyskilden skal defineres som feilaktig tent dersom lysstyrken overstiger 0,05
 e) Lyskilden skal defineres som feilaktig slukket dersom lysstyrken er mindre enn 10 cd. 
 
 <figure id = "fig:lysspredning">
-[[Bilde:JD550 06 fig014.svg|thumb|center|500px|<caption>Lysspredning/lysstyrke</caption>]]
+[[Image:JD550 06 fig014.svg.png|thumb|center|500px|Lysspredning/lysstyrke]]
 </figure>
 
 ==== Glødelampe (signallampe) ====
@@ -467,13 +467,13 @@ a) En signallampe for fiberoptikk bør utføres med to glødetråder, hovedtråd
 b) Avstanden mellom signalhodet og signallampen for fiberoptikk skal minimum kunne være inntil 20 meter. 
 
 <figure id = "fig:Eksempel på samplassering av lyssignal">
-[[Bilde:JD550 06 fig015.svg|thumb|center|500px|<caption>Eksempel på samplassering av lyssignal</caption>]]
+[[Image:JD550 06 fig015.svg.png|thumb|center|500px|Eksempel på samplassering av lyssignal]]
 </figure>
 
 == Hovedsignal ==
 
 <figure id = "fig:hovedsignal">
-[[Bilde:JD550 06 fig016.svg|thumb|center|500px|<caption>Hovedsignal 3-lys - signalbilder</caption>]]
+[[Image:JD550 06 fig016.svg.png|thumb|center|500px|Hovedsignal 3-lys - signalbilder]]
 </figure>
 
 a) Et hovedsignal skal kunne vise:
@@ -541,13 +541,13 @@ t) Signalhodet skal kunne justeres trinnløst i vertikalplanet inntil ± 3°.
 {{lærebokstoff|3° tilsvarer stigning/fall på 52 ‰ på avstand 250 meter.}}
 
 <figure id = "fig:eksempel på 3-lys hovedsignal">
-[[Bilde:JD550 06 fig017.svg|thumb|center|500px|<caption>Eksempel på 3-lys hovedsignal</caption>]]
+[[Image:JD550 06 fig017.svg.png|thumb|center|500px|Eksempel på 3-lys hovedsignal]]
 </figure>
 
 == Forsignal ==
 
 <figure id = "fig:forsignal - signalbilder">
-[[Bilde:JD550 06 fig018.svg|thumb|center|350px|<caption>Forsignal - signalbilder</caption>]]
+[[Image:JD550 06 fig018.svg.png|thumb|center|350px|Forsignal - signalbilder]]
 </figure>
 
 a) Et forsignal skal kunne vise:
@@ -616,13 +616,13 @@ s) Signalhodet skal kunne justeres trinnløst i vertikalplanet inntil ± 3°.
 {{lærebokstoff|3° tilsvarer stigning/fall på 52 ‰ på avstand 250 meter.}}
 
 <figure id = "fig:eksempel frittstående">
-[[Bilde:JD550 06 fig019.svg|thumb|center|500px|<caption>Eksempel på frittstående forsignal og forsignal på hovedsignals mast</caption>]]
+[[Image:JD550 06 fig019.svg.png|thumb|center|500px|Eksempel på frittstående forsignal og forsignal på hovedsignals mast]]
 </figure>
 
 == Dvergsignal ==
 
 <figure id = "fig:Dvergsignal - signalbilder">
-[[Bilde:JD550 06 fig020.svg|thumb|center|500px|<caption>Dvergsignal - signalbilder</caption>]]
+[[Image:JD550 06 fig020.svg.png|thumb|center|500px|Dvergsignal - signalbilder]]
 </figure>
 
 a) Et dvergsignal skal kunne vise:
@@ -677,13 +677,13 @@ n) Toppen av signalhodet bør ikke være mer enn 2,0 meter over skinnetopp.
 {{lærebokstoff|3° tilsvarer stigning/fall på 52 ‰ på avstand 250 meter.}}
 
 <figure id = "fig:eksempel dvergsignal">
-[[Bilde:JD550 06 fig021_01.svg|thumb|center|500px|<caption>Eksempel på frittstående dvergsignal </caption>]]
+[[Image:JD550 06 fig021_01.svg.png|thumb|center|500px|Eksempel på frittstående dvergsignal ]]
 </figure>
 
 == Høyt skiftesignal ==
 
 <figure id = "fig:høyt skiftesignal og eksempel på lyssignal">
-[[Bilde:JD550 06 fig022.svg|thumb|center|500px|<caption>Høyt skiftesignal og eksempel på lyssignal</caption>]]
+[[Image:JD550 06 fig022.svg.png|thumb|center|500px|Høyt skiftesignal og eksempel på lyssignal]]
 </figure>
 
 a) Et høyt skiftesignal skal kunne vise:
@@ -746,7 +746,7 @@ o) Signalhodet skal kunne justeres trinnløst i vertikalplanet inntil ± 3°.
 == Repetersignal ==
 
 <figure id = "fig:repetersignal - signalbilder">
-[[Bilde:JD550 06 fig023.svg|thumb|center|500px|<caption>Repetersignal - signalbilder</caption>]]
+[[Image:JD550 06 fig023.svg.png|thumb|center|500px|Repetersignal - signalbilder]]
 </figure>
 
 a) Et repetersignal skal kunne vise:
@@ -802,7 +802,7 @@ o) Signalhodet skal kunne justeres trinnløst i vertikalplanet inntil ± 3°.
 {{lærebokstoff|3° tilsvarer stigning/fall på 52 ‰ på avstand 250 meter.}}
 
 <figure id = "fig:eksempel repetersignal">
-[[Bilde:JD550 06 fig024.svg|thumb|center|500px|<caption>Eksempel på repetersignal</caption>]]
+[[Image:JD550 06 fig024.svg.png|thumb|center|500px|Eksempel på repetersignal]]
 </figure>
 
 == Togsporsignal ==
@@ -810,7 +810,7 @@ o) Signalhodet skal kunne justeres trinnløst i vertikalplanet inntil ± 3°.
 Togsporsignaler skal ikke prosjekteres ved nye signalanlegg eller ved endringer i signalanlegg
 
 <figure id = "fig:togsporsignal">
-[[Bilde:JD550 06 fig025.svg|thumb|center|500px|<caption>Togsporsignal - signalbilder og eksempel på lyssignal</caption>]]
+[[Image:JD550 06 fig025.svg.png|thumb|center|500px|Togsporsignal - signalbilder og eksempel på lyssignal]]
 </figure>
 
 a) Et togsporsignal skal kunne vise:
@@ -865,7 +865,7 @@ n) Signalhodet skal kunne justeres trinnløst i vertikalplanet inntil ± 3°.
 == Middelkontrollampe ==
 
 <figure id = "fig:middelkontrollampe">
-[[Bilde:JD550 06 fig026.svg|thumb|center|500px|<caption>Middelkontrollampe - signalbilde og eksempel på lyssignal</caption>]]
+[[Image:JD550 06 fig026.svg.png|thumb|center|500px|Middelkontrollampe - signalbilde og eksempel på lyssignal]]
 </figure>
 
 a) En middelkontrollampe skal kunne vise hvitt blinklys.
@@ -915,7 +915,7 @@ m) Signalhodet skal kunne justeres trinnløst i vertikalplanet inntil ± 3°.
 == Lyssignal forsiktig kjøring ==
 
 <figure id = "fig:lyssignal forsiktig kjøring">
-[[Bilde:JD550 06 fig027.svg|thumb|center|500px|<caption>Lyssignal forsiktig kjøring - signalbilde og eksempel på lyssignal</caption>]]
+[[Image:JD550 06 fig027.svg.png|thumb|center|500px|Lyssignal forsiktig kjøring - signalbilde og eksempel på lyssignal]]
 </figure>
 
 a) Lyssignalet forsiktig kjøring skal kunne vise signal 32, ”Forsiktig kjøring”, eller være slukket.
@@ -961,7 +961,7 @@ k) Signalhodet skal kunne justeres trinnløst i vertikalplanet inntil ± 3°.
 == Linjesignal ==
 
 <figure id = "fig:linjesignal">
-[[Bilde:JD550 06 fig028.svg|thumb|center|500px|<caption>Linjesignal - signalbilde og eksempel på lyssignal</caption>]]
+[[Image:JD550 06 fig028.svg.png|thumb|center|500px|Linjesignal - signalbilde og eksempel på lyssignal]]
 </figure>
 
 a) Et linjesignal skal kunne vise Signal 35 B ”Til angitt linje/sporområde”, eller være slukket.
@@ -1010,7 +1010,7 @@ k) Signalhodet skal kunne justeres i trinnløst i vertikalplanet inntil ± 3°.
 == Lyssignal avvikende hastighet ==
 
 <figure id = "fig:Lyssignalet avvikende hastighet">
-[[Bilde:JD550 06 fig029.svg|thumb|center|500px|<caption>Lyssignalet avvikende hastighet - signalbilde og eksempel på lyssignal</caption>]]
+[[Image:JD550 06 fig029.svg.png|thumb|center|500px|Lyssignalet avvikende hastighet - signalbilde og eksempel på lyssignal]]
 </figure>
 
 a) Lyssignalet avvikende hastighet skal kunne vise Signal 68 E eller være slukket.
@@ -1056,7 +1056,7 @@ k) Signalhodet skal kunne justeres trinnløst i vertikalplanet inntil ± 3°.
 == Sporvekselsignal for enkel sporveksel ==
 
 <figure id = "fig:Sporvekselsignal">
-[[Bilde:JD550 06 fig030.svg|thumb|center|500px|<caption>Sporvekselsignal – signalbilder og eksempel på lyssignal</caption>]]
+[[Image:JD550 06 fig030.svg.png|thumb|center|500px|Sporvekselsignal – signalbilder og eksempel på lyssignal]]
 </figure>
 
 a) Et sporvekselsignal for enkel sporveksel skal kunne vise:
@@ -1097,7 +1097,7 @@ g) Signalhodet bør være plassert slik at avstanden mellom senter av signalet o
 === Sporvekselsignal for kryssveksel ===
 
 <figure id = "fig:Sporvekselsignal for kryssvekselsignal">
-[[Bilde:JD550 06 fig031.svg|thumb|center|500px|<caption>Sporvekselsignal for kryssvekselsignal - signalbilder og eksempel på lyssignal</caption>]]
+[[Image:JD550 06 fig031.svg.png|thumb|center|500px|Sporvekselsignal for kryssvekselsignal - signalbilder og eksempel på lyssignal]]
 </figure>
 
 a) Et sporvekselsignal for kryssveksel skal kunne vise:
@@ -1144,7 +1144,7 @@ j) Signalhodet bør være plassert slik at avstanden mellom senter av signalet o
 == Sporsperresignal ==
 
 <figure id = "fig:Sporsperresignal">
-[[Bilde:JD550 06 fig032.svg|thumb|center|500px|<caption>Sporsperresignal – signalbilder og eksempel på lyssignal</caption>]]
+[[Image:JD550 06 fig032.svg.png|thumb|center|500px|Sporsperresignal – signalbilder og eksempel på lyssignal]]
 </figure>
 
 a) Et sporsperresignal skal kunne vise

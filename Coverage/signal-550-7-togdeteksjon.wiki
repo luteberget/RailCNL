@@ -4,7 +4,7 @@ __NUMBEREDHEADINGS__
 Kapitlet beskriver tekniske krav og funksjonskrav til togdeteksjon. 
 
 <figure id ="Systemoversikt signalanlegg">
-[[Bilde:JD550 07 fig001.png|thumb|center|350px|<caption>Systemoversikt signalanlegg</caption>]]
+[[Image:JD550 07 fig001.png|thumb|center|350px|Systemoversikt signalanlegg]]
 </figure>
 
 Kapittelet omfatter følgende systemer for togdeteksjon:
@@ -26,7 +26,7 @@ Det finnes i hovedsak to forskjellige typer togdeteksjon:
 *Punktbasert togdeteksjon - herunder akselteller 
 
 <figure id ="Systemdefinisjon - togdeteksjon">
-[[Bilde:JD550 07 fig002.png|thumb|center|350px|<caption>Systemdefinisjon - togdeteksjon</caption>]]
+[[Image:JD550 07 fig002.png|thumb|center|350px|Systemdefinisjon - togdeteksjon]]
 </figure>
 
 a) '''Valg av togdeteksjonssystem:''' Det skal velges akseltellersystem som togdeteksjon 
@@ -40,14 +40,14 @@ b) '''Grense mellom togdeteksjonssystemer:''' Grense mellom akselteller‐ og sp
 
 ===Sporfelt===
 <figure id ="Systemdefinisjon - sporfelt">
-[[Bilde:JD550 07 fig003.png|thumb|center|350px|<caption>Systemdefinisjon - sporfelt</caption>]]
+[[Image:JD550 07 fig003.png|thumb|center|350px|Systemdefinisjon - sporfelt]]
 </figure>
 
 Et sporfelt består typisk av en sender/tilførsel i en ende av sporavsnittet og en mottaker/retur i den andre enden av sporavsnittet og et sporfeltrele som angir sporavsnittets status til forriglingsutrustningen. Sporfeltet begrenses av en isolert skjøt eller en elektrisk overgangssone i begge ender av sporavsnittet.
 
 ===Akselteller===
 <figure id ="Systemdefinisjon - akseltellersystem">
-[[Bilde:JD550 07 fig004.png|thumb|center|350px|<caption>Systemdefinisjon - akseltellersystem</caption>]]
+[[Image:JD550 07 fig004.png|thumb|center|350px|Systemdefinisjon - akseltellersystem]]
 </figure>
 
 Et sporavsnitt detektert med akselteller består av en detektor - tellepunkt i hver ende av sporavsnittet og en evalueringsenhet som behandler informasjon fra tellepunktene og angir sporavsnittets status til forriglingsutrustningen.
@@ -80,7 +80,7 @@ i) Akseltellere skal prosjekteres som beskrevet i [[Signal/Prosjektering/Togdete
 
 ==Sporavsnitt ved hovedsignal og dvergsignal==
 <figure id ="Sporavsnitt ved hovedsignal og dvergsignal">
-[[Bilde:JD550 07 fig005.png|thumb|center|350px|<caption>Sporavsnitt ved hovedsignal og dvergsignal</caption>]]
+[[Image:JD550 07 fig005.png|thumb|center|350px|Sporavsnitt ved hovedsignal og dvergsignal]]
 </figure>
 
 a) Sporavsnittet (2) bak signalet skal være detektert som fritt når tog befinner seg foran signalet. 
@@ -89,7 +89,7 @@ b) Sporavsnittet (1) foran signalet skal være detektert som fritt når tog har 
 
 ==Sporavsnitt i sporveksler==
 <figure id ="fig:Sporavsnitt i sporveksel">
-[[Bilde:JD550 07 fig006.png|thumb|center|350px|<caption>Sporavsnitt i sporveksel</caption>]]
+[[Image:JD550 07 fig006.png|thumb|center|350px|Sporavsnitt i sporveksel]]
 </figure>
 
 a) Et sporavsnitt i en sporveksel skal være detektert som belagt når et togs første (siste) aksel er mindre enn 5 meter innenfor middel mot nabospor, se <xr  id ="fig:Sporavsnitt i sporveksel"/>.
@@ -100,7 +100,7 @@ c) Dersom akseltellere brukes som togdeteksjon skal tellepunkt som ikke passeres
 
 ==Sporavsnitt ved sporsperre==
 <figure id ="fig:Sporavsnitt ved sporsperre">
-[[Bilde:JD550 07 fig007.png|thumb|center|350px|<caption>Sporavsnitt ved sporsperre</caption>]]
+[[Image:JD550 07 fig007.png|thumb|center|350px|Sporavsnitt ved sporsperre]]
 </figure>
 
 a) Et sporavsnitt ved en sporsperre skal være detektert som belagt senest når toget er ved sporsperrens bakkant, se <xr id ="fig:Sporavsnitt ved sporsperre"/>.
@@ -108,18 +108,18 @@ a) Et sporavsnitt ved en sporsperre skal være detektert som belagt senest når 
 
 ==Sporavsnitt ved sporkryss/kryssveksel==
 <figure id ="fig:Sporavsnitt ved sporkryss">
-[[Bilde:JD550 07 fig008.png|thumb|center|350px|<caption>Sporavsnitt ved sporkryss/kryssveksel</caption>]]
+[[Image:JD550 07 fig008.png|thumb|center|350px|Sporavsnitt ved sporkryss/kryssveksel]]
 </figure>
 
 a) Et sporavsnitt i et sporkryss eller en kryssveksel skal ha en utstrekning som vist i <xr  id ="fig:Sporavsnitt ved sporkryss"/>.
 
 ==Sporavsnitt ved overkjøringsspor==
 <figure id ="fig:Sporavsnitt ved overkjøringsspor">
-[[Bilde:JD550 07 fig009.png|thumb|center|350px|<caption>Sporavsnitt ved overkjøringsspor</caption>]]
+[[Image:JD550 07 fig009.png|thumb|center|350px|Sporavsnitt ved overkjøringsspor]]
 </figure>
 
 <figure id ="fig:Sporavsnitt ved overkjøringsspor med sporkryss">
-[[Bilde:JD550 07 fig010.png|thumb|center|350px|<caption>Sporavsnitt ved overkjøringsspor med sporkryss</caption>]]
+[[Image:JD550 07 fig010.png|thumb|center|350px|Sporavsnitt ved overkjøringsspor med sporkryss]]
 </figure>
 
 a) Sporavsnittene ved overkjøringsspor skal prosjekteres på en av følgende måter, ref. <xr  id ="fig:Sporavsnitt ved overkjøringsspor"/> og <xr id ="fig:Sporavsnitt ved overkjøringsspor med sporkryss"/>:

@@ -5,7 +5,7 @@ __NUMBEREDHEADINGS__
 Dette kapitlet beskriver tekniske krav og funksjonskrav til veisikringsanlegg. 
 
 <figure id="Systemoversikt signalanlegg">
-[[Bilde:JD550 09 fig001.png|thumb|center|600px|<caption>Systemoversikt signalanlegg</caption>]]
+[[Image:JD550 09 fig001.png|thumb|center|600px|Systemoversikt signalanlegg]]
 </figure>
 
 Kapitlet omfatter følgende delsystemer/komponenter:
@@ -40,12 +40,12 @@ h) '''Hinderdeteksjon''' Hinderdeteksjon kan benyttes for å detektere et veikj�
 
 ==Systemdefinisjon==
 <figure id="Systemdefinisjon veisikringsanlegg">
-[[Bilde:JD550 09 fig002.png|thumb|center|600px|<caption>Systemdefinisjon veisikringsanlegg (NSS)</caption>]]
+[[Image:JD550 09 fig002.png|thumb|center|600px|Systemdefinisjon veisikringsanlegg (NSS)]]
 </figure>
 
 
 <figure id="Systemdefinisjon veisikringsanlegg L2">
-[[Bilde:Systemdefinisjon veisikringsanlegg L2.svg|thumb|center|600px|<caption>Systemdefinisjon veisikringsanlegg (L2)</caption>]]
+[[Image:Systemdefinisjon veisikringsanlegg L2.svg|thumb|center|600px|Systemdefinisjon veisikringsanlegg (L2)]]
 </figure>
 
 ==Tilstander og tiltandsoverganger==
@@ -150,19 +150,19 @@ d) Et hovedsignal som er plassert etter en planovergang på en stasjon skal sett
 e) Et forsignal for hovedsignal skal settes i avhengighet til veisikringsanlegget i de tilfeller planovergangen ligger mellom forsignalet og tilhørende hovedsignal.
 
 <figure id="Planovergang i togsporene">
-[[Bilde:JD550 09 fig007.png|thumb|center|600px|<caption>Planovergang i togsporene</caption>]]
+[[Image:JD550 09 fig007.png|thumb|center|600px|Planovergang i togsporene]]
 </figure>
 
 <figure id="Planovergang mellom inn- og utkjørhovedsignalene">
-[[Bilde:JD550 09 fig008.png|thumb|center|600px|<caption>Planovergang mellom inn- og utkjørhovedsignalene.</caption>]]
+[[Image:JD550 09 fig008.png|thumb|center|600px|Planovergang mellom inn- og utkjørhovedsignalene.]]
 </figure>
 
 <figure id="Planovergang midt på stasjonen">
-[[Bilde:JD550 09 fig009.png|thumb|center|600px|<caption>Planovergang midt på stasjonen.</caption>]]
+[[Image:JD550 09 fig009.png|thumb|center|600px|Planovergang midt på stasjonen.]]
 </figure>
 
 <figure id="Planovergang mellom innkjørhovedsignal og tilhørende forsignal">
-[[Bilde:JD550 09 fig010.png|thumb|center|600px|<caption>Planovergang mellom innkjørhovedsignal og tilhørende forsignal</caption>]]
+[[Image:JD550 09 fig010.png|thumb|center|600px|Planovergang mellom innkjørhovedsignal og tilhørende forsignal]]
 </figure>
 
 f) Et dvergsignal som tillater skiftevei over planovergangen skal settes i avhengighet til veisikringsanlegget, slik at dvergsignalet kun kan vise "Skifting tillatt" eller "Varsom skifting tillatt" når planovergangen er sperret.
@@ -274,7 +274,7 @@ f) Trafikkskiltet 138 Jernbanespor (andreaskors) skal plasseres på veisignalets
 g) Veisignalene til høyre for veien skal benevnes V1 og V2 med V1 nærmest banens kilometer 0. Veisignal utover disse skal benevnes V3, V5 osv. på samme side av sporet som V1 og V4, V6 osv. på samme side som V2. Veisignal skal ikke merkes, se <xr id = "fig:Plassering av utstyr for veisikringsanlegg"/>.
 
 <figure id="fig:Plassering av utstyr for veisikringsanlegg">
-[[Bilde:JD550 09 fig003.png|thumb|center|600px|<caption>Plassering av utstyr for veisikringsanlegg</caption>]]
+[[Image:JD550 09 fig003.png|thumb|center|600px|Plassering av utstyr for veisikringsanlegg]]
 </figure>
 
 ===Lydsignal===
@@ -455,7 +455,7 @@ a) Et innkoblingspunkt for veisikringsanlegg skal plasseres slik at planovergang
 <math>A = B +\frac{V}{3,6}\cdot(\text{FrT}+\text{SeT}+3)</math>, <math>V = \text{hastighet}[km/h]</math>
 }}
 <figure id="Plassering av et innkoblingspunkt ved veibomanlegg uten avhengighet til forsignal eller hovedsignal">
-[[Bilde:JD550 09 fig004.png|thumb|center|600px|<caption>Plassering av et innkoblingspunkt ved veibomanlegg uten avhengighet til forsignal eller hovedsignal</caption>]]
+[[Image:JD550 09 fig004.png|thumb|center|600px|Plassering av et innkoblingspunkt ved veibomanlegg uten avhengighet til forsignal eller hovedsignal]]
 </figure>
 
 ===Veisikringsanlegg med avhengighet til forsignal eller hovedsignal===
@@ -468,7 +468,7 @@ a) Når et forsignal eller et hovedsignal er satt i avhengighet til et veisikrin
 }}
  
 <figure id="Plassering av et innkoblingspunkt ved veibomanlegg med avhengighet til forsignal eller hovedsignal">
-[[Bilde:JD550 09 fig005.png|thumb|center|600px|<caption>Plassering av et innkoblingspunkt ved veibomanlegg med avhengighet til forsignal eller hovedsignal.</caption>]]
+[[Image:JD550 09 fig005.png|thumb|center|600px|Plassering av et innkoblingspunkt ved veibomanlegg med avhengighet til forsignal eller hovedsignal.]]
 </figure>
 
 === Veisikringsanlegg på strekning utrustet med FATC ===
@@ -544,11 +544,11 @@ c) Et veisikringsanlegg skal kunne indikere følgende:
 
 ===Veisignal===
 <figure id="Veisignal - Signalbilder">
-[[Bilde:JD550 09 fig011.png|thumb|center|350px|<caption>Veisignal - Signalbilder</caption>]]
+[[Image:JD550 09 fig011.png|thumb|center|350px|Veisignal - Signalbilder]]
 </figure>
 
 <figure id="Veisignal - Signalbilder">
-[[Bilde:JD550 09 fig011b.svg|thumb|center|350px|<caption>Veisignal - Signalbilder</caption>]]
+[[Image:JD550 09 fig011b.svg|thumb|center|350px|Veisignal - Signalbilder]]
 </figure>
 
 a) Et veisignal skal være utformet i samsvar med skiltforskriften, og kunne vise:
@@ -602,7 +602,7 @@ o) Trafikkskilt 138 Jernbanespor (andreaskors) skal monteres på veisignalets ma
 # Ca. 3,0 meter over vei for ”andreaskors” (flere spor)
 
 <figure id="Veisignal">
-[[Bilde:JD550 09 fig012.png|thumb|center|600px|<caption>Veisignal</caption>]]
+[[Image:JD550 09 fig012.png|thumb|center|600px|Veisignal]]
 </figure>
 
 ===Lydsignal===
@@ -612,7 +612,7 @@ a) Et lydsignal skal ha (justerbart) volum i området 74 dB(A) til 92 dB(A) mål
 ===Veibomlykt===
 
 <figure id="Veibomlykt">
-[[Bilde:JD550 09 fig013.png|thumb|center|600px|<caption>Veibomlykt</caption>]]
+[[Image:JD550 09 fig013.png|thumb|center|600px|Veibomlykt]]
 </figure>
 
 a) En veibomlykt skal:
@@ -656,7 +656,7 @@ k) Ved flere veibomlykter på en veibom bør disse blinke vekselvis.
 ==Veibom og veibomdrivmaskin==
 
 <figure id="Eksempel på veibom">
-[[Bilde:JD550 09 fig014.png|thumb|center|600px|<caption>Eksempel på veibom</caption>]]
+[[Image:JD550 09 fig014.png|thumb|center|600px|Eksempel på veibom]]
 </figure>
 
 ===Generelt===
@@ -739,7 +739,7 @@ n) Ved manuell heving og senking av en veibom skal veibommen ikke kunne heves el
 ===Planovergangsignal===
 
 <figure id="fig:Planovergangsignal - signalbilder">
-[[Bilde:JD550 09 fig015.png|thumb|center|350px|<caption>Planovergangsignal - signalbilder</caption>]]
+[[Image:JD550 09 fig015.png|thumb|center|350px|Planovergangsignal - signalbilder]]
 </figure>
 
 a) Et planovergangsignal skal kunne vise:
@@ -803,13 +803,13 @@ t) Signalhodet skal kunne justeres trinnløst i horisontalplanet inntil ± 20°.
 u) Signalhodet skal kunne justeres i trinnløst i vertikalplanet inntil ± 5°.
 
 <figure id="fig:Planovergangsignal">
-[[Bilde:JD550 09 fig016.png|thumb|center|350px|<caption>Planovergangsignal/forsignal for planovergangsignal</caption>]]
+[[Image:JD550 09 fig016.png|thumb|center|350px|Planovergangsignal/forsignal for planovergangsignal]]
 </figure>
 
 ===Forsignal for planovergangsignal===
 
 <figure id="fig:Forsignal for planovergangsignal - signalbilder">
-[[Bilde:JD550 09 fig017.png|thumb|center|350px|<caption>Forsignal for planovergangsignal - signalbilder</caption>]]
+[[Image:JD550 09 fig017.png|thumb|center|350px|Forsignal for planovergangsignal - signalbilder]]
 </figure>
 
 a) Et forsignal for planovergangsignal skal kunne vise:
@@ -885,7 +885,7 @@ Under utarbeidelse.
 ==Systemdefinisjon==
 
 <figure id="Systemdefinisjon varsellampe">
-[[Bilde:JD550 09 fig018.png|thumb|center|600px|<caption>Systemdefinisjon varsellampe</caption>]]
+[[Image:JD550 09 fig018.png|thumb|center|600px|Systemdefinisjon varsellampe]]
 </figure>
 
 ==Plassering av utstyr==
@@ -912,7 +912,7 @@ c) Varsellampen skal slukke slik at varslingstiden er minst 60 sekund for tog so
 ===Varsellampe===
 
 <figure id="Varsellampe">
-[[Bilde:JD550 09 fig019.png|thumb|center|350px|<caption>Varsellampe</caption>]]
+[[Image:JD550 09 fig019.png|thumb|center|350px|Varsellampe]]
 </figure>
 
 a) Lys i varsellampen skal kunne ses og oppfattes entydig på 150 meters avstand.
@@ -946,7 +946,7 @@ e) En varsellampe skal plasseres på en ca. 2 meter høy mast.
 ==Systemdefinisjon==
 
 <figure id="fig:Systemdefinisjon varsellys">
-[[Bilde:JD550 09 fig020.png|thumb|center|600px|<caption>Systemdefinisjon varsellys</caption>]]
+[[Image:JD550 09 fig020.png|thumb|center|600px|Systemdefinisjon varsellys]]
 </figure>
 
 ==Plassering av utstyr==
@@ -974,7 +974,7 @@ f) Det skal gis alarm ved feil på varsellyset.
 ===Varsellys===
 
 <figure id="fig:Varsellys">
-[[Bilde:JD550 09 fig021.png|thumb|center|350px|<caption>Varsellys</caption>]]
+[[Image:JD550 09 fig021.png|thumb|center|350px|Varsellys]]
 </figure>
 
 a) Lys i varsellyset skal kunne ses og oppfattes entydig på 150 meters avstand.

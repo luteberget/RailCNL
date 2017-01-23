@@ -5,7 +5,7 @@ __NUMBEREDHEADINGS__
 ATC-systemet har som formål å overvåke togs kjørehastigheter, med utgangspunkt i banebetingede hastighetsbegrensninger og/eller kjøretillatelser gitt ved lyssignal. Hastighetsinformasjonen overføres til tog via informasjonspunkter i sporet. Informasjonspunktene består av 2 - 4 baliser.
 
 <figure id ="fig:Systemoversikt signalanlegg">
-[[Bilde:JD550 10 fig001.png|thumb|center|600px|<caption>Systemoversikt signalanlegg</caption>]]
+[[Image:JD550 10 fig001.png|thumb|center|600px|Systemoversikt signalanlegg]]
 </figure>
 
 Dette dokument omfatter de hovedregler som skal følges ved prosjektering av ATC. Det som ikke er omtalt i dokumentet hører ikke inn under begrepet “prosjektering”. Dokumentet angir hvordan ATC-systemet skal benyttes i de enkelte prosjekteringstilfeller, samt hvordan prosjekteringen skal dokumenteres. Prosjekteringsdokumentasjonen omfatter balisesymboler inntegnet på “Signal- og baliseplassering” og “Kodetabeller”.
@@ -82,7 +82,7 @@ a) A-balisen i L kodes alltid AX=4, AY=14 og AZ=14, og
 === Plassering av lenkingsbalisegrupper på linjen ===
 
 <figure id ="fig:Plassering av lenkingsbalisegrupper på linjen">
-[[Bilde:JD550 10 fig002.png|thumb|center|350px|<caption>Plassering av lenkingsbalisegrupper på linjen</caption>]]
+[[Image:JD550 10 fig002.png|thumb|center|350px|Plassering av lenkingsbalisegrupper på linjen]]
 </figure>
 
 a) Lenkingsbalisegrupper på linjen skal ikke legges på strekninger som dekkes av et forsignal.
@@ -418,11 +418,11 @@ b) Ved signal 24 i forsignal for hovedsignal skal ATC gi ”vent sporvekselhasti
 c) Ved signal 24 i forsignal for hovedsignal skal overvåking av hastighet over sporveksel gjøres ved hjelp av SVG i DATC-område, og ved hjelp av A-bortflytting i FATC-område.
 
 <figure id ="fig:Prosjektering av DATC ved samtidige togbevegelser">
-[[Bilde:JD550 10 fig003.png|thumb|center|350px|<caption>Prosjektering av DATC ved samtidige togbevegelser med sikkerhetsavstand 200 meter</caption>]]
+[[Image:JD550 10 fig003.png|thumb|center|350px|Prosjektering av DATC ved samtidige togbevegelser med sikkerhetsavstand 200 meter]]
 </figure>
 
 <figure id ="fig:Prosjektering av FATC ved samtidige togbevegelser">
-[[Bilde:JD550 10 fig004.png|thumb|center|350px|<caption>Prosjektering av FATC ved samtidige togbevegelser med sikkerhetsavstand 200 meter</caption>]]
+[[Image:JD550 10 fig004.png|thumb|center|350px|Prosjektering av FATC ved samtidige togbevegelser med sikkerhetsavstand 200 meter]]
 </figure>
 
 == Sikkerhetsavstand 150 meter ==
@@ -440,7 +440,7 @@ c) Ved signal 24 i forsignal for hovedsignal skal ATC gi ”vent sporvekselhasti
 d) En lenkingsbalisegruppe skal oppdatere avstandsinformasjonen ca 250 meter foran repeterbalisegruppa. {{lærebokstoff|Eventuelt bortfall av rep-gruppen vil da gi feilmelding ca 100 m før utkjørhovedsignalet passeres.}}
 
 <figure id ="fig:Prosjektering av ATC ved samtidige togbevegelser1">
-[[Bilde:JD550 10 fig005.svg|thumb|center|350px|<caption>Prosjektering av ATC ved samtidige togbevegelser med sikkerhetsavstand 150 meter</caption>]]
+[[Image:JD550 10 fig005.svg|thumb|center|350px|Prosjektering av ATC ved samtidige togbevegelser med sikkerhetsavstand 150 meter]]
 </figure>
 
 == Sikkerhetsavstand 150 meter, ombygging ==
@@ -458,7 +458,7 @@ d) En lenkingsbalisegruppe skal oppdatere avstandsinformasjonen ca 250 meter for
 
 
 <figure id ="fig:Prosjektering av ATC ved samtidige togbevegelser2">
-[[Bilde:JD550 10 fig006.svg|thumb|center|350px|<caption>Prosjektering av ATC ved samtidige togbevegelser med sikkerhetsavstand 150 meter, ombygging </caption>]]
+[[Image:JD550 10 fig006.svg|thumb|center|350px|Prosjektering av ATC ved samtidige togbevegelser med sikkerhetsavstand 150 meter, ombygging ]]
 </figure>
 
 = ATC-kryssingsbarriere =
@@ -485,11 +485,11 @@ g) ''' Minimumsavstander:''' Avstand fra baliser for ATC kryssingsbarriere til t
 
 
 <figure id ="fig:Eksempel på minsteavstand der korte og lange passasjertog har samme stoppested">
-[[Bilde:JD550 10 fig008.svg|thumb|center|750px|<caption> Eksempel på minsteavstand der korte og lange passasjertog har samme stoppested </caption>]]
+[[Image:JD550 10 fig008.svg|thumb|center|750px| Eksempel på minsteavstand der korte og lange passasjertog har samme stoppested ]]
 </figure>
 
 <figure id ="fig:Eksempel på minsteavstand der korte og lange passasjertog har forskjellig stoppested">
-[[Bilde:JD550 10 fig009.svg|thumb|center|750px|<caption> Eksempel på minsteavstand der korte- og lange passasjertog har forskjellig stoppested </caption>]]
+[[Image:JD550 10 fig009.svg|thumb|center|750px| Eksempel på minsteavstand der korte- og lange passasjertog har forskjellig stoppested ]]
 </figure>
 
 
@@ -541,7 +541,7 @@ i)  '''Forskjellige toglengder:''' Ved ulike stoppmønster på grunn av forskjel
 
 
 <figure id ="fig:Eksempel der man nytter 2 balisegrupper etter hverandre med ATC kryssingsbarriere på grunn av forskjellig stoppunkt for tog med ulike lengder">
-[[Bilde:JD550 10 fig011.svg|thumb|center|750px|<caption> Eksempel der man nytter 2 balisegrupper etter hverandre med ATC kryssingsbarriere på grunn av forskjellig stoppunkt for tog med ulike lengder
+[[Image:JD550 10 fig011.svg|thumb|center|750px|<caption> Eksempel der man nytter 2 balisegrupper etter hverandre med ATC kryssingsbarriere på grunn av forskjellig stoppunkt for tog med ulike lengder
  </caption>]]
 </figure>
 
@@ -918,7 +918,7 @@ under symbol.
 </figtable>
 "XXX" og "ZZ", se <xr id = "tab:Baliseidentitet"/>.
 
-b)	Styrte baliser skal angis med overstrekning:  [[Bilde:JD550 10 001.svg|40px]]
+b)	Styrte baliser skal angis med overstrekning:  [[Image:JD550 10 001.svg|40px]]
 
 c) Ved navngivning av enkel balise internt i balisegruppen (f.eks. kabelplan) belyttes balisegruppenavnet angitt i <xr id="tab:Prosjekteringsdokumentasjon, enkeltrettede balisegrupper"/> og <xr id = "tab:Prosjekteringsdokumentasjon, dobbeltrettede balisegrupper"/> og hvilken balise i gruppen med et mellomrom (P,A,B eller C). Eks: "Rep.<nowiki>#</nowiki>P", "Rep.<nowiki>#</nowiki>A", "Rep.<nowiki>#</nowiki>B".
 
@@ -1098,7 +1098,7 @@ under symbol.
 
 "XXX" og "ZZ", se <xr id = "tab:Baliseidentitet"/>.
 
-b) Styrte baliser skal angis med overstrekning:  [[Bilde:JD550 10 001.svg|40px]]
+b) Styrte baliser skal angis med overstrekning:  [[Image:JD550 10 001.svg|40px]]
 
 c) Ved navngivning av enkel balise internt i balisegruppen (f.eks. kabelplan) belyttes balisegruppenavnet angitt i <xr id="tab:Prosjekteringsdokumentasjon, enkeltrettede balisegrupper"/> og <xr id = "tab:Prosjekteringsdokumentasjon, dobbeltrettede balisegrupper"/> og hvilken balise i gruppen med et mellomrom (P,A,B eller C). Eks: "Rep.<nowiki>#</nowiki>P", "Rep.<nowiki>#</nowiki>A", "Rep.<nowiki>#</nowiki>B".
 
@@ -1303,7 +1303,7 @@ d) Hvis det er fall på strekningen, skal avstanden kodes BZ=0 og CX=14. BY og C
 Dersom BZ = 0 og C-balisen mangler vil man få balisefeil. Dersom CY = 0 vil man også få balisefeil. Fall kodes i C-balisens Z-ord.
 
 <figure id ="fig:fig">
-[[Bilde:JD550 10 fig007.png|thumb|center|350px]]
+[[Image:JD550 10 fig007.png|thumb|center|350px]]
 </figure>
 
 == Tabell for EH, BU, SU, GMO, GMD, BHT, SHT, SEH og SH ==
@@ -1534,7 +1534,7 @@ a) Mellom hver balisegruppe i kodetabellen skal det være minst én åpen linje.
 b) Det skal være egne kodetabeller for de enkelte kjøreretninger. Balisegrupper skal føres i kilometerrekkefølge. 
 
 <figure id ="fig:ATC-kodetabell">
-[[Bilde:JD550 10 tab013.png|thumb|center|650px]]
+[[Image:JD550 10 tab013.png|thumb|center|650px]]
 </figure>	
 																
 {| class="wikitable"

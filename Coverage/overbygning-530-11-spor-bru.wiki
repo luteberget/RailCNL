@@ -44,7 +44,7 @@ g) Det er ikke nødvendig å anvende ledeskinner dersom brua oppfyller følgende
 a) På bruer med gjennomgående [[Definisjon:Ballast|ballast]] og dilatasjonslengde større enn 120 m skal det være glideskjøter. Hvilken type glideskjøt som skal anvendes er avhengig av maksimal lengdeendring over dilatasjonslengden, ΔD maks. Tabell 1 viser glideskjøter med hovedmål som skal anvendes ved nyanlegg og sporombygging.
 
 <figure id="fig:Lengdeendring over dilatasjonslengden">
-[[Bilde:JD530 11 fig001.png|thumb|none|400px|<caption>Lengdeendring over dilatasjonslengden</caption>]]
+[[Image:JD530 11 fig001.png|thumb|none|400px|Lengdeendring over dilatasjonslengden]]
 </figure>
 
 <figtable id="tab:Glideskjøter som skal anvendes ved nyanlegg og sporombygging på bruer med gjennomgående ballast">
@@ -72,7 +72,7 @@ b) Tekniske krav til glideskjøter er gitt i [http://trv.jbv.no/ts/Overbygning/G
 c) Ved behov for glideskjøter med lengre ekspansjonslengder kan dette anskaffes på grunnlag av [http://trv.jbv.no/ts/Overbygning/Glideskj%C3%B8ter Technical specification - Expansion devices].
 
 <figure id="fig:Glideskjøter hovedmål">
-[[Bilde:Glideskjøter hovedmål.png|thumb|none|800px|<caption>Glideskjøter hovedmål</caption>]]
+[[Image:Glideskjøter hovedmål.png|thumb|none|800px|Glideskjøter hovedmål]]
 </figure> 
 
 {{lærebokstoff|Glideskjøt leveres ferdig montert på sviller, hvor man kan velge mellom å få skjøten levert i en del eller delt i to deler (A-del og B-del).}}
@@ -85,7 +85,7 @@ b) Der det er to bevegelige lager etter hverandre plasseres glideskjøten på de
 På figur 2 er vist prinsippskisser for plassering av glideskjøter på bruer.
 
 <figure id="fig:Plassering av glideskjøter">
-[[Bilde:JD530 11 fig002.png|thumb| none |400px|<caption>Plassering av glideskjøter</caption>]]
+[[Image:JD530 11 fig002.png|thumb| none |400px|Plassering av glideskjøter]]
 </figure>
 
 D = dilatasjonslengde = summen av brulengder hvis lengdevariasjon ved temperatur og belastning (dilatasjon) utløses gjennom bevegelige lagre på samme sted
@@ -162,7 +162,7 @@ e) Over enden av svillene skal det monteres 48x123 impregnerte planker som feste
 f) I skarpe kurver skal svilleavstanden forminskes eller svilledimensjonen økes.
 
 <figure id="fig:Sviller på stålbruer med enkle bærere">
-[[Bilde:JD530 11 fig003.png|thumb|none|450px|<caption>Sviller på stålbruer med enkle bærere</caption>]]
+[[Image:JD530 11 fig003.png|thumb|none|450px|Sviller på stålbruer med enkle bærere]]
 </figure> 
 
 <figtable id="tab:Sviller på stålbruer med enkle bærere">
@@ -191,7 +191,7 @@ d) Alle sviller festes med to hakebolter til bærebjelkene.
 e) Over enden av svillene monteres impregnert justert trevirke J 48x123, som festes med bolter Ø16 mm til svillene.
 
 <figure id="fig:Sviller på stålbruer med tvillingbjelker">
-[[Bilde:JD530 11 fig004.png|thumb|none|450px|<caption>Sviller på stålbruer med tvillingbjelker</caption>]]
+[[Image:JD530 11 fig004.png|thumb|none|450px|Sviller på stålbruer med tvillingbjelker]]
 </figure>
 
 <figtable id="tab:Sviller på stålbruer med tvillingbjelker">
@@ -291,7 +291,7 @@ a) Det skal benyttes befestigelse av typen Pandrol Railfree.
 Sammenstilling figur 5. Figurer / tegninger av befestigelseskomponentene finnes i [https://trv.jbv.no/PDF/Overbygning/530/Vedlegg/T3006D05.pdf vedlegg 6.d].
 
 <figure id="fig:Pandrol Railfree befestigelse">
-[[Bilde:JD530 11 fig005.png|thumb|none|600px|<caption>Pandrol Railfree befestigelse</caption>]]
+[[Image:JD530 11 fig005.png|thumb|none|600px|Pandrol Railfree befestigelse]]
 </figure>
 
  <figtable id="tab:Befestigelse som for øvrig forekommer i  eksisterende spor">
@@ -335,7 +335,7 @@ g) Avslutning av ledeskinner med profil 49E1 skal beskyttes med en oppkjørsbjel
 h) Avslutning av ledeskinner med mindre profil enn 49E1 skal beskyttes med oppkjørsplanke.
 
 <figure id="fig:Ledeskinner">
-[[Bilde:JD530 11 fig006.png|thumb|none|500px|<caption>Ledeskinner</caption>]]
+[[Image:JD530 11 fig006.png|thumb|none|500px|Ledeskinner]]
 </figure>
 
 ===Dilatasjonsåpning===
@@ -361,7 +361,7 @@ d) Størrelsen av dilatasjonsåpningen (d), avhengig av skinnetemperaturen og di
 Eksempel : Ved skinnetemp. = 15 <sup>0</sup>C og D = 125 m blir d = 0,88 x 125 = 110 mm.
 
 <figure id="fig:Dilatasjonsåpninger for ledeskinner">
-[[Bilde:JD530 11 fig007.png|thumb|none|450px|<caption>Dilatasjonsåpninger for ledeskinner</caption>]]
+[[Image:JD530 11 fig007.png|thumb|none|450px|Dilatasjonsåpninger for ledeskinner]]
 </figure>
 
 ==Landkarkonstruksjon==
@@ -372,7 +372,7 @@ b) Svilleavstanden A, se figur 8, skal ved faste opplagerpunkter være mindre en
 c) Det skal anvendes elastiske sviller av tre- eller komposittmateriale på landkar.
 
 <figure id="fig:Landkarkonstruksjon">
-[[Bilde:JD530 11 fig008.png|thumb|none|400px|<caption>Landkarkonstruksjon</caption>]]
+[[Image:JD530 11 fig008.png|thumb|none|400px|Landkarkonstruksjon]]
 </figure>
 
 ==Spor i kurver==
@@ -396,7 +396,7 @@ h) Stålkiler skal legges under underlagsplatene til indre skinne for å gi denn
 Stålkile er vist på <xr id="fig:Stålkiler til overbygningskonstruksjon på stålbruer" />. Helningen bestemmes også ved fallretningen til underlagsplatene. <xr id="tab:Stålkiler, overhøydeklosser og stålplater i overbygningskonstruksjoner på stålbruer" /> viser stålkilenes stigning og fallretning, samt underlagsplatenes fallretning, avhengig av overhøyden. 
 
 <figure id="fig:Overbygningskonstruksjon på stålbruer">
-[[Bilde:JD530 11 fig009.png|thumb|none|600px|<caption>Overbygningskonstruksjon på stålbruer</caption>]]
+[[Image:JD530 11 fig009.png|thumb|none|600px|Overbygningskonstruksjon på stålbruer]]
 </figure> 
 
 # S = den foreskrevne sporutvidelse
@@ -420,7 +420,7 @@ Stålkile er vist på <xr id="fig:Stålkiler til overbygningskonstruksjon på st
 </figtable>
 
 <figure id="fig:Stålkiler til overbygningskonstruksjon på stålbruer">
-[[Bilde:JD530 11 fig010.png|thumb|none|400px|<caption>Stålkiler til overbygningskonstruksjon på stålbruer</caption>]]
+[[Image:JD530 11 fig010.png|thumb|none|400px|Stålkiler til overbygningskonstruksjon på stålbruer]]
 </figure> 
 
 <figtable id="tab:Stålkiler til overbygningskonstruksjon på stålbruer">
@@ -447,7 +447,7 @@ b) Anordning av overgangskurver på bruer skal bestemmes i hvert enkelt tilfelle
 For eksisterende bruer kan det gjøres unntak fra ovenstående hvis tverrsnittet ikke tilfredsstiller minste tverrsnitt. 
 
 <figure id="fig:Plassering av sporets midtlinje">
-[[Bilde:JD530 11 fig011.png|thumb|none|350px|<caption>Plassering av sporets midtlinje</caption>]]
+[[Image:JD530 11 fig011.png|thumb|none|350px|Plassering av sporets midtlinje]]
 </figure>
 
 Forklaringer:		
@@ -462,7 +462,7 @@ f =	Kurvens horisontale pilhøyde over bruas lengde
 a) Figur 12 viser bolter som skal anvendes til overbygningskonstruksjoner på stålbruer.
 
 <figure id="fig:Bolter til overbygningskonstruksjoner på bruer">
-[[Bilde:JD530 11 fig012.png|thumb|none|350px|<caption>Bolter til overbygningskonstruksjoner på bruer</caption>]]
+[[Image:JD530 11 fig012.png|thumb|none|350px|Bolter til overbygningskonstruksjoner på bruer]]
 </figure>
 
 Innstøpte bolter på landkarsviller og splintbolter leveres i lengder på 370 mm og 460 mm. Hakebolter og bolter for feste av plank på svilleendene leveres i varierende lengder. Lengdene som forekommer er gitt i tabell 13.

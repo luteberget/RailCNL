@@ -360,7 +360,7 @@ a) '''Kombinasjonskurver:''' Kombinasjonskurver bør unngås.
 Det stilles samme traseringskrav for kom­binasjonskurver som for vanlige kurver.
 
 <figure id="fig:Pilhøydediagram for kombinasjonskurve">
-[[Fil:JD530 05 fig002.png|thumb|600px|center|<caption>Pilhøydediagram for kombinasjonskurve</caption>]]
+[[File:JD530 05 fig002.png|thumb|600px|center|Pilhøydediagram for kombinasjonskurve]]
 </figure>
 
 {{lærebokstoff|Ved kombinasjonskurver bestemmes lengden av overgangskurven <math>L_{12}</math> slik:
@@ -394,7 +394,7 @@ Kombinasjoner av kurver uten overgangskurver kan være (jamfør figur):
 - ensrettede kurver med rettlinjet avnsitt
 
 <figure id="fig:Kombinasjoner av kurveelementer uten overgangskurver">
-[[Fil:Tegning-fra-EN13803.png|thumb|600px|center|<caption>Kombinasjoner av kurveelementer uten overgangskurver</caption>]]
+[[File:Tegning-fra-EN13803.png|thumb|600px|center|Kombinasjoner av kurveelementer uten overgangskurver]]
 </figure>
 
 b) '''Rettlinjet avsnitt mellom to kurver uten overgangskurver:''' For å betrakte to sprang i den manglende overhøyden som separate, skal det være et rettlinjet avsnitt (''M'') mellom kurvene etter følgende regler:
@@ -442,15 +442,15 @@ c) '''Avstand mellom sporveksel og overgangskurve/sirkelkurve/bru/sporveksel:'''
 
 
 <figure id="fig:Krav til rettlinje M mellom to motstående sporveksler og sporveksel og kurve">
-[[Fil:JD530 05 fig003.png|thumb|600px|center|<caption>Krav til rettlinje M mellom to motstående sporveksler og sporveksel og kurve</caption>]]
+[[File:JD530 05 fig003.png|thumb|600px|center|Krav til rettlinje M mellom to motstående sporveksler og sporveksel og kurve]]
 </figure>
 
 <figure id="fig:Krav til rettlinje M ved linjedelende sporveksel">
-[[Fil:JD530 05 fig005.png|thumb|600px|center|<caption>Krav til rettlinje M ved linjedelende sporveksel</caption>]]
+[[File:JD530 05 fig005.png|thumb|600px|center|Krav til rettlinje M ved linjedelende sporveksel]]
 </figure>
 
 <figure id="fig:Sporsløyfe">
-[[Fil:JD530 05 fig004.png|thumb|600px|center|<caption>Sporsløyfe</caption>]]
+[[File:JD530 05 fig004.png|thumb|600px|center|Sporsløyfe]]
 </figure>
 
 
@@ -472,7 +472,7 @@ For sporveksler i vertikalkurver, se [[#Vertikalkurver|Vertikalkurver]].
 f) '''Avstand mellom etterfølgende sporveksler:''' Dersom bakkant sporveksel (BK) i hovedspor møter en tilstøtende sporveksel i stokkskinneskjøten (SS), skal det legges inn en rettlinje M med lengde som angitt i <xr id="tab:Minste rettlinje M mellom bakkant sporveksel (BK) i hovedspor og påfølgende stokkskinneskjøt" />.
 
 <figure id="fig:Krav til rettlinje M mellom to etterfølgende sporveksler">
-[[Fil:JD530 05 fig006.png|thumb|600px|center|<caption>Krav til rettlinje M mellom to etterfølgende sporveksler NB: Ikke samme ''M'' som i det foregående.</caption>]]
+[[File:JD530 05 fig006.png|thumb|600px|center|Krav til rettlinje M mellom to etterfølgende sporveksler NB: Ikke samme ''M'' som i det foregående.]]
 </figure>
 
 
@@ -590,7 +590,7 @@ g) '''Dekningsgivende objekt''': Sidespor skal ha et dekningsgivende objekt som 
 
 
 <figure id="fig:Dekningsgivende objekt">
-[[Fil:JD530 05 fig007.svg|thumb|600px|center|<caption>Dekningsgivende objekt</caption>]]
+[[File:JD530 05 fig007.svg.png|thumb|600px|center|Dekningsgivende objekt]]
 </figure>
 
 

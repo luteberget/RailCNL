@@ -2,7 +2,7 @@
 <scope>
 <rule textref="overbygning_generelt_1">
 <railcnl>
-En prosjekt som er nybygg bør ha krav normale.
+Et prosjekt som er nybygg bør ha krav normale.
 </railcnl>
 </rule>
 </scope>

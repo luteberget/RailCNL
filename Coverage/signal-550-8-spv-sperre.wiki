@@ -5,7 +5,7 @@ __NUMBEREDHEADINGS__
 Kapittelet beskriver tekniske krav og funksjonskrav til sporveksel- og sporsperreutrustning. 
 
 <figure id ="Systemoversikt signalanlegg">
-[[Bilde:JD550 08 fig001.png|thumb|center|350px|<caption>Systemoversikt signalanlegg</caption>]]
+[[Image:JD550 08 fig001.png|thumb|center|350px|Systemoversikt signalanlegg]]
 </figure>
 
 Kapittelet omfatter følgende delsystemer/komponenter:
@@ -24,7 +24,7 @@ Lokalstiller
 
 ===Generelt===
 <figure id ="Systemdefinisjon sporveksel- og sporsperreutrustning">
-[[Bilde:JD550 08 fig002.png|thumb|center|350px|<caption>Systemdefinisjon sporveksel- og sporsperreutrustning</caption>]]
+[[Image:JD550 08 fig002.png|thumb|center|350px|Systemdefinisjon sporveksel- og sporsperreutrustning]]
 </figure>
 
 Med sporveksel- og sporsperreutrustning menes enhet for styring/kontroll av sporveksel- og sporsperreutrustning og nødvendige utvendige enheter for omlegging, låsing og kontroll (av låsing og posisjon).
@@ -33,7 +33,7 @@ I tillegg inngår for håndstilt sporveksel- og sporsperreutrustning nødvendige
 
 ===Sporvekselutrustning===
 <figure id ="Systemoversikt - Sporvekselutrustning">
-[[Bilde:JD550 08 fig003.png|thumb|center|350px|<caption>Systemoversikt - Sporvekselutrustning</caption>]]
+[[Image:JD550 08 fig003.png|thumb|center|350px|Systemoversikt - Sporvekselutrustning]]
 </figure>
 
 Med sporvekselutrustning for en sentralstilt sporveksel menes all nødvendig utrustning for å utføre omlegging, låsing, kontroll av låsing og kontroll av posisjonen til sporvekseltungene og sporvekselkryss med bevegelig krysspiss. 
@@ -49,7 +49,7 @@ Sporvekselutrustning for håndstilt sporveksel består av kontrollås eller rige
 {{lærebokstoff|Sporsperre skal hindre at rullende materiell kommer inn i middel til nabospor enten ved å stoppe materiellet før dette skjer eller som siste utvei å avspore materiellet.}}
 
 <figure id ="Systemoversikt - Sporsperreutrustning">
-[[Bilde:JD550 08 fig004.png|thumb|center|350px|<caption>Systemoversikt - Sporsperreutrustning</caption>]]
+[[Image:JD550 08 fig004.png|thumb|center|350px|Systemoversikt - Sporsperreutrustning]]
 </figure>
 
 Med sporsperreutrustning for en sentralstilt sporsperre menes all nødvendig utrustning for å utføre omlegging, låsing, kontroll av låsing og kontroll av posisjon av sporsperre.
@@ -62,7 +62,7 @@ Sporsperreutrustning for håndstilt sporsperre består av kontrollås eller rige
 
 ===Lokalstiller===
 <figure id ="Systemoversikt - Lokalstiller">
-[[Bilde:JD550 08 fig005.png|thumb|center|350px|<caption>Systemoversikt - Lokalstiller</caption>]]
+[[Image:JD550 08 fig005.png|thumb|center|350px|Systemoversikt - Lokalstiller]]
 </figure>
 
 Med lokalstiller menes utrustning for lokal betjening og lokal indikering av sentralstilt sporveksel og/eller sporsperre.
@@ -99,7 +99,7 @@ e) Sporveksel sikret med kontrollås eller rigel skal ha egen utrustning for lå
 
 ===Sporveksel med stigning 1:9===
 <figure id ="Bestykning av sporveksel1">
-[[Bilde:JD550 08 fig006.png|thumb|center|350px|<caption>Bestykning av sporveksel 1:9</caption>]]
+[[Image:JD550 08 fig006.png|thumb|center|350px|Bestykning av sporveksel 1:9]]
 </figure>
 
 <figtable id="Bestykning av sporveksel 1:9">
@@ -148,7 +148,7 @@ dv - sporvekseldrivverk, kp - sporvekselkontrollpunkt.
 
 ===Sporveksel med stigning 1:12 til 1:18,4 (fast kryss)=== 
 <figure id ="Bestykning av sporveksel2">
-[[Bilde:JD550 08 fig007.png|thumb|center|350px|<caption>Bestykning av sporveksel med stigning 1:12 til 1:18,4</caption>]]
+[[Image:JD550 08 fig007.png|thumb|center|350px|Bestykning av sporveksel med stigning 1:12 til 1:18,4]]
 </figure>
 
 <figtable id="Bestykning av sporveksel med stigning 1:12 til 1:18,4">
@@ -204,7 +204,7 @@ dv - sporvekseldrivverk, kp - sporvekselkontrollpunkt.
 ===Sporveksel med stigning 1:18,4 (bevegelig kryss)=== 
 
 <figure id ="Bestykning av sporveksel3">
-[[Bilde:JD550 08 fig007b.svg|thumb|center|350px|<caption>Bestykning av sporveksel med stigning 1:18,4</caption>]]
+[[Image:JD550 08 fig007b.svg|thumb|center|350px|Bestykning av sporveksel med stigning 1:18,4]]
 </figure>
 
 <figtable id="Bestykning av sporveksel med stigning 1:18,4">
@@ -232,7 +232,7 @@ dv - sporvekseldrivverk, kp - sporvekselkontrollpunkt.
 
 ===Sporveksel med stigning 1:26,1===
 <figure id ="Bestykning av sporveksel3">
-[[Bilde:JD550 08 fig008.png|thumb|center|350px|<caption>Bestykning av sporveksel UIC60, R2500, 1:26,1</caption>]]
+[[Image:JD550 08 fig008.png|thumb|center|350px|Bestykning av sporveksel UIC60, R2500, 1:26,1]]
 </figure>
 
 <figtable id="Bestykning av sporveksel UIC60, R2500, 1:26,1">

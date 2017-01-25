@@ -11,10 +11,10 @@ namespace RailCNL2Datalog
 		public static int Main (string[] args)
 		{
 			try {
-				if (args.Length == 1 && args [0] == "-i") {
-					Interactive ();
-				} else if (args.Length == 2) {
-					ProcessFile (args [0], args [1]);
+				if (args.Length == 2 && args [0] == "-i") {
+					Interactive (args[1]);
+				} else if (args.Length == 3) {
+					ProcessFile (args [0], args [1], args[2]);
 				} else {
 					Console.WriteLine ($"usage: {nameof(RailCNL2Datalog)} [-i] [IN OUT]");
 					Console.WriteLine ($"  -i: interactive mode");
@@ -30,7 +30,7 @@ namespace RailCNL2Datalog
 			return 0;
 		}
 
-		public static void ProcessFile (string infile, string outfile)
+		public static void ProcessFile (string grammarfile, string infile, string outfile)
 		{
 			Console.WriteLine ($"Loading {infile}.");
 			var serializer = new XmlSerializer (typeof(RailConsXMLFormat.RailConsXML));
@@ -44,7 +44,7 @@ namespace RailCNL2Datalog
 
 			Console.WriteLine ($"Transforming.");
 
-			using (var grammar = PGF.Grammar.FromFile ("/home/bjlut/Dropbox/RailCNL.pgf")) {
+			using (var grammar = PGF.Grammar.FromFile (grammarfile)) {
 				var lang = grammar.Languages.First ().Value;
 
 				Transform.TransformContents (lang, railconsxml, s => Console.WriteLine ($"WARNING: {s}"));
@@ -67,9 +67,9 @@ namespace RailCNL2Datalog
 			return parsed;
 		}
 
-		public static void Interactive ()
+		public static void Interactive (string grammarfile)
 		{
-			using (var grammar = PGF.Grammar.FromFile ("/home/bjlut/Dropbox/RailCNL.pgf")) {
+			using (var grammar = PGF.Grammar.FromFile (grammarfile)) {
 				var lang = grammar.Languages.First ().Value;
 
 				Console.WriteLine ($"-- RailCNL2Datalog: {lang.ToString()}.");

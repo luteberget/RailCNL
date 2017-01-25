@@ -19,7 +19,7 @@ index.html: index.md
 	python $(ANNOTATE) $^ > $@
 
 %.railcons.proc : %.railcons $(PGF) $(RAILCNL2DATALOG)
-	$(RAILCNL2DATALOG) $< $@
+	$(RAILCNL2DATALOG) $(PGF) $< $@
 
 # Don't delete proc files, for inspection.
 .PRECIOUS: %.railcons.proc

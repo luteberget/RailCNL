@@ -53,17 +53,17 @@ For skilting av kilometer og trasépunkter, se [[Skilt/Plassering_av_skilt_langs
 
 {{lærebokstoff|Kjedebrudd er brudd i kilometreringen. Kjedebruddet har positiv verdi hvis kilometerverdien øker over bruddet.}}
 
-a) '''Negative kjedebrudd:''' <label id="overbygning_km_4">Negative kjedebrudd bør unngås.</label>
+a) '''Negative kjedebrudd:''' <label id="overbygning_km_kjedebrudd_1">Negative kjedebrudd bør unngås.</label>
 
-b) '''Plassering:''' <label id="overbygning_km_5">Kjedebrudd skal plasseres på linjen, det vil si mellom to stasjoners innkjørhovedsignaler.</label>
+b) '''Plassering:''' <label id="overbygning_km_kjedebrudd_2">Kjedebrudd skal plasseres på linjen, det vil si mellom to stasjoners innkjørhovedsignaler.</label>
 
 Utførelse:
-# <label id="overbygning_km_5">Bruddet søkes plassert på hel 100-meter, eventuelt hel 10-meter.</label>
-# <label id="overbygning_km_6">Bruddet skal ikke plasseres i vertikalkurver eller overgangskurver.</label>
-# Der to baner samles uten at det ligger noen stasjon der, legges kjedebruddet ved første passende anledning på Oslo-siden av samlingsstedet.
-# Der en bane opphører for å samles med en kortere bane (lavere kilometer), søkes bruddet lagt rett foran første sporveksel på stasjonen.
-# Ved lange tunneler søkes kjedebruddet lagt utenfor tunnelmunningene.
-# Bruddet plasseres på et sted der det ikke finnes fundamenter/objekter. Dette for å unngå tvetydige kilometerverdier for samme objekt.
+# <label id="overbygning_km_kjedebrudd_3">Bruddet søkes plassert på hel 100-meter, eventuelt hel 10-meter.</label>
+# <label id="overbygning_km_kjedebrudd_4">Bruddet skal ikke plasseres i vertikalkurver eller overgangskurver.</label>
+# <label id="overbygning_km_kjedebrudd_5">Der to baner samles uten at det ligger noen stasjon der, legges kjedebruddet ved første passende anledning på Oslo-siden av samlingsstedet.</label>
+# <label id="overbygning_km_kjedebrudd_6">Der en bane opphører for å samles med en kortere bane (lavere kilometer), søkes bruddet lagt rett foran første sporveksel på stasjonen.</label>
+# <label id="overbygning_km_kjedebrudd_7">Ved lange tunneler søkes kjedebruddet lagt utenfor tunnelmunningene.</label>
+# <label id="overbygning_km_kjedebrudd_8">Bruddet plasseres på et sted der det ikke finnes fundamenter/objekter.</label> Dette for å unngå tvetydige kilometerverdier for samme objekt.
 
 For skilting av kjedebrudd, se [[Skilt/Plassering_av_skilt_langs_sporet/Skiltoversikt#Kjedebrudd|kjedebrudd]] og 
 [[Skilt/Plassering_av_skilt_langs_sporet/Skiltoversikt#Eksakt_kjedebrudd|eksakt kjedebrudd]]
@@ -108,8 +108,8 @@ Dimensjonerende parametre for traséen er gitt i <xr id="tab:Dimensjonerende par
 | a) &nbsp;&nbsp;
 | <math>R_\text{min}</math>
 | minste radius
-| align="center"| 250 m
-| align="center"| 190 m
+| align="center"| <label id="overbygning_trase_param_1">250 m</label>
+| align="center"| <label id="overbygning_trase_param_2">190 m</label>
 |-
 | b)
 | <math>h_{maks}\,</math>

@@ -7,9 +7,11 @@ concrete RailCNLLexiconNor of RailCNLLexicon = CatNor **
 
   lin
     should_VV = lin VV ((mkV "burde" "bør" "bør" "burde" "burdet" "bør") ** {c2 = mkComplement []});
+    shall_VV = lin VV  ((mkV "skal"  "skal" "skal" "skulle" "skullet" "skal") ** {c2 = mkComplement []});
 
 
     must_VV = Struct.must_VV;
+
     have_V2 = Struct.have_V2;
 
     then_Adv   = mkAdv  "så";

@@ -1,25 +1,33 @@
 abstract Area = Graph ** {
 
   cat
+    BaseArea;
+    NamedArea;
     Area;
-
+    AreaConj;
 
  fun
  
  -- Any area of built-in type
-  TunnelArea, BridgeArea, LocalReleaseArea : Area;
+  TunnelArea, BridgeArea, LocalReleaseArea : BaseArea;
 
  -- Any area of named type
-  NamedArea : String -> Area;
+  MkNamedArea : String -> BaseArea;
 
  -- Area has given name.
-  SpecificArea : String -> Area -> Area;
+  SpecificArea : String -> BaseArea -> NamedArea;
+  NonSpecificArea : BaseArea -> NamedArea;
 
-  AreaPropertyRestriction : Area -> PropertyRestriction -> Area;
+  -- Property restriction on area
+  AreaPropertyRestriction : NamedArea -> PropertyRestriction -> Area;
+  NoRestrictionArea : NamedArea -> Area;
 
+  SingleArea : Area -> AreaConj;
+  OrArea, AndArea : AreaConj -> AreaConj -> AreaConj;
 
-  ObjectArea : Object -> Area -> Object;
-  SubjectArea : Subject -> Area -> Subject;
-  AreaCondition : Area -> Condition;
+  ObjectArea : Object -> AreaConj -> Object;
+  SubjectArea : Subject -> AreaConj -> Subject;
+  AreaCondition : AreaConj -> Condition;
 
+  PlacementRestriction : Modality -> Subject -> AreaConj -> Statement;
 }

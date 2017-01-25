@@ -66,6 +66,8 @@ def get_text_by_id(i):
     header_str += rule_classification["missing"]
   else:
     for rule in rules:
+      content.append(soup.new_tag("hr"))
+
       rule_class = rule.attrib.get("class","no-class")
       if rule_class in css_classification: css_class = css_classification[rule_class]
 

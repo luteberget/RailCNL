@@ -5,5 +5,55 @@
 Et prosjekt som er nybygg bør ha krav normale.
 </railcnl>
 </rule>
+
+<rule textref="overbygning_km_kjedebrudd_1">
+<railcnl>
+Et kjedebrudd bør ha differanse som er større enn 0.
+</railcnl>
+</rule>
+
+<rule textref="overbygning_km_kjedebrudd_7">
+<railcnl>
+Et kjedebrudd bør ikke være plassert i tunnel som har lengde som er større enn 500.
+</railcnl>
+</rule>
+
+<rule textref="overbygning_km_kjedebrudd_8">
+<railcnl>
+Avstanden fra et kjedebrudd til et fundament må være større enn 5.
+</railcnl>
+</rule>
+
+<rule textref="overbygning_sporveksel_1">
+<railcnl>
+En sporveksel bør være plassert i rettlinje.
+</railcnl>
+</rule>
+
+<rule textref="overbygning_sporveksel_4">
+<railcnl>
+En sporsløyfe må være plassert i rettlinje eller kurve som har overhøyde 0.
+</railcnl>
+</rule>
+
+<rule textref="overbygning_vertikal_8">
+<railcnl>
+Et vertikalsegment som har radius som er mindre enn 10000 skal ikke være plassert i overgangskurve.
+</railcnl>
+</rule>
+
+<rule textref="overbygning_vertikal_8">
+<railcnl>
+En sporveksel skal ikke være plassert i vertikalkurve som har radius som er mindre enn 10000.
+</railcnl>
+</rule>
+
+<rule textref="overbygning_vertikal_1">
+<railcnl>
+Et vertikalsegment må ha lengde som er større enn 20.
+</railcnl>
+</rule>
+
+
 </scope>
 </RailConsXML>

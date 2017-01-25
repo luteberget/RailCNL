@@ -25,6 +25,8 @@ abstract Ontology = RailCNLStatement, Datalog ** {
                         -- "red"
                         -- "red or blue"
 
+    Modality;
+
   fun
 
   -- Classes, properties, values
@@ -67,7 +69,10 @@ abstract Ontology = RailCNLStatement, Datalog ** {
     AndCond, OrCond : Condition -> Condition -> Condition;
 
 
+    Obligation, NegativeObligation,
+    Recommendation, NegativeRecommendation : Modality;
+    
   -- Statements
-    Obligation, Constraint, Recommendation : Subject -> Condition -> Statement;
-
+    OntologyStatement   : Subject -> Condition -> Statement;
+    OntologyRestriction : Modality -> Subject -> Condition -> Statement;
 }

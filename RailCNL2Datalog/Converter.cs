@@ -43,7 +43,10 @@ namespace RailCNL2Datalog
 
 
 		public IList<RailCNL.Rule> Optimize(IList<RailCNL.Rule> rules) {
-			rules = OptimizationPasses.InlineNegation.InlineNegations (rules);
+			try {
+				rules = OptimizationPasses.InlineNegation.InlineNegations (rules);
+			} catch (Exception e) {
+			}
 			return rules;
 		}
 

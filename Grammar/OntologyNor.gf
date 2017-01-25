@@ -12,6 +12,7 @@ in {
   param
     ConditionRec = WithClass | OnlyProperty ;
     RestrictionType = RestrNP | RestrRS;
+    ModalityType = MNeg | MPos ;
 
 
   lincat
@@ -24,6 +25,7 @@ in {
     ClassRestriction = NP;
     Restriction = { ap : AP; np : NP; typ : RestrictionType} ;
     Statement = Utt;
+    Modality = { vv : VV ; typ : ModalityType };
 
   oper
     mkCmpRS : AP -> RS
@@ -106,15 +108,27 @@ in {
     OrCond =  conj_Condition or_Conj;
 
 
-    Constraint subj cond = mkUtt (mkS (
-        mkCl subj (is_or_has cond)
-    ));
+    Obligation             = { vv = RailLex.must_VV;   typ = MPos };
+    NegativeObligation     = { vv = RailLex.shall_VV;  typ = MNeg };
+    Recommendation         = { vv = RailLex.should_VV; typ = MPos };
+    NegativeRecommendation = { vv = RailLex.should_VV; typ = MNeg };
 
-    Obligation subj cond = mkUtt (mkS (
-      mkCl subj (mkVP RailLex.must_VV (is_or_has cond))
-    ));
+    OntologyStatement subj cond = mkUtt(mkS(mkCl subj (is_or_has cond)));
+    OntologyRestriction mod subj cond = mkUtt(mkS
+      (case mod.typ of { MNeg => negativePol; MPos => positivePol })
+      (mkCl subj (mkVP mod.vv (is_or_has cond))));
 
-    Recommendation subj cond = mkUtt (mkS (
-      mkCl subj (mkVP RailLex.should_VV (is_or_has cond))
-    ));
+
+-- Could the vv field be a function? This could avoid 
+-- unknown Modality when parsing Constraint.
+--     Obligation             = { vv = \v -> v;   typ = MPos };
+--     NegativeObligation     = { vv = \v -> (mkVP RailLex.shall_VV v);  typ = MNeg };
+--     Recommendation         = { vv = \v -> (mkVP RailLex.should_VV v); typ = MPos };
+--     NegativeRecommendation = { vv = \v -> (mkVP RailLex.should_VV v); typ = MNeg };
+-- 
+--     OntologyStatement subj cond = mkUtt(mkS(mkCl subj (is_or_has cond)));
+--     OntologyRestriction mod subj cond = mkUtt(mkS
+--       (case mod.typ of { MNeg => negativePol; MPos => positivePol })
+--       (mkCl subj (mod.vv (is_or_has cond))));
+
 }

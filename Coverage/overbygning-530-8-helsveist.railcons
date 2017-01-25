@@ -2,12 +2,12 @@
 <scope>
 <rule textref="overbygning_helsveist_1">
 <railcnl>
-En kurvesegment som har sveisetype helsveist og svilletype betong må ha kurveradius som er større enn 250.
+Et kurvesegment som har sveisetype helsveist og svilletype betong må ha kurveradius som er større enn 250.
 </railcnl>
 </rule>
 <rule textref="overbygning_helsveist_2">
 <railcnl>
-En kurvesegment som har sveisetype helsveist og svilletype tre må ha kurveradius som er større enn 300.
+Et kurvesegment som har sveisetype helsveist og svilletype tre må ha kurveradius som er større enn 300.
 </railcnl>
 </rule>
 </scope>

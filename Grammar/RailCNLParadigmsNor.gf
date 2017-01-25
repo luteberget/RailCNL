@@ -14,6 +14,7 @@ resource RailCNLParadigmsNor = open
     -- vv_have : VV -> NP -> VP = \vv,np -> mkVP vv (mkVP np) 
     -- vv_have : VV -> NP -> VP = \vv,np -> mkVP vv (mkVP RailLex.have_V2 np);
     forall_CN : CN -> NP = \n -> mkNP a_Det n | mkNP all_Predet (mkNP aPl_Det n);
+
     conj_NP : Syn.Conj -> NP -> NP -> NP = \conj,a,b -> mkNP conj a b ;
 
 

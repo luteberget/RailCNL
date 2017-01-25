@@ -1,0 +1,82 @@
+.container {
+margin-left: 1em;
+}
+
+.container, p, li {
+line-height: 2.0em;
+}
+
+.details, .details p, .details li {
+line-height: 1.25em;
+}
+.details p {
+margin: 0.50em 0.0em;
+}
+
+
+.details {
+float:right;
+padding: 0.5em;
+margin: 0.1em;
+margin-right: -27em;
+border: 1px solid black;
+clear: both;
+  width: 45em;
+}
+
+.section { display:inline; }
+
+.section label {
+  padding: 0.25em 0.5em;
+  display:inline;
+  vertical-align: top;
+  -webkit-transform: perspective(1px) translateZ(0);
+  transform: perspective(1px) translateZ(0);
+  box-shadow: 0 0 1px transparent;
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  -webkit-transition-property: box-shadow;
+  transition-property: box-shadow;
+}
+
+.section .details {
+  -webkit-transform: perspective(1px) translateZ(0);
+  transform: perspective(1px) translateZ(0);
+  box-shadow: 0 0 1px transparent;
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  -webkit-transition-property: box-shadow;
+  transition-property: box-shadow;
+}
+.section:hover label, .section:focus label, .section:active label .section:target label{
+ box-shadow: 0 0 18px rgba(0, 0, 0, 0.6), 
+  inset 0 0 0 2px #000, 0 0 1px transparent;
+}
+
+.section:hover .details, .section:focus .details, .section:active .details, .section:target .details {
+ box-shadow: 0 0 18px rgba(0, 0, 0, 0.6), 
+  inset 0 0 0 2px #000, 0 0 1px transparent;
+}
+
+h1,h2,h3,h4,h5,h6 {
+clear: both;
+}
+
+/* label { background-color: rgba(200,200,200,0.4); } */
+label.error { background-color: rgba(255,0,0,0.3); }
+label.neutral { background-color: rgba(200,200,200,0.3); }
+label.known { background-color: rgba(255,255,0,0.3); }
+label.covered { background-color: rgba(0,255,0,0.3); }
+
+.details.error { background-color: rgba(255,0,0,0.1); }
+.details.neutral { background-color: rgba(200,200,200,0.1); }
+.details.known { background-color: rgba(255,255,0,0.1); }
+.details.covered { background-color: rgba(0,255,0,0.1); }
+
+table {
+    border-collapse: collapse;
+}
+
+table, th, td {
+    border: 1px solid black;
+}

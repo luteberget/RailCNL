@@ -1,0 +1,86 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta content="text/html; charset=utf-8" http-equiv="Content-Type"/>
+<meta content="text/css" http-equiv="Content-Style-Type"/>
+<meta content="pandoc" name="generator"/>
+<title></title>
+<style type="text/css">code{white-space: pre;}</style>
+<link href="template.css" rel="stylesheet" type="text/css"/>
+<link href="style.css" rel="stylesheet" type="text/css"/>
+</head>
+<body>
+<div class="container">
+<div class="row">
+<div class="span3" id="TOC">
+<div class="well toc">
+<ul>
+<li class="nav-header">Table of Contents</li>
+</ul>
+<ul>
+<li><a href="#hensikt-og-omfang">Hensikt og omfang</a><ul>
+<li><a href="#generelle-krav">Generelle krav</a><ul>
+<li><a href="#utførelse">Utførelse</a></li>
+<li><a href="#behandling">Behandling</a></li>
+<li><a href="#plassering">Plassering</a></li>
+<li><a href="#prosjektering">Prosjektering</a></li>
+<li><a href="#godkjenningansvar">Godkjenning/ansvar</a></li>
+</ul></li>
+<li><a href="#vedlegg">Vedlegg</a></li>
+</ul></li>
+</ul>
+</div>
+</div>
+<div class="span9">
+<h1 id="hensikt-og-omfang">Hensikt og omfang</h1>
+<p>De generelle tekniske krav i dette regelverket er et minimum sett av krav til skilt, merker og stolper som skal oppfylles for å ivareta drifts- og personsikkerhet ved alle jernbaneanlegg.</p>
+<h2 id="generelle-krav">Generelle krav</h2>
+<h3 id="utførelse">Utførelse</h3>
+<p><div class="section neutral" id="section_skilt1"><div class="details neutral" id="details_skilt1"><p>ID: skilt1 — Definisjon.</p><p><b>RailCNL: </b>
+En skilt har refleksevne høy eller lav.
+    </p><p><b>AST: </b>Constraint (SubjectClass (StringClass "skilt")) (ConditionPropertyRestriction (MkPropertyRestriction (StringProperty "refleksevne") (OrRestr (Eq (MkValue (StringTerm "høy"))) (Eq (MkValue (StringTerm "lav"))))))</p></div><label class="neutral" id="skilt1">På jernbaneskilt er det naturlig å skille mellom høyest mulig og en lavere refleksevne.</label></div> Dette fremgår av tegningen for det enkelte skilt.</p>
+<p><div class="section covered" id="section_skilt2"><div class="details covered" id="details_skilt2"><p>ID: skilt2 — Automatisk verifisering.</p><p><b>RailCNL: </b>
+En skilt bør ha sporvinkel som er større enn 94.
+    </p><p><b>AST: </b>Recommendation (SubjectClass (StringClass "skilt")) (ConditionPropertyRestriction (MkPropertyRestriction (StringProperty "sporvinkel") (Gt (MkValue (StringTerm "94")))))</p><p><b>Datalog: </b><ul><li>skilt2_found(Subj0) :- skilt(Subj0), sporvinkel(Subj0, Val2), Val2 &gt; 94.</li><li>skilt2_recommendation(Subj0) :- skilt(Subj0), !skilt2_found(Subj0).</li></ul></p></div><label class="covered" id="skilt2">For å unngå speilrefleks, bør skilt og merker ikke settes opp vinkelrett (90º) på sporet, men dreies 4º ut.</label></div></p>
+<h3 id="behandling">Behandling</h3>
+<p>Uriktig behandling, både under transport og oppsetting, kan føre til skader som nedsetter skiltenes/merkenes levetid. Refleksbelegget må behandles varsomt, det vil si at:</p>
+<ul>
+<li><div class="section error" id="section_skilt3_a"><div class="details error" id="details_skilt3_a"><p>ID: skilt3_a — Mangler formalisering.</p></div><label class="error" id="skilt3_a">Innpakningen bør beholdes på også under lagring og transport.</label></div></li>
+<li><div class="section error" id="section_skilt3_b"><div class="details error" id="details_skilt3_b"><p>ID: skilt3_b — Mangler formalisering.</p></div><label class="error" id="skilt3_b">Under lagring bør skilt/merker/stolper stå i reoler og skilles fra hverandre med papp eller bord.</label></div></li>
+<li><div class="section error" id="section_skilt3_c"><div class="details error" id="details_skilt3_c"><p>ID: skilt3_c — Mangler formalisering.</p></div><label class="error" id="skilt3_c">Under oppsetting skal skilt og merker ikke legges mot bakken uten beskyttelse.</label></div></li>
+</ul>
+<p><div class="section error" id="section_skilt4"><div class="details error" id="details_skilt4"><p>ID: skilt4 — Mangler formalisering.</p></div><label class="error" id="skilt4">Eventuelle skader/feil på leverte skilt/merker/stolper skal registreres ved mottakelsen og reklamasjon sendes leverandør.</label></div></p>
+<h3 id="plassering">Plassering</h3>
+<p>Skilt, merker og stolper skal plasseres etter følgende generelle regler:</p>
+<ul>
+<li><div class="section error" id="section_skilt5"><div class="details error" id="details_skilt5"><p>ID: skilt5 — Kunne ikke tolkes.</p><p><b>RailCNL: </b>
+  Avstanden fra  ...
+    </p></div><label class="error" id="skilt5">De skal ikke plasseres umiddelbart bak kontaktledningsmast eller annen konstruksjon som hindrer fri sikt til signalet, herunder andre skiltstolper.</label></div> Det vises til <a class="uri" href="Signal/Prosjektering/Lyssignal" title="wikilink">Signal/Prosjektering/Lyssignal</a> for plassering av signalapparater og <a href="Underbygning/Vedlikehold/Vegetasjonskontroll_i_sideterreng" title="wikilink">Underbygning/Vedlikehold/Vegetasjonskontroll i sideterreng</a> for vegetasjonskontroll/sikt til sporet fra tog.</li>
+<li>På kontaktledningsmaster skal det kun monteres skilt som vedkommer ledningsanlegget, jf. § 75.19 [FSE]. Skilt skal plasseres slik at de ikke gjør det lett å klatre i mastene. Spornummerskilt og lignende kan monteres i åk dersom dette godkjennes av Driftsleder og åkene er dimensjonert for ekstralaster fra skilt (vind og vekt). Skilt skal monteres slik at galvanisering ikke skades.</li>
+<li>De skal plasseres slik at de ikke kommer i konflikt med kravet til minste tverrsnitt.</li>
+<li>På strekninger med mer enn to spor, plasseres skilt som gjelder for de to ytterste spor som på dobbeltsporet strekning.</li>
+<li>To eller flere spor på strekning med fjernstyring og utbygd ATC er å betrakte som uavhengige enkeltspor og skal skiltes for begge kjøreretninger på alle spor.</li>
+<li>Avstand fra signal 68 D «Markeringsmerke» til plasseringspunkt for signal 68 A «Nedsatt kjørehastighet» og signal 69 A «Midlertidig kjørehastighet» beregnes etter bestemmelsene i <a class="uri" href="Signal/Prosjektering/ATC/Målavstandstabeller" title="wikilink">Signal/Prosjektering/ATC/Målavstandstabeller</a>.</li>
+</ul>
+<h3 id="prosjektering">Prosjektering</h3>
+<p>a) <strong>Dokumentasjon:</strong> For nye baner og omskilting av eksisterende baner skal det utarbeides en fullstendig skiltplan.</p>
+<ol>
+<li>Utførelse: Skiltplanen skal både utarbeides på skjematiske sporplaner og oppføres tabellarisk, jf. Vedlegg a: Skiltplaner.</li>
+<li>Utførelse: Tabellarisk del av skiltplanen skal inneholde opplysninger om skiltets utforming, plassering og eventuelle anmerkninger.</li>
+<li>Utførelse: Skiltplanen skal inneholde alle aktuelle skilt fra gruppen «Skilt for kjørende personell».</li>
+</ol>
+<p>b) <strong>Dokumentasjon:</strong> For mindre eller særskilte prosjekter kan det utarbeides en ufullstendig skiltplan.</p>
+<ol>
+<li>Utførelse: Skiltplanen skal merkes slik at det tydelig fremgår at det ikke er en fullstendig skiltplan.</li>
+</ol>
+<p>c) <strong>Tverrfaglig kontroll:</strong> Tverrfaglig kontroll skal dokumenteres på selve tegningene i alle trinn i prosessen.</p>
+<h3 id="godkjenningansvar">Godkjenning/ansvar</h3>
+<p>Bane NOR, Trafikk godkjenner planer for plassering av skilt, merker og stolper på nye baner og linjeomlegginger på eksisterende baner. Dette gjelder også planer for endringer av permanent skilting for eksisterende baner. Infrastruktureier er ansvarlig for oppsetting og vedlikehold av skilt, merker og stolper på eksisterende strekninger.</p>
+<h2 id="vedlegg">Vedlegg</h2>
+<p><a href="https://trv.jbv.no/PDF/Skilt/Vedlegg/Eksempel%20på%20skiltplan%20tabell.xls">Vedlegg a: Skiltplan, tabell (xls)</a><a href="https://trv.jbv.no/PDF/Skilt/Vedlegg/Eksempel%20på%20skiltplan%20tabell.ods">(ods)</a></p>
+</div>
+</div>
+</div>
+</body>
+</html>
+

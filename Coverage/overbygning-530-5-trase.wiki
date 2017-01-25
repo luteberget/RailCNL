@@ -1,4 +1,3 @@
-EDHEADINGS__
 == Hensikt og omfang ==
 Kapitlet fastlegger prosjekteringsregler for
 * kilometrering

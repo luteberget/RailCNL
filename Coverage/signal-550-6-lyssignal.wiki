@@ -1,5 +1,3 @@
-__NUMBEREDHEADINGS__
-
 = Hensikt og omfang =
 Kapitlet beskriver tekniske krav og funksjonskrav til lyssignal. Med et lyssignal menes et optisk signal som benyttes til å gi informasjon til lokomotivfører. Informasjonen sendes ut i form av lys i definerte farger som fast- eller blinklys. Lyssignalet gir informasjon om bl.a. kjøretillatelse eller stopp, togvei til/fra hovedtogspor eller avviketogspor, hastighet, linjevalg og skiftebevegelser.
 

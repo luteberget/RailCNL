@@ -1,5 +1,3 @@
-__NUMBEREDHEADINGS__
-
 = Hensikt og omfang =
 Dette kapitlet beskriver krav til forriglingsutrustningen for sikringsanlegg. 
 

@@ -1,5 +1,3 @@
-__NUMBEREDHEADINGS__
-
 =Hensikt og omfang=
 
 Dette kapitlet beskriver tekniske krav og funksjonskrav til veisikringsanlegg. 

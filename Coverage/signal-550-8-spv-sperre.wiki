@@ -1,5 +1,3 @@
-__NUMBEREDHEADINGS__
-
 =Hensikt og omfang=
 
 Kapittelet beskriver tekniske krav og funksjonskrav til sporveksel- og sporsperreutrustning. 

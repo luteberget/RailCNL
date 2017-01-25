@@ -1,4 +1,3 @@
-__NUMBEREDHEADINGS__
 = Hensikt og omfang =
 De generelle tekniske krav i dette regelverket er et minimum sett av krav til skilt, merker og stolper som skal oppfylles for å ivareta drifts- og personsikkerhet ved alle jernbaneanlegg.
 

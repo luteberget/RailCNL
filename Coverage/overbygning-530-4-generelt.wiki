@@ -1,4 +1,3 @@
-__NUMBEREDHEADINGS__
 = Omfang =
 {{lærebokstoff|Sporets overbygning omfatter sporets trasé, skinner, sviller, sporveksler, skinnebefestigelse, skjøter, ballast og planoverganger. Sporet deles inn i overbygningsklasser og kvalitetsklasser.}}
 

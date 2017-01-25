@@ -1,5 +1,3 @@
-__NUMBEREDHEADINGS__
-
 =Hensikt og omfang=
 Kapitlet beskriver tekniske krav og funksjonskrav til togdeteksjon. 
 

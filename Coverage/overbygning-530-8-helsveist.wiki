@@ -1,4 +1,3 @@
-__NUMBEREDHEADINGS__
 =Hensikt og omfang=
 {{lærebokstoff|Kapitlet fastlegger de sportekniske krav til et helsveist spor. Et helsveist spor er et sporavsnitt hvor skinnene er sveist sammen til kontinuerlige skinnestrenger uten skjøter. Et helsveist spor eliminerer skjøter, noe som medfører mindre vedlikeholdskostnader og bedre komfort for passasjerene.}}
 

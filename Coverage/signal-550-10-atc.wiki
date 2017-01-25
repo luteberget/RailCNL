@@ -1,5 +1,3 @@
-__NUMBEREDHEADINGS__
-
 = Hensikt og omfang =
 
 ATC-systemet har som formål å overvåke togs kjørehastigheter, med utgangspunkt i banebetingede hastighetsbegrensninger og/eller kjøretillatelser gitt ved lyssignal. Hastighetsinformasjonen overføres til tog via informasjonspunkter i sporet. Informasjonspunktene består av 2 - 4 baliser.

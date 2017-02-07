@@ -7,6 +7,7 @@ abstract Graph = Ontology ** {
     GoalObject;
     PathCondition;
     SearchSubject;
+    PathQuantifier;
 
   fun
 
@@ -33,30 +34,33 @@ abstract Graph = Ontology ** {
   FirstFound : DirectionalObject -> GoalObject;
   AnyFound : DirectionalObject -> GoalObject; -- Any or All?
 
--- Distance
 
---    Distance : Term -> Term -> PropertyRestriction -> Literal;
-    -- Avstanden fra X til Y er Z.
+    AllPaths, ExistsPath, UniquePath, NoPath : PathQuantifier;
 
-    -- A home main signal shall be placed at least 200 m in
-    -- front of the first controlled, facing switch
-    -- in the entry train path
-    -- --->
-    -- Alle veier fra en stasjonsgrense til første motrettet sporveksel
-    -- må passere et innkjørhovedsignal i kjøreretningen.
-    --
-    -- Avstanden fra et innkjørhovedsignal til første motrettede sporveksel
-    -- må være større enn 200.
+   -- Statements
 
-    -- Balise spacing
-    -- Avstanden mellom baliser må være større enn 3.
+    PathObligation : PathQuantifier -> Subject -> GoalObject -> PathCondition -> Statement;
 
-    AllPathsObligation : Subject -> GoalObject -> PathCondition -> Statement;
-    -- ExistsPathObligation : Object -> GoalObject -> PathCondition;
-    -- UniquePPathObligation : Object -> GoalObject -> PathCondition;
-    -- NoPathObligation : Object -> GoalObject -> PathCondition;
 
-    DistanceObligation : Subject -> GoalObject -> Restriction -> Statement;
+-- Attempts at Relation-defining Path:
+--   ""Veier fra et forsignal til det første påfølgende hovedsignalet 
+--     i kjøreretningen er dets/forsignalets påfølgende hovedsignal. ""
+--     Explicit "path", but repeats "forsignalet". Requires genitive.
+--
+--   ""Det første påfølgende hovedsignalet i kjøreretningen er et 
+--     forsignals påfølgende hovedsignal."" -- Awkward ordering.
+--
+--   ""Tilhørende hovedsignal for et forsignal bør være det første
+--     påfølgende hovedsignalet i kjøreretningen. """"
+--     This one avoids genitive! Puts defined term in front. 
+--     Same ordering as PathObligation. Seems good.
+
+    RelationDefiningPath : Class -> Subject -> GoalObject -> Statement;
+    RelationPathRestriction : Modality -> Class -> Subject -> GoalObject -> Statement;
+
+
+    DistanceRestriction : Modality -> Subject -> GoalObject -> Restriction -> Statement;
+    DistanceRelationRestriction : Modality -> Subject -> Class -> Restriction -> Statement;
 
   -- Path Conditions
     PathContains : DirectionalObject -> PathCondition;

@@ -2,6 +2,7 @@ concrete RailCNLNor of RailCNL =
   OntologyNor, 
   GraphNor, 
   AreaNor,
-  TracksideObjectNor
+  TracksideObjectNor,
+  OntologyExtensionsNor
 
 ** {};	

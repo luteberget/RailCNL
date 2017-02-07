@@ -40,14 +40,16 @@ in {
     OrArea  = conj_NP or_Conj ;
     AndArea  = conj_NP and_Conj;
 
+    SubjectArea subj area = (mkCN subj (areaAdv area));
+
     --ObjectArea obj area = mkCN obj (areaAdv area) ;
-    SubjectArea subj area = mkNP subj;
-    AreaCondition a = { np = mkNP (mkNP (Par.mkN "plassering")) (areaAdv a); cls = OnlyProperty };
+    -- SubjectArea subj area = Syn.mkNP (Syn.mkCN subj (areaAdv area));
+    -- AreaCondition a = { np = mkNP (mkNP (Par.mkN "plassering")) (areaAdv a); cls = OnlyProperty };
 
 
     PlacementRestriction mod subj area = mkUtt(mkS
       (case mod.typ of {MNeg => negativePol ; MPos => positivePol})
-      (mkCl (mkNP subj) (mkVP mod.vv (mkVP (mkVP placed_A) (areaAdv area)))));
+      (mkCl (forall_CN subj) (mkVP mod.vv (mkVP (mkVP placed_A) (areaAdv area)))));
 
 -- Using passiveVP for the "to be placed in ..." 
 -- linearizes to "må bli plassert" instead of "må være plassert".

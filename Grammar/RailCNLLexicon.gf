@@ -54,4 +54,7 @@ abstract RailCNLLexicon = Cat ** {
     tunnel_CN, bridge_CN, localreleasearea_CN : CN;
  
 
+    -- Running time
+    runningtime_CN : CN;
+
 }

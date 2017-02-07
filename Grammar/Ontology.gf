@@ -6,73 +6,72 @@ abstract Ontology = RailCNLStatement, Datalog ** {
 
 
   cat
-    Class; Property; Value;
+    BaseClass;
+    Class; 
+    Property; Value;
+    RelationMultiplicity;
+
     Subject; -- "a track", "a track of quality class X",
              -- "a track which has length greater than 200",
              -- "an object which is red".
 
-    Condition; -- Same as subject, but can also be just a property restriction,
-               -- "a track which has color red" or just "color red".
+    Condition; -- PropertyRestriction, ClassRestriction or Class + PropertyRestriction
+               -- (not ClassRestriction+PropertyRestriction, because
+               --  they are both arbitrarily complex using and/or, and 
+               --  both need NP, which makes them hard to compose using the RGL)
 
     PropertyRestriction; -- "has a length which is less than 200 m"
                          -- "color red"
                          -- "color red or blue"
                          -- "color red or length 15.0"
 
-    ClassRestriction;
+    ClassRestriction; -- "... is a new_construction"
 
     Restriction;        -- "less than 200 m"
                         -- "red"
                         -- "red or blue"
-
     Modality;
 
   fun
 
   -- Classes, properties, values
-    StringClass : String -> Class;
-    StringClassGen1 : String -> Class;
-    StringClassGen2 : String -> Class;
-    StringAdjective : String -> Class -> Class;
+
+    StringClassMasculine : String -> BaseClass;
+    StringClassFeminine : String -> BaseClass;
+    StringClassNeutrum : String -> BaseClass;
+    StringClassAdjective : String -> BaseClass -> Class;
+    StringClassNoAdjective : BaseClass -> Class;
+
     StringProperty : String -> Property;
     MkValue : Term -> Value; -- ConstTerm?
 
   -- Value restrictions
-    Gt, Gte, Lt, Lte, Eq, Neq
-      : Value -> Restriction;
+    Gt, Gte, Lt, Lte, Eq, Neq : Value -> Restriction;
     AndRestr, OrRestr : Restriction -> Restriction -> Restriction;
 
   -- Property value restrictions
    MkPropertyRestriction : Property -> Restriction -> PropertyRestriction;
    AndPropRestr, OrPropRestr : PropertyRestriction -> PropertyRestriction -> PropertyRestriction;
 
-   MkClassRestriction : Class -> ClassRestriction;
-   AndClassRestr, OrClassRestr : ClassRestriction -> ClassRestriction -> ClassRestriction;
+    MkClassRestriction : Class -> ClassRestriction;
+    AndClassRestr, OrClassRestr : ClassRestriction -> ClassRestriction -> ClassRestriction;
 
-  -- Subjects
-
-    -- alle spor / et spor ...
     SubjectClass : Class -> Subject;
+    -- SubjectRelation : Class -> Class -> Subject; -- ??
+    SubjectCondition : Class -> Condition -> Subject;
 
-    -- alle spor som har ...
-    SubjectPropertyRestriction : Class -> PropertyRestriction -> Subject;
-    SubjectClassRestriction : Class -> ClassRestriction -> Subject;
-    SubjectClassAndPropertyRestriction : Class -> ClassRestriction -> PropertyRestriction -> Subject;
+    ExistsRelation, ManyRelation, OneRelation : RelationMultiplicity;
 
+    ConditionPropertyRestriction :         PropertyRestriction -> Condition;
+    ConditionClassRestriction :            ClassRestriction -> Condition;
+    ConditionClassAndPropertyRestriction : Class -> PropertyRestriction -> Condition;
 
-  -- Conditions
-    ConditionClass : Class -> Condition;
-    ConditionPropertyRestriction : PropertyRestriction -> Condition;
-    DatalogCondition : Literal -> Condition;
-
-    -- Condition operations
-    AndCond, OrCond : Condition -> Condition -> Condition;
-
+    ConditionRelationRestriction : RelationMultiplicity -> Class -> Condition;
+    ConditionRelationWithPropertyRestriction : RelationMultiplicity -> Class -> PropertyRestriction -> Condition;
 
     Obligation, NegativeObligation,
     Recommendation, NegativeRecommendation : Modality;
     
-  -- Statements
-    OntologyStatement   : Subject -> Condition -> Statement;
+    OntologyAssertion   : Subject -> Condition -> Statement;
     OntologyRestriction : Modality -> Subject -> Condition -> Statement;
 }

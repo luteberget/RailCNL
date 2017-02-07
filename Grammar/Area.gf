@@ -25,9 +25,8 @@ abstract Area = Graph ** {
   SingleArea : Area -> AreaConj;
   OrArea, AndArea : AreaConj -> AreaConj -> AreaConj;
 
-  ObjectArea : Object -> AreaConj -> Object;
   SubjectArea : Subject -> AreaConj -> Subject;
-  AreaCondition : AreaConj -> Condition;
+  --AreaCondition : AreaConj -> Condition;
 
   PlacementRestriction : Modality -> Subject -> AreaConj -> Statement;
 }

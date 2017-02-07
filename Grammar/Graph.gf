@@ -1,34 +1,33 @@
 abstract Graph = Ontology ** {
   -- Graph property language.
+  flags startcat=Statement;
 
   cat
     DirectionalObject;
     GoalObject;
     PathCondition;
-    Object;
+    SearchSubject;
 
   fun
 
 -- Objects which are direction-dependent.
 
-  ObjectClass : Class -> Object;
-  ObjectOther : Class -> Object;
-  ObjectOtherImplied : Object;
-  ObjectPropertyRestriction : Class -> PropertyRestriction -> Object;
-
+  SubjectOtherImplied : SearchSubject;
+  SubjectRelationToOneMascFem : Class -> SearchSubject;
+  SubjectRelationToOneNeutrum : Class -> SearchSubject;
+  AnySearchSubject : Subject -> SearchSubject;
 
   -- Special terminology for switch goal
   FacingSwitch : DirectionalObject;
   TrailingSwitch : DirectionalObject;
 
   -- General terminology for goals: signals, derailers, etc.
-  SameDirectionObject : Object -> DirectionalObject;
-  OppositeDirectionObject : Object -> DirectionalObject;
+  SameDirectionObject : SearchSubject -> DirectionalObject;
+  OppositeDirectionObject : SearchSubject -> DirectionalObject;
+  AnyDirectionObject : SearchSubject -> DirectionalObject;
 
-  AnyDirectionObject : Object -> DirectionalObject;
-
-  SearchDirectionObject : Object -> DirectionalObject;
-  OppositeSearchDirecitonObject : Object -> DirectionalObject;
+  SearchDirectionObject : SearchSubject -> DirectionalObject;
+  OppositeSearchDirecitonObject : SearchSubject -> DirectionalObject;
 
 -- Search termination
   FirstFound : DirectionalObject -> GoalObject;

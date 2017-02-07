@@ -61,4 +61,6 @@ concrete RailCNLLexiconNor of RailCNLLexicon = CatNor **
       bridge_CN = Syn.mkCN (mkN "bro") ;
       localreleasearea_CN = Syn.mkCN (mkN "lokalområde" );
 
+      runningtime_CN = Syn.mkCN (mkN "kjøretid");
+
 }

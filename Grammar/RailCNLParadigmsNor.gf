@@ -5,11 +5,14 @@ resource RailCNLParadigmsNor = open
   (Diff = DiffNor),
   (Lex = LexiconNor),
   (CommonScand = CommonScand),
-  (RailLex = RailCNLLexiconNor), RailCNLLexiconNor
+  (RailLex = RailCNLLexiconNor), RailCNLLexiconNor,
+  (MorphoNor=MorphoNor)
  in {
 
 
   oper
+
+    den_Pron : Pron = lin Pron (MorphoNor.regNP "den" "dens" MorphoNor.Utr MorphoNor.Sg );
 
     -- vv_have : VV -> NP -> VP = \vv,np -> mkVP vv (mkVP np) 
     -- vv_have : VV -> NP -> VP = \vv,np -> mkVP vv (mkVP RailLex.have_V2 np);
@@ -30,6 +33,8 @@ lin N { s = \\_ => \\_ => \\_  => str ; g = g ; co = str }
      ;
 
     strCN : DiffNor.NGenderNor -> Str -> CN = \g,str -> mkCN (strN g str);
+
+    strA : Str -> A = \str -> Par.mkADeg str str str str str;
 
     strNP : DiffNor.NGenderNor -> Str -> NP = \g,str -> mkNP (strPN g str);
 

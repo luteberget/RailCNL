@@ -14,30 +14,21 @@ in {
     RestrictionType = RestrNP | RestrRS;
     ModalityType = MNeg | MPos ;
 
-
   lincat
     Class = CN;
+    BaseClass = CN;
     Property = CN;
     Value = Str;
-    Subject = NP;
-    Condition = { np : NP ; cls : ConditionRec };
+    Subject = CN;
+    Condition = VP;
     PropertyRestriction = NP;
     ClassRestriction = NP;
     Restriction = { ap : AP; np : NP; typ : RestrictionType} ;
     Statement = Utt;
     Modality = { vv : VV ; typ : ModalityType };
+    RelationMultiplicity = Digits;
 
-  oper
-    mkCmpRS : AP -> RS
-      = \a ->
-        (mkRS (mkRCl which_RP a));
-
-    is_or_has : { np : NP ; cls:ConditionRec } -> VP
-      = \cond -> case cond.cls of {
-        WithClass => mkVP cond.np;
-        OnlyProperty => mkVP RailLex.have_V2 cond.np
-      };
-
+  oper 
       conj_Restriction : Syn.Conj -> Restriction -> Restriction -> Restriction
        = \conj,r1,r2 ->  lin Restriction  {
          ap = mkAP conj r1.ap r2.ap ;
@@ -48,35 +39,22 @@ in {
          }
        };
 
-       conj_Condition : Syn.Conj -> Condition -> Condition -> Condition
-        = \conj,c1,c2 -> lin Condition {
-          np = conj_NP conj c1.np c2.np;
-          cls = case <c1.cls,c2.cls> of {
-            <OnlyProperty,OnlyProperty> => OnlyProperty;
-            _ => WithClass
-          }
-        };
 
   lin
+    StringClassMasculine rts = strCN Par.masculine rts.s;
+    StringClassFeminine rts = strCN Par.feminine rts.s;
+    StringClassNeutrum rts = strCN Par.neutrum rts.s;
 
-    StringClass rts = strCN Par.masculine rts.s;
-    StringClassGen1 rts = strCN Par.neutrum rts.s;
-    StringClassGen2 rts = strCN Par.feminine rts.s;
+    StringClassAdjective rts cls = mkCN (strA rts.s) cls;
+    StringClassNoAdjective cls = cls;
 
-    -- StringAdjective rts class = rts.s ++ class;
     StringProperty rts = strCN Par.masculine rts.s;
 
     MkValue t = t;
 
-    SubjectClass cls = forall_CN (cls);
-    SubjectPropertyRestriction cls restr = forall_CN (mkCN (cls)
-     (mkRS (mkRCl which_RP Syn.have_V2 (restr))) );
-
-    SubjectClassRestriction cls restr = forall_CN (mkCN (cls)
-     (mkRS (mkRCl which_RP (restr))) );
-
-    -- SubjectClassAndPropertyRestriction cls restr = forall_CN (mkCN (cls)
-     -- (mkRS (mkRCl which_RP (restr))) );
+    SubjectClass cls =  (cls);
+    SubjectCondition cls cond =  (mkCN cls
+      (mkRS (mkRCl which_RP cond)));
 
     Gt val =  { ap = mkAP big_A (strNP_m val);       np = strNP_m val; typ = RestrRS };
     Gte val =  { ap = mkAP gte_A2 (strNP_m val);     np = strNP_m val; typ = RestrRS };
@@ -92,43 +70,35 @@ in {
     OrPropRestr = conj_NP or_Conj;
 
     MkPropertyRestriction prop restr = case restr.typ of {
-      RestrRS => mkNP (mkCN prop (mkCmpRS restr.ap));
+      RestrRS => mkNP (mkCN prop (mkRS (mkRCl which_RP restr.ap)));
       RestrNP => mkNP (mkCN prop restr.np)
     };
 
-    MkClassRestriction cls = mkNP cls;
+    MkClassRestriction cls = mkNP a_Det cls;
     AndClassRestr = conj_NP and_Conj;
     OrClassRestr = conj_NP or_Conj;
 
 
-    ConditionClass cls = { np = mkNP a_Det (cls) ; cls = WithClass };
-    ConditionPropertyRestriction prop = { np = prop ; cls = OnlyProperty };
+    ConditionClassRestriction cls = mkVP cls;
+    ConditionPropertyRestriction prop = mkVP RailLex.have_V2 prop;
+    ConditionClassAndPropertyRestriction cls prop = mkVP (mkNP a_Det 
+      (mkCN cls (mkRS (mkRCl which_RP Syn.have_V2 prop))));
 
-    AndCond = conj_Condition and_Conj;
-    OrCond =  conj_Condition or_Conj;
+    ExistsRelation = lin Digits {s =  \\_ => "et"; n = Par.singular};
+    OneRelation = lin Digits {s =  \\_ => "ett"; n = Par.singular};
+    ManyRelation = lin Digits {s =  \\_ => "ett eller flere"; n = Par.plural};
 
+    ConditionRelationRestriction mult cls = mkVP RailLex.have_V2 (mkNP mult cls);
+    ConditionRelationWithPropertyRestriction mult cls prop = mkVP RailLex.have_V2 (mkNP mult 
+      (mkCN cls (mkRS (mkRCl which_RP Syn.have_V2 prop))));
 
     Obligation             = { vv = RailLex.must_VV;   typ = MPos };
     NegativeObligation     = { vv = RailLex.shall_VV;  typ = MNeg };
     Recommendation         = { vv = RailLex.should_VV; typ = MPos };
     NegativeRecommendation = { vv = RailLex.should_VV; typ = MNeg };
 
-    OntologyStatement subj cond = mkUtt(mkS(mkCl subj (is_or_has cond)));
+    OntologyAssertion subj cond = mkUtt(mkS(mkCl (forall_CN subj) cond));
     OntologyRestriction mod subj cond = mkUtt(mkS
       (case mod.typ of { MNeg => negativePol; MPos => positivePol })
-      (mkCl subj (mkVP mod.vv (is_or_has cond))));
-
-
--- Could the vv field be a function? This could avoid 
--- unknown Modality when parsing Constraint.
---     Obligation             = { vv = \v -> v;   typ = MPos };
---     NegativeObligation     = { vv = \v -> (mkVP RailLex.shall_VV v);  typ = MNeg };
---     Recommendation         = { vv = \v -> (mkVP RailLex.should_VV v); typ = MPos };
---     NegativeRecommendation = { vv = \v -> (mkVP RailLex.should_VV v); typ = MNeg };
--- 
---     OntologyStatement subj cond = mkUtt(mkS(mkCl subj (is_or_has cond)));
---     OntologyRestriction mod subj cond = mkUtt(mkS
---       (case mod.typ of { MNeg => negativePol; MPos => positivePol })
---       (mkCl subj (mod.vv (is_or_has cond))));
-
+      (mkCl (forall_CN subj) (mkVP mod.vv cond)));
 }

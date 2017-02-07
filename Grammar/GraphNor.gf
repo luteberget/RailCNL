@@ -9,9 +9,12 @@ concrete GraphNor of Graph = OntologyNor ** open
   (RailLex = RailCNLLexiconNor), RailCNLLexiconNor
 in {
 
+  param
+    Owned = ONo|OYesUtr|OYesNeutr;
+
   lincat
-    Object = CN;
-    DirectionalObject = CN;
+    SearchSubject = {cn: CN; o : Owned} ;
+    DirectionalObject = {cn: CN; o : Owned};
 
     PathCondition = VP;
     GoalObject = NP;
@@ -25,40 +28,50 @@ in {
 
   lin
 
-  -- Objects in general
-    ObjectClass cls =  (cls);
-    ObjectOther cls = mkCN other_A (cls);
-    ObjectOtherImplied = another_CN;
-    ObjectPropertyRestriction cls restr =  (mkCN (cls)
-     (mkRS (mkRCl which_RP Syn.have_V2 (restr))) );
-
+    SubjectOtherImplied = { cn = another_CN; o = ONo };
+    SubjectRelationToOneMascFem cls = { cn = cls; o = OYesUtr };
+    SubjectRelationToOneNeutrum cls = { cn = cls; o = OYesNeutr };
+    AnySearchSubject s = {cn = s; o = ONo };
 
   -- Directional objects.
-    FacingSwitch   =  facingSwitch_CN;
-    TrailingSwitch =  trailingSwitch_CN;
+    FacingSwitch   =  { cn = facingSwitch_CN; o = ONo };
+    TrailingSwitch =  { cn = trailingSwitch_CN; o = ONo };
 
-    SameDirectionObject obj     = mkCN obj (Syn.mkAdv in_Prep (sameDir_NP));
-    OppositeDirectionObject obj = mkCN obj (Syn.mkAdv in_Prep (oppositeDir_NP));
+    SameDirectionObject obj     = { cn = mkCN obj.cn (Syn.mkAdv in_Prep (sameDir_NP)); o = obj.o};
+    OppositeDirectionObject obj = { cn = mkCN obj.cn (Syn.mkAdv in_Prep (oppositeDir_NP)); o = obj.o};
+
 
     AnyDirectionObject obj = obj;
 
-    SearchDirectionObject obj = mkCN obj (Syn.mkAdv in_Prep (mkNP the_Det driving_direction_N));
+    SearchDirectionObject obj = { cn = mkCN obj.cn (Syn.mkAdv in_Prep (mkNP the_Det driving_direction_N)); o = obj.o };
 
     --- OppositeSearchDirection ???
 
 
 -- Search goals
-  FirstFound obj = mkNP the_Det (mkCN first_A obj);
-  AnyFound obj = mkNP a_Det obj;
+  FirstFound obj = case obj.o of  {
+    ONo => mkNP the_Det (mkCN first_A obj.cn);
+    OYesNeutr => mkNP it_Pron (mkCN first_A obj.cn);
+    OYesUtr => mkNP den_Pron (mkCN first_A obj.cn)
+  };
 
+  AnyFound obj = case obj.o of {
+    ONo => mkNP a_Det obj.cn;
+    OYesNeutr => mkNP it_Pron obj.cn;
+    OYesUtr => mkNP den_Pron obj.cn
+  };
 
 -- Path obligations
-   PathContains obj = mkVP pass_V2 (mkNP a_Det obj); --- Why does this one generate so many empty strings?
+   PathContains obj = mkVP pass_V2 (case obj.o of {
+     ONo => (mkNP a_Det obj.cn);
+     OYesNeutr => (mkNP it_Pron obj.cn);
+     OYesUtr => (mkNP den_Pron obj.cn)
+   });
 
    AllPathsObligation fromSubj toObject cond_VP = mkUtt (mkS (
      mkCl (mkNP (mkNP
        (mkNP all_Predet (mkNP aPl_Det path_N))
-       (Syn.mkAdv from_Prep fromSubj))
+       (Syn.mkAdv from_Prep (forall_CN fromSubj)))
        (Syn.mkAdv to_Prep toObject)
      )
         (mkVP RailLex.must_VV cond_VP)
@@ -69,7 +82,7 @@ in {
    DistanceObligation fromSubj toObject restr = mkUtt (mkS (
 mkCl (mkNP the_Det (mkCN distance_N3
       --(mkNP all_Predet (mkNP aPl_Det fromSubj))
-      fromSubj
+      (forall_CN fromSubj)
       toObject))
 
       (mkVP RailLex.must_VV (case restr.typ of {

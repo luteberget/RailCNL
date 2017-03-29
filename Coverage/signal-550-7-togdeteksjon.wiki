@@ -57,7 +57,7 @@ Dette avsnittet angir generelle regler for plassering og utstrekning av system f
 
 ==Generelt==
 
-a) Ingen sporavsnitt skal være kortere enn 21 meter.
+a) <label id="togdeteksjon_plassering_1">Ingen sporavsnitt skal være kortere enn 21 meter.</label>
 
 b) Ingen dødsoner skal være lenger enn 3 meter. 
 {{lærebokstoff|Dødsoner er soner hvor en togaksel ikke er sikkert detektert, og bør unngås.}}

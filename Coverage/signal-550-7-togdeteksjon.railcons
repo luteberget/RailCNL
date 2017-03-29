@@ -1,4 +1,9 @@
 <RailConsXML>
 <scope>
+  <rule class="static-infrastructure-datalog" textref="togdeteksjon_plassering_1">
+    <railcnl>
+Avstanden fra en akselteller til en annen må være større enn 21.0m.
+    </railcnl>
+  </rule>
 </scope>
 </RailConsXML>

@@ -3,9 +3,9 @@ abstract Area = Graph ** {
   cat
     BaseArea;
     NamedArea;
-    Area;
+    SingleArea;
     AreaConj;
-
+    Area; -- Closed for modifiers
  fun
  
  -- Any area of built-in type
@@ -19,14 +19,15 @@ abstract Area = Graph ** {
   NonSpecificArea : BaseArea -> NamedArea;
 
   -- Property restriction on area
-  AreaPropertyRestriction : NamedArea -> PropertyRestriction -> Area;
-  NoRestrictionArea : NamedArea -> Area;
+  AreaPropertyRestriction : NamedArea -> PropertyRestriction -> SingleArea;
+  NoRestrictionArea : NamedArea -> SingleArea;
 
-  SingleArea : Area -> AreaConj;
+  SingleAreaConj : SingleArea -> AreaConj;
   OrArea, AndArea : AreaConj -> AreaConj -> AreaConj;
 
-  SubjectArea : Subject -> AreaConj -> Subject;
-  --AreaCondition : AreaConj -> Condition;
+  MkArea : AreaConj -> Area;
 
-  PlacementRestriction : Modality -> Subject -> AreaConj -> Statement;
+  SubjectArea : OpenSubject -> Area -> Subject;
+
+  PlacementRestriction : Modality -> Subject -> Area -> Statement;
 }

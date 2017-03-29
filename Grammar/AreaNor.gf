@@ -11,10 +11,11 @@ concrete AreaNor of Area = GraphNor ** open
 in {
 
   lincat 
-    AreaConj = NP;
-    Area = CN;
     BaseArea = CN;
     NamedArea = CN;
+    SingleArea = CN;
+    AreaConj = NP;
+    Area = NP;
 
   oper
     areaAdv : NP -> Adv = \a -> Syn.mkAdv in_Prep a ;
@@ -23,6 +24,7 @@ in {
     place_V2 : V2 = Par.mkV2 (Par.mkV "plassere" "plasserer" "plasseres" "plasserte" "plassert" "plassér") in_Prep;
 
   lin
+
 
     TunnelArea = tunnel_CN;
     BridgeArea = bridge_CN;
@@ -36,9 +38,10 @@ in {
      (mkRS (mkRCl which_RP Syn.have_V2 (restr))) ;
     NoRestrictionArea a = a;
 
-    SingleArea a = mkNP a;
+    SingleAreaConj a = mkNP a;
     OrArea  = conj_NP or_Conj ;
     AndArea  = conj_NP and_Conj;
+    MkArea a = a;
 
     SubjectArea subj area = (mkCN subj (areaAdv area));
 

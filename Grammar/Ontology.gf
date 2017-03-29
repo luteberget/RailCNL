@@ -10,7 +10,9 @@ abstract Ontology = RailCNLStatement, Datalog ** {
     Class; 
     Property; Value;
     RelationMultiplicity;
+    ConsequentCondition;
 
+    OpenSubject;
     Subject; -- "a track", "a track of quality class X",
              -- "a track which has length greater than 200",
              -- "an object which is red".
@@ -56,9 +58,11 @@ abstract Ontology = RailCNLStatement, Datalog ** {
     MkClassRestriction : Class -> ClassRestriction;
     AndClassRestr, OrClassRestr : ClassRestriction -> ClassRestriction -> ClassRestriction;
 
-    SubjectClass : Class -> Subject;
+    SubjectClass : Class -> OpenSubject;
     -- SubjectRelation : Class -> Class -> Subject; -- ??
-    SubjectCondition : Class -> Condition -> Subject;
+    SubjectCondition : Class -> Condition -> OpenSubject;
+
+    CloseSubject : OpenSubject -> Subject;
 
     ExistsRelation, ManyRelation, OneRelation : RelationMultiplicity;
 
@@ -71,7 +75,9 @@ abstract Ontology = RailCNLStatement, Datalog ** {
 
     Obligation, NegativeObligation,
     Recommendation, NegativeRecommendation : Modality;
+
+    MkConsequent : Condition -> ConsequentCondition;
     
-    OntologyAssertion   : Subject -> Condition -> Statement;
-    OntologyRestriction : Modality -> Subject -> Condition -> Statement;
+    OntologyAssertion   : Subject -> ConsequentCondition -> Statement;
+    OntologyRestriction : Modality -> Subject -> ConsequentCondition -> Statement;
 }

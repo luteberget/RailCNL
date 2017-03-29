@@ -5,7 +5,8 @@ abstract RailCNL =
   Graph, 
   Area,
   TracksideObject,
-  OntologyExtensions
+  OntologyExtensions,
+  RailwayVocabulary
 
 ** 
 {

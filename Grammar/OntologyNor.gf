@@ -20,7 +20,9 @@ in {
     Property = CN;
     Value = Str;
     Subject = CN;
+    OpenSubject = CN;
     Condition = VP;
+    ConsequentCondition = VP;
     PropertyRestriction = NP;
     ClassRestriction = NP;
     Restriction = { ap : AP; np : NP; typ : RestrictionType} ;
@@ -55,6 +57,7 @@ in {
     SubjectClass cls =  (cls);
     SubjectCondition cls cond =  (mkCN cls
       (mkRS (mkRCl which_RP cond)));
+    CloseSubject s = s;
 
     Gt val =  { ap = mkAP big_A (strNP_m val);       np = strNP_m val; typ = RestrRS };
     Gte val =  { ap = mkAP gte_A2 (strNP_m val);     np = strNP_m val; typ = RestrRS };
@@ -91,6 +94,8 @@ in {
     ConditionRelationRestriction mult cls = mkVP RailLex.have_V2 (mkNP mult cls);
     ConditionRelationWithPropertyRestriction mult cls prop = mkVP RailLex.have_V2 (mkNP mult 
       (mkCN cls (mkRS (mkRCl which_RP Syn.have_V2 prop))));
+
+    MkConsequent x = x;
 
     Obligation             = { vv = RailLex.must_VV;   typ = MPos };
     NegativeObligation     = { vv = RailLex.shall_VV;  typ = MNeg };
